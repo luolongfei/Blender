@@ -1,39 +1,112 @@
 # 迁移到另一台电脑
 
-本方案采用“Git 同步代码和清单，手动复制大文件”，不需要 Git LFS。迁移源应是本工作区准备好的同一阶段快照；不要把仍在修改的旧目录当作已冻结备份。
+本方案采用“Git 同步代码和清单，手动复制大文件”，不需要 Git LFS。**只执行 `git clone` 不会得到模型、贴图或工具安装文件。**
 
-## 1. 确认本次交接基线
+按以下顺序操作：旧电脑准备两个目录 → 新电脑安装 Git、Node.js 和 Python → clone `main` → 复制工具、导入并校验角色资产 → 安装 Blender、VRM Add-on 和 Blender MCP → 验收后续作。
 
-原制作会话已于北京时间 2026-10-28 18:15 完成交付。本工作区已接收其最终交接，主源与当前导出没有版本差异；新增依赖审计报告和可选插件安装文件也已补齐。阅读 [已接收的交接](HANDOFF.md)，不必重复发送收尾请求。
+软件的下载、安装、Codex MCP 配置和故障排查见 [新电脑环境安装](NEW_MACHINE_SETUP.md)。本页负责明确“搬什么、放哪里、怎样确认没有漏文件”。
 
-本次迁移可以直接从新 Blender 工作区取文件。当前没有待合并的必需修复，模型仍是有已知视觉和性能问题的审阅版。原会话已做本机换路径恢复测试，新电脑尚待验证。
+## 1. 本次迁移基线
 
-旧完整 ZIP 保留作恢复后备；其中的旧 `.git`、根代码和会话状态不能覆盖本工作区。若旧工程之后继续产生新修改，应另行核对并更新迁移快照。
+原制作会话已于北京时间 2026-10-28 18:15 完成交付。本工作区已接收最终交接，主源与当前导出没有版本差异；新增依赖审计报告和可选插件安装文件也已补齐。阅读 [已接收的交接](HANDOFF.md)，不必重复发送收尾请求。
 
-## 2. 准备需要手动搬运的目录
+本次角色资产清单为 963 个文件，合计 7,543,237,602 字节，约 7.54 GB。原会话已做本机换路径恢复测试，新电脑仍需实际验收。当前没有待合并的必需修复，模型仍是有已知视觉和性能问题的审阅版。
 
-| 目录 | 是否需要搬运 | 说明 |
-| --- | --- | --- |
-| `projects/6c8500bf-1c38-481a-babd-e5478a50dd67/` | 必须 | 包含主源、图片、纹理、过程副本和输出 |
-| `tools/` | 推荐 | 包含固定版 Charakuru，以及 `tools/setup/` 中的可选 VRM/MCP 安装文件 |
-| `state/` | 通常不用 | 本机状态可重建，不作为角色成果依据 |
+本工作区直接使用 `main`。搬运时保持新旧电脑使用相同的 Git 提交和资产清单。若旧工程之后又产生修改，应先核对并更新迁移快照，再搬运；不要同时在两台电脑修改同一个角色主源。
 
-角色目录可能同时包含 Git 管理的源码和手动管理的资产。可以把整个角色目录放到外置盘或临时传输目录，但在新机使用下面的资产复制命令恢复，避免覆盖 Git 中已适配的源码。
-
-工具目录必须来自本工作区，保持 `tools/charakuru/<version>/` 和 `tools/setup/` 层级。不要用上游仓库的 Source code ZIP 或旧完整备份的根目录替代锁定工具套件。
-
-本次资产清单已经生成并校验。直接搬运该快照时不必重新生成；后续又有资产修改时，在停止写入后执行：
+在旧电脑的 `/Users/luolongfei/dev/code/Blender` 中，确认本次代码、状态和清单已经提交并推送，再记录提交号：
 
 ```sh
-node scripts/assets.mjs inventory --project 6c8500bf-1c38-481a-babd-e5478a50dd67
-node scripts/assets.mjs verify --project 6c8500bf-1c38-481a-babd-e5478a50dd67
+git status --short --branch
+git rev-parse HEAD
 ```
 
-清单随代码提交到 Git。实际资产仍需要复制到外置盘、局域网目标或新电脑；清单生成成功不等于备份完成。
+把完整提交号记录在传输目录旁的 `Blender-transfer/GIT-COMMIT.txt` 中，供新电脑比对。发现未提交修改或本地 `main` 领先远端时，先核对并完成本次快照的提交、推送，不把一套新资产配给另一版旧清单。
 
-## 3. 新电脑先取得代码
+## 2. 旧电脑：哪些需要手动搬
 
-本工作区直接使用 `main` 分支，代码、版本锁和迁移清单都保存在该分支。
+以下“原电脑路径”都是当前已准备好的 **Blender 新工作区**，不要从旧 Charakuru 根目录混着取文件。“新电脑位置”相对于新电脑 clone 得到的 `Blender` 根目录。
+
+| 内容 | 原电脑完整路径 | 新电脑位置 | 是否手动搬运 |
+| --- | --- | --- | --- |
+| 角色完整制作目录 | `/Users/luolongfei/dev/code/Blender/projects/6c8500bf-1c38-481a-babd-e5478a50dd67/` | `projects/6c8500bf-1c38-481a-babd-e5478a50dd67/` | **必须**，约 7.54 GB；先放暂存目录，再用第 5 节命令导入 |
+| 固定版工具与插件安装文件 | `/Users/luolongfei/dev/code/Blender/tools/` | `tools/` | **强烈建议一起搬**，约 18.7 MB；可省去重新取得工具和插件载荷 |
+
+必须搬整个角色目录。它不仅有当前 `.blend`、`.vrm`，还保留原画、贴图、动作、历史检查点、工作副本和报告。不要只挑 `exports/`、一个 VRM 或一个 `.charakit`。
+
+`tools/` 内应保持以下结构：
+
+```text
+tools/
+  charakuru/
+    1.1.0/                         固定版 Charakuru 完整运行套件
+  setup/
+    VRM_Addon_for_Blender-Extension-4_10_2.zip
+    mcp_for_blender-2.2.4-py3-none-any.whl
+    blender-mcp-2.2.4/
+      addon.py
+```
+
+这些是工具文件和安装载荷，**复制不等于在新机完成安装**。MCP 的 Python 依赖没有全部离线打包；安装时仍可能需要网络。
+
+### 外置盘或传输目录怎么摆
+
+例如建立名为 `Blender-transfer` 的目录，把原电脑的角色目录和 `tools` 按下面的层级复制进去：
+
+```text
+Blender-transfer/
+  projects/
+    6c8500bf-1c38-481a-babd-e5478a50dd67/
+      project.charakit
+      work/
+      exports/
+      textures/
+      images/
+      models/
+      previews/
+      ...                          原角色目录中的其余文件也保留
+  tools/
+    charakuru/
+      1.1.0/
+    setup/
+      ...
+```
+
+角色目录里也有少量 Git 管理的源码，整目录复制到暂存区没有问题。新电脑使用第 5 节的资产导入命令，会保留 clone 得到的适配后源码。
+
+### 哪些已经在 Git，不必手动搬
+
+`scripts/`、`pipeline/`、`config/` 中的公共配置和样例、`docs/`、`asset-manifests/`、`toolchain.lock.json`、根目录说明，以及角色登记的制作源码和 `project-state.json`，都随 `main` 获取。
+
+### 哪些不要照搬
+
+| 内容 | 处理方式 |
+| --- | --- |
+| 旧 Charakuru 或旧工作区的 `.git/` | 不覆盖新仓库；新电脑用 clone 创建 Git 元数据 |
+| `state/` | 通常不用搬；应用状态首次启动时重建。它不是角色资产正本 |
+| `config/local.json`、`config/charakuru.local.json` | 新机按样例重新填写，避免旧电脑路径失效 |
+| `.codex/`、Codex 登录数据、浏览器 Cookie/配置 | 不整份复制；在新机正常安装、登录及配置需要的 MCP |
+| `node_modules/`、虚拟环境、Python 缓存、`.DS_Store` | 不作为迁移资料；按需重建 |
+| 旧电脑的 Blender/Node 应用程序本体 | 按新电脑操作系统和 CPU 架构安装 |
+
+如需保留历史日志和交接排错资料，可选把 `/Users/luolongfei/dev/code/Blender/state/` 单独备份到传输盘的 `Blender-transfer/optional-state-backup/`，不提交到 Git。新机默认不恢复为活动 `state/`，仍从 `.charakit` 重建；尤其不要恢复旧排队请求。它是历史后备，不是继续制作的必需目录。
+
+### 旧完整换机包是否也要搬
+
+下面两份文件可作为额外恢复后备，但不是上述“两目录”方案的必需文件，不用为了续作重复搬两套相同资产：
+
+- `/Users/luolongfei/dev/code/Charakuru-delivery/Charakuru-workspace-2026-10-28.zip`，约 6.24 GB。
+- `/Users/luolongfei/dev/code/Charakuru-delivery/Charakuru-workspace-2026-10-28.zip.sha256`。
+
+如果选择保留这个备份，应把 ZIP 和校验文件一起搬。旧 ZIP 包含旧 `.git`、根目录代码、配置和会话状态，**不能整体解压覆盖新的 Blender 工作区**。其中的操作说明针对旧目录布局；日常续作以本仓库文档为准。
+
+`character-review-2026-10-28.zip` 只是审阅包，不足以替代完整制作目录。
+
+## 3. 新电脑：先准备基础软件并取得代码
+
+先按 [新电脑环境安装](NEW_MACHINE_SETUP.md) 安装 Git、Node.js 和 Python。后续 MCP 自身要求 Python 3.10 以上；本工作区的工具安装和语法检查最低只要求 3.8。Node.js 要求 22 以上。
+
+在新电脑希望存放项目的父目录打开终端，执行：
 
 ```sh
 git clone --branch main https://github.com/luolongfei/Blender.git
@@ -41,62 +114,79 @@ cd Blender
 git rev-parse HEAD
 ```
 
-将显示的提交号与源端迁移提交核对。两台电脑应使用同一份代码、工具版本锁和资产清单。
+最后一条命令显示 Git 提交号，应与 `Blender-transfer/GIT-COMMIT.txt` 中记录的迁移提交一致。若不一致，先核对远端提交和资产快照，不能重写清单消除差异。macOS 的新根目录可以是 `/Users/<新用户名>/dev/Blender`，Windows 可以是 `D:\dev\Blender`；不要求沿用原电脑用户名或绝对路径。
 
-安装 Node.js 22 以上和系统 Python 3.8 以上。Python 用于工具包解压与 Python 源码语法检查，只使用标准库，不需要额外安装 Python 包。它与 Blender 内置 Python 分开管理。Blender、VRM Add-on 和 Blender MCP 需要在新电脑上安装并连接，不能由项目文件复制代替。恢复时先使用版本锁记录的已验证版本。
+此后本页所有 `node scripts/...` 命令都在**新电脑的 Blender 工作区根目录**执行。
 
-如果手动复制工具，把整个 `tools/` 放到新工作区同名目录。没有复制固定版 Charakuru 时也可执行：
+现在就按 [本机路径配置](NEW_MACHINE_SETUP.md#3-取得代码资产与本机路径配置) 从 `config/local.example.json` 创建 `config/local.json`，先填写实际 `pythonExecutable`，再执行后面的安装或语法检查命令。使用 uv 时以 `uv python find 3.12` 的输出为准。此时 Blender 尚未安装可暂留空，装好后补填；不要等到第 6 节才配置 Python。
+
+## 4. 新电脑：放好工具
+
+从暂存目录把整个 `Blender-transfer/tools/` 复制到新工作区的 `tools/`，确保得到 `Blender/tools/charakuru/1.1.0/`，而不是多套一层 `Blender/tools/tools/`。
+
+不要把旧完整 ZIP 的 Charakuru 根目录当作这个固定版工具目录复制，也不要用 GitHub 的 Source code ZIP 替代完整工具套件。
+
+如果没有手动搬运固定版 Charakuru，可在新工作区执行：
 
 ```sh
 node scripts/workspace.mjs install-tool
 ```
 
-`tools/setup/` 的安装文件来源和校验值记录在版本锁中，需要在新机实际安装。MCP 2.2.4 需要 Python 3.10 以上，相关 Python 依赖没有全部离线打包。Blender 和 Node 本体仍需按新机系统安装。
+这个命令只安装锁定版 Charakuru；不会代替 Blender、VRM Add-on、MCP 或 `tools/setup/` 安装载荷的恢复。后者按 [新电脑环境安装](NEW_MACHINE_SETUP.md) 操作。
 
-首次设置时，将 `config/local.example.json` 复制为 `config/local.json`。macOS / Linux 可执行：
+## 5. 新电脑：导入并校验角色资产
+
+把下面 `--source` 后面的路径替换成实际外置盘或暂存目录中的**角色目录**。该目录应直接包含 `project.charakit`、`work`、`exports` 等，不要填它的上一级 `projects`。
+
+macOS 示例，外置盘名假设为 `Transfer`：
 
 ```sh
-cp -n config/local.example.json config/local.json
+node scripts/assets.mjs copy --source "/Volumes/Transfer/Blender-transfer/projects/6c8500bf-1c38-481a-babd-e5478a50dd67" --project 6c8500bf-1c38-481a-babd-e5478a50dd67
 ```
 
-已有配置时直接编辑，不覆盖它。Windows 可以通过文件管理器复制。这个文件被 Git 忽略，按需填写：
+Windows PowerShell 示例，外置盘盘符假设为 `E:`：
 
-- `blenderExecutable`：本机 Blender 可执行文件的完整路径。
-- `pythonExecutable`：本机 Python 3.8 以上可执行文件的完整路径；留空时尝试环境配置及 `python3`、`python`。
-- `charakuruConfig`：可选的 Charakuru 本机配置文件路径；相对路径按工作区根目录解析。
+```powershell
+node scripts/assets.mjs copy --source "E:\Blender-transfer\projects\6c8500bf-1c38-481a-babd-e5478a50dd67" --project 6c8500bf-1c38-481a-babd-e5478a50dd67
+```
 
-macOS 与 Windows 的可执行文件位置不同。公共配置保持相对路径，不要把旧机器路径写回通用制作代码。
-
-## 4. 从传输目录恢复大文件
-
-在新工作区根目录执行，将占位文字替换成外置盘或暂存目录中的角色目录：
+两种系统导入后都执行：
 
 ```sh
-node scripts/assets.mjs copy --source "<传输目录中的角色目录>" --project 6c8500bf-1c38-481a-babd-e5478a50dd67
 node scripts/assets.mjs verify --project 6c8500bf-1c38-481a-babd-e5478a50dd67
-```
-
-复制命令用于资产恢复，并保护登记的源码。目标已有不同内容时，先核对哪份正确，不要随意覆盖。校验失败时保留两端文件，处理缺失或不一致项后重新校验。
-
-工具和资产恢复后：
-
-```sh
 node scripts/workspace.mjs doctor
 node scripts/workspace.mjs validate-source
 ```
 
-## 5. 验证能继续工作
+本次基线的资产验证应显示 `status: "ok"`、`checkedFiles: 963`、`extraFiles: 0`、`failures: []`。`doctor` 应确认固定工具和主 Blend 存在；它不验证 Blender MCP 是否已连接。`validate-source` 只做源码语法检查，不会运行建模补丁或证明模型外观合格。
 
-1. 核对交接中的主源，确认不会重跑已经执行过的变形补丁。
-2. 用 Blender 打开主源，检查贴图、骨架、表情和物理设置。
-3. 确认 MCP 能读取正确场景。
-4. 检查短动作或阶段说明要求的关键姿势，确认导出与主源的对应关系。
-5. 验证后再继续未完成修正；旧电脑原件保留到新电脑恢复成功。
+复制命令保护 Git 登记的源码。目标已有不同内容时会拒绝覆盖并报告，先核对文件来源；不要直接加 `--refresh` 或重新生成清单把问题掩盖掉。校验失败时保留两端文件，处理缺失或不一致项后重新校验。
 
-新电脑在 Codex 中打开的是这个 `Blender` 工作区，把 [续作提示词](CONTINUE_PROMPT.txt) 发给新会话。它已适配本仓库的路径、命令、`main` 分支和最终交接状态。
+**新电脑第一次恢复时只执行 `verify`，不要先执行 `inventory`。** `inventory` 会把当前文件重新写成基准清单，不能用来证明搬运完整。
 
-`.charakit` 显示较早的阶段，不表示 Blender 模型丢失。不要为“恢复进度”重新触发候选生成，应先恢复制作源，再核对应用登记。
+## 6. 新电脑：完成软件安装和恢复验收
 
-## 更新工具时
+按 [新电脑环境安装](NEW_MACHINE_SETUP.md) 完成 Blender、VRM Add-on、Blender MCP 两端和 Codex 配置，补齐第 3 节创建的 `config/local.json` 中的 Blender 路径。所有可执行文件路径使用新电脑实际位置，已有配置不覆盖。
 
-下载新版到另一个版本目录，在可丢弃的角色副本上检查打开、保存、材质、表情、物理与导出。通过后再更新工具锁和角色状态，不直接覆盖当前唯一可用的工具包。
+随后依次验收：
+
+1. 用 Blender 打开 `projects/6c8500bf-1c38-481a-babd-e5478a50dd67/work/character.blend`，这是唯一建模主源。
+2. 检查贴图、骨架、表情和物理设置；确认 MCP 能读取正确场景。
+3. 运行 `node scripts/workspace.mjs preview`，按打印的地址检查当前模型的静态状态和短动作。
+4. 在 Codex 中打开新的 `Blender` 工作区，把 [续作提示词](CONTINUE_PROMPT.txt) 发给新会话。
+5. 恢复验收通过后才继续精修。旧电脑原件和传输副本保留到新机恢复成功。
+
+`finish_comprehensive_refinement.py` 等本轮变形补丁已经执行，不能对当前主源重复运行。`.charakit` 显示较早的制作阶段，不表示 Blender 模型丢失；不要为恢复进度重新触发 Tripo 候选生成。
+
+## 后续又有资产修改时
+
+本次资产清单已经生成并校验，直接搬运本次快照不必再生成。以后需要制作新的迁移快照时，由制作端先保存、停止写入，再执行：
+
+```sh
+node scripts/assets.mjs inventory --project 6c8500bf-1c38-481a-babd-e5478a50dd67
+node scripts/assets.mjs verify --project 6c8500bf-1c38-481a-babd-e5478a50dd67
+```
+
+将更新后的角色状态和清单提交到 `main`，再搬运对应资产。清单生成或 Git 推送成功不等于大文件已经复制到另一台电脑。
+
+新版 Charakuru 并列安装，在角色副本上验证打开、保存、材质、表情、物理与导出后再切换工具锁，不覆盖当前唯一可用工具版本。

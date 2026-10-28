@@ -1,18 +1,24 @@
 请在当前 Blender 工作区继续已经迁移的角色工程。直接使用 main，
 未经我明确要求不要新建分支。先读 AGENTS.md、README.md、
-docs/HANDOFF.md、docs/MIGRATION.md、toolchain.lock.json 和
+docs/HANDOFF.md、docs/MIGRATION.md、docs/NEW_MACHINE_SETUP.md、toolchain.lock.json 和
 projects/6c8500bf-1c38-481a-babd-e5478a50dd67/project-state.json。
 
 这是现有工程的续作，不从图片生成阶段重做，不使用 Tripo。
 Charakuru 是 tools/charakuru/<锁定版本>/ 下的外部工具，读取其中实际需要的 Skill。
 不要用旧完整换机包的根目录、.git、会话配置或源码覆盖当前工作区。
 
-先在当前根目录校验：
+这是新环境时，先按 docs/NEW_MACHINE_SETUP.md 核对并补齐 Git、Node、
+独立 Python/uv、Blender、VRM Add-on、Blender MCP 两端和 Codex 配置。
+手动复制 tools/setup 的安装文件不等于已经安装；保留本机已有配置，
+使用新电脑的可执行文件绝对路径。先填好 config/local.json 的 pythonExecutable，
+再执行工具安装和源码语法检查。通过 MCP 实际读取场景才能判定连接成功。
+
+在当前根目录校验：
 node scripts/assets.mjs verify --project 6c8500bf-1c38-481a-babd-e5478a50dd67
 node scripts/workspace.mjs doctor
 node scripts/workspace.mjs validate-source
 
-核对本机 Blender、VRM Add-on、MCP 的实际安装和连接。
+资产 verify 失败时先修复搬运结果，不执行 inventory 重写基准。
 用 Blender 打开：
 projects/6c8500bf-1c38-481a-babd-e5478a50dd67/work/character.blend
 这是唯一建模主源。检查贴图、骨骼、形态键、衣内身体和马尾物理。

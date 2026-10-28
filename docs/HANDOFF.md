@@ -51,6 +51,8 @@
 
 ## 新机环境
 
+完整软件清单、安装顺序、平台路径示例、Codex MCP 配置与验收见 [新电脑环境安装与验收](NEW_MACHINE_SETUP.md)。手动搬运的准确范围、源路径和目标位置见 [迁移步骤](MIGRATION.md)。
+
 恢复基线为 Blender 5.2.3 LTS、VRM Add-on 4.10.2、mcp-for-blender 2.2.4，Node.js 要求 22 以上。工具安装和语法检查使用的系统 Python 最低为 3.8；MCP 2.2.4 自身要求 Python 3.10 以上。
 
 `tools/setup/` 已保留 VRM Extension 安装 ZIP、MCP wheel 和 Blender 端 `addon.py`，大小和 SHA-256 记录在 `toolchain.lock.json` 的 `optionalInstallationMedia`。这些文件需要在新机实际安装；它们不包含全部 Python 依赖，不能视为完整离线安装环境。

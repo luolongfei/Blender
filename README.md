@@ -22,6 +22,8 @@ Git 中的代码和清单不能替代模型文件。角色主源固定为 `proje
 
 ## 开始使用
 
+新电脑从零安装请先看 [新电脑环境安装与验收](docs/NEW_MACHINE_SETUP.md)：包含 Git、Node.js、Python/uv、Blender、VRM Add-on、Blender MCP 两端及 Codex 配置，分别提供 macOS 和 Windows 示例。
+
 需要 Node.js 22 以上。工具包安装和 Python 源码语法检查还需要系统 Python 3.8 以上，只使用标准库；Blender 内置 Python 另计。当前已验证的制作环境基线是 Blender 5.2.3 LTS、VRM Add-on 4.10.2、Blender MCP 2.2.4；这些是恢复基线，不是“最新版”声明。
 
 首次设置时，将 `config/local.example.json` 复制为 `config/local.json`，按需填写本机 Blender、Python 可执行文件和 Charakuru 配置路径；本机配置不入 Git。
@@ -53,7 +55,7 @@ node scripts/workspace.mjs preview
 
 ## 迁移与续作
 
-阅读 [迁移步骤](docs/MIGRATION.md)，在新电脑拉取本仓库，再复制同一迁移阶段的资产和工具。本方案不需要 Git LFS。不要把旧 Charakuru 目录中的源码直接覆盖到这个工作区。
+阅读 [迁移步骤](docs/MIGRATION.md)，在新电脑拉取本仓库，再复制同一迁移阶段的资产和工具。**必须手动搬运整个角色目录，强烈建议同时搬运 `tools/`**；文档列有旧机完整路径、新机目标位置和导入命令。Git clone 不包含模型与贴图。本方案不需要 Git LFS。不要把旧 Charakuru 目录中的源码直接覆盖到这个工作区。
 
 阅读 [制作管理规则](docs/PRODUCTION.md)，确认主源、待合并副本、导出是否与当前主源对应。当前 `.charakit` 的应用流程状态可能落后于 Blender 制作进度，不能据此重新生成或覆盖角色。
 
