@@ -33,10 +33,10 @@ node scripts/assets.mjs verify --project 6c8500bf-1c38-481a-babd-e5478a50dd67
 
 ## 3. 新电脑先取得代码
 
-迁移分支为 `codex/migration-workspace`。只有该分支已经推送到 GitHub 后，下面的命令才能在新机运行；本地创建分支不表示远程已经可用。
+本工作区直接使用 `main` 分支，代码、版本锁和迁移清单都保存在该分支。
 
 ```sh
-git clone --branch codex/migration-workspace https://github.com/luolongfei/Blender.git
+git clone --branch main https://github.com/luolongfei/Blender.git
 cd Blender
 git rev-parse HEAD
 ```
