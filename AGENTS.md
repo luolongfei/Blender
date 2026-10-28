@@ -5,6 +5,7 @@
 ## 开始工作
 
 - 先读 `README.md`、`docs/PRODUCTION.md`、`toolchain.lock.json` 和当前角色的状态记录。
+- 本仓库直接使用 `main`；除非用户明确要求，不创建额外分支。
 - 从工作区根目录运行命令。使用统一的路径适配入口，不写死旧电脑用户名、磁盘或 Charakuru 安装目录。
 - 按实际任务读取锁定版 Charakuru 中需要的 Skills。用户已选择本地 Blender 制作，不自动切回 Tripo 或重新生成候选。
 - `tools/charakuru/<version>/` 保留上游原文件。适配和自编代码放在本工作区管理，不用直接改工具包解决路径问题。
