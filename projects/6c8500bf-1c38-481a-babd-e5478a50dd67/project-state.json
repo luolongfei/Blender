@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "projectId": "6c8500bf-1c38-481a-babd-e5478a50dd67",
-  "recordedAt": "2026-10-28T09:59:09+00:00",
+  "recordedAt": "2026-10-28T18:42:48+08:00",
   "stage": "migration-checkpoint-review-candidate",
   "route": "local-original-Blender-MCP",
   "toolchainLock": "../../toolchain.lock.json",
@@ -53,7 +53,7 @@
   ],
   "candidatePreservation": {
     "allCopied": true,
-    "unmergedCandidateAudit": "Not exhaustively reviewed; preserve work copies and consult their reports before reuse."
+    "unmergedCandidateAudit": "The final producer handoff confirms no required fixes remain unmerged. Historical checkpoints and candidates remain preserved."
   },
   "canonicalCharakit": {
     "path": "project.charakit",
@@ -87,16 +87,16 @@
   ],
   "migration": {
     "assetManifest": "../../asset-manifests/6c8500bf-1c38-481a-babd-e5478a50dd67.json",
-    "snapshotAt": "2026-10-28T09:56:08.226Z",
-    "assetFiles": 962,
-    "assetBytes": 7543228222,
+    "snapshotAt": "2026-10-28T10:38:45.621Z",
+    "assetFiles": 963,
+    "assetBytes": 7543237602,
     "copyResult": "ok",
     "sourceStableDuringSuccessfulCopy": true,
     "localSnapshotHashVerification": "ok",
     "extraFiles": 0,
     "originalProducerMessageSent": false,
     "originalProducerPauseConfirmed": false,
-    "scope": "Stable saved snapshot copied from the original Charakuru project. Subsequent original-workspace changes are not automatically included.",
+    "scope": "Final producer handoff reconciled. All 963 asset entries match the original completed archive manifest; the local snapshot passed a fresh full hash verification.",
     "offMachineCopyVerified": false,
     "newMachineBlenderAndMcpVerified": false,
     "migrationValidation": {
@@ -107,10 +107,44 @@
       "appRestoredProject": true,
       "appPendingRequest": null,
       "previewRoutesAndVrmRange": true
+    },
+    "originalProducerHandoffReceived": true,
+    "originalConversationCompletedAt": "2026-10-28T18:15:02+08:00",
+    "originalArchiveFrozen": true,
+    "liveSourceWriteLockVerified": false,
+    "handoff": {
+      "guide": "../../docs/HANDOFF.md",
+      "continuePrompt": "../../docs/CONTINUE_PROMPT.txt",
+      "sourceArchive": "Charakuru-workspace-2026-10-28.zip",
+      "sourceArchiveBytes": 6238610776,
+      "sourceArchiveSha256": "10f0a778d7109459427b45d65d87e93bd0cde59e231c71119c1015f7ea7fa0a3",
+      "sourceArchiveSha256RecomputedThisPass": false,
+      "sourceManifestCreatedAt": "2026-10-28T10:03:44.113554+00:00",
+      "sourceHandoffSha256": "5942a1a539720b26fc43b1dcb2f55f1bfe0ecebfee01a6738a602830dccb91e1",
+      "existingAssetEntriesUnchanged": 962,
+      "newAssetEntries": 1,
+      "principalLocalFilesRehashed": [
+        "work/character.blend",
+        "exports/expression-review/avatar-preview.vrm",
+        "project.charakit"
+      ],
+      "optionalInstallerFilesVerified": 3,
+      "modelsRewritten": false,
+      "producerRestorationReport": {
+        "filename": "restoration-check-report.json",
+        "sha256": "11e1ce25d35c6b20fd4ca5f76fcafd7b8789e845df7110f943d0fe187c48421c",
+        "testEnvironment": "macOS local relocation; not a second physical machine",
+        "passed": true,
+        "filesChecked": 1836,
+        "fileImagesPacked": 19,
+        "rigBones": 128,
+        "linkedLibraries": 0
+      }
     }
   },
   "resume": [
     "Restore this Git revision and all assets, then run assets verify before production writes.",
+    "Read docs/HANDOFF.md; finish_comprehensive_refinement.py and early generation/shape patches have already been applied and must not be blindly rerun.",
     "Open work/character.blend with the pinned Blender/VRM Add-on environment; connect MCP and confirm the correct scene.",
     "Use previews/motion-viewer.html via the workspace preview server for the current runtime model.",
     "Continue the visual and performance issues recorded in exports/quality-assessment.json; do not regenerate Tripo candidates based on historical workflow stages."

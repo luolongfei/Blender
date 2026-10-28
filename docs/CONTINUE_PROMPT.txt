@@ -1,0 +1,38 @@
+请在当前 Blender 工作区继续已经迁移的角色工程。直接使用 main，
+未经我明确要求不要新建分支。先读 AGENTS.md、README.md、
+docs/HANDOFF.md、docs/MIGRATION.md、toolchain.lock.json 和
+projects/6c8500bf-1c38-481a-babd-e5478a50dd67/project-state.json。
+
+这是现有工程的续作，不从图片生成阶段重做，不使用 Tripo。
+Charakuru 是 tools/charakuru/<锁定版本>/ 下的外部工具，读取其中实际需要的 Skill。
+不要用旧完整换机包的根目录、.git、会话配置或源码覆盖当前工作区。
+
+先在当前根目录校验：
+node scripts/assets.mjs verify --project 6c8500bf-1c38-481a-babd-e5478a50dd67
+node scripts/workspace.mjs doctor
+node scripts/workspace.mjs validate-source
+
+核对本机 Blender、VRM Add-on、MCP 的实际安装和连接。
+用 Blender 打开：
+projects/6c8500bf-1c38-481a-babd-e5478a50dd67/work/character.blend
+这是唯一建模主源。检查贴图、骨骼、形态键、衣内身体和马尾物理。
+需要预览时运行 node scripts/workspace.mjs preview，使用命令打印的地址。
+不要把运行版 VRM 重新导入后当作可编辑主源。
+
+当前主源 SHA-256：
+6e7361e7f5c306325d3f33c4c9f6f56b1a489d5f4579bb4be951d4c3d59cc8c1
+此哈希标识迁移基线；开始新的编辑并保存后，更新相关状态和清单。
+
+原最终交接确认本轮必需修复已整合，无必需修复待合并。
+finish_comprehensive_refinement.py 已执行，不能再次对当前主源施加。
+早期整体生成、头型变形脚本和旧 QA 副本是历史资料，不能顺序重跑或覆盖主源。
+
+当前仍是需要精修的审阅版，未达到真人感终稿要求。
+先检查真实多角度效果，再按头脸自然感、枕颈和发帽边缘、真实发丝、
+皮肤和配色、手部及衣料的顺序完善。保留默认无腮红、自然表情、
+完整衣内身体和可摆动的马尾。不能用技术检查替代外观验收。
+运行版目前614282三角形，超过脚本300000目标；目标设备、作者和授权信息未确认。
+
+仍可多代理分工，但只有整合者写主源；子代理使用独立副本，
+合并前核对基线，合并后重新导出并验证。先报告迁移验收结果、
+实际看到的问题和下一步优先级，再继续制作。旧电脑原件保留到新机恢复成功。

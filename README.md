@@ -4,7 +4,7 @@
 
 当前角色：`6c8500bf-1c38-481a-babd-e5478a50dd67`（双马尾绿裙角色）。
 
-本次迁移清单生成于 **2026-10-28 17:56（北京时间）**：962 个资产文件，共约 7.54 GB，已在本机新目录完成全量 SHA-256 校验。当前主源和导出对应关系、已合入修改及剩余问题见 [角色状态](projects/6c8500bf-1c38-481a-babd-e5478a50dd67/project-state.json)。这是已保存成果的迁移快照，不表示原制作会话已暂停，也不是异机恢复或最终质量验收完成。
+已接收原制作会话的最终交接。本次迁移清单更新于 **2026-10-28 18:38（北京时间）**：963 个资产文件，共约 7.54 GB，已完成全量 SHA-256 校验，全部资产条目与原交接包清单一致。主模型没有变化；新增依赖审计及插件安装文件已补齐。详见 [交接说明](docs/HANDOFF.md) 和 [角色状态](projects/6c8500bf-1c38-481a-babd-e5478a50dd67/project-state.json)。新电脑实际恢复和最终质量验收尚未完成。
 
 ## 文件在哪里
 
@@ -15,7 +15,7 @@
 | `asset-manifests/` | 手动复制资产的路径、大小和 SHA-256 清单 | Git |
 | `projects/<id>/work/local-model/` | 现有角色制作代码 | Git 中明确登记的源码 |
 | `projects/<id>/` 中的模型、贴图、原画和过程产物 | 实际角色资产 | 手动复制并校验 |
-| `tools/charakuru/<version>/` | 完整 Charakuru 运行套件 | 本机安装或手动复制 |
+| `tools/charakuru/<version>/`、`tools/setup/` | 固定版工具和可选插件安装文件 | 本机安装或手动复制 |
 | `state/` | 本机应用状态与运行日志 | 本机保存 |
 
 Git 中的代码和清单不能替代模型文件。角色主源固定为 `projects/<id>/work/character.blend`；新副本只有完成整合后才成为主源，不能根据修改时间自动替换。
@@ -57,7 +57,7 @@ node scripts/workspace.mjs preview
 
 阅读 [制作管理规则](docs/PRODUCTION.md)，确认主源、待合并副本、导出是否与当前主源对应。当前 `.charakit` 的应用流程状态可能落后于 Blender 制作进度，不能据此重新生成或覆盖角色。
 
-原制作会话的收尾请求在 [ORIGINAL-CHAT-REQUEST.txt](docs/ORIGINAL-CHAT-REQUEST.txt)。迁移准备时没有可用的跨会话发送工具，Codex 窗口控制也被工具限制拒绝，因此**这份文字需要在原会话中发送，不能把文件存在视为已经通知或停工**。
+原制作会话已完成交付，不必再发送收尾请求。新电脑在 Codex 中打开本工作区，使用 [续作提示词](docs/CONTINUE_PROMPT.txt)。原 6.24 GB 完整 ZIP 保留作后备，其中的旧 Git、根目录代码和会话配置不能覆盖本工作区。
 
 ## 更新 Charakuru
 

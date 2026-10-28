@@ -17,5 +17,32 @@
     "uv": "0.13.5",
     "mcpPython": "3.15.1",
     "meaning": "Previously validated versions, not a claim of latest releases."
+  },
+  "optionalInstallationMedia": {
+    "directory": "tools/setup",
+    "sourceArchive": "Charakuru-workspace-2026-10-28.zip",
+    "sourceArchiveSha256": "10f0a778d7109459427b45d65d87e93bd0cde59e231c71119c1015f7ea7fa0a3",
+    "files": [
+      {
+        "path": "tools/setup/VRM_Addon_for_Blender-Extension-4_10_2.zip",
+        "bytes": 1649263,
+        "sha256": "228e622d158fbbf070b1b49547708f360a223873f00fa81a42170794492e6db9",
+        "sourceArchivePath": "local/setup/vrm-research/VRM_Addon_for_Blender-Extension-4_10_2.zip"
+      },
+      {
+        "path": "tools/setup/mcp_for_blender-2.2.4-py3-none-any.whl",
+        "bytes": 217173,
+        "sha256": "c6c3286da735cd44eef43186759da7f19696b0d50991a1b64399280f9744ae14",
+        "sourceArchivePath": "local/setup/mcp-research/mcp_for_blender-2.2.4-py3-none-any.whl"
+      },
+      {
+        "path": "tools/setup/blender-mcp-2.2.4/addon.py",
+        "bytes": 287857,
+        "sha256": "8e193a249e2ed1262f3e794ee2254efd8e3d1f0224385245f2b989154c837083",
+        "sourceArchivePath": "local/setup/mcp-research/addon.py"
+      }
+    ],
+    "mcpPythonMinimum": "3.10",
+    "scope": "Optional installer payloads only. MCP dependencies are not bundled; installation may need network access."
   }
 }
