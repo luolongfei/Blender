@@ -1,0 +1,4820 @@
+{
+  "version": 1,
+  "projectId": "6c8500bf-1c38-481a-babd-e5478a50dd67",
+  "assetRoot": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67",
+  "snapshotAt": "2026-10-28T09:56:08.226Z",
+  "totalFiles": 962,
+  "totalBytes": 7543228222,
+  "files": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3505,
+      "sha256": "6ab0b122649a56d56fbcd202ebd0b5974ff89eeeec35ad63d51e40d131c62966"
+    },
+    {
+      "path": "exports/avatar-clearance-report.json",
+      "bytes": 30221,
+      "sha256": "70e7a091e3c42cb549912ac29876de527b9412a071fcae8f6b9bc95e48c1fe24"
+    },
+    {
+      "path": "exports/avatar-export-report.json",
+      "bytes": 297083,
+      "sha256": "f266378b0fc3b37299f77a64da7069c692c29a62fccd0a9257b46d72cb0c6776"
+    },
+    {
+      "path": "exports/avatar-geometry-report.json",
+      "bytes": 307,
+      "sha256": "c0a6583da9f6ba96bc28f595cf4d1da2b60ac1d4508c545aa03cb3283df57db1"
+    },
+    {
+      "path": "exports/avatar-physics-report.json",
+      "bytes": 5912,
+      "sha256": "cd029517acec4006830ed24213da67afd93307052bbce0ef582ad12818a672a3"
+    },
+    {
+      "path": "exports/avatar-preview.glb",
+      "bytes": 75819164,
+      "sha256": "bc67ca334bfc62b860f412af03bae9eb60ac338e225b03aed694d2ede78ce9ef"
+    },
+    {
+      "path": "exports/avatar-preview.vrm",
+      "bytes": 76645100,
+      "sha256": "09c82321c484e5512607c9218b442bf998d5076be0d48db574970668e8617c99"
+    },
+    {
+      "path": "exports/avatar-runtime.blend",
+      "bytes": 54493034,
+      "sha256": "9a3bfdcb54c93ed86d8ad80a3bb3615ef7f98988cf1fe25471daf5ea56f52a5a"
+    },
+    {
+      "path": "exports/avatar-source-report.json",
+      "bytes": 4365,
+      "sha256": "b72a647c7b10eb1b37d8699a0e32213d082808dfb22628c080736f6a2edb5981"
+    },
+    {
+      "path": "exports/avatar-spring-plan.json",
+      "bytes": 6206,
+      "sha256": "dcbfd9f5339db9b212e84e04b68f20aac4a96e2a90a9f9f396024f910a9d45d8"
+    },
+    {
+      "path": "exports/avatar-walk-report.json",
+      "bytes": 853,
+      "sha256": "e60ba36225956add7b6e9cf936dbeb43b3f5787286783612326269a3efafdd3e"
+    },
+    {
+      "path": "exports/avatar.blend",
+      "bytes": 57502979,
+      "sha256": "dcc12641026baf53579d072442c3139d1fdcef1e37452f1cc197347590c093f1"
+    },
+    {
+      "path": "exports/character-client-review.zip",
+      "bytes": 256310648,
+      "sha256": "688d01fd0ae80ea3cc78b9ec35c76279cced854df25792034638f2dc3da3627d"
+    },
+    {
+      "path": "exports/current-preview-aliases.json",
+      "bytes": 2157,
+      "sha256": "7e9b4b9b14ae06578fe2347029b5add97f311b1937e18b4aaad01284ae3a3761"
+    },
+    {
+      "path": "exports/delivery-manifest.json",
+      "bytes": 7487,
+      "sha256": "d6c2f1a6492c54052fdcf2b80f8fdd910eb55650fa099a337d02d633940585d2"
+    },
+    {
+      "path": "exports/expression-review/avatar-body-clothing-greet-report.json",
+      "bytes": 14794,
+      "sha256": "56e8551d200569b9113a808810f13cc2be26838df64377df982825b18a18762b"
+    },
+    {
+      "path": "exports/expression-review/avatar-body-clothing-static-report.json",
+      "bytes": 6931,
+      "sha256": "8b37517045e943d21834d7abe2eca5ad173a6dd2d13e0c131541af80c083f042"
+    },
+    {
+      "path": "exports/expression-review/avatar-body-clothing-walk-report.json",
+      "bytes": 11827,
+      "sha256": "c000fe6b0288a61ba230ac96ae8f0a70895588afdc37fd5b9f051bf77cd6bcbc"
+    },
+    {
+      "path": "exports/expression-review/avatar-body-completion-report.json",
+      "bytes": 20035,
+      "sha256": "23b3d980392f568bd784ed9ee4a1e74760551322da1a11b88f0de54c7c4c5cbf"
+    },
+    {
+      "path": "exports/expression-review/avatar-export-report.json",
+      "bytes": 297083,
+      "sha256": "f266378b0fc3b37299f77a64da7069c692c29a62fccd0a9257b46d72cb0c6776"
+    },
+    {
+      "path": "exports/expression-review/avatar-expression-browser-report.json",
+      "bytes": 2283,
+      "sha256": "c96a6e0341401373be795e334fe073edc1dede42ce49b647eacf39f07edeb677"
+    },
+    {
+      "path": "exports/expression-review/avatar-expression-runtime-report.json",
+      "bytes": 3496,
+      "sha256": "111b0f25e13843e12cdb1cb806c289bbf8c1c17e1394fb491d16365c1e70fb05"
+    },
+    {
+      "path": "exports/expression-review/avatar-hair-dynamics-report.json",
+      "bytes": 161330,
+      "sha256": "a0b5276e8768b5c98ef8b3ae1c36a41d67e97d71a7741a003d7a0e045e0ee331"
+    },
+    {
+      "path": "exports/expression-review/avatar-hair-greet-report.json",
+      "bytes": 12597,
+      "sha256": "f14c23ce0766c3eefa80c929c8529a396553aaeb79247a38fb15915035306975"
+    },
+    {
+      "path": "exports/expression-review/avatar-hair-standard-report.json",
+      "bytes": 24673,
+      "sha256": "4221aaee6aa5663a1d71676eea00f4dcce3279355486e7aeeff2f07ff5ff2c89"
+    },
+    {
+      "path": "exports/expression-review/avatar-hair-static-report.json",
+      "bytes": 2405,
+      "sha256": "c9b5bf85281f58aee6aa5eefd2af2c6fedb7fe1a77911c2cffb5c91339882003"
+    },
+    {
+      "path": "exports/expression-review/avatar-hair-walk-report.json",
+      "bytes": 47665,
+      "sha256": "f61c7469d942a3299a7c3699197985ab85e5bcdce563248a818ad4657066d9ca"
+    },
+    {
+      "path": "exports/expression-review/avatar-hem-intersections-report.json",
+      "bytes": 59938,
+      "sha256": "40ecaab7a4f15162fa860c0ef408a0c61c8f2d707bd348fbea553c88050cd001"
+    },
+    {
+      "path": "exports/expression-review/avatar-natural-motion-report.json",
+      "bytes": 3897,
+      "sha256": "30ad5e4d4aa2152e46d94eefba239696d7833134ae8b6d52d017e9359f8a8cb8"
+    },
+    {
+      "path": "exports/expression-review/avatar-physics-report.json",
+      "bytes": 5912,
+      "sha256": "cd029517acec4006830ed24213da67afd93307052bbce0ef582ad12818a672a3"
+    },
+    {
+      "path": "exports/expression-review/avatar-preview.glb",
+      "bytes": 75819164,
+      "sha256": "bc67ca334bfc62b860f412af03bae9eb60ac338e225b03aed694d2ede78ce9ef"
+    },
+    {
+      "path": "exports/expression-review/avatar-preview.vrm",
+      "bytes": 76645100,
+      "sha256": "09c82321c484e5512607c9218b442bf998d5076be0d48db574970668e8617c99"
+    },
+    {
+      "path": "exports/expression-review/avatar-runtime-review-summary.json",
+      "bytes": 4985,
+      "sha256": "c3f2cf3dd134a3cff7895e643b693f453ae351f84d95eb639ec8aa5e86c3a0e8"
+    },
+    {
+      "path": "exports/expression-review/avatar-runtime.blend",
+      "bytes": 54493034,
+      "sha256": "9a3bfdcb54c93ed86d8ad80a3bb3615ef7f98988cf1fe25471daf5ea56f52a5a"
+    },
+    {
+      "path": "exports/expression-review/avatar-spring-plan.json",
+      "bytes": 6206,
+      "sha256": "dcbfd9f5339db9b212e84e04b68f20aac4a96e2a90a9f9f396024f910a9d45d8"
+    },
+    {
+      "path": "exports/motions/friendly-greeting.vrma",
+      "bytes": 345932,
+      "sha256": "bcc5b4b88b6aada5fffc4d3b71c830b5895159551f95b143efa86bafb011fea0"
+    },
+    {
+      "path": "exports/motions/motions-report.json",
+      "bytes": 3902,
+      "sha256": "f4691c128a0a271c51f55fd7d59dd3e9549db49f9d96881f9ca836f5ca16209a"
+    },
+    {
+      "path": "exports/motions/natural-idle.vrma",
+      "bytes": 871092,
+      "sha256": "446016124e6d66295f1f98e2d7938e0a9dede9b35941596bba588ac76dca6e26"
+    },
+    {
+      "path": "exports/motions/natural-walk-forward.vrma",
+      "bytes": 345064,
+      "sha256": "4757f6c778f89999a9e1bbb6dba9e4367a1c67f77bfa1224b6e17265c57effe7"
+    },
+    {
+      "path": "exports/motions/natural-walk-in-place.vrma",
+      "bytes": 102744,
+      "sha256": "b86d616fc5ac79b2c5de8f72c43760c4028eca9bca69da11fd4893aa927d2cf2"
+    },
+    {
+      "path": "exports/motions/使用说明.txt",
+      "bytes": 878,
+      "sha256": "df71a14307b3fca6f70f7582a23bdef44eff461534fdcbfb1207274d30d7af21"
+    },
+    {
+      "path": "exports/quality-assessment.json",
+      "bytes": 2961,
+      "sha256": "968f01f76631aec548fd03c44e5b98cdbd6c01748e8c7000fef45f8f6df3669f"
+    },
+    {
+      "path": "exports/交付说明.txt",
+      "bytes": 3542,
+      "sha256": "793dc2af884ee22ae296d38a019c1966479df534452719e21a67d2ceaa74fd9c"
+    },
+    {
+      "path": "exports/质量评估.txt",
+      "bytes": 1330,
+      "sha256": "fee0e39f898fd54aad42c56e88ea7870d36f77c8e1de830e0bed9f901a313354"
+    },
+    {
+      "path": "images/body/back.png",
+      "bytes": 513275,
+      "sha256": "3094cfc61a6422eada7756ab47f888b1deb49ec9f82a6f5733d4570f5e5b2887"
+    },
+    {
+      "path": "images/body/front.png",
+      "bytes": 535273,
+      "sha256": "a77993f1fb62168ef3aa335451512f901ff2da0f0e4201076ee26edd34d6410e"
+    },
+    {
+      "path": "images/body/left.png",
+      "bytes": 315401,
+      "sha256": "9e45df6d6dd6818651660a29c5346e1d3d52bb69ef5dbcfe103b18ae32ed5860"
+    },
+    {
+      "path": "images/body/right.png",
+      "bytes": 312937,
+      "sha256": "1106d0aae9371fc9766b046c1d405a739b68a70eaae50a241d4a47dd9e7d06b9"
+    },
+    {
+      "path": "images/head/back.png",
+      "bytes": 1227147,
+      "sha256": "399d99eb227223ae95fc6c0050f3773560ce97eb3bf22f3632e7801311b68467"
+    },
+    {
+      "path": "images/head/front.png",
+      "bytes": 1239553,
+      "sha256": "37a07e7515d0cd4986719d972817fbe15a5cc22dc796967aa1d4c31423050c47"
+    },
+    {
+      "path": "images/head/left.png",
+      "bytes": 1033593,
+      "sha256": "355f0c434aef2476424bc1b615dd3c83079afcdea5008bdbea03c21c8f46ba3e"
+    },
+    {
+      "path": "images/head/right.png",
+      "bytes": 1047369,
+      "sha256": "dd3299be688dcff48dd70b2f17a1d7ad8c2fa3c273f843a7ff102e0dbe5daca4"
+    },
+    {
+      "path": "images/manifest.json",
+      "bytes": 2287,
+      "sha256": "6449db89ff0e30677af6f0d2c7f0af5e2e370b9b1e64917d0b58c46de9e3f385"
+    },
+    {
+      "path": "previews/01-front-work.png",
+      "bytes": 862982,
+      "sha256": "52ebcb57b6d54557cc3c8b3673f0d0b24a404bfed21459e3c46cf226cc3cece7"
+    },
+    {
+      "path": "previews/02-three-quarter-work.png",
+      "bytes": 1246902,
+      "sha256": "1746b0e7297bc2559156999304da697dee01c167116004f8339cf480cf2498d5"
+    },
+    {
+      "path": "previews/03-face-work.png",
+      "bytes": 1158035,
+      "sha256": "dde39567af8ec79dc4871e2d18f42b3dedc1e245025bafc78e4bcc44c6c906bc"
+    },
+    {
+      "path": "previews/04-face-refined.png",
+      "bytes": 1145561,
+      "sha256": "2b6febb9a6541c1b1a1fc1055113e8266c4febea810d543eb1b7acb593d6ac3b"
+    },
+    {
+      "path": "previews/05-front-refined.png",
+      "bytes": 1250477,
+      "sha256": "42b6495cf447faf77e2ccef2766333dd122e01d4e440e666247a1292e8ecedd4"
+    },
+    {
+      "path": "previews/06-posed-work.png",
+      "bytes": 1248718,
+      "sha256": "0a44a9c6f90f9b5b645a5c46269768a6489c338fc5a9c12063a2df5a09dd5141"
+    },
+    {
+      "path": "previews/07-painted-portrait.png",
+      "bytes": 1481435,
+      "sha256": "5ff31c3268266fc214f46a7750f50a5aec1092017502c36a8cf4c1196bfc418f"
+    },
+    {
+      "path": "previews/08-painted-full.png",
+      "bytes": 1505315,
+      "sha256": "19c90a0d5e2ffa69468ae318d096e152ebb2f431ccc6102528b642ae169a02a0"
+    },
+    {
+      "path": "previews/09-final-material-portrait.png",
+      "bytes": 1755479,
+      "sha256": "00311a3c9d715a7a0127f16eca73a79a6ca0a4c4914a1e2e6d251c928afda8c9"
+    },
+    {
+      "path": "previews/10-side-check.png",
+      "bytes": 1232810,
+      "sha256": "8630a6af9cf21db139af22002b92de24be93fffbd2162154d11eef5974637e5f"
+    },
+    {
+      "path": "previews/11-back-check.png",
+      "bytes": 1263964,
+      "sha256": "f591c05124456db78a6946b97e034523ba99f40047f26f91e8d04620a07ad275"
+    },
+    {
+      "path": "previews/12-shoes-check.png",
+      "bytes": 1030698,
+      "sha256": "d6acb099d5e18d70622be054f3c932eecad17273e93eec81770d5d06687daf79"
+    },
+    {
+      "path": "previews/13-shoes-refined.png",
+      "bytes": 1985992,
+      "sha256": "1582c37da39d09bf7773488e214bd5a5e52d583ba82fcd168cd4f7e855665213"
+    },
+    {
+      "path": "previews/14-back-refined.png",
+      "bytes": 2032537,
+      "sha256": "177d413a8311a8e816ade2f64e901bf98f1373f39043c3c19c8897881a124398"
+    },
+    {
+      "path": "previews/back-refined.png",
+      "bytes": 2002584,
+      "sha256": "936be7815b823cabe730aff7a189c03c18aabaf04ed16e176bd02387dc2a8be4"
+    },
+    {
+      "path": "previews/back.png",
+      "bytes": 2032537,
+      "sha256": "177d413a8311a8e816ade2f64e901bf98f1373f39043c3c19c8897881a124398"
+    },
+    {
+      "path": "previews/expression-viewer-aa-oblique.png",
+      "bytes": 70722,
+      "sha256": "a3165192080ba6b0e9ee255ee5feac88fd33622005f6796130249cf4a450e4e2"
+    },
+    {
+      "path": "previews/expression-viewer-blink-profile.png",
+      "bytes": 62024,
+      "sha256": "97303843796e71072203fa70955b373b6ae0f9170dad6aa95484fbeac2fcc0a8"
+    },
+    {
+      "path": "previews/expression-viewer-blink.png",
+      "bytes": 69224,
+      "sha256": "cac2c26400cb2db22aaea9c8a21c9a7dea72350994628ebb5744fee9ab72ecf5"
+    },
+    {
+      "path": "previews/expression-viewer-happy-half.png",
+      "bytes": 70516,
+      "sha256": "40af8b3bd3db98d22ea2749d97d22a6b0fa9ea0373bfcc88023eaed166c0b403"
+    },
+    {
+      "path": "previews/expression-viewer-happy.png",
+      "bytes": 70566,
+      "sha256": "f75dbb087b561bc8ad4185e7f84a53700ebcdc8e7c91630f9fe09dae368e017f"
+    },
+    {
+      "path": "previews/expression-viewer-neutral.png",
+      "bytes": 71550,
+      "sha256": "0af8ffa95e79c644fadf14fdb5de5c60e2b52963ad6310841f15bf316168a575"
+    },
+    {
+      "path": "previews/face-front-refined.png",
+      "bytes": 1697242,
+      "sha256": "7565255dfb6cd989f7f12226b20d3a61bff75ce94e896f74c6769b55494396da"
+    },
+    {
+      "path": "previews/face-left-refined.png",
+      "bytes": 1560200,
+      "sha256": "736ccc04d98289cc89ebeeb3db9699967ff91469aa8049f9efe28947825a1bd4"
+    },
+    {
+      "path": "previews/face-side-clay-after.png",
+      "bytes": 1404236,
+      "sha256": "402a0dac4a7ccb2ccb33a0b606ebf6d3b30905ef36ef5ed18895b326c1f5034e"
+    },
+    {
+      "path": "previews/face-side-clay-before.png",
+      "bytes": 1403420,
+      "sha256": "802eef6787728d8eabaa6c5eec64438d8e8df03de79fd669d20f77c15f83499c"
+    },
+    {
+      "path": "previews/face-side-refined.png",
+      "bytes": 1612498,
+      "sha256": "1f9500aeb09614e8605b1e2b9d8251b2f73918614e38d380f42b461ba377f977"
+    },
+    {
+      "path": "previews/face-three-quarter-clay-after.png",
+      "bytes": 1409194,
+      "sha256": "37627c91b3204a4a9cf68639bc2e0ad2554cd3688376b20e5fa15e89f70ca449"
+    },
+    {
+      "path": "previews/face-three-quarter-clay-before.png",
+      "bytes": 1407197,
+      "sha256": "6ee0e32950910f49144dbbe38e641d79741c10bce0edd297a66f81b7e78e8419"
+    },
+    {
+      "path": "previews/face-three-quarter-refined.png",
+      "bytes": 1700522,
+      "sha256": "1f15515710e7a5678c5c062bed1772dec8b91773f93fb7e9756d33cef05a4cd4"
+    },
+    {
+      "path": "previews/front-refined.png",
+      "bytes": 2022694,
+      "sha256": "19ed1ca314b7a014f7573b9854d9ad324d0bea4ace2cef8bdaf5a44ff37dbd20"
+    },
+    {
+      "path": "previews/front.png",
+      "bytes": 2037444,
+      "sha256": "64a5d89a027de076629bbf947bf7f471b98a5fe4c84678032c0f2f76692271d5"
+    },
+    {
+      "path": "previews/hand-refined.png",
+      "bytes": 1487573,
+      "sha256": "42183dcbe117fe07a7e31dc2ba9998c6c3d0d7dd099ab7a797f47274b03baa56"
+    },
+    {
+      "path": "previews/hero-refined.png",
+      "bytes": 4008101,
+      "sha256": "b54a3abd6e853b6ba404bce2051c23a4eff57e75236188d60f90ebaf00905635"
+    },
+    {
+      "path": "previews/hero.png",
+      "bytes": 4044228,
+      "sha256": "9fc5fed6a2e9a8ba197fbe52f8bbcb9a5a9dde60a6575dc6b2e7435c1afa8d00"
+    },
+    {
+      "path": "previews/portrait-refined.png",
+      "bytes": 2829221,
+      "sha256": "9ac7ad024cac5244166291d4d9ed1698dff827027408a6ca2db6fbd207a1af75"
+    },
+    {
+      "path": "previews/portrait.png",
+      "bytes": 3052788,
+      "sha256": "dfa60cba1f6e7e744d69295b7640817033c8d0d2f7866e406f2f6a5c1f166ecc"
+    },
+    {
+      "path": "previews/pose-arms.png",
+      "bytes": 1276144,
+      "sha256": "ac1ba5e368fa1336a179b83354957374eacf7d4e8c362dab02dc741e4a41e6d6"
+    },
+    {
+      "path": "previews/refined-current/aa-half.png",
+      "bytes": 863075,
+      "sha256": "d200cd43f7e61461f76444b446365e199324755f4946af25df243531d732c68f"
+    },
+    {
+      "path": "previews/refined-current/aa.png",
+      "bytes": 865198,
+      "sha256": "1494f8addf1aa1da0d6cef6ae42b9dd6bac71447e81699b5dfafdbb8203904ee"
+    },
+    {
+      "path": "previews/refined-current/back.png",
+      "bytes": 1036341,
+      "sha256": "b626c951257aeb65df5e2ba3c90aaac59a913c95db2e54e5c323f00a7eefc212"
+    },
+    {
+      "path": "previews/refined-current/before-profile.png",
+      "bytes": 821012,
+      "sha256": "c3808967adcbd4843050e0e232d5356fb1d0699d4a842484fd21227fd1d8a3ae"
+    },
+    {
+      "path": "previews/refined-current/blink-half.png",
+      "bytes": 856822,
+      "sha256": "9ee76f1c539f70a7ae461c47460d271edf5c8d14a2d8f482b00d7241591bbbf4"
+    },
+    {
+      "path": "previews/refined-current/blink.png",
+      "bytes": 853921,
+      "sha256": "3883545e8ca0d864975403152a4bd0db0603bea7eb0af49d353a4fa7374577b6"
+    },
+    {
+      "path": "previews/refined-current/comparison-provenance.json",
+      "bytes": 619,
+      "sha256": "a2482edab2f7ac0acc9a27c6345398964fef4d2bfb2cb3734f996cd035f424e5"
+    },
+    {
+      "path": "previews/refined-current/front.png",
+      "bytes": 1038537,
+      "sha256": "72e4bf0f6e5fa06b1b6a82bae85d38f7a774632fa97aa1858d0ba9be9cf7b7d2"
+    },
+    {
+      "path": "previews/refined-current/full-back45.png",
+      "bytes": 1059925,
+      "sha256": "9ca336b410144ab1d39db1c9ac91a081832735cc2ba35788830755590340bb34"
+    },
+    {
+      "path": "previews/refined-current/full-left.png",
+      "bytes": 1006582,
+      "sha256": "a4d078ea768a95b387fafa95f86f9bd4cbbe75af7164ebc881b15d1e3f74eb5c"
+    },
+    {
+      "path": "previews/refined-current/full-right.png",
+      "bytes": 1000643,
+      "sha256": "a2209558cdc177ff903e7e36648963310130380460b9905d82ea8cf9b7b89a71"
+    },
+    {
+      "path": "previews/refined-current/hand.png",
+      "bytes": 683397,
+      "sha256": "017951070b39b6127590fd06cd5ae1e5c9b8844644b5da830a91352a60637b70"
+    },
+    {
+      "path": "previews/refined-current/happy.png",
+      "bytes": 853378,
+      "sha256": "d21e6c2dc5ee1387d07b8425b20b7a281e96bb6dde93784fe567323573fad2a6"
+    },
+    {
+      "path": "previews/refined-current/head-back-left.png",
+      "bytes": 871840,
+      "sha256": "4030ea4e72964b5dd3419d64be77be6ab49f85396d315d1c0b7f0ccde6c9b024"
+    },
+    {
+      "path": "previews/refined-current/head-back-right.png",
+      "bytes": 862449,
+      "sha256": "607baf7f156847681c0c2803c100dd7d7f5962c361afd30abbbd163636e8e270"
+    },
+    {
+      "path": "previews/refined-current/head-back.png",
+      "bytes": 865592,
+      "sha256": "05dd60d38dfc7f546bc88489248946eeb58fc749c87f39e91098b09bd40b0467"
+    },
+    {
+      "path": "previews/refined-current/head-front.png",
+      "bytes": 851753,
+      "sha256": "3dbd290dd06dd9f2ad219dab07ba08391109aaeb1252e661a000c63caa5e6954"
+    },
+    {
+      "path": "previews/refined-current/head-left.png",
+      "bytes": 852204,
+      "sha256": "3d870bfdb1aa1f1bc17fff055bd355697bee16d1c044514dd0cb7d2d769775e1"
+    },
+    {
+      "path": "previews/refined-current/head-left45.png",
+      "bytes": 844864,
+      "sha256": "db75eebe36130665f59a6407eb2481949c1433aca1ee3686044c30c106b8b022"
+    },
+    {
+      "path": "previews/refined-current/head-right45.png",
+      "bytes": 849859,
+      "sha256": "1cb53aaae6f58c5d31e6c04c30828c0469d94d623648d12773891b0c0e02c88e"
+    },
+    {
+      "path": "previews/refined-current/hero.png",
+      "bytes": 1308291,
+      "sha256": "090a8bd39726b0e5ffeb4a92459c2066b94c5551686173baac42acd79a258a85"
+    },
+    {
+      "path": "previews/refined-current/portrait.png",
+      "bytes": 1058790,
+      "sha256": "a3f151678d832dac836b8f951877dbace4cf9b4b86613da2b649acb87b01ebd3"
+    },
+    {
+      "path": "previews/refined-current/profile.png",
+      "bytes": 844266,
+      "sha256": "f1a9461894e40cfcb0563bd0df5fe1bc5ef47e40c63ea929fec98c44a2d1af03"
+    },
+    {
+      "path": "previews/refined-current/render-report.json",
+      "bytes": 4677,
+      "sha256": "b4eaf1710f27147af85e0d19d0d5a18a0f216fcf054dda570f03f757871e4d38"
+    },
+    {
+      "path": "previews/refined-current/review.html",
+      "bytes": 4178,
+      "sha256": "9a793c59f7f496c0eb967c0d06ff787c3fe99e89db8f967ce4d87f9eb2cbf779"
+    },
+    {
+      "path": "previews/refined-current/sleeve-inside.png",
+      "bytes": 790550,
+      "sha256": "d63372e561fc3918a22231c32aa5ef868b82adeb54804321d5c114a8b7706285"
+    },
+    {
+      "path": "previews/refined-current/torso-inside.png",
+      "bytes": 765831,
+      "sha256": "8984dc48c0cc64a07b6a846fdf3f934fb21da7be8cd9e812cfc3cf39680b1300"
+    },
+    {
+      "path": "previews/runtime-final-neutral-front.png",
+      "bytes": 64775,
+      "sha256": "35852a1897e069844aca16c2f4e5c66070ef3c125d76d52e0fcbb3e64081f4c0"
+    },
+    {
+      "path": "previews/runtime-final-neutral-side.png",
+      "bytes": 59421,
+      "sha256": "1c27c77e851bbc5eb5c6c1cd45778b6c4176be090f92aed4fa10543c844d5233"
+    },
+    {
+      "path": "previews/shoes-refined.png",
+      "bytes": 1473029,
+      "sha256": "84a0a9e76dcedfd20224ea6ee43cdf34de4eea678ce7a9cf3a51b93657a8d012"
+    },
+    {
+      "path": "previews/shoes.png",
+      "bytes": 1985992,
+      "sha256": "1582c37da39d09bf7773488e214bd5a5e52d583ba82fcd168cd4f7e855665213"
+    },
+    {
+      "path": "previews/side-refined.png",
+      "bytes": 1962878,
+      "sha256": "8633108576e4949a1dd0f6803a7160bb12bb67f1df5735c42e9229b42297cf28"
+    },
+    {
+      "path": "previews/side.png",
+      "bytes": 1979852,
+      "sha256": "8de4f205128ab4055f1491f66aa83b4246d34dcf00d59e58e9fdd9806fbdd82d"
+    },
+    {
+      "path": "previews/surface-polish-check.png",
+      "bytes": 1487136,
+      "sha256": "dc0dd7346a7159bbea7b4369ef6209b4d8927fead974750d6644dc58d8729e2b"
+    },
+    {
+      "path": "project.charakit",
+      "bytes": 87435255,
+      "sha256": "fabae567498479695c0abf8300612b712236ccb6754c118102a8939fc70b599d"
+    },
+    {
+      "path": "textures/clothing-basecolor.png",
+      "bytes": 4431356,
+      "sha256": "69c7f1ef04e143eeb900cc8bd234a9906141416115715acb7995281a7780e228"
+    },
+    {
+      "path": "textures/clothing-normal.png",
+      "bytes": 11621346,
+      "sha256": "94b0ccb8f86747fdaa52eca40ed7029cbad5988f23cdea8186a3faa7e9ac00f0"
+    },
+    {
+      "path": "textures/face-basecolor.png",
+      "bytes": 1261265,
+      "sha256": "772b69518944dd360801be3a368ac0d79eb7c6e8ac739ead01aed39471d04de8"
+    },
+    {
+      "path": "textures/face-expressive-skin-basecolor.png",
+      "bytes": 243239,
+      "sha256": "a46b86337452bd76e833b0423b10f0f1bfdc6d27c2a5cffe4925bfef10cd3cd6"
+    },
+    {
+      "path": "textures/face-natural-basecolor.png",
+      "bytes": 2791664,
+      "sha256": "46d54c7d1d36287b0aac2d65394024b82159eda56338f02413ea18a8a4b90ce4"
+    },
+    {
+      "path": "textures/face-natural-normal.png",
+      "bytes": 4343808,
+      "sha256": "2f35e1a4b51064148a7b811891708c6a57e0499b3ceda8e0fccf6c08deb01168"
+    },
+    {
+      "path": "textures/face-neutral-basecolor.png",
+      "bytes": 1007078,
+      "sha256": "6bd8634ba2e9d2c0121983634a5e73181951c3394530dfc8e172b239947cf88b"
+    },
+    {
+      "path": "textures/face-neutral-projection.png",
+      "bytes": 1202753,
+      "sha256": "8d8061cc602377e8236f6b849ee244e07f70643d127b282b9f1cfbaf228a3106"
+    },
+    {
+      "path": "textures/face-skin-only-projection.png",
+      "bytes": 1154821,
+      "sha256": "468363a2267ad36a6da56524f582910cab872934dc652f569573c2d9b9662b44"
+    },
+    {
+      "path": "textures/hair-charcoal-basecolor.png",
+      "bytes": 934902,
+      "sha256": "1231518fda5ac572c65147f01d978c9a293d758ec55984626be6355c8095f37c"
+    },
+    {
+      "path": "textures/hair-fine-normal.png",
+      "bytes": 964393,
+      "sha256": "ad0af8063a29043600d4811a4a0e3883352ed6321f18cd1ae04dcc1686382371"
+    },
+    {
+      "path": "textures/hair-strands.png",
+      "bytes": 1578751,
+      "sha256": "dbd4e605e87f9d72f5d08a180eb39c4e60ebcdfe23f93731af908373f9f1bf05"
+    },
+    {
+      "path": "textures/iris-brown-realism.png",
+      "bytes": 2083465,
+      "sha256": "40d8548a8c05e429504c10c3bbccd91c4766299110746b35a776263c95f23712"
+    },
+    {
+      "path": "textures/skin-neutral-anatomical-basecolor.png",
+      "bytes": 2420681,
+      "sha256": "602c52f3ff0a56f70fef147610119063b6bad71906a16b0ce8911492f57e9dc9"
+    },
+    {
+      "path": "textures/skin-neutral-anatomical-normal.png",
+      "bytes": 2831665,
+      "sha256": "8df4b5144638722cdd2855852eb4cd5ae8781d90f18a5ebaf3f4b22cc8c1d9a3"
+    },
+    {
+      "path": "work/character.blend",
+      "bytes": 60560716,
+      "sha256": "6e7361e7f5c306325d3f33c4c9f6f56b1a489d5f4579bb4be951d4c3d59cc8c1"
+    },
+    {
+      "path": "work/character.blend1",
+      "bytes": 56918930,
+      "sha256": "ebf64d62920b0f2fff3471c7bafb45394f2787cc0fe5511a1a7991721864f6f3"
+    },
+    {
+      "path": "work/checkpoints/client-refinement-start/avatar-export-report.json",
+      "bytes": 6674,
+      "sha256": "faf297571f020e56f0c5bd74f79b292a19cd02f74cf20223c77cfb754cd4b57e"
+    },
+    {
+      "path": "work/checkpoints/client-refinement-start/avatar-physics-report.json",
+      "bytes": 19313,
+      "sha256": "6c479c728259777e73516812f9b8b89aa2e79cc9db41f00dc305b720fb6961cc"
+    },
+    {
+      "path": "work/checkpoints/client-refinement-start/character.blend",
+      "bytes": 18414331,
+      "sha256": "a2e4ff45d0577207bdbeafec38a103585f28134d68232135f16df5c143508fe1"
+    },
+    {
+      "path": "work/checkpoints/client-refinement-start/delivery-manifest.json",
+      "bytes": 1477,
+      "sha256": "259e0b2e93f6e3539f8c24f4376e10c4ca3c001d4c310b818fa737636ee9139f"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/avatar-preview.vrm",
+      "bytes": 70222720,
+      "sha256": "a5266c7d4ed048b010791cf9a8a8c79543b3ba947e4b12c12289dcd1b6daad3f"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/character.blend",
+      "bytes": 47333655,
+      "sha256": "7b08fc54bb873e5c03af24cdebaf8a1798423069c0357d2c168341b2df3b316c"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/legacy-export-aliases/avatar-export-report.json",
+      "bytes": 185584,
+      "sha256": "3928aa31edad82b663664d0f2de9b97dbef4023bfdec574b7176f3203f1a7790"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/legacy-export-aliases/avatar-physics-report.json",
+      "bytes": 5492,
+      "sha256": "d858b11004fdcbb191dba15e7c06c50d62e9a7e8b8f351d35adb5fbc99b1ac65"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/legacy-export-aliases/avatar-preview.glb",
+      "bytes": 52271364,
+      "sha256": "751e06ebe77ba5007c02c8ceb5eabdda8cf75b9e666a5d4c765647ff5b4f82ff"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/legacy-export-aliases/avatar-preview.vrm",
+      "bytes": 27056908,
+      "sha256": "d2d5d9de5182d29cd4abcfab2363fba5d0ee21100f57c2cc7e40c2a87c2c12a6"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/legacy-export-aliases/avatar-runtime.blend",
+      "bytes": 25862940,
+      "sha256": "cbcab2a1f8e43d65d3e5ddf2ad2133c664c283cdad1e91f84e323b2c68a6d58d"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/legacy-export-aliases/avatar-spring-plan.json",
+      "bytes": 5896,
+      "sha256": "5eba5a883beb1b63d64d8259dc2ea2c08b95709d1b24c575c7da595b9ebfde2f"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/portrait.png",
+      "bytes": 1074222,
+      "sha256": "6507d770212ac132928b914c4ec6ae7bf2cf48495b0831d0a79c4a6a0d485316"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/checkpoint-manifest.json",
+      "bytes": 4237,
+      "sha256": "74718d7269271ad8de5e5e7e9646146c1a1fd8e60ab9bd69f813be3cad1fea86"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/avatar-source-report.json",
+      "bytes": 4025,
+      "sha256": "7af3faedf67c479b3c30bc51e80056e161d92296352e681497cd37160046b245"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/avatar.blend",
+      "bytes": 44304359,
+      "sha256": "f6d6736e4206345cf249d1e926295906d8a5b09ace92621c6b3e84e8aa1debeb"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/delivery-manifest.json",
+      "bytes": 3326,
+      "sha256": "d466f1daf4099b8c9ec888b3cfbc29249f914f82546b3ef102aeed8e1c156b49"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/expression-review/avatar-export-report.json",
+      "bytes": 288002,
+      "sha256": "bc7e9906e3931274977482356ab43c4122503199fc51709eb317ca5bc003343d"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/expression-review/avatar-expression-browser-report.json",
+      "bytes": 2283,
+      "sha256": "c96a6e0341401373be795e334fe073edc1dede42ce49b647eacf39f07edeb677"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/expression-review/avatar-expression-runtime-report.json",
+      "bytes": 3499,
+      "sha256": "9a4c382b687a64007d5309724f8f923123c1911f731b6ba25d0e2647726cde09"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/expression-review/avatar-hair-greet-report.json",
+      "bytes": 162352,
+      "sha256": "f255fefb62929b61dfe00c1836d28e7ddf3eb9b57fa81f235872f81cfc02f949"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/expression-review/avatar-hair-walk-report.json",
+      "bytes": 216455,
+      "sha256": "1ef0f7ad456e24fc493521acbc69b3c33f15aa862683b4607c46a395b35fe972"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/expression-review/avatar-hem-intersections-report.json",
+      "bytes": 59938,
+      "sha256": "40ecaab7a4f15162fa860c0ef408a0c61c8f2d707bd348fbea553c88050cd001"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/expression-review/avatar-natural-motion-report.json",
+      "bytes": 3849,
+      "sha256": "f68b6b33178dfeabcab9374b81d94d52a5bac6704939b3bc5f61549e040a64f2"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/expression-review/avatar-physics-report.json",
+      "bytes": 5745,
+      "sha256": "9e6150f1d9472564b5de751388002d904a108a24d41defcfe5132d47c5de4443"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/expression-review/avatar-preview.glb",
+      "bytes": 72338148,
+      "sha256": "2eb387827b14a124182312e4653874859e94df65a3c487db30299d927bdc4827"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/expression-review/avatar-preview.vrm",
+      "bytes": 70222720,
+      "sha256": "a5266c7d4ed048b010791cf9a8a8c79543b3ba947e4b12c12289dcd1b6daad3f"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/expression-review/avatar-runtime.blend",
+      "bytes": 40584961,
+      "sha256": "1233c0220fd2d69d6358ca6ac06e28ff20d8d7a41f1ca65b034f5e837fb84215"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/expression-review/avatar-spring-plan.json",
+      "bytes": 6039,
+      "sha256": "9d52c6d918e6543cd47e42fd2366db4b0ddfc323e7843fb74bf3bf035c851629"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/exports/交付说明.txt",
+      "bytes": 3282,
+      "sha256": "9ef42c202b5b367b328ad69f1108f32e7ba9c38d9291c1680091e6dc89c31e0d"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/previews/refined-current/back.png",
+      "bytes": 1026550,
+      "sha256": "3fe2bed519ade465cdd070ee04c0b254c1a6d46a271132f940d72796bcd6e161"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/previews/refined-current/blink.png",
+      "bytes": 855087,
+      "sha256": "2deccbd80fc55f9bfc388b0981fb4c30c9c54518fba2694a79b8df4112012ee6"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/previews/refined-current/front.png",
+      "bytes": 1043580,
+      "sha256": "61ff0da4a0f7425b1b38795b23c8d9adf3c07d191b396383d04a306376147960"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/previews/refined-current/hand.png",
+      "bytes": 682896,
+      "sha256": "759f1c99077b2ef09446fa71255a3d1157d549d3b7640364486ca381deea991f"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/previews/refined-current/happy.png",
+      "bytes": 861274,
+      "sha256": "16ddbf13a3946dee9ee785ee2d01cbac2d026f7c76e8e515f3ce01ffe8c7174b"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/previews/refined-current/hero.png",
+      "bytes": 1310780,
+      "sha256": "1c67f3d598ff2c657e05e6c56dcd745f42d12fdfae9575279c79cd89b450e46a"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/previews/refined-current/portrait.png",
+      "bytes": 1074222,
+      "sha256": "6507d770212ac132928b914c4ec6ae7bf2cf48495b0831d0a79c4a6a0d485316"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/previews/refined-current/profile.png",
+      "bytes": 821012,
+      "sha256": "c3808967adcbd4843050e0e232d5356fb1d0699d4a842484fd21227fd1d8a3ae"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/previous-review/previews/refined-current/render-report.json",
+      "bytes": 1748,
+      "sha256": "c1f1407893b0b645975933ab8ef1218ca36e810ddad49fbf935f9d45a4535885"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/profile.png",
+      "bytes": 821012,
+      "sha256": "c3808967adcbd4843050e0e232d5356fb1d0699d4a842484fd21227fd1d8a3ae"
+    },
+    {
+      "path": "work/checkpoints/comprehensive-refinement-start/project.charakit",
+      "bytes": 10789188,
+      "sha256": "24f939a4a411dcd86e730fb7fd9c67308619c4ec86ba8019f8c73c07ca462589"
+    },
+    {
+      "path": "work/checkpoints/expression-redesign-start/character.blend",
+      "bytes": 37725427,
+      "sha256": "ca8cb2a4300f3a90bbca40c2e35fadb54a91987fbb7b236ffd2f72ab4ccaa4f1"
+    },
+    {
+      "path": "work/checkpoints/expression-redesign-start/project.charakit",
+      "bytes": 10789188,
+      "sha256": "24f939a4a411dcd86e730fb7fd9c67308619c4ec86ba8019f8c73c07ca462589"
+    },
+    {
+      "path": "work/checkpoints/face-refinement-start/character.blend",
+      "bytes": 33335723,
+      "sha256": "186d46807264dd2f3d0ddcb85f7fbc3b96f3477779b4c239b955dd0ffd1fb991"
+    },
+    {
+      "path": "work/checkpoints/face-refinement-start/face-basecolor.png",
+      "bytes": 1261265,
+      "sha256": "772b69518944dd360801be3a368ac0d79eb7c6e8ac739ead01aed39471d04de8"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/character.blend",
+      "bytes": 34908013,
+      "sha256": "d8f2926610698564cebe28a6544ce7b1dbb0d8a0575d95c77e38160268947189"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/checkpoint-manifest.json",
+      "bytes": 3962,
+      "sha256": "22173ad29a35469a90c1507035bf206119e1db8d2d84dd00aea0f5f1d94e2725"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/avatar-clearance-report.json",
+      "bytes": 30221,
+      "sha256": "70e7a091e3c42cb549912ac29876de527b9412a071fcae8f6b9bc95e48c1fe24"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/avatar-export-report.json",
+      "bytes": 185584,
+      "sha256": "3928aa31edad82b663664d0f2de9b97dbef4023bfdec574b7176f3203f1a7790"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/avatar-geometry-report.json",
+      "bytes": 307,
+      "sha256": "c0a6583da9f6ba96bc28f595cf4d1da2b60ac1d4508c545aa03cb3283df57db1"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/avatar-physics-report.json",
+      "bytes": 5492,
+      "sha256": "d858b11004fdcbb191dba15e7c06c50d62e9a7e8b8f351d35adb5fbc99b1ac65"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/avatar-preview.glb",
+      "bytes": 52271364,
+      "sha256": "751e06ebe77ba5007c02c8ceb5eabdda8cf75b9e666a5d4c765647ff5b4f82ff"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/avatar-preview.vrm",
+      "bytes": 27056908,
+      "sha256": "d2d5d9de5182d29cd4abcfab2363fba5d0ee21100f57c2cc7e40c2a87c2c12a6"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/avatar-runtime.blend",
+      "bytes": 25862940,
+      "sha256": "cbcab2a1f8e43d65d3e5ddf2ad2133c664c283cdad1e91f84e323b2c68a6d58d"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/avatar-source-report.json",
+      "bytes": 3875,
+      "sha256": "821161912741532ba530f0f3fcd946ff3cf84b61e5743000492c7cb05c04672e"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/avatar-spring-plan.json",
+      "bytes": 5896,
+      "sha256": "5eba5a883beb1b63d64d8259dc2ea2c08b95709d1b24c575c7da595b9ebfde2f"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/avatar-walk-report.json",
+      "bytes": 853,
+      "sha256": "e60ba36225956add7b6e9cf936dbeb43b3f5787286783612326269a3efafdd3e"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/avatar.blend",
+      "bytes": 30857199,
+      "sha256": "0831bdfae15cc086c12493bbbc461a0eaf1bb20792288d422513e8b7d52cf723"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/character-client-review.zip",
+      "bytes": 157658017,
+      "sha256": "c4edec9b21913473e35b85f8d15b66848962ce0b6ed2035b9a1529b7b5d80085"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/delivery-manifest.json",
+      "bytes": 3326,
+      "sha256": "d466f1daf4099b8c9ec888b3cfbc29249f914f82546b3ef102aeed8e1c156b49"
+    },
+    {
+      "path": "work/checkpoints/hair-body-integration-start/previous-exports/交付说明.txt",
+      "bytes": 3282,
+      "sha256": "9ef42c202b5b367b328ad69f1108f32e7ba9c38d9291c1680091e6dc89c31e0d"
+    },
+    {
+      "path": "work/checkpoints/pre-finish-live-state/character.blend",
+      "bytes": 56921287,
+      "sha256": "d2525ba8b64b13778a16e8d07b57aa11d2e33d1bf41584421dfa26fd8dc15240"
+    },
+    {
+      "path": "work/checkpoints/pre-finish-live-state/comparison.json",
+      "bytes": 3586,
+      "sha256": "7fbf7387b1de827edd159879f526f04ef26323afb9ec26d9eb568d7741f9d8a7"
+    },
+    {
+      "path": "work/checkpoints/pre-finish-live-state/disk-fingerprint.json",
+      "bytes": 4614617,
+      "sha256": "b517ce70e6de0f18724a359a1eac960bb2b465e4346bd038f2db354cb7b99252"
+    },
+    {
+      "path": "work/checkpoints/pre-finish-live-state/disk-fingerprint.log",
+      "bytes": 1674,
+      "sha256": "d43fe86bfb96144582a3fa936767099b572e8864a17c3242636cd92a65fcc93c"
+    },
+    {
+      "path": "work/checkpoints/pre-finish-live-state/live-fingerprint.json",
+      "bytes": 4614651,
+      "sha256": "b526204c0833439ae9c001a6dcfa13daed6daffff5d043394fa759be3fe204d3"
+    },
+    {
+      "path": "work/checkpoints/pre-finish-live-state/live-fingerprint.log",
+      "bytes": 1742,
+      "sha256": "84f91da230ba0017e419a45706d859d762c1b3ee1260148261e9fafec637307b"
+    },
+    {
+      "path": "work/checkpoints/pre-finish-live-state/preservation.json",
+      "bytes": 480,
+      "sha256": "4af38f03e968b444a47bdb1039674d6c26d77f13eafa533c8aa891925c66da19"
+    },
+    {
+      "path": "work/checkpoints/realism-direction-start/avatar-preview.vrm",
+      "bytes": 60729120,
+      "sha256": "7faf0e3f5d80918166af239227e7a975aabc110837fe05df6a36c86c5d4d7bdd"
+    },
+    {
+      "path": "work/checkpoints/realism-direction-start/character.blend",
+      "bytes": 36306801,
+      "sha256": "c20425f591154339107bffede8216bdaaa53f0babf2642e4f120de3b44996b74"
+    },
+    {
+      "path": "work/comprehensive-finish-report.json",
+      "bytes": 55283,
+      "sha256": "591bf3b46be77b654bdfef5fc01ac368cac2f9cd668a350aab80e18878d155e0"
+    },
+    {
+      "path": "work/comprehensive-finish-status.json",
+      "bytes": 151,
+      "sha256": "fbc4207db247aa8f0f79dfdd0c95c478c869661803372d5ec3b9e266d574be8f"
+    },
+    {
+      "path": "work/comprehensive-integration-report.json",
+      "bytes": 291990,
+      "sha256": "cc06806b73873486dc9669d3c132a058f4fa2a6a7cad7aab382e7a779df01dcd"
+    },
+    {
+      "path": "work/comprehensive-integration-status.json",
+      "bytes": 145,
+      "sha256": "be3c72bb284d236fd955ecdb0b69a2975f7ffa31911b6d9ea9d26a669cc2f6dd"
+    },
+    {
+      "path": "work/expression-authoring/animation-benchmark-001.png",
+      "bytes": 497324,
+      "sha256": "ab701accadeb9980e79e50423949c01fd6d37fbac1bf70d086fb72030a3b673f"
+    },
+    {
+      "path": "work/expression-authoring/animation-benchmark-011.png",
+      "bytes": 489650,
+      "sha256": "0ce030eaa554d2bcab998e6fd640e81e05866a3a3c5d2059703715575cb753e2"
+    },
+    {
+      "path": "work/expression-authoring/animation-benchmark-032.png",
+      "bytes": 496465,
+      "sha256": "40f4f747855304472b754ab72c6879e3f01f4b88cf30955ee4816df3259fcab8"
+    },
+    {
+      "path": "work/expression-authoring/animation-benchmark.json",
+      "bytes": 7701,
+      "sha256": "6c9e21bc3970b82332c13bedd9f6f57c8c20446651480d959694cf8d87919c42"
+    },
+    {
+      "path": "work/expression-authoring/animation-test-report.json",
+      "bytes": 7419,
+      "sha256": "f8bc13e4b79ee29bf2064e8ea42acf8e209ebd697527203cd4cb7aced4f68be2"
+    },
+    {
+      "path": "work/expression-authoring/animation-test.png",
+      "bytes": 497324,
+      "sha256": "dbeac49250d7b1b6c9929c0363850fa64c2a4fa301f3289d719c3f7f6a65feb7"
+    },
+    {
+      "path": "work/expression-authoring/body-integration-report.json",
+      "bytes": 2099,
+      "sha256": "0e8052b1a3876902be81f40cfc4e85c1bee8bbdd8babad5b30414e1080486869"
+    },
+    {
+      "path": "work/expression-authoring/current.blend",
+      "bytes": 60560716,
+      "sha256": "6e7361e7f5c306325d3f33c4c9f6f56b1a489d5f4579bb4be951d4c3d59cc8c1"
+    },
+    {
+      "path": "work/expression-authoring/current.blend1",
+      "bytes": 34918140,
+      "sha256": "a70be27717550abcf5e4d07c5130de370b71a64d65b466179be3cf76b9a850ab"
+    },
+    {
+      "path": "work/expression-authoring/facial-construction.json",
+      "bytes": 12915,
+      "sha256": "11bb6936d47f89d8d5feb48e60242bb6f0b3e4d7c126d688ef73dc9a3c6f30d8"
+    },
+    {
+      "path": "work/expression-authoring/geometry-audit.json",
+      "bytes": 3682,
+      "sha256": "c53686995e064fbbe2f3c3fb59d3ed2158831b9f43e17ebbd71e60f8c95a2239"
+    },
+    {
+      "path": "work/expression-authoring/hair-integration-report.json",
+      "bytes": 2251,
+      "sha256": "8b5fd24c217f020a71078a6912026d43b587b7a557c4ec7dc2438e0b65b15b1d"
+    },
+    {
+      "path": "work/expression-authoring/neutral-initial.png",
+      "bytes": 827680,
+      "sha256": "00c319e6283534997794587608b2f8ef5418e1282f6844c2f32bdbb2cf242322"
+    },
+    {
+      "path": "work/expression-authoring/project-preview-registration.json",
+      "bytes": 895,
+      "sha256": "9b70291afb6a8703bf61b900822b18fc33d28c8352870c4fd5523ac0798c4b4b"
+    },
+    {
+      "path": "work/expression-authoring/render-suite.log",
+      "bytes": 5779,
+      "sha256": "79c573629020a5534f761c86a9e781c7e195e149cf181d71e6725d4119b3b945"
+    },
+    {
+      "path": "work/expression-authoring/review/aa-45.png",
+      "bytes": 788481,
+      "sha256": "8ee69ceca547e49a1d8a3d8cf3ff43a36bfb4a936951e55c57b8d1b01487b9de"
+    },
+    {
+      "path": "work/expression-authoring/review/aa.png",
+      "bytes": 789904,
+      "sha256": "ef6e1cdd1414265380f9a202a3a73afa658adc44350caea4b2d0dbb391c33e8e"
+    },
+    {
+      "path": "work/expression-authoring/review/angry.png",
+      "bytes": 784777,
+      "sha256": "b7f7c737437ad81fa80642fc459806e757c3fe014aca203fa13e59664020e073"
+    },
+    {
+      "path": "work/expression-authoring/review/blink-45.png",
+      "bytes": 775433,
+      "sha256": "c6e057f8df63f64a58aaef9d7be0bf57bdcc624ad33586af48d9a28094e7a4f0"
+    },
+    {
+      "path": "work/expression-authoring/review/blink-left45.png",
+      "bytes": 773554,
+      "sha256": "43214d815c722ca3ddb6daccccf4a0d96283e004a54820de99defacfa7937151"
+    },
+    {
+      "path": "work/expression-authoring/review/blink-side.png",
+      "bytes": 745795,
+      "sha256": "5f27f7b772b1bcd64d2526567814b42151054106b127f0ef941119f3219f90e8"
+    },
+    {
+      "path": "work/expression-authoring/review/blink.png",
+      "bytes": 772878,
+      "sha256": "ec5072aa83e74bde12314168210778515738fb5e46c076ef5ad57cef95797fcf"
+    },
+    {
+      "path": "work/expression-authoring/review/ee.png",
+      "bytes": 788288,
+      "sha256": "73d4a2bcd2082f99a971ef5a7e355328f4cfe359dcc5d3b0f27c3ae0eb088a9a"
+    },
+    {
+      "path": "work/expression-authoring/review/half-aa-45.png",
+      "bytes": 787311,
+      "sha256": "5b36f028c68d59adc860628cc54c25b2ec8940a68648661fbadde729612d99da"
+    },
+    {
+      "path": "work/expression-authoring/review/half-aa-left45.png",
+      "bytes": 784435,
+      "sha256": "ea7742a1ff1d4e347406df9b18a5c863b4c8fd92255dcf64f85baa0319f50562"
+    },
+    {
+      "path": "work/expression-authoring/review/half-aa-side.png",
+      "bytes": 748402,
+      "sha256": "8ca6b35edb6518a2c97daa3362aef3ee39e0b59d1fe880a19c565bfcf2fe1cfe"
+    },
+    {
+      "path": "work/expression-authoring/review/half-blink-45.png",
+      "bytes": 780126,
+      "sha256": "44ef3b19b79409d8c00f6ab33d9935ec1ecfd0ee208746e7f83b7fc9fa111af0"
+    },
+    {
+      "path": "work/expression-authoring/review/half-blink-left45.png",
+      "bytes": 777297,
+      "sha256": "d2d46a307ab8dc4831b3339cf1288184b0cca0f0dc3ea363c59983b1bffacc8a"
+    },
+    {
+      "path": "work/expression-authoring/review/half-blink-side.png",
+      "bytes": 747515,
+      "sha256": "6286f384e40f6373c9a5a611d3c78664390e4405d653f53a927f01f436a295ba"
+    },
+    {
+      "path": "work/expression-authoring/review/happy-45.png",
+      "bytes": 784626,
+      "sha256": "c513c8ad4a606abb958e2dede1b0c8d08922f08e24b6fac6072fe7eed13a4633"
+    },
+    {
+      "path": "work/expression-authoring/review/happy-left45.png",
+      "bytes": 781187,
+      "sha256": "9ffac25dc9df4b45d915bc66e9b47bfd67f3e775e484529dceebfc2038f43741"
+    },
+    {
+      "path": "work/expression-authoring/review/happy-side.png",
+      "bytes": 748156,
+      "sha256": "090aff9ac8d1c5d8a4e80da3e00286fdac467bd32597c427db8a914ea6fcd3ba"
+    },
+    {
+      "path": "work/expression-authoring/review/happy.png",
+      "bytes": 783134,
+      "sha256": "efeb961b3403b133c79a83114e6cc0f99ac7511d2665d8617520a7d6f009323f"
+    },
+    {
+      "path": "work/expression-authoring/review/ih.png",
+      "bytes": 787775,
+      "sha256": "032f79b751b250a08a0627ab01d242ae171b10277e430ea6acd40c30cceeaa4d"
+    },
+    {
+      "path": "work/expression-authoring/review/neutral-45.png",
+      "bytes": 785555,
+      "sha256": "02f6fe78e78d3bcc3dad60d7c42bbb4b16dcf391d94db2591cd98c3990718491"
+    },
+    {
+      "path": "work/expression-authoring/review/neutral-left45.png",
+      "bytes": 782153,
+      "sha256": "fa7d27dd826e5932764ba8375e38871880ca7a1c8f05969e91bcc872b4e2917a"
+    },
+    {
+      "path": "work/expression-authoring/review/neutral-side.png",
+      "bytes": 748111,
+      "sha256": "14afe9bc142919efa82e38f04bb1488a05c08f13ac8416be5b301e581e8c2abe"
+    },
+    {
+      "path": "work/expression-authoring/review/neutral.png",
+      "bytes": 785577,
+      "sha256": "aa69b702bb661a9e8b4f0c86f974429c27a64ae0952c41a0b26f4e71bb08d52a"
+    },
+    {
+      "path": "work/expression-authoring/review/oh.png",
+      "bytes": 787811,
+      "sha256": "c2d0eaf929f895a863c4f9ca1d79d6917f3554e54b5adaee9567af514b6a5181"
+    },
+    {
+      "path": "work/expression-authoring/review/ou.png",
+      "bytes": 786846,
+      "sha256": "890a54953d2fc9ab514075a55d1f8e3d5fe79310cdf00cdb990fda9b61fb7d1d"
+    },
+    {
+      "path": "work/expression-authoring/review/relaxed.png",
+      "bytes": 783033,
+      "sha256": "0237a1dd85c4dd0c21817634bebc8db0cfb85b0ed772322ff1b85132006b2b8e"
+    },
+    {
+      "path": "work/expression-authoring/review/sad.png",
+      "bytes": 784668,
+      "sha256": "6a7423243b07785a8721e6dd49fb106d6ccf0856dbf615a5be9875ff193877a3"
+    },
+    {
+      "path": "work/expression-authoring/review/surprised.png",
+      "bytes": 790688,
+      "sha256": "9ae09a085756584f84f28bd3d19747fdfd7048a63ef80c213f952ad35ba5ff7c"
+    },
+    {
+      "path": "work/expression-authoring/review/wink.png",
+      "bytes": 782426,
+      "sha256": "3695dad78b450c65ffd1737c98f26c101c4b288156508916558f5700884c295b"
+    },
+    {
+      "path": "work/expression-authoring/skin-imagegen.json",
+      "bytes": 1403,
+      "sha256": "7bd3de449b1e334bc0a3abaf78c5b4890a5db773f3ae98a4517a1d74e7c5da56"
+    },
+    {
+      "path": "work/expression-authoring/topology-cleanup.json",
+      "bytes": 1934,
+      "sha256": "47877b91946826ca64f6f16ed6f2738cd7e042869dd60624dff3714d673e01aa"
+    },
+    {
+      "path": "work/expression-export-qa/report.json",
+      "bytes": 6516,
+      "sha256": "965d7062bba10911d1af3b4e7204c67f2373c7523ec90d31f0468b5f626b0ed3"
+    },
+    {
+      "path": "work/expression-export-qa/runtime-report.json",
+      "bytes": 3237,
+      "sha256": "60836421cae191b08ec11b42e706c2eb924fe5ebd576e51a0cbf1eb47805702e"
+    },
+    {
+      "path": "work/expression-export-qa/synthetic-expressions.glb",
+      "bytes": 1503676,
+      "sha256": "567cff1d44b66730d45d37c14845528d3171362e4d8dfaa339a8618665a8b622"
+    },
+    {
+      "path": "work/expression-export-qa/synthetic-expressions.vrm",
+      "bytes": 1509408,
+      "sha256": "b592b22f4e39a32c3bea5fd0df59c1965b848064b0dcc3c0a56bf709740f9f07"
+    },
+    {
+      "path": "work/inputs/IMG_7225.PNG",
+      "bytes": 1662984,
+      "sha256": "650d8cb31220308b3c9d677a5a06fe6c8f5377828aae6c4c7ccef534f21c239f"
+    },
+    {
+      "path": "work/inputs/IMG_7226.PNG",
+      "bytes": 1649786,
+      "sha256": "117769e972f4aaa2dcefc4e85004f0ff8ab96c01dbded1d6b29394d98b1c397a"
+    },
+    {
+      "path": "work/inputs/IMG_7227.PNG",
+      "bytes": 1673310,
+      "sha256": "b229636ae87edf92ef059ae4cfba3a85e6c680d90c8a53360f440fb820636c41"
+    },
+    {
+      "path": "work/inputs/IMG_7228.PNG",
+      "bytes": 1646021,
+      "sha256": "1cbca42b9ac0a4c70d07d82f7e846cfd5f2585cc8bd855e35358ef8dec96b22b"
+    },
+    {
+      "path": "work/local-model/body_clearance_motion_probes.json",
+      "bytes": 242803,
+      "sha256": "43a082851d6b01532a255dbe1a1969a1c4a88588ae62931d877d69cecaae459e"
+    },
+    {
+      "path": "work/local-model/client-source.log",
+      "bytes": 3203,
+      "sha256": "3f2f678b0f4ebe418f8eed1dcdb846a5dae6d6979575625ea05220e57550abd0"
+    },
+    {
+      "path": "work/local-model/comprehensive-body-static.log",
+      "bytes": 1403,
+      "sha256": "b891f4a071abf24734131521a8a9ad4cab50a6e1030bba5e8b4ee38610cab16c"
+    },
+    {
+      "path": "work/local-model/comprehensive-export_motions.mjs.log",
+      "bytes": 2998,
+      "sha256": "09f7e716ee3d82360541b384f0b267cf0314d14bb3340b4441588360c8d45288"
+    },
+    {
+      "path": "work/local-model/comprehensive-export.log",
+      "bytes": 291811,
+      "sha256": "c383a862c47b4df76cf5b284ec0472b8e8195a62e6972860a87257f4948b4cb7"
+    },
+    {
+      "path": "work/local-model/comprehensive-hair-dynamics.log",
+      "bytes": 2023,
+      "sha256": "8b223cc28b64732bdb6553352b3fa53e38755594e67174e172b2f68706cb4bff"
+    },
+    {
+      "path": "work/local-model/comprehensive-hair-greet.log",
+      "bytes": 3756,
+      "sha256": "b52c49bec80d2a68ff2301fa82f916ded13c2b49689694f2f859df2c596103c9"
+    },
+    {
+      "path": "work/local-model/comprehensive-hair-standard.log",
+      "bytes": 7012,
+      "sha256": "4acaf1873785e26bab09c7acca766b76b481322ac8d2df2a2c08ebd941e4f5bc"
+    },
+    {
+      "path": "work/local-model/comprehensive-hair-static.log",
+      "bytes": 1671,
+      "sha256": "68bad182a19f0df142ae1715042aeaf24ce90d4f382f9f4d1d60a787d0020429"
+    },
+    {
+      "path": "work/local-model/comprehensive-hair-walk.log",
+      "bytes": 12364,
+      "sha256": "466faa4ac04e62cc8d0c1df40f9b7192cba4e1443ec2bb8f2d089a56b3c0b68f"
+    },
+    {
+      "path": "work/local-model/comprehensive-physics.log",
+      "bytes": 5660,
+      "sha256": "4d03b1b7469440e3a9ff82319f4d9d4ae8e2d3020c954325bc761e153e909f6f"
+    },
+    {
+      "path": "work/local-model/comprehensive-qa_expressions.mjs.log",
+      "bytes": 2723,
+      "sha256": "56c0ae0e22162ffe97f382463ac7c42565cd54eb5fa1db5e881664e68a2b4ecf"
+    },
+    {
+      "path": "work/local-model/comprehensive-qa_natural_motion.mjs.log",
+      "bytes": 3897,
+      "sha256": "24bd9587c4f695ccb0016741303797555149f5fb505233c8615a0c2b324bf09e"
+    },
+    {
+      "path": "work/local-model/comprehensive-renders.log",
+      "bytes": 3493,
+      "sha256": "679c195aae35e1dd07ba74c354814b04efefde260606c64d79a93dfab2e8ec0b"
+    },
+    {
+      "path": "work/local-model/comprehensive-source.log",
+      "bytes": 3519,
+      "sha256": "3315900a27cf19227f5613707c121566be56abade4a395a33c2dae4afa711729"
+    },
+    {
+      "path": "work/local-model/delivery-renders.log",
+      "bytes": 2224,
+      "sha256": "37d2e4fee8476cbb11a749fb6c0c98ab2c48894eb73086e94a21a8d8f6bacdd1"
+    },
+    {
+      "path": "work/local-model/expression-export.log",
+      "bytes": 273098,
+      "sha256": "302fe7ba8165510a64319c142d4dc585918f5664cd92aadf6b47ad050efb5a48"
+    },
+    {
+      "path": "work/local-model/expression-runtime-qa.log",
+      "bytes": 2724,
+      "sha256": "e52897ae37f79b507825952b0fa42e99dce03b8020e59dc27635777bc19651f3"
+    },
+    {
+      "path": "work/local-model/face-neutral-imagegen.json",
+      "bytes": 1236,
+      "sha256": "38fb47db9238e70b5155a6f6f4801567d8fa41a104ac8b8478968324002f4e94"
+    },
+    {
+      "path": "work/local-model/face-neutral-report.json",
+      "bytes": 479,
+      "sha256": "4375326e5a13ae35a984d2d8f8779cad2fc142226051c97898f0e714662f8299"
+    },
+    {
+      "path": "work/local-model/face-realism.log",
+      "bytes": 2147,
+      "sha256": "9b7854dcc6ca82dc4be45d0f6469863e223758bba32d0e3cda1ef8cb3ef85425"
+    },
+    {
+      "path": "work/local-model/face-render-report.json",
+      "bytes": 496,
+      "sha256": "e00bfdec0938b1505639dcddc53b87954db27f6dcb4ee0584454979f291f9234"
+    },
+    {
+      "path": "work/local-model/face-review-renders.log",
+      "bytes": 1992,
+      "sha256": "adf080e529275b7bc8ba6bd32113eb047a8abef6546d58a6fae4fd74c3b10bf9"
+    },
+    {
+      "path": "work/local-model/face-view-state.json",
+      "bytes": 7824,
+      "sha256": "034e45440e141dffa8fbf078f8924c6b8a802b5d7a926275112f7cf336ba54fd"
+    },
+    {
+      "path": "work/local-model/final-body-greet.log",
+      "bytes": 3576,
+      "sha256": "5c2e3ba4908cf3f893ebd5e94445ddbe7da082682da91603f2bf6db5dbfbf650"
+    },
+    {
+      "path": "work/local-model/final-body-static.log",
+      "bytes": 1400,
+      "sha256": "7238fa9bf0dda00b3dcc4bdf8eec273d2e6925f8aa9193c70a4f6cced16d1405"
+    },
+    {
+      "path": "work/local-model/final-body-walk.log",
+      "bytes": 2849,
+      "sha256": "a78c294d5290214174d1572f8184140e85bf3f70acc4fd55afde0e39c4f322b4"
+    },
+    {
+      "path": "work/local-model/final-comprehensive-export.log",
+      "bytes": 290887,
+      "sha256": "a340eb86d8addfddbc827e5c45485907ae70b2d4c75332fea43285b51aaef22c"
+    },
+    {
+      "path": "work/local-model/final-comprehensive-physics.log",
+      "bytes": 5660,
+      "sha256": "4d03b1b7469440e3a9ff82319f4d9d4ae8e2d3020c954325bc761e153e909f6f"
+    },
+    {
+      "path": "work/local-model/final-comprehensive-render.log",
+      "bytes": 4637,
+      "sha256": "ca9ce30e9a5eddce6f868defac1abf96265dd74085958768b89db24803b0fcc6"
+    },
+    {
+      "path": "work/local-model/final-comprehensive-source.log",
+      "bytes": 3519,
+      "sha256": "53fa2708cd84a7f6d7ab490fbce48bba902cc1c069e06f9b1e1d93be5019b91a"
+    },
+    {
+      "path": "work/local-model/final-export-motions.log",
+      "bytes": 3902,
+      "sha256": "f4691c128a0a271c51f55fd7d59dd3e9549db49f9d96881f9ca836f5ca16209a"
+    },
+    {
+      "path": "work/local-model/final-export.log",
+      "bytes": 192532,
+      "sha256": "74bb5bc8ced4b3a9a1d66a16a86b644b6d3663e328da5e57ca1170c0f03fc340"
+    },
+    {
+      "path": "work/local-model/final-expression-runtime.log",
+      "bytes": 2723,
+      "sha256": "a49489128e5e82bf6a3d89a74b749b6ee41200b92ef987024ccf2ed1d109a78d"
+    },
+    {
+      "path": "work/local-model/final-expressions-qa.log",
+      "bytes": 2726,
+      "sha256": "454910471b4b83b0a2ea60349e811804359df3c529e9133e20b91423e5d1dfea"
+    },
+    {
+      "path": "work/local-model/final-file-audit.json",
+      "bytes": 5645,
+      "sha256": "d1f2243617e8e0c7f3bfc606e63ebb4346afdd19db7766921f66e43b23ace276"
+    },
+    {
+      "path": "work/local-model/final-hair-dynamics.log",
+      "bytes": 2023,
+      "sha256": "65adb3d183bb02136ba9a5524405595fe4f947a7ea09fc1635491a8275efee0d"
+    },
+    {
+      "path": "work/local-model/final-hair-greet-qa.log",
+      "bytes": 3790,
+      "sha256": "4e8b4d9f6ed893645f22118f2ca9ab6bfe81e698d0be7095dd8fa44269b6e702"
+    },
+    {
+      "path": "work/local-model/final-hair-greet.log",
+      "bytes": 3757,
+      "sha256": "b086f22819e90ed0d1481752ce145ab02cf9849f6de325d7171486eba7cfafea"
+    },
+    {
+      "path": "work/local-model/final-hair-standard.log",
+      "bytes": 7013,
+      "sha256": "3e271230db3da4636bf11ccc867b54e535454782e24fbf98effcc17d5a03c21c"
+    },
+    {
+      "path": "work/local-model/final-hair-static.log",
+      "bytes": 1672,
+      "sha256": "597033607f6eb19a05bff2204ea9b96507afb91faf4c1236d27d0e050f256007"
+    },
+    {
+      "path": "work/local-model/final-hair-walk-qa.log",
+      "bytes": 4545,
+      "sha256": "79b3b7864ae66973ecf34e902c16a430438915e87095b308e92a7216978f33e1"
+    },
+    {
+      "path": "work/local-model/final-hair-walk.log",
+      "bytes": 12365,
+      "sha256": "63638d1feb875aa4decb304d37bca5722744cfdc34b008ed5e83a9c96120f86c"
+    },
+    {
+      "path": "work/local-model/final-hem-qa.log",
+      "bytes": 39638,
+      "sha256": "bc750ff2d42154c8b874ebc164146636c9043eb2072ad142c4258db603e46783"
+    },
+    {
+      "path": "work/local-model/final-motions-qa.log",
+      "bytes": 2998,
+      "sha256": "0855edea4fc7d4f54610611f80adb9c75e948837fc0f400354dd53140e698569"
+    },
+    {
+      "path": "work/local-model/final-natural-motion-qa.log",
+      "bytes": 3849,
+      "sha256": "f68b6b33178dfeabcab9374b81d94d52a5bac6704939b3bc5f61549e040a64f2"
+    },
+    {
+      "path": "work/local-model/final-natural-motion.log",
+      "bytes": 3897,
+      "sha256": "30ad5e4d4aa2152e46d94eefba239696d7833134ae8b6d52d017e9359f8a8cb8"
+    },
+    {
+      "path": "work/local-model/final-physics.log",
+      "bytes": 5493,
+      "sha256": "37f98546e9f3107d4d7fb8237cb497fd6322ac9040c1ef227c8f0c235a0395a8"
+    },
+    {
+      "path": "work/local-model/head-profile-qa.log",
+      "bytes": 1351,
+      "sha256": "120e918ae4ec80a691bbeae194b5ab4b545d8ff2d6f20a03af88a861690e09f2"
+    },
+    {
+      "path": "work/local-model/image-prompts.json",
+      "bytes": 1169,
+      "sha256": "6401a3315b145efc3450a9435c62fc22269813d3034574f794b344a35f20783a"
+    },
+    {
+      "path": "work/local-model/integrated-export.log",
+      "bytes": 281778,
+      "sha256": "0568d3961ffdd2df664bb6495bf1dc2a83fba32caa5df27048b8804c6396134e"
+    },
+    {
+      "path": "work/local-model/integrated-physics.log",
+      "bytes": 5494,
+      "sha256": "5e466c9d979a93ce137bf859e9e2ebcc4becd49199a4f3bd40a812cf2fbd677f"
+    },
+    {
+      "path": "work/local-model/integrated-renders.log",
+      "bytes": 1764,
+      "sha256": "75b95b9b1c62d5ab8515341da4721528bf04cd997e1276a35699a57932a6506b"
+    },
+    {
+      "path": "work/local-model/integrated-source.log",
+      "bytes": 3295,
+      "sha256": "27ab7f3006a64b655e2faccee187d968572177b6c4eb2ec4083227c45f207853"
+    },
+    {
+      "path": "work/local-model/motion-diagnosis.json",
+      "bytes": 575067,
+      "sha256": "55333df07d1fc928e7c9ac4a38bacb2567fff6444c834348d7c64def45ffeb22"
+    },
+    {
+      "path": "work/local-model/natural-motion-report.json",
+      "bytes": 1529,
+      "sha256": "730d4f438802283b224ebf5d2945cedaa06a4e6537d33d98f58b3d8c8145851c"
+    },
+    {
+      "path": "work/local-model/natural-motion-v02-report.json",
+      "bytes": 1529,
+      "sha256": "5cdabbf39c1db4a437fc8e2ffc34df837b12fd344dd2adda58388860353b25f9"
+    },
+    {
+      "path": "work/local-model/qa-expression-export.log",
+      "bytes": 13439,
+      "sha256": "a32ae59e0ec49d29468f9188993e298a60dcab2df5e258764ae34842cdc2226d"
+    },
+    {
+      "path": "work/local-model/qa-expression-runtime.log",
+      "bytes": 2464,
+      "sha256": "6c2e6029cd29ba56145b0174308e04d564cbd884354d6f5607b1da78ea1b20bb"
+    },
+    {
+      "path": "work/local-model/qa-face-bake.png",
+      "bytes": 137781,
+      "sha256": "114a7eda86fbebaca387d7f968f5d95f4f4013e20857f829e6c2854a92141370"
+    },
+    {
+      "path": "work/local-model/qa-runtime-optimization.json",
+      "bytes": 190619,
+      "sha256": "ffaef07997f9fdbf01bd974b949b5140f03ce7274b913a8397042c6093c4e848"
+    },
+    {
+      "path": "work/local-model/qa-runtime-optimize.log",
+      "bytes": 40408,
+      "sha256": "9e048175d93fb2ee79016094156ef66dcc408d48b4d32fdb09eb0c979c8b6c64"
+    },
+    {
+      "path": "work/local-model/qa-runtime-optimized.vrm",
+      "bytes": 27051932,
+      "sha256": "efb0bb79c3cd024f8d149a49fb9b309afb5d185b98f338743329ad4a42700481"
+    },
+    {
+      "path": "work/local-model/qa-runtime-physics.json",
+      "bytes": 5497,
+      "sha256": "f1cd008aced9e130012c4a667479c825045917315ff11b8cebf47abb07846737"
+    },
+    {
+      "path": "work/local-model/qa-runtime-physics.log",
+      "bytes": 5498,
+      "sha256": "d5fa1b4bc0c689268b0d9543dd8c6d408df06b8c833324694c65a620d8a3cae2"
+    },
+    {
+      "path": "work/local-model/qa-runtime-spring-plan.json",
+      "bytes": 5896,
+      "sha256": "5eba5a883beb1b63d64d8259dc2ea2c08b95709d1b24c575c7da595b9ebfde2f"
+    },
+    {
+      "path": "work/local-model/qa-runtime-walk.json",
+      "bytes": 290,
+      "sha256": "4d10edce2c1eb0b2d1bccf2575374541e1d0f710e6309e8b754a353b1a6674e3"
+    },
+    {
+      "path": "work/local-model/qa-shared-atlas.png",
+      "bytes": 8128,
+      "sha256": "b68e9837371c02b4334e2f35a9ee6bd0198e5e14f3f251e1251a690430129061"
+    },
+    {
+      "path": "work/local-model/rig-report.json",
+      "bytes": 100573,
+      "sha256": "f73b01d5a60de6eeaaeb485f6ca7ff61035802523a97927cb7e3e194f953728c"
+    },
+    {
+      "path": "work/qa-anatomy-material/aa-depth-corrected.png",
+      "bytes": 583711,
+      "sha256": "ef3f329f793a19f4cb311844f3801d0de107951728a1a2780e70ab474745c3b0"
+    },
+    {
+      "path": "work/qa-anatomy-material/aa.png",
+      "bytes": 583107,
+      "sha256": "43bbb86976679cef64f46049308c59410bc1fbd43e629ed90089e04414189bba"
+    },
+    {
+      "path": "work/qa-anatomy-material/anatomy-material.blend",
+      "bytes": 49705567,
+      "sha256": "21a674a784df4b77445f9deb709fd1671a34c0d5d5136064b5b58f40104bcd13"
+    },
+    {
+      "path": "work/qa-anatomy-material/anatomy-material.blend1",
+      "bytes": 49624375,
+      "sha256": "d149140e650a2d45a5cfaf813e7fcdad2ef8bcef968aeca478e89743ee69e8b1"
+    },
+    {
+      "path": "work/qa-anatomy-material/blink.png",
+      "bytes": 576500,
+      "sha256": "9e538a2340c915be0e40be7c40ccb20195cbff2a983af637d971eb590d55a3bf"
+    },
+    {
+      "path": "work/qa-anatomy-material/dental-depth.log",
+      "bytes": 518,
+      "sha256": "ebb46ad5f93b187eb45c346b5031e49fbbfac0f9d36d8c88ebd739bd39307c8f"
+    },
+    {
+      "path": "work/qa-anatomy-material/front.png",
+      "bytes": 573014,
+      "sha256": "ba5b6b32056ea8aec7483d6078584003ae00a8690d0bee2f7b576d9544790907"
+    },
+    {
+      "path": "work/qa-anatomy-material/hairless-oblique.png",
+      "bytes": 489186,
+      "sha256": "bd93a12ca27c9340dd004fae2f879d5e14ce63d924503909a920e6b102c7ae1a"
+    },
+    {
+      "path": "work/qa-anatomy-material/hairless-profile.png",
+      "bytes": 478984,
+      "sha256": "e01a24902c6ac84184f50bb29ed2b3aa65eac1103499f285b089ed8b870e2716"
+    },
+    {
+      "path": "work/qa-anatomy-material/happy.png",
+      "bytes": 579351,
+      "sha256": "21bb96b5256a4033a9dc0a6d4a0e7fd534e4230cc188fcd6438518ca167409eb"
+    },
+    {
+      "path": "work/qa-anatomy-material/oblique.png",
+      "bytes": 580781,
+      "sha256": "dc10675eab1e1fe56065d83a7cb44ff57adfc7c22ea6b4bcfcc5241faf79c608"
+    },
+    {
+      "path": "work/qa-anatomy-material/patch-report.json",
+      "bytes": 18039,
+      "sha256": "afcb23e8f36ab5bc6cef2ecc60993a53ca4a8c45a0701192c5c0fa61cee83acc"
+    },
+    {
+      "path": "work/qa-anatomy-material/profile.png",
+      "bytes": 555144,
+      "sha256": "6f8fb9b79c2f62c906a00608503d12f087e02fe8ee2f4eaa0ea39fcaced3d987"
+    },
+    {
+      "path": "work/qa-anatomy-material.log",
+      "bytes": 2005,
+      "sha256": "44dc7ecb276e5e0d16e5622271957b2178b954982bd0b502ae59a0610de9d42b"
+    },
+    {
+      "path": "work/qa-body-completion/anatomy-structure.png",
+      "bytes": 514970,
+      "sha256": "cb358545954486f68d06099d1653500fac499ab81f94b0c52d07fc471f0f265a"
+    },
+    {
+      "path": "work/qa-body-completion/body-completed.blend",
+      "bytes": 46814915,
+      "sha256": "6791bdb105e61a6bd17a0a4858392edf209c0a03de60e172380ab209a0bc9115"
+    },
+    {
+      "path": "work/qa-body-completion/body-completed.blend1",
+      "bytes": 46814883,
+      "sha256": "516f4df7710445ad5986bd5165db7b8b47a8e25d4ccc2fdd9ac194ba1ba0cf7f"
+    },
+    {
+      "path": "work/qa-body-completion/clearance.json",
+      "bytes": 167893,
+      "sha256": "f94e5dcf41abec98eeb765fd2da9bba8002173e0006e290d914d268feedac47e"
+    },
+    {
+      "path": "work/qa-body-completion/clearance.log",
+      "bytes": 6223,
+      "sha256": "36438493eda59548b78753d2bba2e817b553eec33fda9e76466f9b4f6ce34cba"
+    },
+    {
+      "path": "work/qa-body-completion/clearance.py",
+      "bytes": 7041,
+      "sha256": "dfedb7fa757fa9062607a52c40cf7a83133b885ce8eea1223ee121cef8e697c1"
+    },
+    {
+      "path": "work/qa-body-completion/cloth-thickness.json",
+      "bytes": 1453,
+      "sha256": "bb5404797f1fa8dc4f09ee825731217346292c159b85c0c1563e991c3a9758bc"
+    },
+    {
+      "path": "work/qa-body-completion/connections.json",
+      "bytes": 1431,
+      "sha256": "988bd9480d76e5d364face40c3a91fb1621f38756eb2bf73362a8b6f95c71404"
+    },
+    {
+      "path": "work/qa-body-completion/cranium-inspection.log",
+      "bytes": 57378,
+      "sha256": "178109026af64a637b87636026f6985dd36d9b83a16f08a631e7e84b7d42703f"
+    },
+    {
+      "path": "work/qa-body-completion/ear-cartilage-clay.png",
+      "bytes": 337385,
+      "sha256": "4aa7717b842f9c80cd5471281176fe16cc8fa7428cb95a09f8205d123b05878d"
+    },
+    {
+      "path": "work/qa-body-completion/ear-cartilage.png",
+      "bytes": 336474,
+      "sha256": "580c97e137673cd90c4e6ab48ced018f2c57c5240144931ad2a80502057d705c"
+    },
+    {
+      "path": "work/qa-body-completion/ear-completed.blend",
+      "bytes": 45085115,
+      "sha256": "9beaed03ec1c17d5d02fe6c4234908244195a533dfff9005f21864bcaaa62111"
+    },
+    {
+      "path": "work/qa-body-completion/ear-completed.blend1",
+      "bytes": 45084757,
+      "sha256": "38c2b516e1e62f56ae433b15da4c507afaed68c39e6c3b78004cd25e76dcb285"
+    },
+    {
+      "path": "work/qa-body-completion/ear-structure.log",
+      "bytes": 1166,
+      "sha256": "3f9c7cf66a0f57a85123ad8f1173fe59f03d7635dfef2414591c1dec12d54e3f"
+    },
+    {
+      "path": "work/qa-body-completion/ear-validation.json",
+      "bytes": 1039,
+      "sha256": "8ed3a121d1b7c0604fefe41870cc4c0055c3b4dca1ebe22c3a16a5b4b54f7830"
+    },
+    {
+      "path": "work/qa-body-completion/ear-validation.log",
+      "bytes": 1159,
+      "sha256": "671c36940aef4b6482be536aefdc8a8fee2160ed4e9d0a4178adf2412ec50eda"
+    },
+    {
+      "path": "work/qa-body-completion/input.blend",
+      "bytes": 47333655,
+      "sha256": "7b08fc54bb873e5c03af24cdebaf8a1798423069c0357d2c168341b2df3b316c"
+    },
+    {
+      "path": "work/qa-body-completion/inspect_cranium.py",
+      "bytes": 1220,
+      "sha256": "dfc6754c5b0158c5e8e47d9d11557988c41e226f81d99384d6f7f5a224f62453"
+    },
+    {
+      "path": "work/qa-body-completion/inspect_weights.py",
+      "bytes": 648,
+      "sha256": "16d74043c987ff9546a8cd7761a233ae243e026dc11469d80c792163fee3cc82"
+    },
+    {
+      "path": "work/qa-body-completion/integration-report.json",
+      "bytes": 5355,
+      "sha256": "f1b92f59de0dce9a5d64d7688892a67b7ee2e3ad686dc436562d072293cb0e39"
+    },
+    {
+      "path": "work/qa-body-completion/render_structure.py",
+      "bytes": 2352,
+      "sha256": "69b0a1e690f29a9a6f162d18a7308ff24919ab65770b9bb651b6f363dbe7e4cd"
+    },
+    {
+      "path": "work/qa-body-completion/render.log",
+      "bytes": 641,
+      "sha256": "927b558fc60a20b4545766ec42185460282dc90672fa73db050e94e4cce4e6a8"
+    },
+    {
+      "path": "work/qa-body-completion/sleeve-bend-75.png",
+      "bytes": 607907,
+      "sha256": "6145d90a96f4f84c865c030d9202708024d378197ba6cccc8b178aeb77f0cf1c"
+    },
+    {
+      "path": "work/qa-body-completion/validate_ear.py",
+      "bytes": 3372,
+      "sha256": "d70cfd85bbf9b7fb5ae8dc487925e40714ec1f51c9d1689d21a381c75b5d4478"
+    },
+    {
+      "path": "work/qa-body-completion/validate.py",
+      "bytes": 4107,
+      "sha256": "098fab43c9911a07207b717c503b00b68ca8de8854d732261bb5cab698a6e8a9"
+    },
+    {
+      "path": "work/qa-body-completion/validation.json",
+      "bytes": 61633,
+      "sha256": "355c6e5746668f8e865ec1045f36554cac45f213622b46c8c43267c3f21bdecc"
+    },
+    {
+      "path": "work/qa-body-completion/validation.log",
+      "bytes": 8155,
+      "sha256": "de19762754c4df32012c1a1af5e95d0e0b4d18f2536fc346f90f613f5e943ab7"
+    },
+    {
+      "path": "work/qa-body-completion/weights.log",
+      "bytes": 4154,
+      "sha256": "594daebe2be3039ff50760c8d5c7b6a330d3981263d37ec0cebf95c305a66200"
+    },
+    {
+      "path": "work/qa-body-motion/after-knee.png",
+      "bytes": 863425,
+      "sha256": "32b26ae735fa912b47f6cba345ad2fe53fb2dff0f37e8d2a229ced0f07db02d9"
+    },
+    {
+      "path": "work/qa-body-motion/after-raised.png",
+      "bytes": 892832,
+      "sha256": "bbebde228a348137688e991b926b091be9a2877c448ecff1b2bf73174d33e56d"
+    },
+    {
+      "path": "work/qa-body-motion/after-reach.png",
+      "bytes": 887039,
+      "sha256": "83e5ebbc37e715eb0551e71cf1103f2c6e0dce0c888bd07d931f8bd6eaa7794f"
+    },
+    {
+      "path": "work/qa-body-motion/after-relaxed.png",
+      "bytes": 932426,
+      "sha256": "39744d9d8b60c1b0c14c47dc582186b5a8a5b0188179b115bcf974b8a2650bb6"
+    },
+    {
+      "path": "work/qa-body-motion/after-render.log",
+      "bytes": 1082,
+      "sha256": "13797d7816909b9d2919524cd2dcc7b9a6e15fb842b7ea524ac823551ff9b30a"
+    },
+    {
+      "path": "work/qa-body-motion/after-shoulder-unobstructed.png",
+      "bytes": 673154,
+      "sha256": "bf50f361990d4c8eeece37c1e26671e1dc640a70dddaa72d466537201103edf8"
+    },
+    {
+      "path": "work/qa-body-motion/after-shoulder.log",
+      "bytes": 469,
+      "sha256": "4e1d386cf305d98be134c6093b1425e312ee78e5bcc4ca1ed5b0f42a24f6e83c"
+    },
+    {
+      "path": "work/qa-body-motion/apply-report.json",
+      "bytes": 2061,
+      "sha256": "eae39bbff8b21119e22271ed9253332724f2d0e9b96109b927e941daf78e5c79"
+    },
+    {
+      "path": "work/qa-body-motion/before-knee.png",
+      "bytes": 863783,
+      "sha256": "039573720afbd6c4ceb3371cbc3194db20721c5f80bc7dd623fa9724a53a7e03"
+    },
+    {
+      "path": "work/qa-body-motion/before-raised.png",
+      "bytes": 892463,
+      "sha256": "949a192aaead4cd68da53e8d02795cf759d23bef2260725477c7aef8caf994d5"
+    },
+    {
+      "path": "work/qa-body-motion/before-reach.png",
+      "bytes": 886428,
+      "sha256": "616067aa0e850b6e20b9d9332e1f255907e10d407b9dfa6e81bc1d6a34676ccd"
+    },
+    {
+      "path": "work/qa-body-motion/before-relaxed.png",
+      "bytes": 931511,
+      "sha256": "b3b0bf09d2ee589982dc1e26d70b73fc69ff8eaaa8bedaa1835ccc817dea06a6"
+    },
+    {
+      "path": "work/qa-body-motion/before-render.log",
+      "bytes": 1047,
+      "sha256": "cc44c4d518b6cc41b3168bd2e02b750f5ae305ebbb0b94445a80e7540bd09ec0"
+    },
+    {
+      "path": "work/qa-body-motion/before-shoulder-unobstructed.png",
+      "bytes": 674217,
+      "sha256": "b410398dfc33c4477cc1552bb3e498550a3d09afc6b98ded0c23287ca742191b"
+    },
+    {
+      "path": "work/qa-body-motion/before-shoulder.log",
+      "bytes": 470,
+      "sha256": "cf0d7eb79d75898a05c7dcee604a1ac6f5c2012c7ce3a5758a362d8dd2fc10fb"
+    },
+    {
+      "path": "work/qa-body-motion/body-clothing-script-smoke.json",
+      "bytes": 14520,
+      "sha256": "dc24928a98a6b71c551e9703ba76df53f0615540325fb6d50b7cd8b7ab7b76ec"
+    },
+    {
+      "path": "work/qa-body-motion/body-clothing-script-smoke.log",
+      "bytes": 1473,
+      "sha256": "81022e9897607a0c5736dd1d198cbec465f23a9e2f8883ddc7bf0d6601ccf9bb"
+    },
+    {
+      "path": "work/qa-body-motion/body-motion-refined.blend",
+      "bytes": 31913431,
+      "sha256": "1f9be130ef94045c64d9695a6e9f48bc7afabaded096767c79360c6bb98050d5"
+    },
+    {
+      "path": "work/qa-body-motion/body-motion-refined.blend1",
+      "bytes": 31890060,
+      "sha256": "844458a1a0be9cebf8045c0d4e9c9d9bbeca92b7ea3cde28810f987a0370a6b8"
+    },
+    {
+      "path": "work/qa-body-motion/initial-inspection.json",
+      "bytes": 24125,
+      "sha256": "2bf5b5bf3f573194282695ed6a0a63264f6678aa9379f3dc26e22bce9f0c6d0a"
+    },
+    {
+      "path": "work/qa-body-motion/input.blend",
+      "bytes": 34908013,
+      "sha256": "d8f2926610698564cebe28a6544ce7b1dbb0d8a0575d95c77e38160268947189"
+    },
+    {
+      "path": "work/qa-body-motion/inspect.py",
+      "bytes": 1222,
+      "sha256": "a1f07560c904bcff083b9a1aec210ad1557e90eb8f77ba6e195365e322715d1c"
+    },
+    {
+      "path": "work/qa-body-motion/render_poses.py",
+      "bytes": 3423,
+      "sha256": "b7f3eecccb31db2d29101d071a324c29971f441a08e5cbf452abe6d581b5f736"
+    },
+    {
+      "path": "work/qa-body-motion/render_shoulder.py",
+      "bytes": 1841,
+      "sha256": "c306b4c2bb7692515ea7b4fef42b8151e78def4610ddaa4bbed53e2e9557de5f"
+    },
+    {
+      "path": "work/qa-body-motion/validate.py",
+      "bytes": 6144,
+      "sha256": "3f459d121315773df3fe5525c890328c39be9fe9a125d0ec2e8d882f9aa865b3"
+    },
+    {
+      "path": "work/qa-body-motion/validation.json",
+      "bytes": 8174,
+      "sha256": "efc444fbe62d76401b409374fc2bcdf424203e38bf8d49b6eae18603255aa6e5"
+    },
+    {
+      "path": "work/qa-body-motion/validation.log",
+      "bytes": 691,
+      "sha256": "6e5c491383120e0af124b3b45c7dc77ac3acb1406c5c9553f49507d414bb96a0"
+    },
+    {
+      "path": "work/qa-body-realism/after-ear.png",
+      "bytes": 641274,
+      "sha256": "f2508904d0967804cc08015fd9d8b56b5d9bb5e0c0e18dbe26517679b6c655d2"
+    },
+    {
+      "path": "work/qa-body-realism/after-hand-bend.png",
+      "bytes": 554515,
+      "sha256": "d4e751183b674bf2457be5d3280e901b46461b4e6669f0a40ee92957a16da6db"
+    },
+    {
+      "path": "work/qa-body-realism/after-hand.png",
+      "bytes": 553059,
+      "sha256": "8c999c03dc087d3464c2f6c5a099087fffb9ef927d3977e8f5ec8e2f076156dc"
+    },
+    {
+      "path": "work/qa-body-realism/after-neck-profile.png",
+      "bytes": 656754,
+      "sha256": "bc006698d49fc1ffd8413fe39a217d888a3af1660ada675e9da98b892a8f13ed"
+    },
+    {
+      "path": "work/qa-body-realism/after-neck-quarter.png",
+      "bytes": 742574,
+      "sha256": "530dcc09fd7747f20c9cc09adbb79880d84fcf39d24e804d6c10bdabfe93864a"
+    },
+    {
+      "path": "work/qa-body-realism/after-v02.log",
+      "bytes": 923,
+      "sha256": "75e593481ed078b5eef69c5a75204ccbe1aeb7034eddff6c19527a6c94694ba4"
+    },
+    {
+      "path": "work/qa-body-realism/after.log",
+      "bytes": 1307,
+      "sha256": "fe5ce06f7bfcd7cff7780241cc58c9b17600e2465241998f2efd6905655c82b7"
+    },
+    {
+      "path": "work/qa-body-realism/before-ear.png",
+      "bytes": 643064,
+      "sha256": "82aa8fc3f29c06afb86b5549edaaa4f2cc9931e6134773f4eeaf5e6a6107a997"
+    },
+    {
+      "path": "work/qa-body-realism/before-hand-bend.png",
+      "bytes": 554426,
+      "sha256": "f28f55d0364f82a396a02b792dc92db9d9217243d959c58a96d0ef8f5275f1f3"
+    },
+    {
+      "path": "work/qa-body-realism/before-hand.png",
+      "bytes": 552931,
+      "sha256": "c96874e9fe65647f52d5fbebba906857ad1aa7fd0f9667c6604ee2b2cab762bd"
+    },
+    {
+      "path": "work/qa-body-realism/before-neck-profile.png",
+      "bytes": 654859,
+      "sha256": "855831d0cd6e6d6820d82f46d3387e0a37e612105efe1fa1c261e6bbaf31adb8"
+    },
+    {
+      "path": "work/qa-body-realism/before-neck-quarter.png",
+      "bytes": 745558,
+      "sha256": "e098d92aa86012cecb60ad0ebca1c58000e7a9513264c4956ee5ef63d9b19955"
+    },
+    {
+      "path": "work/qa-body-realism/before-v02.log",
+      "bytes": 893,
+      "sha256": "9dbc6442066ff6440f21d7c95c26afd376375d753623c0df0833fcedf21b6a87"
+    },
+    {
+      "path": "work/qa-body-realism/before.log",
+      "bytes": 1281,
+      "sha256": "bac427b62ad32070b0d7d6705a2ec3304016aad990c4ff66e5d12c2a90d5bce3"
+    },
+    {
+      "path": "work/qa-body-realism/body-realism.blend",
+      "bytes": 33327967,
+      "sha256": "3c2f6970b6c61ec4c02c5b72071f18e2bb2a493af40caf91f21c237d8adb6bbe"
+    },
+    {
+      "path": "work/qa-body-realism/body-realism.blend1",
+      "bytes": 33327476,
+      "sha256": "763754a5852178930ebef3f33b5011d2ddacc15708b30fdc4414aaf23e12294a"
+    },
+    {
+      "path": "work/qa-body-realism/input.blend",
+      "bytes": 36306801,
+      "sha256": "c20425f591154339107bffede8216bdaaa53f0babf2642e4f120de3b44996b74"
+    },
+    {
+      "path": "work/qa-body-realism/inspect_visibility.py",
+      "bytes": 3196,
+      "sha256": "d63f10b4423a706b790cdcd64e76e6d2664f0fb0c91851d351afd569a2b9d59d"
+    },
+    {
+      "path": "work/qa-body-realism/inspect.py",
+      "bytes": 1228,
+      "sha256": "16e5d38f9fa5eda85a3ab7546921a541c89bde96cdabf20252292f7be3c0d052"
+    },
+    {
+      "path": "work/qa-body-realism/inspection.json",
+      "bytes": 14544,
+      "sha256": "10a55072dd46b5c896396fe39209b7f33c8bb062c33113f346fcb1ff84d5d958"
+    },
+    {
+      "path": "work/qa-body-realism/inspection.log",
+      "bytes": 14841,
+      "sha256": "d7f6684e14eca0d8ded8ebd2ec7c6c6971db8886c7127e61d8b525f21f16ccc7"
+    },
+    {
+      "path": "work/qa-body-realism/render.py",
+      "bytes": 4751,
+      "sha256": "55e5894881380974d6ea48ff6dd1b2e42554516898c74b25f78b23b7433febf1"
+    },
+    {
+      "path": "work/qa-body-realism/report.json",
+      "bytes": 1828,
+      "sha256": "cad19cb264e2a462443be62e6e11bd58671a923dc8faf8910785a190609814f2"
+    },
+    {
+      "path": "work/qa-body-realism/visibility-report.json",
+      "bytes": 61347,
+      "sha256": "5cdbffbeae4a8f87f841b2a7f3e2eab211ed83a0975f3bc328ba7d1a9804c2e8"
+    },
+    {
+      "path": "work/qa-body-realism/visibility.log",
+      "bytes": 61648,
+      "sha256": "d9b0f870aff6c86d07b640730b905fc0a7c701ed1278a12beeb84c4f514bcefd"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-clearance-final-completion-report.json",
+      "bytes": 20069,
+      "sha256": "68e5c65463d8e10aae1e99cf69acf402b961d35d5ec89b9c7a88a3358c34aa33"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-clearance-final-greet-runtime.json",
+      "bytes": 14819,
+      "sha256": "dbb7813b41a28907a7c44a3fe05ab4a5a3bd7e7a154629d9235ae02fd670e5a5"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-clearance-final-greet-runtime.log",
+      "bytes": 3601,
+      "sha256": "3ee7c9b7f654f7fef6d1f9161873296561b3867e4a6180e4089bfb312aae693b"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-clearance-final-static-runtime.json",
+      "bytes": 6956,
+      "sha256": "c30fd4ad02c1623dba562f44ccc3b1757a59616ff988f3365f50a1a1c52ef3a6"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-clearance-final-static-runtime.log",
+      "bytes": 1425,
+      "sha256": "417ae974132be81ba4813b21a425be0ee80daa14b00718ad44609d8e1f86c01f"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-clearance-final-walk-runtime.json",
+      "bytes": 11852,
+      "sha256": "2293c34e28721797d86c2793f85c47f305127abfac4a9a86f6418a425f1a1390"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-clearance-final-walk-runtime.log",
+      "bytes": 2874,
+      "sha256": "da90832c60181ab4354a1b7bdb2812e11c5ac78ebf8d3889a452f01a0b5a6709"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-greet-rest-contacts.json",
+      "bytes": 24019,
+      "sha256": "bfacbb798dd7d806524ba57a77c7a5363a9d582c57663cccbb221e37e15953cf"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-greet-runtime.json",
+      "bytes": 632975,
+      "sha256": "780f094ed7d1095f220453bc54e97d8540f6fa48296b05bfbe336d1035ef8b1d"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-greet-runtime.log",
+      "bytes": 3687,
+      "sha256": "f52f9a161723a0683b6820b23b859282a625ee7fd796fd939bd2cc68fe44b929"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-refined-completion-report.json",
+      "bytes": 32663,
+      "sha256": "1cc5c00417092ebfaf2396b3d7ac93138507400bc27a1c1a9865f52e13449159"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-refined-greet-rest-contacts.json",
+      "bytes": 13526,
+      "sha256": "0bc494e7ac4533f4b356abe026e7c99e03590e6d780f3e1a602bdcca550ab5bf"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-refined-greet-runtime.json",
+      "bytes": 43184,
+      "sha256": "9cd8798a79ac8656b4c8c880058bf4c1721a8401199701d724ff0ce19c6c74fa"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-refined-greet-runtime.log",
+      "bytes": 3596,
+      "sha256": "2ca25df51c2b116d73afd46e91065dd2584138022b982557104784287a4e7477"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-refined-static-runtime.json",
+      "bytes": 6948,
+      "sha256": "89193a58d6d5a043dd1927fe0972b36804cbc2096b467ba6d9670876157eedb2"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-refined-static-runtime.log",
+      "bytes": 1417,
+      "sha256": "44c834283891b2da15f2b1a459350bf299ff37173f79b9bb8058414173688272"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-refined-walk-rest-contacts.json",
+      "bytes": 16547,
+      "sha256": "f8379729fada669962f07351c20c198be318fae5ecb096719cdc419085c3bc55"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-refined-walk-runtime.json",
+      "bytes": 144968,
+      "sha256": "77a27e21d13caf8919cc910ba34a209f581ee6c21db3027c3c40cd35fcdb2da5"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-refined-walk-runtime.log",
+      "bytes": 2896,
+      "sha256": "f515b6a990fbc8e90b69cdca94a24a857c4ccb19bf14ab9fa17ed8076a76f54a"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-static-rest-contacts.json",
+      "bytes": 25366,
+      "sha256": "afc76e40b50468f21d29318ea8fa696be2736cf398831f6641d634530d980d6f"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-static-runtime.json",
+      "bytes": 63074,
+      "sha256": "9bc3c432d9b7ba0d5f942a29be7fd4e1fc7435d942cfdedbd204264ce7d86aeb"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-static-runtime.log",
+      "bytes": 1411,
+      "sha256": "8c484482722ba4ba0c5b0b966709668b5fb2b610e1ea7ecc5e67e00f392a4de3"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-surface-clearance-handoff.json",
+      "bytes": 4948,
+      "sha256": "27d2a0101d3fada242e157c191247ce63cbd95671fe85e3c63a59082d64422fa"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-surfaces-clearance-final.blend",
+      "bytes": 57301457,
+      "sha256": "543110b578c04e70d875dff17edd904de30a59c017ef225cafb502b65b51bfdd"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-surfaces-clearance-final.blend1",
+      "bytes": 57299920,
+      "sha256": "b9da639cb3f77aaf8c0645c3cb1525c1ebab957f0af84de231d2dd91d6bcdc82"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-surfaces-refined.blend",
+      "bytes": 57297391,
+      "sha256": "6666c57826acc41502550939aa06f3122361e8f755470d9b0026a02573dd5fe2"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-surfaces-v02.blend",
+      "bytes": 57297307,
+      "sha256": "bce8c02599b56f9f78b06b954709eacfa31ee22726abe0f5f7f30833d0f5921b"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-surfaces.blend",
+      "bytes": 57283401,
+      "sha256": "328b17cf09a8c883882a0f14f0aba93630e59aa13a3c900919efe9b82f3ec1aa"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-v02-completion-report.json",
+      "bytes": 51466,
+      "sha256": "da8902a32f0842c25d9397b8068a5d8ca1e910100f24c81feea1c4d54b7643a0"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-v02-greet-rest-contacts.json",
+      "bytes": 24137,
+      "sha256": "f8363d0ea915084281a21e276c0374b367037d8cb274fadd8e19f406582dd275"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-v02-greet-runtime.json",
+      "bytes": 482226,
+      "sha256": "dbfd2bd29f09470a94d19582bf1edb8cf9bbcb6e60d852ceb9646029ebd76238"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-v02-greet-runtime.log",
+      "bytes": 3661,
+      "sha256": "8afc25afa4a4d6331704221545c9ec5de5b3baa72d1a8d8b63ac58e9e22fb126"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-v02-static-rest-contacts.json",
+      "bytes": 11535,
+      "sha256": "7f1e20343ec642eebe0d00b79df3f8a1f6d2851b8feccaa69bd31493ab76838e"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-v02-static-runtime.json",
+      "bytes": 51345,
+      "sha256": "6858c67d1e958404ce5b8e631519f9c4a5b38d92092bb05c1d75b49c0b651b78"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-v02-static-runtime.log",
+      "bytes": 1414,
+      "sha256": "447a69720e93139e2ca243f78f65379cd2109988be3f8e2b66226e82df3cd8d2"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-v02-walk-rest-contacts.json",
+      "bytes": 26040,
+      "sha256": "a42123379a40e48860854cfb5c77c5d6824e1c9e4f5a839ffc0a3d46ad54621e"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-v02-walk-runtime.json",
+      "bytes": 418490,
+      "sha256": "d524a952976da304fc3d410ebbcb3ff8d8b6be43376779937562102fdd80f194"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-v02-walk-runtime.log",
+      "bytes": 2944,
+      "sha256": "468a666c9b152d5ba698a9578482b4f689117d073f3a0b84fba3fc25f33c0a75"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-walk-runtime.json",
+      "bytes": 423430,
+      "sha256": "36f4458432fdd7a230ab474c8515f3ce5cf0b9a1b63e2f14afce1495ec214173"
+    },
+    {
+      "path": "work/qa-body-surface-repair/body-walk-runtime.log",
+      "bytes": 2906,
+      "sha256": "4bc7c73d8c3940d2b0d4eb572f96d259853b0db6bca13e8dc1877dcaf92c3fd9"
+    },
+    {
+      "path": "work/qa-body-surface-repair/bone-matrices-greet420.json",
+      "bytes": 338298,
+      "sha256": "94a8097c60fc7410583c00950966fdb937d4af739ad2ddbf2e662d11a20d98d2"
+    },
+    {
+      "path": "work/qa-body-surface-repair/bone-matrices-refined-greet-worst.json",
+      "bytes": 338307,
+      "sha256": "7c249265626b29fd7d1f9821c26c0112254e92af8894b3746fa800d20abaa0c8"
+    },
+    {
+      "path": "work/qa-body-surface-repair/bone-matrices-refined-walk-sequence.json",
+      "bytes": 5511940,
+      "sha256": "2deec3d00f0529ab2d09d29d785d14f2133f66f56beeb7bac65748be4c9461ad"
+    },
+    {
+      "path": "work/qa-body-surface-repair/bone-matrices-refined-walk-worst.json",
+      "bytes": 336286,
+      "sha256": "1713807fdb45e995f648876aa515d26a043040069967cc42c327060531c11284"
+    },
+    {
+      "path": "work/qa-body-surface-repair/bone-matrices-relaxed0.json",
+      "bytes": 332807,
+      "sha256": "605203fecf0f20a214881f5fdf07536cd3331b8839eee223b4b3ef940d2928c0"
+    },
+    {
+      "path": "work/qa-body-surface-repair/bone-matrices-v02-greet42.json",
+      "bytes": 338303,
+      "sha256": "5dfe2ee5046a615c8f15e06a946e25d5601433a7cd2400f4d32f0a42d1f7f8fd"
+    },
+    {
+      "path": "work/qa-body-surface-repair/bone-matrices-v02-walk16.json",
+      "bytes": 336475,
+      "sha256": "39365fece628f4134f849a7c50b87a5cb88d32d22ed959d9c7599e7dc3ca1469"
+    },
+    {
+      "path": "work/qa-body-surface-repair/build-clearance-final.py",
+      "bytes": 1268,
+      "sha256": "bfd6479baf87dbf4bc5ab8473ba9ef6f29837abe6b770af0193b904a03def001"
+    },
+    {
+      "path": "work/qa-body-surface-repair/candidate-report.json",
+      "bytes": 3278,
+      "sha256": "78d6064e7d78f52ce8926c7aaede6d8184591b5429e37c2d2ec88bca8174f74e"
+    },
+    {
+      "path": "work/qa-body-surface-repair/candidate-v02-report.json",
+      "bytes": 10299,
+      "sha256": "f0a89e6aed41be16490674fbd1771372b2f215833d852c9318bae773b2fc8a10"
+    },
+    {
+      "path": "work/qa-body-surface-repair/candidate-v02.log",
+      "bytes": 296026,
+      "sha256": "9879ae829bb4decdad5b56fef410dc488b869f74b62a43862ad2c16e7e87121b"
+    },
+    {
+      "path": "work/qa-body-surface-repair/candidate.log",
+      "bytes": 290832,
+      "sha256": "3154abce2ea21276e813fbcede3875359e3a2d9974001f8ea9859798625b4dda"
+    },
+    {
+      "path": "work/qa-body-surface-repair/check-solidify.py",
+      "bytes": 335,
+      "sha256": "dcf4f5bbd667795a926164a74a7e95f60e73c8c975b8eebd3800f9251741b14b"
+    },
+    {
+      "path": "work/qa-body-surface-repair/check-source-rest.py",
+      "bytes": 959,
+      "sha256": "4f88e79855a78c19a22cd2efeb5544659537db8f413552ecfcab21352f01a7cf"
+    },
+    {
+      "path": "work/qa-body-surface-repair/clearance-final-build.log",
+      "bytes": 313007,
+      "sha256": "c8da234b752036bb9da2730511f57342edc009c540ed614a7b7c3d1bcc82cd4f"
+    },
+    {
+      "path": "work/qa-body-surface-repair/clearance-final-greet-seam.png",
+      "bytes": 540211,
+      "sha256": "b3be165614d1476e5abb89822a2d295255ff57dca91f406e10df2040beca81c9"
+    },
+    {
+      "path": "work/qa-body-surface-repair/clearance-final-report.json",
+      "bytes": 44795,
+      "sha256": "d931003914d8694e40d8aa78c8c4943803c4db9c5fe4763ba8ad73105cb229e5"
+    },
+    {
+      "path": "work/qa-body-surface-repair/clearance-final-rest-seam.png",
+      "bytes": 504339,
+      "sha256": "df0c5bc7f5f7a89647672f72381d43e96e32cc6541b53636e7ad8fe862da7654"
+    },
+    {
+      "path": "work/qa-body-surface-repair/compare-fit.py",
+      "bytes": 659,
+      "sha256": "3671e6cf0c6264cf6cf87d403746ff5ee5872bfd76068286064dab5c3a153372"
+    },
+    {
+      "path": "work/qa-body-surface-repair/diagnose_remaining.py",
+      "bytes": 1210,
+      "sha256": "f9bcc0f0c93043aa82bfa700de26c05ebe2d1c125dc6dcd831a63a80f41eceec"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export/avatar-export-report.json",
+      "bytes": 296584,
+      "sha256": "40b90e11045196a518146b79af92af2372b1dfcc58bbc26b2c4bcaf61a5c756c"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export/avatar-preview.glb",
+      "bytes": 75372368,
+      "sha256": "a5f6ffdeb481e8d78d6d811fb35072d34d46dc1ff8394824ea86371e54d43d83"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export/avatar-preview.vrm",
+      "bytes": 75532148,
+      "sha256": "d4206f229a301f4d0c7cf002e9ee12c124a763f8cfa133a6ab94ef14a023c172"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export/avatar-runtime.blend",
+      "bytes": 53356863,
+      "sha256": "c8dd0845e50dacdd45564f3be3d2f8fb46fc1381000bde055992b588fc218507"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export/avatar-spring-plan.json",
+      "bytes": 6206,
+      "sha256": "dcbfd9f5339db9b212e84e04b68f20aac4a96e2a90a9f9f396024f910a9d45d8"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-clearance-final/avatar-export-report.json",
+      "bytes": 297176,
+      "sha256": "4c2b4da391a2e0e7c17589df16301aaf8b4a8528a0211305ae0116c9660934ca"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-clearance-final/avatar-preview.glb",
+      "bytes": 75819164,
+      "sha256": "52ebfc94bb9a1bd935acc998f40c7210dbe0c96e8a7a098b866d0ac21017c057"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-clearance-final/avatar-preview.vrm",
+      "bytes": 76642132,
+      "sha256": "10f921ae88ccbd47ea915780a46855a73de9711b8d7a6a55a5d7b605fbbab0e3"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-clearance-final/avatar-runtime.blend",
+      "bytes": 53946315,
+      "sha256": "1f821744207e3ebef61033e98bf8ec2e8ccb7e30ac4346794ad402d4274ad887"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-clearance-final/avatar-spring-plan.json",
+      "bytes": 6206,
+      "sha256": "dcbfd9f5339db9b212e84e04b68f20aac4a96e2a90a9f9f396024f910a9d45d8"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-refined/avatar-export-report.json",
+      "bytes": 297153,
+      "sha256": "58efa5cabfebceb39bf2111e67f95b4b2aaad2f7735a9de378d431071e72cf3e"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-refined/avatar-preview.glb",
+      "bytes": 75819168,
+      "sha256": "d6dfef1ebe69e256b285e5d16c4e7986f1f63df5cd8ef6134e3213bc5fec925a"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-refined/avatar-preview.vrm",
+      "bytes": 76623444,
+      "sha256": "43db22321d3ea38f063e2d350c1442c108da026d239131b97d8a28e79643b682"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-refined/avatar-runtime.blend",
+      "bytes": 53943472,
+      "sha256": "ad165fae1ebed6e51ec5fa0c91106ad76b5bc4c8f5e6a4b03eef63769bbe56e1"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-refined/avatar-spring-plan.json",
+      "bytes": 6206,
+      "sha256": "dcbfd9f5339db9b212e84e04b68f20aac4a96e2a90a9f9f396024f910a9d45d8"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-v02/avatar-export-report.json",
+      "bytes": 297666,
+      "sha256": "b3677dcd2c2e4a3d9bffcdbdd2dabf05bc6bb8eaddcfb27ff63c3a7f34c2359a"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-v02/avatar-preview.glb",
+      "bytes": 75819160,
+      "sha256": "8ce315600812fd23c419090db900d383337aca51be98cec1cea8a127a09caeb4"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-v02/avatar-preview.vrm",
+      "bytes": 77506920,
+      "sha256": "20eb6023297b756d0ca9f5826c9dc93b1985b014b44a961217bd0555c5b920bc"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-v02/avatar-runtime.blend",
+      "bytes": 54341516,
+      "sha256": "12ba4bfc06663cc3aa4802b84089ab48e198477c40d03c6fc889e63e81e5f81f"
+    },
+    {
+      "path": "work/qa-body-surface-repair/export-v02/avatar-spring-plan.json",
+      "bytes": 6206,
+      "sha256": "dcbfd9f5339db9b212e84e04b68f20aac4a96e2a90a9f9f396024f910a9d45d8"
+    },
+    {
+      "path": "work/qa-body-surface-repair/final-refinement-report.json",
+      "bytes": 14724,
+      "sha256": "0f607f5209a1422bddef2eba766e136d9fa25562c3f3e14cf44f65ad35031e3f"
+    },
+    {
+      "path": "work/qa-body-surface-repair/final-refinement.log",
+      "bytes": 297574,
+      "sha256": "e79a4601678d89cd83cd2f23e47f032a70f6ca0607516cd06ee9bed4963a253f"
+    },
+    {
+      "path": "work/qa-body-surface-repair/fit-displacements.log",
+      "bytes": 10059,
+      "sha256": "ecc00ecdbc447d0b760abe1cdf3542e7d2e873df5b23190a20a68c4641827d73"
+    },
+    {
+      "path": "work/qa-body-surface-repair/original-sock-shoe-intersections.json",
+      "bytes": 10831,
+      "sha256": "8fa0d031dacc3e0d3554cf135ca46574d184f4efce64355071070a85f56d4915"
+    },
+    {
+      "path": "work/qa-body-surface-repair/original-sock.log",
+      "bytes": 495,
+      "sha256": "82ae739c3e87f49b5b06f9dca0dad1dc66b797b3814abf4b9edf2f201f37535a"
+    },
+    {
+      "path": "work/qa-body-surface-repair/qa-original-sock.py",
+      "bytes": 1508,
+      "sha256": "dbcbe955985bea2c300989d26b7c18d17891f6832a8cb89f378f78547e122643"
+    },
+    {
+      "path": "work/qa-body-surface-repair/qa-sock-and-render.py",
+      "bytes": 2562,
+      "sha256": "a26d4d08581a57810d9295637aaeb8d74ecd2c033008ecfd306a680973c281dd"
+    },
+    {
+      "path": "work/qa-body-surface-repair/refined-greet-seam.png",
+      "bytes": 540189,
+      "sha256": "3f31a35a59d1260448fdc27dcbaaf1fab27e7d62f12ad3f6d7d05dc9de65040d"
+    },
+    {
+      "path": "work/qa-body-surface-repair/refined-rest-seam.png",
+      "bytes": 504286,
+      "sha256": "e50fa0655ace0cbb8f364a47b439ef8bc7168c989b3b28668512f9e35ba455a0"
+    },
+    {
+      "path": "work/qa-body-surface-repair/refined-sock-foot.png",
+      "bytes": 456391,
+      "sha256": "840728f0cbf0d62a0700b78dd646a1f13bdc2aa7497e3df655460909258e20ff"
+    },
+    {
+      "path": "work/qa-body-surface-repair/render-clearance-final.log",
+      "bytes": 688,
+      "sha256": "714da364a4ac6675fe9a633403f712b46be77e85bf0cc93e40fdff0f1190f57b"
+    },
+    {
+      "path": "work/qa-body-surface-repair/render-clearance-final.py",
+      "bytes": 1471,
+      "sha256": "08159889183232d4479f8e1d2ae7f1f12c466c098ab7d2128e44f58d46fe06ca"
+    },
+    {
+      "path": "work/qa-body-surface-repair/render-refined.log",
+      "bytes": 836,
+      "sha256": "0e40a05ea2a6e24d3a6003a03f65e7db82db3809321a53aff4b2883eb104df19"
+    },
+    {
+      "path": "work/qa-body-surface-repair/render-refined.py",
+      "bytes": 1653,
+      "sha256": "15ed2da485455dff2e887413799f2a63d050c5fe8a5b7899656967f6d54f76b1"
+    },
+    {
+      "path": "work/qa-body-surface-repair/render-v02.log",
+      "bytes": 820,
+      "sha256": "2d28a260c820335d782ed7581c05f1a96deb0114bd92f592357e07cf47e13c97"
+    },
+    {
+      "path": "work/qa-body-surface-repair/render-v02.py",
+      "bytes": 1644,
+      "sha256": "ff133769a2d7d8edc2e855eb5baef39880f22f3c7d0fb10d6b3f243540e4c0db"
+    },
+    {
+      "path": "work/qa-body-surface-repair/run-candidate-v02.py",
+      "bytes": 713,
+      "sha256": "38575ecc242837e8684f3aab2eb8dfd161a5c0557e40744b3ac72b80f368ddfd"
+    },
+    {
+      "path": "work/qa-body-surface-repair/run-candidate.py",
+      "bytes": 701,
+      "sha256": "7a003623cf717a3978d592d1529a8808bf057545bc8f68e2fb9ef2c4a2183724"
+    },
+    {
+      "path": "work/qa-body-surface-repair/run-final-refinement.py",
+      "bytes": 724,
+      "sha256": "ad8cb32a0d4e20d774f08e5dcf6ecc82279473e7557420790c99c01fdeaa7fc4"
+    },
+    {
+      "path": "work/qa-body-surface-repair/shoulder-seam.png",
+      "bytes": 431313,
+      "sha256": "1b3f43e449250fa0d9ab788ba37f4070457451f56c8cb40e5cc7e518e260427c"
+    },
+    {
+      "path": "work/qa-body-surface-repair/sock-foot-inspection.png",
+      "bytes": 396928,
+      "sha256": "bc34b66900e23045d41534c17d9d8d3ee087ae8618718b26105320f514b7988c"
+    },
+    {
+      "path": "work/qa-body-surface-repair/sock-render.log",
+      "bytes": 865,
+      "sha256": "bf93206e61a9a330b249fe049c004aafc5c656c9940066599422437b82f291f9"
+    },
+    {
+      "path": "work/qa-body-surface-repair/sock-shoe-intersections.json",
+      "bytes": 10821,
+      "sha256": "a50d75406e76483a460ba7960b35036e880019d5ff8513afc3127beb5b52ea6a"
+    },
+    {
+      "path": "work/qa-body-surface-repair/v02-greet-seam.png",
+      "bytes": 540929,
+      "sha256": "150f9f2dea060c092ad2ae2031e41bf103cb5be3a18063f371910341edb9b430"
+    },
+    {
+      "path": "work/qa-body-surface-repair/v02-rest-seam.png",
+      "bytes": 527342,
+      "sha256": "c91e0abb439c01f90ab85b83ecd1c3e895502020ffab9fec4dc371b5528b40f1"
+    },
+    {
+      "path": "work/qa-body-surface-repair/v02-sock-foot.png",
+      "bytes": 456361,
+      "sha256": "1883b2b6af21d210b83e361a15e270a14b9cb40647da58c31edc47011cec071f"
+    },
+    {
+      "path": "work/qa-comprehensive/final-visual-check.json",
+      "bytes": 8967,
+      "sha256": "875675aa16cff4c4e5d68d3dbee40845ad28fb772e36d9ab7f86e2d76c96105b"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/avatar-body-clothing-static-report.json",
+      "bytes": 85901,
+      "sha256": "cfa696ac1d7a33e58c36af36e562f2cfeb5595dfa679b2a2aa4083047a191a60"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/avatar-export-report.json",
+      "bytes": 298088,
+      "sha256": "4382ecf8daaaf9a772508a6dbd2a15cb9db9d9111a0cd5a6cf1bcf76959e829b"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/avatar-expression-browser-report.json",
+      "bytes": 2283,
+      "sha256": "c96a6e0341401373be795e334fe073edc1dede42ce49b647eacf39f07edeb677"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/avatar-expression-runtime-report.json",
+      "bytes": 3496,
+      "sha256": "0fe755b15fd5c9fe24f46f7400ce26dd81fa3a7c8ca5131865209ac456eb5d42"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/avatar-hair-dynamics-report.json",
+      "bytes": 161330,
+      "sha256": "42a90cd81a9f6961521cacc592a65138541b8951116c481a00ecda3aeaf78d6d"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/avatar-hair-greet-report.json",
+      "bytes": 12596,
+      "sha256": "f528d8c812ac4b277b3e5c5a3ffae7e29425d8c3e0e1ee945517e7087a7a94ec"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/avatar-hair-standard-report.json",
+      "bytes": 24672,
+      "sha256": "a44dc81ca53760ceee60ed9977f54e1447bdc472648111cf3c1138c689052366"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/avatar-hair-static-report.json",
+      "bytes": 2404,
+      "sha256": "75f7a7d03948d5faaa47752688613e744471f9c9183784419a73b58b78cdcfb8"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/avatar-hair-walk-report.json",
+      "bytes": 47664,
+      "sha256": "e390fc47db67f33b9b8eddaf81e98de8f75498a9bf4931080e733a2b24ab95c0"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/avatar-hem-intersections-report.json",
+      "bytes": 59938,
+      "sha256": "40ecaab7a4f15162fa860c0ef408a0c61c8f2d707bd348fbea553c88050cd001"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/avatar-natural-motion-report.json",
+      "bytes": 3897,
+      "sha256": "24bd9587c4f695ccb0016741303797555149f5fb505233c8615a0c2b324bf09e"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/avatar-physics-report.json",
+      "bytes": 5912,
+      "sha256": "1b817eea2067583a8cd24e6f5736f07f7fd16988330d46572d79068b3d7367d4"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/character.blend",
+      "bytes": 56918930,
+      "sha256": "ebf64d62920b0f2fff3471c7bafb45394f2787cc0fe5511a1a7991721864f6f3"
+    },
+    {
+      "path": "work/qa-comprehensive/first-combination/render-report.json",
+      "bytes": 3455,
+      "sha256": "d7c0156d077f6aa4da17bac4776baca8fd31a24ccd22b383c9ffd8a2d754a84a"
+    },
+    {
+      "path": "work/qa-comprehensive/migration-art-audit.json",
+      "bytes": 18170,
+      "sha256": "ac3dfc844463e783a6e267761d7c72a09dc14ae188be253324ba78581cc20307"
+    },
+    {
+      "path": "work/qa-comprehensive/migration-blend-resource-audit.json",
+      "bytes": 5793,
+      "sha256": "fbd25566385cbf445b3d1186f60903a014bc617e324dbc281f99251e5060adeb"
+    },
+    {
+      "path": "work/qa-comprehensive/migration-blend-resource-audit.log",
+      "bytes": 521,
+      "sha256": "e5fafbfd6041ff8f835970ec31d548c365b4b7d97306023fb788d8b63637eb5e"
+    },
+    {
+      "path": "work/qa-comprehensive/visual-assessment.json",
+      "bytes": 9830,
+      "sha256": "d3d6fc797f3de41f6e660da23d37054aa550bfb5423943066dd2567b31b04bbc"
+    },
+    {
+      "path": "work/qa-cranial-fairing/cranial-faired.blend",
+      "bytes": 47590252,
+      "sha256": "c411368c5fcb6f95e2f822ce1b85f7a464fc86a4b04712f5314a9cc445f574f5"
+    },
+    {
+      "path": "work/qa-cranial-fairing/cranial-faired.blend1",
+      "bytes": 47601996,
+      "sha256": "602ca064535370999130b5da2dedbb9f3f2caa8eb887516ab9bf4fe0053da501"
+    },
+    {
+      "path": "work/qa-cranial-fairing/ear-orientation/check_idempotence.py",
+      "bytes": 662,
+      "sha256": "2ea95833c4873f60903ed11c884956df4330bc00d8a52fa67a7ff1ec2f540e1e"
+    },
+    {
+      "path": "work/qa-cranial-fairing/ear-orientation/ear-oriented.blend",
+      "bytes": 53867932,
+      "sha256": "2765b61285d505aa08bf8efebf5be78b3986b59c9c4f1b8c89064750e35b76b1"
+    },
+    {
+      "path": "work/qa-cranial-fairing/ear-orientation/front.png",
+      "bytes": 334653,
+      "sha256": "d7b2b599f865becc21e2b7f4bd1bac05d34a46903f15ad0d99312be5b80ca9b7"
+    },
+    {
+      "path": "work/qa-cranial-fairing/ear-orientation/profile.png",
+      "bytes": 330620,
+      "sha256": "59ce75a15120f4ee5d70dd35b5f00df8f368a2207c9022f3a8c302d3a1e099bb"
+    },
+    {
+      "path": "work/qa-cranial-fairing/ear-orientation/report.json",
+      "bytes": 1378,
+      "sha256": "94d7be8492b170a8ed25af8097fbf1758608db50160a0763167deddc1815fcb4"
+    },
+    {
+      "path": "work/qa-cranial-fairing/ear-orientation.log",
+      "bytes": 1820,
+      "sha256": "eaa734efab666bfe98df46ec7657092c9d3c680c5f0abbf951e1c182e11ceda5"
+    },
+    {
+      "path": "work/qa-cranial-fairing/fairing-report.json",
+      "bytes": 14565,
+      "sha256": "4692c65be3f4ed54babacc36644452e4d4f91eb67e17575e7126653f8092bf0c"
+    },
+    {
+      "path": "work/qa-cranial-fairing/hairless-oblique.png",
+      "bytes": 329164,
+      "sha256": "e40584bcb3ad11a27027ac941f474b45b3f2b4f21ae0f386830d77e54ce19bff"
+    },
+    {
+      "path": "work/qa-cranial-fairing/hairless-profile.png",
+      "bytes": 321003,
+      "sha256": "1287697d45e5e6512a9d6acb62bf0acc40e5e7672dc30d861fbac326d276dc54"
+    },
+    {
+      "path": "work/qa-cranial-fairing/inspect_neck_bodice.py",
+      "bytes": 1696,
+      "sha256": "acb2a897b21b50f223868f01800f8baa5014a6ee0e4c4067f223a76bd9447486"
+    },
+    {
+      "path": "work/qa-cranial-fairing/neck-rest-intersection.json",
+      "bytes": 6488,
+      "sha256": "74ea6ee92938938023b72b5531de6be049bc74eca431043c5e5677840ea0b618"
+    },
+    {
+      "path": "work/qa-cranial-fairing/neckline-cleared.blend",
+      "bytes": 40455188,
+      "sha256": "1281f6b400de9ef7ce20e0f1643919eb2de3f18232488d9eff20bd1a7b4a3b55"
+    },
+    {
+      "path": "work/qa-cranial-fairing/neckline-cleared.blend1",
+      "bytes": 40457901,
+      "sha256": "48af8c8501cd9205174b400c8a4a3baee75989e468025e43e7a7c297fa5591ad"
+    },
+    {
+      "path": "work/qa-cranial-fairing/neckline-report.json",
+      "bytes": 25276,
+      "sha256": "0f39c76bc4e7191e1bf41aa4dc08d440a4a8ceadf77e20d2151c1abd25730590"
+    },
+    {
+      "path": "work/qa-cranial-fairing/neckline-v01-input.blend",
+      "bytes": 47579635,
+      "sha256": "2468365aa7bb91f5935dc271d29402a0a955d280591f52c8e97a829dfc3025ac"
+    },
+    {
+      "path": "work/qa-cranial-fairing/neckline-v01-report.json",
+      "bytes": 35394,
+      "sha256": "0e6c33e2e3d50deb1d032c011e922e3f3a08215429ad403a647f8205e521f2d3"
+    },
+    {
+      "path": "work/qa-cranial-fairing/neckline-validation.log",
+      "bytes": 1016,
+      "sha256": "7ad44a5dbede53d03275dc00254f8b34ef4562f48f078c46207ef5e937ddf3e3"
+    },
+    {
+      "path": "work/qa-cranial-fairing/rear-neckline.png",
+      "bytes": 274932,
+      "sha256": "ad40d0d4d78b9b7984b516e0db759b340ecc6bddd990e2c068b6a30d52d2c37c"
+    },
+    {
+      "path": "work/qa-cranial-fairing/source-neck-profile.json",
+      "bytes": 199,
+      "sha256": "6fd3352482b7a5768196a28139f9d0871c2d044e9091dae6def14605b48a5eaf"
+    },
+    {
+      "path": "work/qa-cranial-fairing/source-profile.json",
+      "bytes": 56679,
+      "sha256": "ae76459eeb0f33429eab6807f2b6553ac27d23b9768a20b76dc166f45c4d4383"
+    },
+    {
+      "path": "work/qa-cranial-fairing/source-skull.npz",
+      "bytes": 301998,
+      "sha256": "4d3635110af1b344278b792efe3ce33f82b1429583a0dd45f90f191a4b672196"
+    },
+    {
+      "path": "work/qa-cranial-fairing/validate_ear_orientation.py",
+      "bytes": 2502,
+      "sha256": "481cab9b56893004312d3193df51706453146e956c53536e97413a952852ebfd"
+    },
+    {
+      "path": "work/qa-cranial-fairing/validate_geometry.py",
+      "bytes": 1534,
+      "sha256": "bb5d7e881a4075c717056e421f3c38ed33bfd962609de02d49f37a263b1a3b1a"
+    },
+    {
+      "path": "work/qa-cranial-fairing/validate_neckline.py",
+      "bytes": 6180,
+      "sha256": "679dd407efa076352ee83923325bfd25565b01e4473ea51688fc256444928fbe"
+    },
+    {
+      "path": "work/qa-cranial-fairing/validate.py",
+      "bytes": 2940,
+      "sha256": "0ad25ed6d24a4761d5b304a621f4fbedc621a74a1d110fe5da51da91617a5c0c"
+    },
+    {
+      "path": "work/qa-cranial-fairing/validation.log",
+      "bytes": 800,
+      "sha256": "456a80145181bd44441811f147fc6a033ac76324bd0fb98ef4b364aaeb3f132e"
+    },
+    {
+      "path": "work/qa-expressions/independent-review.json",
+      "bytes": 8527,
+      "sha256": "8f009999143e01eae68b4c88bbae8d5dec78d7628b19b9a83869ab2203157482"
+    },
+    {
+      "path": "work/qa-face/face-geometry-report.json",
+      "bytes": 25477,
+      "sha256": "2c9c733a431ab627506f298de030ca2e86170382e8392f0729950e8f50a4260a"
+    },
+    {
+      "path": "work/qa-face/face-refine-test.blend",
+      "bytes": 31144042,
+      "sha256": "c702f056ea2d32183f0f9c7560230cb958aa96095c271d1e1f74e82b4a2399b5"
+    },
+    {
+      "path": "work/qa-face/face-refine-test.blend1",
+      "bytes": 31174314,
+      "sha256": "090d4ff5c4b6219bc1500ca6e8ca67ca2fdc952b0dc7415b5cb20f97648605d6"
+    },
+    {
+      "path": "work/qa-face/front45-before-clay.png",
+      "bytes": 632715,
+      "sha256": "687af1066dd668583611b2870c31d8f2425bd1791fcdd179bf387ad54b2c7ae0"
+    },
+    {
+      "path": "work/qa-face/front45-before-textured.png",
+      "bytes": 791156,
+      "sha256": "805d7116e7781432c9b22948ab44d3115bd5e1624063272bfb028f0215fb04f8"
+    },
+    {
+      "path": "work/qa-face/front45-clay.png",
+      "bytes": 634451,
+      "sha256": "1f7e24775dc2896aca3a98fbf7e0d403cae743fc8b765ab18c73aaa4b5111f61"
+    },
+    {
+      "path": "work/qa-face/front45-textured.png",
+      "bytes": 791570,
+      "sha256": "fce914923558b2bf7731f1233e18805d00c4da75c77943cca77d5a5c367c792f"
+    },
+    {
+      "path": "work/qa-face/inspect_geometry.py",
+      "bytes": 2200,
+      "sha256": "f7321476fe5f4d825e3a6ea2ef205679ee582eb121049662635cdef6e39e67d5"
+    },
+    {
+      "path": "work/qa-face/refine-report.json",
+      "bytes": 445,
+      "sha256": "bfc96a4e14b7a426988f3190bff6b0bf32dd698839f3d35fff0b747b001f30ad"
+    },
+    {
+      "path": "work/qa-face/render_refine.py",
+      "bytes": 3588,
+      "sha256": "4dafe8b650238fca97a53688a7d32839ae04dba05cd635b30942ed0d8001a464"
+    },
+    {
+      "path": "work/qa-face/right-before-clay.png",
+      "bytes": 629334,
+      "sha256": "16a6860ff8979e406e20cf805c503490353c664afc525625fb22eab2400669b3"
+    },
+    {
+      "path": "work/qa-face/right-before-textured.png",
+      "bytes": 744568,
+      "sha256": "d0fd7aa65cdc458905247cce4bd254c4ce8a2d18b84230a62b964f0c2494b5b4"
+    },
+    {
+      "path": "work/qa-face/right-clay.png",
+      "bytes": 630067,
+      "sha256": "e2c6151f13e5b7a02a91f98e2dafd0f498794127b5c60d69f86dfdb956632131"
+    },
+    {
+      "path": "work/qa-face/right-textured.png",
+      "bytes": 745545,
+      "sha256": "b2a1d458f573cc6973e821e5a1b75b737e806fa9d4858dafae64e4fd7f15ea2a"
+    },
+    {
+      "path": "work/qa-face-harmony/face-harmony-neutral.blend",
+      "bytes": 30830504,
+      "sha256": "1702079172faeb95825d3966fb2cf2357988c98a7416354955fe8e2684fe95da"
+    },
+    {
+      "path": "work/qa-face-harmony/face-harmony-neutral.blend1",
+      "bytes": 30830027,
+      "sha256": "af9cd81f8cec8a32b3d0a11cf6b42d729963c26042cab92c78336a4cb5f14873"
+    },
+    {
+      "path": "work/qa-face-harmony/front-before-textured.png",
+      "bytes": 986276,
+      "sha256": "e5506ab1c77e62a090b1983dad6b9dd56783906cca83126d0b2f887ff4039f28"
+    },
+    {
+      "path": "work/qa-face-harmony/front-clay.png",
+      "bytes": 808526,
+      "sha256": "811606ae51a306ce0e9b6f7182b0fe0aa0b207606d32b7a4eabf776a4e0e44d2"
+    },
+    {
+      "path": "work/qa-face-harmony/front-textured.png",
+      "bytes": 985597,
+      "sha256": "1c339db0bab06c870090375626c1e33893872ee4352c4519122f32b24210725a"
+    },
+    {
+      "path": "work/qa-face-harmony/front45-clay.png",
+      "bytes": 800355,
+      "sha256": "1bdd33f40a3437be0fa33c366ff20d1e0d0999c4c0da9c1de2511ee0340a084b"
+    },
+    {
+      "path": "work/qa-face-harmony/front45-textured.png",
+      "bytes": 979000,
+      "sha256": "d2e843d12aeac1cd064816b35e2b603e03687e61c5721dc51cd8238619e7dbc2"
+    },
+    {
+      "path": "work/qa-face-harmony/profile-clay.png",
+      "bytes": 795501,
+      "sha256": "0cbf9bb41feae7e5cca5dfcad81660491c6f8dcf6f0e7b4ed53281ac094b0b35"
+    },
+    {
+      "path": "work/qa-face-harmony/profile-textured.png",
+      "bytes": 928111,
+      "sha256": "8f619faa2d54c33f003896f56d8bf35462208cf31b259f5f589fc6ab8b1e0336"
+    },
+    {
+      "path": "work/qa-face-harmony/report.json",
+      "bytes": 572,
+      "sha256": "c360366e6b6a45a85a42f7ee942bf1aaed0c2b92f557c06d48ef08c8dd9eee2c"
+    },
+    {
+      "path": "work/qa-hair/back-polish.png",
+      "bytes": 894542,
+      "sha256": "ae3db132fdb392e8842e206e31eeabfec7285f994f5cda0593f89e238855b76d"
+    },
+    {
+      "path": "work/qa-hair/hair-charcoal-basecolor.png",
+      "bytes": 934902,
+      "sha256": "1231518fda5ac572c65147f01d978c9a293d758ec55984626be6355c8095f37c"
+    },
+    {
+      "path": "work/qa-hair/hair-polish-portable-test.blend",
+      "bytes": 31126550,
+      "sha256": "bf963ff09fd61fec2ffcec2fd5fd46d87ea9c52b2955928ad76f570186662605"
+    },
+    {
+      "path": "work/qa-hair/hair-polish-portable-test.blend1",
+      "bytes": 31125818,
+      "sha256": "e9072d7cc21ad2e396c33cf5887bc0795b23378b41d2b6fae6e1cb094697e3d0"
+    },
+    {
+      "path": "work/qa-hair/hair-polish-test.blend",
+      "bytes": 30191313,
+      "sha256": "97458bdfb20dda9aacc468a48b841f0ecacb43d550c3a5c44bac631eb437203a"
+    },
+    {
+      "path": "work/qa-hair/hair-polish-test.blend1",
+      "bytes": 30189738,
+      "sha256": "65244ec87d945178a742355948010beca8638a6695e24bca9e2f29ed00b8b843"
+    },
+    {
+      "path": "work/qa-hair/portable-report.json",
+      "bytes": 363,
+      "sha256": "7cec11f52d04ed278796a9c85b791af707d92b07940c780ff0fce836251a53b7"
+    },
+    {
+      "path": "work/qa-hair/portrait-polish.png",
+      "bytes": 961471,
+      "sha256": "a70576c25ec86e69405cd2d9c7da458c30feac90e7249404a286d728da2ad88e"
+    },
+    {
+      "path": "work/qa-hair/render_test.py",
+      "bytes": 2571,
+      "sha256": "661645e85579dcefc85e19a5f0e11686f6d56bcc783eb210dc291b576a420bc1"
+    },
+    {
+      "path": "work/qa-hair/report.json",
+      "bytes": 2229,
+      "sha256": "7fa3de916593b3e66d873459933b2ebe6f45fe359715105c1775b90102ebbd3e"
+    },
+    {
+      "path": "work/qa-hair/test_portable.py",
+      "bytes": 1580,
+      "sha256": "65f16905b6a95deff182cffe029e86f5ae15c6571d30a40e5fbad68ded69508c"
+    },
+    {
+      "path": "work/qa-hair-delivery/after-front-clay.png",
+      "bytes": 589724,
+      "sha256": "d659aa3d975f9c1d3ecd61eafa63c8121004f5e084851620cb47e5310228a314"
+    },
+    {
+      "path": "work/qa-hair-delivery/after-front-textured.png",
+      "bytes": 592363,
+      "sha256": "fa57f99665593faf13cd091f709c8ba19b736735d2909019d4431ba69d67625a"
+    },
+    {
+      "path": "work/qa-hair-delivery/after-front45-clay.png",
+      "bytes": 582519,
+      "sha256": "8c76c421fb4de300a36d0300bf6501823097fb68c99448d73fcc4c3b67804603"
+    },
+    {
+      "path": "work/qa-hair-delivery/after-front45-textured.png",
+      "bytes": 589674,
+      "sha256": "a167f28dda433299dbfbe494e3f70b1a57b7eb2e2b7bf94f9bdae7a530fea3a6"
+    },
+    {
+      "path": "work/qa-hair-delivery/after-side-clay.png",
+      "bytes": 537359,
+      "sha256": "850463e3bf5cd3ba9196d494d5847ac6c29f56db9df36d368f29ea963cc95d04"
+    },
+    {
+      "path": "work/qa-hair-delivery/after-side-textured.png",
+      "bytes": 547677,
+      "sha256": "64aa3c2cc8d610c76484a07b8fbae91a08713b914d6bd92a28d6b0b3a92070ff"
+    },
+    {
+      "path": "work/qa-hair-delivery/before-front-clay.png",
+      "bytes": 590445,
+      "sha256": "fa29e17d3b6236e221b4454f88f083b2b411675b35d77239041ff761e24ce363"
+    },
+    {
+      "path": "work/qa-hair-delivery/before-front-textured.png",
+      "bytes": 588204,
+      "sha256": "273b3ce3bf359a61cb27f7ce2a75850b87216c0cb5e90067504fd1b104b5dd21"
+    },
+    {
+      "path": "work/qa-hair-delivery/before-front45-clay.png",
+      "bytes": 585543,
+      "sha256": "34856cc0c2cfce6add69de8ce443c67a7d56b1bc29b4ff0207848ac26f8b9ce5"
+    },
+    {
+      "path": "work/qa-hair-delivery/before-front45-textured.png",
+      "bytes": 588127,
+      "sha256": "0dadefdbf02715026a1d43514d6e0765643236923db627b75bee6de4b0e8ba55"
+    },
+    {
+      "path": "work/qa-hair-delivery/before-side-clay.png",
+      "bytes": 542770,
+      "sha256": "c7ec2e078dbbb9c889bb2a1887a18263deea1749edd4b7a858e6cd23bfe53175"
+    },
+    {
+      "path": "work/qa-hair-delivery/before-side-textured.png",
+      "bytes": 549111,
+      "sha256": "f7ab64a4f37f808a6101c8f4b807a3c17f33e0944c6add93af5f746e2c8f9234"
+    },
+    {
+      "path": "work/qa-hair-delivery/hair-delivery-review.blend",
+      "bytes": 33182703,
+      "sha256": "9e33617b62506f0048a55e6335b4de5aa3b8fdf8592158d7b9a4ebf5b2518659"
+    },
+    {
+      "path": "work/qa-hair-delivery/hair-delivery-review.blend1",
+      "bytes": 33180852,
+      "sha256": "a332b49771dda388c708b469a022d7b895b0a67d34b52fee52aeb3f54d305a88"
+    },
+    {
+      "path": "work/qa-hair-delivery/preservation-report.json",
+      "bytes": 460,
+      "sha256": "9ff95da98d1f2feb9698645a568a3575c48acd78fef13924b13e4905ab4b54ce"
+    },
+    {
+      "path": "work/qa-hair-delivery/report.json",
+      "bytes": 2327,
+      "sha256": "d2924e1d7eb51f93bb29835b31dff88bf24af62db567a8c6b73ab2cbbc529df8"
+    },
+    {
+      "path": "work/qa-hair-delivery/verify_preservation.py",
+      "bytes": 4658,
+      "sha256": "27d26283a8bd3be76b03a6efc2b8180144f54fe82785a8bc12e9bcfd5e54da2c"
+    },
+    {
+      "path": "work/qa-hair-nape/back.png",
+      "bytes": 504909,
+      "sha256": "66042cce6f2c085817842a54fc23c9dd2955a0f4c8de121bb8eba6c8a5591a73"
+    },
+    {
+      "path": "work/qa-hair-nape/failed-coverage-check/back.png",
+      "bytes": 509251,
+      "sha256": "34cb83b8734131d5ea7cdd31e22f15f1b6b890d2e3fba3cd3145981fa28c8c1a"
+    },
+    {
+      "path": "work/qa-hair-nape/failed-coverage-check/profile.png",
+      "bytes": 489761,
+      "sha256": "de92939566372b759cc6530d39255fba3286a3516795d5d05f592a9294879f77"
+    },
+    {
+      "path": "work/qa-hair-nape/failed-coverage-check/report.json",
+      "bytes": 966,
+      "sha256": "a8ad0fa77ce6f1ff36e4b65a1c624d7bcb23e521599aea3b50f0254ee39d28e3"
+    },
+    {
+      "path": "work/qa-hair-nape/front-fibres-review.blend",
+      "bytes": 54062453,
+      "sha256": "e872032389b27b0350b5378abe5f97d85d530266fe642293a2382c4aa1755642"
+    },
+    {
+      "path": "work/qa-hair-nape/front-only-report.json",
+      "bytes": 403,
+      "sha256": "ab6fcf2ac6af390b224fa3aea235bf41e020dc53d8d157c25d920d32617281a9"
+    },
+    {
+      "path": "work/qa-hair-nape/inspect-fibres.py",
+      "bytes": 903,
+      "sha256": "e06000c1261a7dcdf875ec1027270c2853c73fb4c4ca8dbd32eb6e08597fcd58"
+    },
+    {
+      "path": "work/qa-hair-nape/inspect.py",
+      "bytes": 862,
+      "sha256": "00d32f5eebddc95ce77a95c1b549b0e8b7f36afa800d703558ac73d0ec87dcf4"
+    },
+    {
+      "path": "work/qa-hair-nape/integrated-visual-review.json",
+      "bytes": 1319,
+      "sha256": "bcc9b2333c0d1790af08d6e28933804166316fb18336f46302958a063398e58c"
+    },
+    {
+      "path": "work/qa-hair-nape/integration-verification.json",
+      "bytes": 435,
+      "sha256": "7cc7c18e0e25706d8f94b858d1deb65ef6b7bc8f900b3aff1c8ad0a513757d90"
+    },
+    {
+      "path": "work/qa-hair-nape/nape-review.blend",
+      "bytes": 54467409,
+      "sha256": "13262dfd5cf0118bf3745a7a5269262e7992a02489e5a4b8f73d3ab1857f6d20"
+    },
+    {
+      "path": "work/qa-hair-nape/nape-review.blend1",
+      "bytes": 54324760,
+      "sha256": "8bf6d72217acd76863412c0ee0ce3bda21e4d74176f38ac3f641d19a26014021"
+    },
+    {
+      "path": "work/qa-hair-nape/profile-rejected-coverage.png",
+      "bytes": 489761,
+      "sha256": "de92939566372b759cc6530d39255fba3286a3516795d5d05f592a9294879f77"
+    },
+    {
+      "path": "work/qa-hair-nape/profile.png",
+      "bytes": 488600,
+      "sha256": "7a85e21c31af775af39ac1edb59ff3b0c6990e2fa534179f80d7b37d8e118647"
+    },
+    {
+      "path": "work/qa-hair-nape/rejected-high-hairline/back.png",
+      "bytes": 502664,
+      "sha256": "bba5bd04902645abeee716344e3e28170fea82c5238a0605bf58bfce10665680"
+    },
+    {
+      "path": "work/qa-hair-nape/rejected-high-hairline/report.json",
+      "bytes": 2058,
+      "sha256": "8340d9a1b39b15feb14843eaaab1d427e46a6ac88ba9d99b3795d91c2bdb40eb"
+    },
+    {
+      "path": "work/qa-hair-nape/report.json",
+      "bytes": 2516,
+      "sha256": "15f495790774fcab10a83cde674b3a2bb151a422ae12b11e7c3c0f112f81b598"
+    },
+    {
+      "path": "work/qa-hair-nape/source-snapshot.blend",
+      "bytes": 56918930,
+      "sha256": "ebf64d62920b0f2fff3471c7bafb45394f2787cc0fe5511a1a7991721864f6f3"
+    },
+    {
+      "path": "work/qa-hair-nape/verify-front-only.py",
+      "bytes": 1120,
+      "sha256": "42c17bb66a287af22219dad1ae49c91613f220b8d00daa1d9c8a39712736811e"
+    },
+    {
+      "path": "work/qa-hair-nape/verify-integration.py",
+      "bytes": 1619,
+      "sha256": "902f97375da01f12a296bb75d314004f8f4d4f12e80ad0d340ca5d4d9549ac8e"
+    },
+    {
+      "path": "work/qa-hair-physics/a526-dynamics.json",
+      "bytes": 68674,
+      "sha256": "4b593ca29a0544947ad5533a857da4442fe83ae5ea0927bd1d5e65ff0d16649f"
+    },
+    {
+      "path": "work/qa-hair-physics/a526-dynamics.log",
+      "bytes": 1720,
+      "sha256": "850aeba72afc79c19461387ff0f5054df0930b5b30ba3ae30a993a8263188944"
+    },
+    {
+      "path": "work/qa-hair-physics/back-coverage-helper-check.log",
+      "bytes": 459,
+      "sha256": "224afa146e361cd460d4eb5c74596348e1a41127da9158405c9a87bf04cd264b"
+    },
+    {
+      "path": "work/qa-hair-physics/baseline-walk-surface.json",
+      "bytes": 212761,
+      "sha256": "a32bd8e38a05c28fae2b4b58377abb0d51653bbaee38ebd071a295512c7bf554"
+    },
+    {
+      "path": "work/qa-hair-physics/baseline-walk-surface.log",
+      "bytes": 4545,
+      "sha256": "c05b49b209ce5b334ec5c6e4cb275632e4b4beab3d6e67302567fa091dedc74e"
+    },
+    {
+      "path": "work/qa-hair-physics/candidate-provenance.json",
+      "bytes": 3225,
+      "sha256": "eb1d5cb202a678b72ebb3fd06af2c68ebf01d4a69c079c0932739e12ba376f31"
+    },
+    {
+      "path": "work/qa-hair-physics/candidate-stiffness-1.5.vrm",
+      "bytes": 71483768,
+      "sha256": "fc7624e0852e006562367f2b8e62170ab0cdd5e3ab4f6f5d117876a71f22a11f"
+    },
+    {
+      "path": "work/qa-hair-physics/candidate-stiffness-3.0.vrm",
+      "bytes": 71483768,
+      "sha256": "a51ce18d0fee9a83e90f097628de1063cec33989abf78f6f08c20d1920520993"
+    },
+    {
+      "path": "work/qa-hair-physics/collision-refined.blend",
+      "bytes": 33264405,
+      "sha256": "538f200a194dfbacffca6d0da0ee50d78cbbff61831c6bd17afb8d34a6e3ee2d"
+    },
+    {
+      "path": "work/qa-hair-physics/collision-refined.json",
+      "bytes": 3015,
+      "sha256": "10b004aa6206f582a3b5511d00338ab5aa8d75d1319dac937f50f11ec2c76c15"
+    },
+    {
+      "path": "work/qa-hair-physics/collision-refined.log",
+      "bytes": 2713,
+      "sha256": "f0f5eb0ce5f5b1551a561503191933e2da150136e8ab1805aa49f26381112ea2"
+    },
+    {
+      "path": "work/qa-hair-physics/contact-binding-5-90.json",
+      "bytes": 30075,
+      "sha256": "4cc612b4807054491a202d57eff39f23dc33b46f2b5f584e718ec2c3575a2908"
+    },
+    {
+      "path": "work/qa-hair-physics/contact-binding-5-90.log",
+      "bytes": 30076,
+      "sha256": "180649a9fd8fa9aa1a150bf39fca3063d3536a443fa16e0a054aa98da1c4ec4a"
+    },
+    {
+      "path": "work/qa-hair-physics/dense-chain.blend",
+      "bytes": 44314443,
+      "sha256": "0df83a9776f4a405459a7ecb1193fdd695f5b35df92ce165c20d279da4360ce9"
+    },
+    {
+      "path": "work/qa-hair-physics/dense-chain.json",
+      "bytes": 12868,
+      "sha256": "4021110bb3864d1b29140054d36d9ac01943aa1f020defe150b04db78f54b015"
+    },
+    {
+      "path": "work/qa-hair-physics/dense-chain.log",
+      "bytes": 8717,
+      "sha256": "96ccabd5177bd33a45d0e9169203bbcff4ba0867d1a4c4521e74fb9db0e16300"
+    },
+    {
+      "path": "work/qa-hair-physics/dense-export/avatar-export-report.json",
+      "bytes": 288046,
+      "sha256": "d868f34e5bec94ce8a7dd42a332e40d9cc5cc6d82405a7bdaf6d649c8e315f73"
+    },
+    {
+      "path": "work/qa-hair-physics/dense-export/avatar-preview.glb",
+      "bytes": 72342456,
+      "sha256": "cc4f68402d5f8ae99f3cfd9a16a75b6f9de9b3f04c051d62af3afb97b0da0fcf"
+    },
+    {
+      "path": "work/qa-hair-physics/dense-export/avatar-preview.vrm",
+      "bytes": 70229504,
+      "sha256": "44693a85a6c661deb9cb2f6785eab14649173058658fba384c4dfaf24edd9ef3"
+    },
+    {
+      "path": "work/qa-hair-physics/dense-export/avatar-runtime.blend",
+      "bytes": 38491240,
+      "sha256": "1f2de75b31acee90474eefa242cf35654125f1518e4980187c4302870a84cc98"
+    },
+    {
+      "path": "work/qa-hair-physics/dense-export/avatar-spring-plan.json",
+      "bytes": 6039,
+      "sha256": "9d52c6d918e6543cd47e42fd2366db4b0ddfc323e7843fb74bf3bf035c851629"
+    },
+    {
+      "path": "work/qa-hair-physics/dense-export.log",
+      "bytes": 281842,
+      "sha256": "ae981b2c82ecb044d171db6e258e50d1d91487e019e552c839936fcef129ad12"
+    },
+    {
+      "path": "work/qa-hair-physics/dense-only-static-report.json",
+      "bytes": 7184,
+      "sha256": "5d4930fad97ec52d3456f76991d294a09c281082d921d4905dccd6252201f845"
+    },
+    {
+      "path": "work/qa-hair-physics/dense-only-static.log",
+      "bytes": 1532,
+      "sha256": "15ef64639a2dd528a18dc08f522a8a9db354c23fe1921befcd0c672c4162a178"
+    },
+    {
+      "path": "work/qa-hair-physics/dense-only-walk-report.json",
+      "bytes": 10169,
+      "sha256": "14702c43211e2e9ea9405780495ab0bfd2a7d3230f17d04fafca6c7ec77e11f5"
+    },
+    {
+      "path": "work/qa-hair-physics/dense-only-walk-report.log",
+      "bytes": 4309,
+      "sha256": "44f35da747e51bf85bc9cac912e0b17f1c69f3672a0c70eaed8214842080fcfe"
+    },
+    {
+      "path": "work/qa-hair-physics/measured-radius-helper-check.log",
+      "bytes": 380,
+      "sha256": "905842102f0afcfb59adbabaf7a54ca225dec6b9b91902d2eb193b640e523937"
+    },
+    {
+      "path": "work/qa-hair-physics/r070-h025-walk-surface.json",
+      "bytes": 213854,
+      "sha256": "1f213075bfb69246f958b75d563520894e8665a7d2232f9a26837e37471ca41f"
+    },
+    {
+      "path": "work/qa-hair-physics/r070-h025-walk-surface.log",
+      "bytes": 4543,
+      "sha256": "bc8a17ce2a45fcce3392500e01fccad1bc66b6f09ddc6dfd70b6dd078cc37aea"
+    },
+    {
+      "path": "work/qa-hair-physics/r070-h030-walk-surface.json",
+      "bytes": 108369,
+      "sha256": "9c67cea910cdc8f7e187659d9f41e019f5e00840cb7bbcee31030ccf0710d668"
+    },
+    {
+      "path": "work/qa-hair-physics/r070-h030-walk-surface.log",
+      "bytes": 3025,
+      "sha256": "55ab233b85299772f1013edd52ef959853cb06b59a259e9ff546ba7b114ce4e9"
+    },
+    {
+      "path": "work/qa-hair-physics/r075-h025-walk-surface.json",
+      "bytes": 108383,
+      "sha256": "b623b1f7b26517de80f0bd343fd14bca3014655d068bd9bc72104b23a1926c0f"
+    },
+    {
+      "path": "work/qa-hair-physics/r075-h025-walk-surface.log",
+      "bytes": 3025,
+      "sha256": "93fc0b8721e02f7f73ecb3d269591f42c44678b31f007c1654f759144e0054af"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-chain.blend",
+      "bytes": 43323941,
+      "sha256": "4df40a4c26ec99e3be50d6026953bfcaf06ffceabc275b9ca3d0b17a4402b822"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-chain.json",
+      "bytes": 13228,
+      "sha256": "ee1155764737f6d689ca01725d74357d7560402c6ccf89ebbc9aa6e4e85cb20b"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-chain.log",
+      "bytes": 9037,
+      "sha256": "a898bef74090c8a43a33023886fcac83fb77d871ecb4569a55681d5aa6f62869"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-dynamics.json",
+      "bytes": 82563,
+      "sha256": "4f867d4e4dd9a477bed65f22aa1e4374727e0e2c6a6f0740be425f1ccc13658c"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-dynamics.log",
+      "bytes": 1776,
+      "sha256": "fc2e7ce1d4e69b56eaf0dbe8789f60ab0c8639bf8074b5c7597bae3dba053c33"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-export/avatar-export-report.json",
+      "bytes": 292228,
+      "sha256": "2a3517fa726b5ab4a3514bccaf218d3c7c810ad78d8bcdf3aea09c437262b9a3"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-export/avatar-preview.glb",
+      "bytes": 73694112,
+      "sha256": "247e147d934d80bea543770165b0d1b7b9652859cf40de530479551b6374584c"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-export/avatar-preview.vrm",
+      "bytes": 71483800,
+      "sha256": "11b2b5838f361d1e7b4a23b687e79c093bcb3822f1a40e4155e89b842d0b9104"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-export/avatar-runtime.blend",
+      "bytes": 40210821,
+      "sha256": "4d430d42895c024375403235f99a1fde9642eb7a19551b65456c1098b786ba4c"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-export/avatar-spring-plan.json",
+      "bytes": 6115,
+      "sha256": "9a5a3ea6be5515a26df4f4157184f53b948b2a05f5c9c7d971fd488baaf0b1fa"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-export.log",
+      "bytes": 286027,
+      "sha256": "2faae48fe6fb8abd728a324430475c28940f1381934f6c4f30f1a54ab0e54213"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-greet-report.json",
+      "bytes": 8022,
+      "sha256": "6a0f085823d160c35c88878aed5639f6de83d2f2211d2dcc91b52da83fcbae03"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-greet.log",
+      "bytes": 3622,
+      "sha256": "41f5f1a9ceea4a23d68c6dfe62bb3b3e37259d1d6420a547ff61caf895730a81"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-static-report.json",
+      "bytes": 4555,
+      "sha256": "107e7f9e4adcf58281e8f4dc391b947d001cee63d66514bef6b206971b5e73af"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-static.log",
+      "bytes": 1539,
+      "sha256": "35da178bb99eb2d92ac1df14001de06363bdba52b7d0908852e2992a8224de54"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-walk-report.json",
+      "bytes": 10177,
+      "sha256": "f926deb2ac16b29b1077fff6a2388b7ed5087406b97a44b405b8cb192e80bb36"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-walk.log",
+      "bytes": 4317,
+      "sha256": "3eb10fcf18cffe5321cc7907958453575d7237f9d1180a0f21e38bc44ede8e51"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-dense-walk590.png",
+      "bytes": 461657,
+      "sha256": "417a7b33d4d2c22dcf0cca9c5c982cdb3f58e694e5c4771c1de059a2225279dd"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-dense.blend",
+      "bytes": 43309675,
+      "sha256": "e096cfceb8eaa8ba793ab74c05c8086bbcaf88d4c857e06b1113033531241084"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-dense.json",
+      "bytes": 19200,
+      "sha256": "fad77407bda340d9424dd0c713a86d0b34f0bdbfa88f17cdc7b35a4bc6b84b56"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-dense.log",
+      "bytes": 12457,
+      "sha256": "8212bc0dd377986b936a15b44c7bee6f0087e22d9fd5a68eb3d63cb4d7a4f381"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-dynamics.json",
+      "bytes": 82718,
+      "sha256": "3564cd3fb25ffb512ec40727c0b34401b9fe02bf65837ccc07e859f6c18bbc4c"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-dynamics.log",
+      "bytes": 1782,
+      "sha256": "49292c6a871f195d750777c36912014df7a58d96162ef92c850fa2530da55f48"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-export/avatar-export-report.json",
+      "bytes": 292312,
+      "sha256": "1bf04f404dfb4ea02cdbb0f57fb0cbb87a9f290727688258df58390421a3f284"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-export/avatar-preview.glb",
+      "bytes": 73428268,
+      "sha256": "eb432f47ca4994cbef56ca2355bfcd6ef5d0654acf4a44ab9911d98815d0bc2a"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-export/avatar-preview.vrm",
+      "bytes": 71252668,
+      "sha256": "8cdcf908d5b473e6c2ca0034901b7efacbb0378f9a8f3b36d24fb86446a7ae67"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-export/avatar-runtime.blend",
+      "bytes": 39882052,
+      "sha256": "c140f1d48829d84b904213ac4da77db0eecfce9c0c856c9fb47f8fb202e7ba1d"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-export/avatar-spring-plan.json",
+      "bytes": 6115,
+      "sha256": "9a5a3ea6be5515a26df4f4157184f53b948b2a05f5c9c7d971fd488baaf0b1fa"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-export.log",
+      "bytes": 286110,
+      "sha256": "23a74580c269d19a245593d25191a8c64473de955819901e76a6d9be47e7a99d"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-greet.json",
+      "bytes": 8028,
+      "sha256": "938fa6c3cd357462803ba909ceb164a66127c795e1d8a7e27cfba197c3e84bbb"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-greet.log",
+      "bytes": 3628,
+      "sha256": "445439de9144536abca250576e49fb03d944a1ee021780e482ff1760ec36d143"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-static.json",
+      "bytes": 2054,
+      "sha256": "5e5b94e2960d9d3584f235ef00efc55d5d97e0e1e2b0122aeef94ab6814aefdf"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-static.log",
+      "bytes": 1543,
+      "sha256": "a08fe7c2a4e61b54cd8274e7f9802fe888ec44cc8722bd5e4f2cae36a42c360c"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-walk.json",
+      "bytes": 58099,
+      "sha256": "c38d74687959e02d81d74d8b19c25673f3fed5720163a530e0b49ab3ddb35fdc"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v04-aligned-walk.log",
+      "bytes": 4359,
+      "sha256": "2d315228123eb432708a43536f1c1e2b0d615b1613cf223037b79853b17abd48"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v05-aligned-dense.blend",
+      "bytes": 43364263,
+      "sha256": "731f07d169cb041ca9f69390ced6870046cbbe888af456182af5b16ac7f2694c"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v05-aligned-dense.json",
+      "bytes": 26298,
+      "sha256": "7e840de58956148b89d63b02b011d29846127f26875f9dcdc9a539213585b1e7"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v05-aligned-dense.log",
+      "bytes": 17299,
+      "sha256": "4941323344dc4b2e7d576c584bfe404524995f5d7a42c8e8fdfb309a4b5cb0cb"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v05-aligned-export/avatar-export-report.json",
+      "bytes": 292316,
+      "sha256": "d802bbafa23531b035c5305824016e483326c872bc2c3e3dd0376de2eacb807d"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v05-aligned-export/avatar-preview.glb",
+      "bytes": 73469676,
+      "sha256": "fc8313d6c3c852d377399a95d17bef5d5d022d34014271656d601f505a231003"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v05-aligned-export/avatar-preview.vrm",
+      "bytes": 71254804,
+      "sha256": "5a6ab3c2a9750f44b7ae2a06b171a9fbfe4e46bbc86e06398ed5ff6ef8674469"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v05-aligned-export/avatar-runtime.blend",
+      "bytes": 39895107,
+      "sha256": "53e914847a6167b9c666b3fa342807eefae53aaae847b8102b05c0fc3b75c102"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v05-aligned-export/avatar-spring-plan.json",
+      "bytes": 6115,
+      "sha256": "9a5a3ea6be5515a26df4f4157184f53b948b2a05f5c9c7d971fd488baaf0b1fa"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v05-aligned-export.log",
+      "bytes": 286117,
+      "sha256": "3987e86a44442391543a2769454bd26dabe1050fd28c7fa75b9cc07f76e362cf"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v07-aligned-dense.blend",
+      "bytes": 43383576,
+      "sha256": "7870d7d516b117f340aa0a803e65c07bf37778a054e177decfb94987fc893a7a"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v07-aligned-dense.json",
+      "bytes": 27598,
+      "sha256": "09765bdb633d41df904e8af1e6e82286f62bc24046d5762d9f8b8a05e9d1c9d6"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v07-aligned-export/avatar-export-report.json",
+      "bytes": 291858,
+      "sha256": "5557b4f307954943308a2d2cb77e1002595eccae347867fc700df2116414e3d6"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v07-aligned-export/avatar-preview.glb",
+      "bytes": 73476984,
+      "sha256": "e830bbd82a693ce468ca60e429d7f3d8e1229357060ce02b45b10a44a3937816"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v07-aligned-export/avatar-preview.vrm",
+      "bytes": 71237992,
+      "sha256": "65acb1a66f5164e28603d1db1e4fff9b5307ce72b961ea5b66d493f526c39f09"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v07-aligned-export/avatar-runtime.blend",
+      "bytes": 39890744,
+      "sha256": "9df58537de29d5713cc1353a0145ac91f0ca99340cbb33d43ea6b81ae2051ece"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v07-aligned-export/avatar-spring-plan.json",
+      "bytes": 6115,
+      "sha256": "9a5a3ea6be5515a26df4f4157184f53b948b2a05f5c9c7d971fd488baaf0b1fa"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v07-dense.log",
+      "bytes": 18079,
+      "sha256": "3dc0db869223a5d5ade1e89beecc8df29b57a40d57af0a3ab822e5f64d02b5e4"
+    },
+    {
+      "path": "work/qa-hair-physics/refined-v07-export.log",
+      "bytes": 285695,
+      "sha256": "e2bbace545a0a68a6cd4b5d27d40a77fe98d1756ff902ad481d948c37389eb5c"
+    },
+    {
+      "path": "work/qa-hair-physics/shoulder-r065-h025.vrm",
+      "bytes": 60727344,
+      "sha256": "6efe45fe60b59c4522af0ecbf102849996a530d84205cde5813e09da176b22aa"
+    },
+    {
+      "path": "work/qa-hair-physics/shoulder-r070-h025-side-5-90.png",
+      "bytes": 60133,
+      "sha256": "907cb33bf34d8c95adb5d4f43ba07280265a52a81f883e3bfd6d05b72a133c78"
+    },
+    {
+      "path": "work/qa-hair-physics/shoulder-r070-h025-walk-5-90.png",
+      "bytes": 63667,
+      "sha256": "2d9089b47b48aea6a8fc181926a061e995452d2402fa27a282df6584bb9b3bdb"
+    },
+    {
+      "path": "work/qa-hair-physics/shoulder-r070-h025.vrm",
+      "bytes": 60727340,
+      "sha256": "5dc6ca314558c6c0a546c2b4fed3e44ec7f5087190fa75864c33f64f432a11e4"
+    },
+    {
+      "path": "work/qa-hair-physics/shoulder-r070-h030.vrm",
+      "bytes": 60727332,
+      "sha256": "ff1e4f29955822757caa697ed537216a1d78ff2ebe7ce39c55247eb44ec37e8a"
+    },
+    {
+      "path": "work/qa-hair-physics/shoulder-r075-h025.vrm",
+      "bytes": 60727344,
+      "sha256": "f33d317c770319a13164be3e0fb9e95c7df63ba99e1b184ca03393ff244e5b04"
+    },
+    {
+      "path": "work/qa-hair-physics/stiffness15-dynamics.json",
+      "bytes": 82372,
+      "sha256": "277a93aeecfce53e9e0bb17bf3f671fa2fcdf5445891fdf2c60573521370e360"
+    },
+    {
+      "path": "work/qa-hair-physics/stiffness15-dynamics.log",
+      "bytes": 1762,
+      "sha256": "82d1786cb44c48a34e75eb5f7255c60143e3b04a6128cebbd084c3d55d4f9012"
+    },
+    {
+      "path": "work/qa-hair-physics/stiffness30-dynamics.json",
+      "bytes": 82566,
+      "sha256": "27e4b20252ae8f5a1a48c4c8a3be5379405c863ae78743311a90f8c11d6da463"
+    },
+    {
+      "path": "work/qa-hair-physics/stiffness30-dynamics.log",
+      "bytes": 1764,
+      "sha256": "885d06b357f61e5e782d612d6e057cc9f4a57691a8b4addf9b4ea94557942d5f"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-aligned-gradient.vrm",
+      "bytes": 71251972,
+      "sha256": "e72c3d70c102cdae56b4301d1904250d7684cf448f1bf76266191773c9823bec"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-aligned-stiff3-idle590-physics-off.png",
+      "bytes": 472291,
+      "sha256": "f68e342985600e6a9214c55fad5b1fad8ce45eb358219adc1b2c5c07b74e4b11"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-aligned-stiff3-idle590.png",
+      "bytes": 473103,
+      "sha256": "e30f9a96a80da76c22f0b8755d777d7df95409a7b6d790c90d9ebf0ad5d165cb"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-aligned-stiff3-walk590.png",
+      "bytes": 460521,
+      "sha256": "d3f2b7cc74f9255ca198b53966e631cb397e1a55a98fa513c6e2020bf8eb1d38"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-aligned-stiffness3.vrm",
+      "bytes": 71252632,
+      "sha256": "f435f684f074f88373076b04c4eb7e346c4b3bb1f6bed1e1fd3c42a017e9d583"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-gradient-dynamics.json",
+      "bytes": 82878,
+      "sha256": "9fc0ce5154e2280eca48209c02764a2a5479216ff07637edff743f81d3006bcd"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-gradient-dynamics.log",
+      "bytes": 1763,
+      "sha256": "a053e3aa6527911258785caf3d1626885505fd9fab92f124571ac27b27dd2ef9"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-gradient-walk.json",
+      "bytes": 16169,
+      "sha256": "5b372196186d6a188387d9d56f7b7e7312c9b6593c9465cde02c9a1e23518890"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-gradient-walk.log",
+      "bytes": 4389,
+      "sha256": "efa710911f492ebc59d9ce7c1ead900fce92d7fd376ca1ca13cdc80f7a9ed5d4"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-dynamics.json",
+      "bytes": 82826,
+      "sha256": "556e7b8b992a709eaf11d2c2f12e6e44e5301190330f4a43924c08da8358b281"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-dynamics.log",
+      "bytes": 1765,
+      "sha256": "4b8fc2b41b43fb25670e49226d72e07f0e6f064fc2533e1b07c89a123bb46f2f"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-greet.json",
+      "bytes": 22722,
+      "sha256": "3463693934c1e127f122d31d32d4e471e13105c384d9d0905fab4e75c41ada92"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-greet.log",
+      "bytes": 9562,
+      "sha256": "7b2020b59deddb3cc7677a18fdc740a6f74ac0ebfa7c04bc8403e37967ce6128"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-standard-primed.json",
+      "bytes": 24615,
+      "sha256": "0e4c219db0a96c21a146816605fee12083d6e953c7faf073f4fb5b8c85cb2ccf"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-standard-primed.log",
+      "bytes": 6955,
+      "sha256": "7209fe30317d4a2f7b899e376cc86fc5bc95ac85bd73b309b090497507a3a1a8"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-standard.json",
+      "bytes": 23170,
+      "sha256": "27ebd55a1d5f1253012cd26ccc1e4815386866256ddf0ce88428c2168234b93d"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-standard.log",
+      "bytes": 6877,
+      "sha256": "4174a4331c91623c19c43ea559745f8c85b7bfc3725b4e6f889a65ae77d963f4"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-static.json",
+      "bytes": 2035,
+      "sha256": "8ee8973fe5872b306e5e811131f7735c84de0a6f8568e6ee62fbc17e5bb216e6"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-static.log",
+      "bytes": 1524,
+      "sha256": "7dad1110e9a139f26a7e73b0274d478e7f3091a2d541dd29c93b9cc43324cf6f"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-walk-full.json",
+      "bytes": 58070,
+      "sha256": "5eac8cc59e5a4b29a74386186cbc0ead86cb4be420ddfea6533a62ff71477fe9"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-walk-full.log",
+      "bytes": 23010,
+      "sha256": "aa1e910ebdb39a14d1086206657134821119507f0cad766b6fec0bb5b314eb39"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-walk.json",
+      "bytes": 10164,
+      "sha256": "0386a6db5695cd99eda924598c52fb82ad640120eb8ecc9f46ee816662c0e99b"
+    },
+    {
+      "path": "work/qa-hair-physics/v04-stiff3-walk.log",
+      "bytes": 4304,
+      "sha256": "fbc62ff0e8bbf9b24046196b9aa1eb90aa078fc80ec9b2fad22aaae60fc517cd"
+    },
+    {
+      "path": "work/qa-hair-physics/v05-graduated-dynamics.json",
+      "bytes": 82621,
+      "sha256": "2dd2a7da7c5d883deaa099b417d820321798036f61f1f37ef76ba69467f4a645"
+    },
+    {
+      "path": "work/qa-hair-physics/v05-graduated-dynamics.log",
+      "bytes": 1783,
+      "sha256": "a340a944ae583dea31bb1be6da4113fd436b3e2a5eb716ecb39b9c4ba33b90ad"
+    },
+    {
+      "path": "work/qa-hair-physics/v05-graduated-standard.json",
+      "bytes": 24664,
+      "sha256": "160084ef059da3f493b4ad0205e97480eaaa0cebc17c43e5b87874ae56847a8f"
+    },
+    {
+      "path": "work/qa-hair-physics/v05-graduated-standard.log",
+      "bytes": 7004,
+      "sha256": "840d53c22eaf8788afe171fc7f7dadc89e7bfeda52273885ccdeb873d3a73e2b"
+    },
+    {
+      "path": "work/qa-hair-physics/v05-graduated-static.json",
+      "bytes": 2396,
+      "sha256": "25164aea75db07bb36e09eee7f509cfbf2d7c057a0f4b3a3463bf51856ddd8a8"
+    },
+    {
+      "path": "work/qa-hair-physics/v05-graduated-static.log",
+      "bytes": 1663,
+      "sha256": "6c6f6b410a39c6260297f57bac47b8d19e970a878f55521d7164cabc3d1566d9"
+    },
+    {
+      "path": "work/qa-hair-physics/v05-graduated-walk.json",
+      "bytes": 435070,
+      "sha256": "6a2e8e8933573f744e67b87aa8240ac2cf3ba9530adfb83fb1bac199d1daf106"
+    },
+    {
+      "path": "work/qa-hair-physics/v05-graduated-walk.log",
+      "bytes": 12552,
+      "sha256": "e0f26e46a3d22b84faca0f6c2acaa14c5084298adbc9d36794867359d64ea25f"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-dynamics.json",
+      "bytes": 158787,
+      "sha256": "8bb840903d74243390e7051dd8b37e09b627757dc819f187ba73753665010d8c"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-dynamics.log",
+      "bytes": 2014,
+      "sha256": "fed230243a664d909b9e2c03c0e44cf0980b91eb30d4944679f8a603dd406264"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-hit040-dynamics.json",
+      "bytes": 159069,
+      "sha256": "5ab50ac8f9edc4f0734aa83a2e22c7159f0c9239ba4dc7067b10565e98800b95"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-hit040-dynamics.log",
+      "bytes": 2025,
+      "sha256": "fb3f81bec83418238a3166b9ecda9367087eafbf0f6b603a4c75eb40764ad53f"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-hit040-standard.json",
+      "bytes": 24646,
+      "sha256": "9e39eda89dadb40445c35ed99d4bed4ef51879541201cb7f0853097192515bba"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-hit040-standard.log",
+      "bytes": 6986,
+      "sha256": "e45b07340bc7a294619b4e81affdd4e2df3a350b5952a8e8e5c4cceb43d22496"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-hit040-static.json",
+      "bytes": 2378,
+      "sha256": "a1a2b29f7c1ce9e8d978016aa455ec2f417b698afa48974e8732b3c1ef94c27b"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-hit040-static.log",
+      "bytes": 1645,
+      "sha256": "c35e3b940a26e58910ec709935f8f5716994d68d5fef174ef3001cde0a337446"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-hit040.log",
+      "bytes": 3020,
+      "sha256": "1fbb39ca75c4faff92df58df777c3b0a5a0eae3e4af3ed7aa99babbc2e1c52ae"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-hit040.vrm",
+      "bytes": 71235924,
+      "sha256": "b4551e3e23e06056cf92b6a3e410122e9a4d3099ecaf469e4801d127a214f435"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-hit040.vrm.json",
+      "bytes": 3019,
+      "sha256": "a751242ba7ac4b1ea41534c61fe83bb67e809fc505652bf54312f098c0812bd9"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-standard.json",
+      "bytes": 138306,
+      "sha256": "2c4f4f724e07be673cdf275206a0fb7b7f14d90c312ba4f3766a732ccac97622"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-standard.log",
+      "bytes": 7040,
+      "sha256": "c0b4d28a88e790b71826e9493bb0a93fe60a9d2b5ea3328f51dd34bdacfdd6b4"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-static.json",
+      "bytes": 2371,
+      "sha256": "ae3d28d61d84d0614bb2230b7ef8bf470e695c16461f9c21908076ddec5952bc"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage-static.log",
+      "bytes": 1638,
+      "sha256": "2af647fc1f327280b2c649c19658c1bb499b2f1cb146669ad05257327f74047d"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage.vrm",
+      "bytes": 71236196,
+      "sha256": "31b2cfb2f57ee5b6140d7ac7ddf1bd2cbd4d4756e6ff5f6d04b706e6bef7b386"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-backcoverage.vrm.json",
+      "bytes": 1154,
+      "sha256": "4c38cbd35260d9737dc6d0740848f1ef91405c81ce43291de4a80ff0077c8b07"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-collision-decision.json",
+      "bytes": 3697,
+      "sha256": "28e35725167c9bd0de803c58de3103cd63d97dc9d244bb73b6d95e8cbb208096"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-graduated-dynamics.json",
+      "bytes": 158807,
+      "sha256": "5d38ec04df12116716c6ec94ca2bb8e342b6cdc3209b3767c7deec61d989dedd"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-graduated-dynamics.log",
+      "bytes": 2039,
+      "sha256": "49aeee8ece2f7220a8dc8b34e45fb7491e55050b914a2e4f376fee3fd7faa7a6"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-graduated-greet.json",
+      "bytes": 12588,
+      "sha256": "006e05e8f8dee7cefefc2050f767f95388cf75629316e8da5f91fbc28350c318"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-graduated-greet.log",
+      "bytes": 3748,
+      "sha256": "95f383a0b6db1f7ee7e392a30bccc8b037b024aa95254041f32576b51b42668e"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-graduated-standard.json",
+      "bytes": 200345,
+      "sha256": "6b18edf8e219d89426c08707f48d10b1bcd5d51c63f957a76b6d8a2fa9a158c4"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-graduated-standard.log",
+      "bytes": 7145,
+      "sha256": "4ad3343d207dc251d2a9f55bba9cb525a7ad186fb3a6010a3411a06e21a15d85"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-graduated-static.json",
+      "bytes": 2396,
+      "sha256": "6e773c487e6ba9463319765ca870f55f610983c6c123db0c94dfeef5fbaac1b6"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-graduated-static.log",
+      "bytes": 1663,
+      "sha256": "a4bb9e214758a93d25fe95952cd58c6edd521d1dac7aad1ea9379a1b36c19258"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-graduated-walk.json",
+      "bytes": 16223,
+      "sha256": "7224cae0f2aab555ee7caa584686ad0a20b28f287de664152f118f2c7f7f7846"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-graduated-walk.log",
+      "bytes": 4443,
+      "sha256": "e4da0fbb204fb41bf62f6665ebabb251db8f1cee075dd0c3e5b393756b46f5c3"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-snapshots/idle590-off.json",
+      "bytes": 15330405,
+      "sha256": "104be7b8fe822a2df3fc84553c31788e214ba1d5b335cba384e615d58e2a612c"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-snapshots/idle590-on.json",
+      "bytes": 15330755,
+      "sha256": "089886659e70df6e56307913fc62dd740c1f1642949a84b3645400b19f89bc69"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-snapshots/settled1600-on.json",
+      "bytes": 15333319,
+      "sha256": "2044dc9e7316c35c4f2ce32b67b275f7004d63cd372a02bc30d282085d6c78c6"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-snapshots/walk590-on.json",
+      "bytes": 15320847,
+      "sha256": "2a6c95c332bc72a4e48d4ab0a23283bb4e0310d18e8180b53c9c901172eae35c"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-standard-contact-binding.json",
+      "bytes": 39166,
+      "sha256": "cdd4a3e3efeb27a9fbfa6498eeaa77dc9582ee844f38f7acbf38429b667b8d00"
+    },
+    {
+      "path": "work/qa-hair-physics/v07-standard-contact-binding.log",
+      "bytes": 39167,
+      "sha256": "b7c0ffae3baa7c5607906ec99adea6ffbffe54ad6e2721d04a6178e686efc634"
+    },
+    {
+      "path": "work/qa-hair-realism/after-front.png",
+      "bytes": 596981,
+      "sha256": "1a87ccf03de639614680d36b3645aa255e4c6f5f760697beb444aaf523349b33"
+    },
+    {
+      "path": "work/qa-hair-realism/after-front45-clay.png",
+      "bytes": 602416,
+      "sha256": "f77db71f931a22fd324cb1ffd9c73f1944bc76cf518133747b7c0f92d905aa2e"
+    },
+    {
+      "path": "work/qa-hair-realism/after-front45.png",
+      "bytes": 597567,
+      "sha256": "0538c8a5efff2c9b13b3ae1f555f9c2c4635e56cd889943e602fb5d7ceafa8ae"
+    },
+    {
+      "path": "work/qa-hair-realism/after-profile-clay.png",
+      "bytes": 556623,
+      "sha256": "5f6b6cf4d4b0a7237627e127218a7fa2d9055dbd7c53d08d70b6103c9ee936b0"
+    },
+    {
+      "path": "work/qa-hair-realism/after-profile.png",
+      "bytes": 553801,
+      "sha256": "7f1acd16c0ee383b587190e316ca286dd95038d7c5ee90d46e900e215f658051"
+    },
+    {
+      "path": "work/qa-hair-realism/before-front.png",
+      "bytes": 593259,
+      "sha256": "c2f64c51026febb7819ebe6fab73afdc628e4f5f647f82a4e28b1af65ec2c230"
+    },
+    {
+      "path": "work/qa-hair-realism/before-front45.png",
+      "bytes": 589855,
+      "sha256": "3d6df7842ae916d0d8b18fb70edd953f8efabde43bf67a6ae5b30177d3abea1e"
+    },
+    {
+      "path": "work/qa-hair-realism/before-profile.png",
+      "bytes": 547498,
+      "sha256": "e1dd77487f5916f591c175343f72e8394c51865ca691f975db520b288120ea45"
+    },
+    {
+      "path": "work/qa-hair-realism/hair-realism-review.blend",
+      "bytes": 34810486,
+      "sha256": "37a435401b809b9be9d754d68009e5bbd07be194dde599e1bcbe10605d2554aa"
+    },
+    {
+      "path": "work/qa-hair-realism/hair-realism-review.blend1",
+      "bytes": 34805320,
+      "sha256": "ba02fb5313dad1906646c801ee951ef2dea3d293f5ad3dd1d8e5ac800ab0454c"
+    },
+    {
+      "path": "work/qa-hair-realism/report.json",
+      "bytes": 3600,
+      "sha256": "a585477a8c2627e1f216bfa1190dda072034c0e2b044225ff0361cb30e52b22b"
+    },
+    {
+      "path": "work/qa-hair-realism/source-snapshot.blend",
+      "bytes": 36306801,
+      "sha256": "c20425f591154339107bffede8216bdaaa53f0babf2642e4f120de3b44996b74"
+    },
+    {
+      "path": "work/qa-hair-refinement/back.png",
+      "bytes": 416836,
+      "sha256": "9f935bc1659492adaeba0b1ff13b61ab0110d244719e60bec80cf3b8b47591ce"
+    },
+    {
+      "path": "work/qa-hair-refinement/hair-refinement-review.blend",
+      "bytes": 45465479,
+      "sha256": "888f4521fcee2f63c1b817d1a1eb358eb1cb30cb666134cfc017a872639a1143"
+    },
+    {
+      "path": "work/qa-hair-refinement/hair-refinement-review.blend1",
+      "bytes": 45456388,
+      "sha256": "6449bd0a96e1d81e4855b76a7a01f209fc75ff022b2f2c748f72ec18ea84e989"
+    },
+    {
+      "path": "work/qa-hair-refinement/inspect-centers.py",
+      "bytes": 643,
+      "sha256": "b573d9f3f4550edf8278c65e9d213538974c96749e655e1fae372b160faa8b32"
+    },
+    {
+      "path": "work/qa-hair-refinement/inspect-nape.py",
+      "bytes": 405,
+      "sha256": "a73847e0bfb5db25d3276b9b2a7d7c4cd780e5cb138c9e76538e2660ddf2465b"
+    },
+    {
+      "path": "work/qa-hair-refinement/inspect.py",
+      "bytes": 1671,
+      "sha256": "90a1348550f23fbe32ea06f5739c5bf796c2a66d84cf119019a64df1ef451245"
+    },
+    {
+      "path": "work/qa-hair-refinement/inspection.json",
+      "bytes": 794567,
+      "sha256": "7c42fd105c4aec186b3a9dfee4860927281071be2cee47604fdb4858fcbd0078"
+    },
+    {
+      "path": "work/qa-hair-refinement/portrait.png",
+      "bytes": 425052,
+      "sha256": "ff3f51ad73bbb607007902895abb6bfe96fa206cf2e1f5f7937a59fa1631f815"
+    },
+    {
+      "path": "work/qa-hair-refinement/profile-full-tail.png",
+      "bytes": 409191,
+      "sha256": "77497cee492c1a7108c16737e0cca9157826d7bb3c5099b3c89b7a4b0942bc68"
+    },
+    {
+      "path": "work/qa-hair-refinement/profile.png",
+      "bytes": 400270,
+      "sha256": "4495edceda2103615abba28192fe47b27db2cda259cab45fae6ec7f7faf746d5"
+    },
+    {
+      "path": "work/qa-hair-refinement/render-runtime-shape.py",
+      "bytes": 4782,
+      "sha256": "97d2bad0e8d3cd6586c47644fb018ff639791419b617971bba58313ef486f95c"
+    },
+    {
+      "path": "work/qa-hair-refinement/render-tail-profile.py",
+      "bytes": 874,
+      "sha256": "6dbe30f8287014042967d96b13da70e4afc6bbd86f3be280622d557893efde3c"
+    },
+    {
+      "path": "work/qa-hair-refinement/report.json",
+      "bytes": 9146,
+      "sha256": "44267c1a3ef55c31a25cacec9151bb831764a90dda97b6129a2e31b8bba0b9ed"
+    },
+    {
+      "path": "work/qa-hair-refinement/runtime-shape/idle590-off-back.png",
+      "bytes": 261365,
+      "sha256": "c91ba1ae5ed00d9c609f77319c5ba77b3cc1b0b3c19e59113a32775009230622"
+    },
+    {
+      "path": "work/qa-hair-refinement/runtime-shape/idle590-off-profile.png",
+      "bytes": 251642,
+      "sha256": "43463a37367b26cc36df9819cb1598329bc42f987a16cded4cb9099556fa7c04"
+    },
+    {
+      "path": "work/qa-hair-refinement/runtime-shape/idle590-on-back.png",
+      "bytes": 261301,
+      "sha256": "10137f4baf456fdb18076c85f1b6654747dea3134c8ec6f35a3830eb10fa822f"
+    },
+    {
+      "path": "work/qa-hair-refinement/runtime-shape/idle590-on-profile.png",
+      "bytes": 252349,
+      "sha256": "8472a8bd811bce3536612a1878374b2641010b38e9ecb22f192e622334379ecb"
+    },
+    {
+      "path": "work/qa-hair-refinement/runtime-shape/report.json",
+      "bytes": 1678,
+      "sha256": "d44fe0fbac6ac882e1d9dd6c0ffddb822ec993562644e0f7dd92863831f62ff2"
+    },
+    {
+      "path": "work/qa-hair-refinement/runtime-shape/visual-review.json",
+      "bytes": 969,
+      "sha256": "13a4920dda366f6992f8e303851002588243a3d83364450392379ad3772d3c36"
+    },
+    {
+      "path": "work/qa-hair-refinement/source-snapshot.blend",
+      "bytes": 47333655,
+      "sha256": "7b08fc54bb873e5c03af24cdebaf8a1798423069c0357d2c168341b2df3b316c"
+    },
+    {
+      "path": "work/qa-hair-refinement/v05-review/back.png",
+      "bytes": 420457,
+      "sha256": "7fa47f62e2bda5757ef744dcf0a9320416762f6d7b5270ed737e535c3854df1b"
+    },
+    {
+      "path": "work/qa-hair-refinement/v05-review/hair_refinement.py",
+      "bytes": 37319,
+      "sha256": "f84ea94ff970a0b5b8dcc2cff445773427f0fc4d973ea5ee0618f69ada7cd008"
+    },
+    {
+      "path": "work/qa-hair-refinement/v05-review/portrait.png",
+      "bytes": 458623,
+      "sha256": "3a5517309bf0ac82223f59ed98ea445fc48d23f8ac6d96ae9776fcfd1110021c"
+    },
+    {
+      "path": "work/qa-hair-refinement/v05-review/profile-full-tail.png",
+      "bytes": 409191,
+      "sha256": "77497cee492c1a7108c16737e0cca9157826d7bb3c5099b3c89b7a4b0942bc68"
+    },
+    {
+      "path": "work/qa-hair-refinement/v05-review/profile.png",
+      "bytes": 431432,
+      "sha256": "7ce18793c8d95defdee8147de1b94b5e711fc93ae355cac0a1f4e294621fd0fb"
+    },
+    {
+      "path": "work/qa-hair-refinement/v05-review/report.json",
+      "bytes": 12768,
+      "sha256": "7fd4b7e90db49bfd6ea51b3921431fdbaf425492648d3b49fd60b08b4978e3af"
+    },
+    {
+      "path": "work/qa-hair-refinement/v05-review/verification.json",
+      "bytes": 295,
+      "sha256": "92fb891534948790357610587a8f1dfa99861995fa625c41b912a59c929b1dc4"
+    },
+    {
+      "path": "work/qa-hair-refinement/v06-review/back.png",
+      "bytes": 416579,
+      "sha256": "819cd60a1a7fce77666b6d2505f51cf1fe2ec5e7062db68e8dbde07b9fb19dec"
+    },
+    {
+      "path": "work/qa-hair-refinement/v06-review/portrait.png",
+      "bytes": 425599,
+      "sha256": "fe2911297c1b1301b22b32af93d6c8cb89fa1d5c6fa91149a8df142db6f4bed5"
+    },
+    {
+      "path": "work/qa-hair-refinement/v06-review/profile.png",
+      "bytes": 404581,
+      "sha256": "e928444ee133b7278a8351dec0d3950e038c13990c52e5cfbc2f022633b682b1"
+    },
+    {
+      "path": "work/qa-hair-refinement/v06-review/report.json",
+      "bytes": 7575,
+      "sha256": "a8793c461e8746dff4e69205edb2fd01b31f00b6e9f4101a9984f7dc86fc590a"
+    },
+    {
+      "path": "work/qa-hair-refinement/verification.json",
+      "bytes": 295,
+      "sha256": "92fb891534948790357610587a8f1dfa99861995fa625c41b912a59c929b1dc4"
+    },
+    {
+      "path": "work/qa-hair-refinement/verify.py",
+      "bytes": 1790,
+      "sha256": "ec6a6d70fd44abd4096c2655f3131b4c062205acf67df22948837722e4e6b702"
+    },
+    {
+      "path": "work/qa-hands/hand-bend-dorsal.png",
+      "bytes": 1023553,
+      "sha256": "762962b49901bc52981b5140049a36feeaa9ff4e198536ad22ca5419a8f62662"
+    },
+    {
+      "path": "work/qa-hands/hand-polish-qa.blend",
+      "bytes": 29945716,
+      "sha256": "93e2159adda8af06a496062712cd378d3fe831849f6d660eb4036618a31e5eb9"
+    },
+    {
+      "path": "work/qa-hands/hand-polish-qa.blend1",
+      "bytes": 29962783,
+      "sha256": "7cd97133373bffa85b3fe941024a1042f1e3ba2387549e731e452778712fe733"
+    },
+    {
+      "path": "work/qa-hands/hand-rest-dorsal.png",
+      "bytes": 1022869,
+      "sha256": "ab457b18442bb7c1439a129503d6f81af69a9a79baa1c98a8ce89c0757036924"
+    },
+    {
+      "path": "work/qa-hands/hand-rest-palm.png",
+      "bytes": 1026613,
+      "sha256": "2e6055b3f9a84674e7ac1d93f18811118758af4e9319a583005d0c0b4b212b33"
+    },
+    {
+      "path": "work/qa-hands/hand-rest-top.png",
+      "bytes": 1016559,
+      "sha256": "ddb3a66d22c5528de7ea1a293acc340536798590ec02f9507b8c58e08aaa19b7"
+    },
+    {
+      "path": "work/qa-hands/input.blend",
+      "bytes": 31237640,
+      "sha256": "b8d5d7f10c8159c0b8bc9e36beed8b4c76ae7b74d6e6492f6914a09b759752c4"
+    },
+    {
+      "path": "work/qa-hands/report.json",
+      "bytes": 300,
+      "sha256": "7b08d29fa8796c66d11b5041d50e5b67b9f6d965df8371fb4b83e6f8507dd515"
+    },
+    {
+      "path": "work/qa-hands/run_qa.py",
+      "bytes": 3750,
+      "sha256": "32bfac531c3feec1c309ebd382ff4988e2325349e6265c8c78eac785896e2edd"
+    },
+    {
+      "path": "work/qa-motion-vrma/final-checkpoint-walk-5-90.png",
+      "bytes": 63290,
+      "sha256": "ab36e318416b0599679c3a117b800bed48be769c8847845f25400f1dc1a997fc"
+    },
+    {
+      "path": "work/qa-motion-vrma/friendly-greeting.vrma",
+      "bytes": 345932,
+      "sha256": "9d03481d39cc71f781bcbfe4c3455d8e8661c031a6d705d5482ac6c68758e963"
+    },
+    {
+      "path": "work/qa-motion-vrma/motions-report.json",
+      "bytes": 2788,
+      "sha256": "d3b880cdb5b78f0f0f4519853304d70a48871925c1ea8d4e518f6a2cee50d6ad"
+    },
+    {
+      "path": "work/qa-motion-vrma/natural-idle.vrma",
+      "bytes": 345928,
+      "sha256": "8ce93ca1d96b3e147592a885947630cac07496ccefad0cf06dbe69434b2b7069"
+    },
+    {
+      "path": "work/qa-motion-vrma/natural-walk-forward.vrma",
+      "bytes": 345064,
+      "sha256": "9b698987f678926db7d5e133514e7215bb511d684b953ebfc8826b994de5662b"
+    },
+    {
+      "path": "work/qa-motion-vrma/natural-walk-in-place.vrma",
+      "bytes": 102744,
+      "sha256": "528d450613b8c07bfb2655ff2a6bc736779099b1fe99bfcba7a6930e2014633b"
+    },
+    {
+      "path": "work/qa-motion-vrma/recording-pipeline-test.mp4",
+      "bytes": 2066007,
+      "sha256": "14e0ef9eba6d15309eb147faa90e383443c09d3651da065dbe6336ec54c36d63"
+    },
+    {
+      "path": "work/qa-motion-vrma/transitions-report.json",
+      "bytes": 1349,
+      "sha256": "fab85b8de554b93cff9b5e10dcda1396c7674d27e6eb4060d900ecb00de70c8d"
+    },
+    {
+      "path": "work/qa-motion-vrma/transitions.log",
+      "bytes": 1349,
+      "sha256": "fab85b8de554b93cff9b5e10dcda1396c7674d27e6eb4060d900ecb00de70c8d"
+    },
+    {
+      "path": "work/qa-motion-vrma/video-test-01.png",
+      "bytes": 81101,
+      "sha256": "b88c76ebae40f2dc3853c8053091a4e787ad65e102c0b2d6810386396c3cde0e"
+    },
+    {
+      "path": "work/qa-motion-vrma/video-test-02.png",
+      "bytes": 96736,
+      "sha256": "f1bd833531f59b87a3223ad858c511d28ea770365e56eabc4d67a108d48652ee"
+    },
+    {
+      "path": "work/qa-motion-vrma/video-test-03.png",
+      "bytes": 95728,
+      "sha256": "1403e45554eea0093271739269359601aa721cb2acbb038ab4508cfc4cb287a4"
+    },
+    {
+      "path": "work/qa-motion-vrma/video-test-04.png",
+      "bytes": 95936,
+      "sha256": "98ce8353cad002f6a6b7f8c0b54ef4997e0bd3f0d03927698bcffee0d464c94d"
+    },
+    {
+      "path": "work/qa-motion-vrma/video-test-05.png",
+      "bytes": 123442,
+      "sha256": "75eb24676c76da60dd7ea9eca3c098f02c38ddb2a40b2ab1423d71773fa24a39"
+    },
+    {
+      "path": "work/qa-motion-vrma/video-test-06.png",
+      "bytes": 132132,
+      "sha256": "b49230b54b85d61ea835fe3b4fae9bae9dcef5a993794f85bd324fdbbc772171"
+    },
+    {
+      "path": "work/qa-skirt-motion/baseline-r055-h008.json",
+      "bytes": 84862,
+      "sha256": "f67489251db92511bc414e87368c21d7cb647de41d2a05186161ec2ec573e995"
+    },
+    {
+      "path": "work/qa-skirt-motion/baseline-r055-h008.vrm",
+      "bytes": 27308956,
+      "sha256": "88ae6b37a7b83817d8373f83a635621d6cd43d4b0b386a75be827591af67e6a4"
+    },
+    {
+      "path": "work/qa-skirt-motion/candidate-r065-h015.json",
+      "bytes": 18291,
+      "sha256": "52f93e77c2745f90a26be8695ead5e8a1f4096e883854c9fd6c0c80f907e62e7"
+    },
+    {
+      "path": "work/qa-skirt-motion/candidate-r065-h015.vrm",
+      "bytes": 27308956,
+      "sha256": "8821b3735045c11b874a52d91d3c209922b7c9be0fc3d144160fcc0e00c525ac"
+    },
+    {
+      "path": "work/qa-skirt-motion/candidate-r070-h015.json",
+      "bytes": 49977,
+      "sha256": "bae7348270de1a721e41932a95ab7716125fc9539fef250ab40e97e9f47311b8"
+    },
+    {
+      "path": "work/qa-skirt-motion/candidate-r070-h015.vrm",
+      "bytes": 27308956,
+      "sha256": "4aff8f4115b4e519f525b566dbdd5b96d8a001860d6f4a02092739ac1d92568a"
+    },
+    {
+      "path": "work/qa-skirt-motion/candidate-r070-h025.json",
+      "bytes": 31165,
+      "sha256": "8ee8bfae61370d2ee2430c4e89170290e5daf1dd16e00736ecc768bc8a2f7666"
+    },
+    {
+      "path": "work/qa-skirt-motion/candidate-r070-h025.vrm",
+      "bytes": 27308956,
+      "sha256": "096039e27a8586b6c8cf1b06efbbb316587a55fa85f4615f92ccf6a1f53dabbd"
+    },
+    {
+      "path": "work/qa-skirt-motion/candidate-r080-h015.json",
+      "bytes": 31178,
+      "sha256": "55a7bee57bb1d9a0f75f63b51d008f1f144a8a2c37d458dc79ba118c7b02f67e"
+    },
+    {
+      "path": "work/qa-skirt-motion/candidate-r080-h015.vrm",
+      "bytes": 27308956,
+      "sha256": "3e3dce3492fc86360b40c8b2d605cde2e80e8f37999dcba6c8f3e01422af4309"
+    },
+    {
+      "path": "work/qa-skirt-motion/candidate-r080-h025.json",
+      "bytes": 28313,
+      "sha256": "1416a53d82f95b5a6d9786a3e1dc25bda3ab4f8ad5662fda0a191d76d2c77a7c"
+    },
+    {
+      "path": "work/qa-skirt-motion/candidate-r080-h025.vrm",
+      "bytes": 27308956,
+      "sha256": "be140e252a75a523f38a6315e04af737d9b30b1f39f04dc1e6cf494386c03da2"
+    },
+    {
+      "path": "work/qa-skirt-motion/candidate-r090-h025.json",
+      "bytes": 28249,
+      "sha256": "676f87d1ec5c69bfbd3cef22b6f000c907654f02abab5836e05d828b5e5b712f"
+    },
+    {
+      "path": "work/qa-skirt-motion/candidate-r090-h025.vrm",
+      "bytes": 27308956,
+      "sha256": "84c30fba3c4aa99d6e448c5e31eb555cb564ac60e877217555ee7dd97f8adc16"
+    },
+    {
+      "path": "work/qa-skirt-motion/candidate.vrm",
+      "bytes": 27310320,
+      "sha256": "860c354237718717ecf9dcf1a24fc895edcbb19a820dbe5404731be15e524a0d"
+    },
+    {
+      "path": "work/qa-skirt-motion/clearance-candidates.log",
+      "bytes": 2232,
+      "sha256": "60791a00ef034fc6390d8ca39ea5664fa65426df0fedb8a4f4213bd4c8df7d7e"
+    },
+    {
+      "path": "work/qa-skirt-motion/clearance-report.json",
+      "bytes": 5148,
+      "sha256": "b4fa938f298b0a876f5a121fc409aa0f8fb8a587ab260a851a1f3bb0626b50e0"
+    },
+    {
+      "path": "work/qa-skirt-motion/clearance-summary.json",
+      "bytes": 3961,
+      "sha256": "467a0b4f87dca57d32e6260e3f6b925c48c4a0529870f7bd4fcb36772f959a05"
+    },
+    {
+      "path": "work/qa-skirt-motion/clearance.log",
+      "bytes": 2685,
+      "sha256": "c70a30daa8da84828f614cb94d8d5ffc6ccb6d57b0917ec627de4adb0ea9b6e6"
+    },
+    {
+      "path": "work/qa-skirt-motion/clearance.mjs",
+      "bytes": 13392,
+      "sha256": "848c50fe8e022488f5088dd841ff331397f4eb235c1c5efc449fb1dac70c2541"
+    },
+    {
+      "path": "work/qa-skirt-motion/control-physics-off.json",
+      "bytes": 89032,
+      "sha256": "769b6009a10bb8231e175658687b3fe6b0cc0b983d4d0f59fe8dea2d89d677d0"
+    },
+    {
+      "path": "work/qa-skirt-motion/control-physics-off.vrm",
+      "bytes": 27308956,
+      "sha256": "88ae6b37a7b83817d8373f83a635621d6cd43d4b0b386a75be827591af67e6a4"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-center040.json",
+      "bytes": 56431,
+      "sha256": "59643909de93352b622d3edf39968298967fea2f94045b958ffb98edb6704fa7"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-center040.log",
+      "bytes": 9186,
+      "sha256": "ad5b242605a5f8d1e0cab5cb8f91de79cedca9d887c902096292f9c01f3f38b5"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-front036-full.json",
+      "bytes": 62664,
+      "sha256": "f5356a67fda3cf4aeffd4ce42d0b696203f8e70db51a9c351ebdb3a214a0d036"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-front036-full.log",
+      "bytes": 41006,
+      "sha256": "492787aebf31ed1019907804363d75f82ddf9e9ca0898abaa3da52626d82cbe1"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-front036.json",
+      "bytes": 8840,
+      "sha256": "90430054755d5337eb1c55a18109f058da2bdeee19a3ef32ca818492f0be5516"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-front036.log",
+      "bytes": 5890,
+      "sha256": "27c07cf77f5c498079648ffbb8702e8f466ed9d04eecc775f8eb36d3d753d4d7"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-front038-full.json",
+      "bytes": 59969,
+      "sha256": "0c4de6f115b8057ad8fbe0e1faf8d0cbcd59e1a315088eb8768ffb2d83dc5c8b"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-front038-full.log",
+      "bytes": 39643,
+      "sha256": "a2f223418a07e7e7eda9e29bb4023439df5544e88d9210b0b4937d55f859a924"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-intersections.json",
+      "bytes": 92013,
+      "sha256": "d67ccfc78ca87bb0c9122cedbf747c137e74a4905ec003f1bf2fc4d3ae98c3ac"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-intersections.log",
+      "bytes": 11306,
+      "sha256": "2ff37b299a838f4a96bed1b785d9f10fa4555d623fc50e9a6f4bc4110eb148ca"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-intersections.mjs",
+      "bytes": 9175,
+      "sha256": "0dc48a40a35a8c72d29830049c9d4fddf1114f1ab328a4ff230a84cff7e6d748"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-r080-h045.json",
+      "bytes": 8323,
+      "sha256": "b905fe38603a0228dd1402db71c21b51d01ef9956a42c1e5b158755b91f28427"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-r080-h045.log",
+      "bytes": 5627,
+      "sha256": "ea5dca4308ffec52e99bd21d3e73f716f5027fdaf47438b9267ed72cbe103c59"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-r090-h025.json",
+      "bytes": 13054,
+      "sha256": "e31f52901beeac1344634b25653fb72a6509da72e642e949bf053c4dacb4fd59"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-r090-h025.log",
+      "bytes": 6730,
+      "sha256": "0ca54f0bc8a0f31ee275eb03ecec1071b357c206542a03935589db0c751f7be2"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-r091-h025.json",
+      "bytes": 8811,
+      "sha256": "bf42d3df2ef8c2b984336cb7ab8d4bba7735892be0f0fad127f7fc2e0af313ee"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-r091-h025.log",
+      "bytes": 5887,
+      "sha256": "13e0b4db4535cf5d8a59e1c79f99172b73cfeb2d9aac1bc4bf319c7caaac63d0"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-r100-h025.json",
+      "bytes": 8322,
+      "sha256": "f125ae1e15f7d2a7defdf257ccaaed7d9a793a16233a006532ef1aec03703838"
+    },
+    {
+      "path": "work/qa-skirt-motion/hem-r100-h025.log",
+      "bytes": 5626,
+      "sha256": "ee157e8f015eac40b8bc910bbca98139f7d7776c35021e692a9e188a2d30f9d6"
+    },
+    {
+      "path": "work/qa-skirt-motion/inspect_static.py",
+      "bytes": 3112,
+      "sha256": "a2bc005ad1169a63f54bc1ae71c16ad365f579c0e952ca5ea4965bdf776a41e6"
+    },
+    {
+      "path": "work/qa-skirt-motion/static-geometry-report.json",
+      "bytes": 8399,
+      "sha256": "f2f34b909e0588183a6718a19c1fcb3a99764477a613c6f1448150d2ddf94a5e"
+    },
+    {
+      "path": "work/qa-skirt-motion/viewer.html",
+      "bytes": 4909,
+      "sha256": "3dd186b998c954613a26421aa80a00e36176abbca329db5ba3bd8a5f12e0b9f8"
+    },
+    {
+      "path": "work/qa-skirt-motion/viewer.mjs",
+      "bytes": 7747,
+      "sha256": "6eaaa26a5d53222dfcb6cce6aaff664c06b72d3fc6cc37e342d7c6daa5816e17"
+    },
+    {
+      "path": "work/realism-authoring/balanced-front.png",
+      "bytes": 579875,
+      "sha256": "2be6506265034d57a2a743c474f2e4ac6aafaf70ac4fef21c00831eaed60aeb8"
+    },
+    {
+      "path": "work/realism-authoring/balanced-oblique-clay.png",
+      "bytes": 553239,
+      "sha256": "1d6be988aa54e3af14af4c042fc2d67b52882a085f3204acf33fc915ecd498b6"
+    },
+    {
+      "path": "work/realism-authoring/balanced-profile-clay.png",
+      "bytes": 525222,
+      "sha256": "e449fc863db06d74f3966c9363d4de6204caa65d089231d10dd8df13260d4c2c"
+    },
+    {
+      "path": "work/realism-authoring/balanced-profile.png",
+      "bytes": 547451,
+      "sha256": "71ce345ad67d2b5dcb7205959059c74b8d35e29d63897a914a389e022efc9d2c"
+    },
+    {
+      "path": "work/realism-authoring/current.blend",
+      "bytes": 60560716,
+      "sha256": "6e7361e7f5c306325d3f33c4c9f6f56b1a489d5f4579bb4be951d4c3d59cc8c1"
+    },
+    {
+      "path": "work/realism-authoring/face-blink.png",
+      "bytes": 873786,
+      "sha256": "29bab03b5da86044d3c1cd6262173a6ae320f859435a975bccdc5a9f35b28a30"
+    },
+    {
+      "path": "work/realism-authoring/face-happy.png",
+      "bytes": 882796,
+      "sha256": "8544bc74d3b803731f7d017fb6212071c7a1e1be5235d0c99dbdb3d6b7f394f1"
+    },
+    {
+      "path": "work/realism-authoring/face-neutral.png",
+      "bytes": 883419,
+      "sha256": "10e8d3f39ef35d4633a2c7967ed4a22b4c3cb881fa8aec3a927ecbfb64b33f8a"
+    },
+    {
+      "path": "work/realism-authoring/face-report.json",
+      "bytes": 10752,
+      "sha256": "3852a979bddda495eb58a5240f48911324a39e7dae4a0ca19248cfae0a8a158d"
+    },
+    {
+      "path": "work/realism-authoring/face-review.blend",
+      "bytes": 42647582,
+      "sha256": "295564cee5c0cddfecd35978cee9d2e23ff1588bc3964d145b206c7b5e1bcde5"
+    },
+    {
+      "path": "work/realism-authoring/face-review.blend1",
+      "bytes": 42608582,
+      "sha256": "2b780d60d7ad5ba62ff2c22ca8ed79c623fc49d9e041fa42655649fb86acfdbe"
+    },
+    {
+      "path": "work/realism-authoring/face-side.png",
+      "bytes": 841377,
+      "sha256": "15b1ffdb73d172c21a8dca74cbb2e006a81497efd71a14aa3df0b00ad6c1de2a"
+    },
+    {
+      "path": "work/realism-authoring/face-three-quarter.png",
+      "bytes": 884519,
+      "sha256": "27ce7945c5d60556dd2c0d3c55e5c38d2186d5ff81fb42c23ac905ff544fd5e6"
+    },
+    {
+      "path": "work/realism-authoring/final-integration.json",
+      "bytes": 16912,
+      "sha256": "a8c7025a90b0b4ad747bf1a13c6b3ff391b910c78abf863ef13a6dab2e174f68"
+    },
+    {
+      "path": "work/realism-authoring/integration.json",
+      "bytes": 2296,
+      "sha256": "18756e9378854e2ca5edeebe949a18940ce602afe34e5e51cc193a4376892168"
+    },
+    {
+      "path": "work/realism-authoring/iris-texture-provenance.json",
+      "bytes": 1422,
+      "sha256": "ea28fd4cff3a7161b7c734986ccc685b01d2802c60b01dffa4520ca227a8e097"
+    },
+    {
+      "path": "work/realism-authoring/user-profile-feedback.png",
+      "bytes": 322593,
+      "sha256": "a735e1da84dc64482942ab8ce1d962aa06b1174ff7304f85343674f866fc037d"
+    },
+    {
+      "path": "work/tripo-inputs/body/back.png",
+      "bytes": 514918,
+      "sha256": "05aac1e386424b558435377494edd269d6b1e746fb7aba39c88e91b5178d1750"
+    },
+    {
+      "path": "work/tripo-inputs/body/front.png",
+      "bytes": 537363,
+      "sha256": "aad21f4d4fa68c42638bd4b8167c789dcec90bf1c9b6ed21ca5bec3704f3a295"
+    },
+    {
+      "path": "work/tripo-inputs/body/left.png",
+      "bytes": 317069,
+      "sha256": "cd894b46db5770c4fde594b5ba594cb79eda13e7147002f7ce2d1c95a7908819"
+    },
+    {
+      "path": "work/tripo-inputs/body/right.png",
+      "bytes": 314663,
+      "sha256": "b5049afec3c501a30508e7c9fffe9312426512a6f7789514f2c6097f93789209"
+    },
+    {
+      "path": "work/tripo-inputs/head/back.png",
+      "bytes": 1228653,
+      "sha256": "7fe2c977d756e3acd9f5828d380a1963883f39e7be13ff4cb789b3d93ef96f16"
+    },
+    {
+      "path": "work/tripo-inputs/head/front.png",
+      "bytes": 1241257,
+      "sha256": "8538d0b983810947659de1cb759c582799c5892b6604ec349feba3cc0817b381"
+    },
+    {
+      "path": "work/tripo-inputs/head/left.png",
+      "bytes": 1034784,
+      "sha256": "5d8b286afdbd1f55c0472ce5562023d54b0d6e62b3b20798aa5ae8ffbed1b852"
+    },
+    {
+      "path": "work/tripo-inputs/head/right.png",
+      "bytes": 1048909,
+      "sha256": "e6a08c5100f7d599fbac7b16b229b51a992acc2064a8e3f3c963d6f599e59785"
+    },
+    {
+      "path": "work/tripo-inputs/inputs.json",
+      "bytes": 3889,
+      "sha256": "4edc9a8ce530f461740d1063fd598f3a9acf9b67724bc6cd59c899ce8ae96bd4"
+    },
+    {
+      "path": "work/update-parts.json",
+      "bytes": 13691,
+      "sha256": "0a881eea876151c15dd72a99d40b8f98d15cee47539b68de9c475ac995e820e1"
+    }
+  ]
+}

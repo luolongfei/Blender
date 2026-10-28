@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <title>双马尾绿裙角色 · 3D 预览</title>
+  <style>
+    :root { color-scheme: light; --ink:#273329; --muted:#747c71; --line:#dddcd4; --green:#4e6348; }
+    * { box-sizing:border-box; }
+    body { margin:0; height:100vh; height:100svh; overflow:hidden; display:grid; grid-template-rows:auto minmax(0,1fr) auto; background:#f5f4ef; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:20px; padding:20px 28px 16px; }
+    h1 { margin:0; font-size:19px; letter-spacing:.02em; font-weight:600; }
+    .subtitle { margin:5px 0 0; color:var(--muted); font-size:12px; }
+    .badge { display:flex; align-items:center; gap:7px; flex-shrink:0; color:var(--muted); font-size:12px; }
+    .dot { width:6px; height:6px; border-radius:50%; background:#a0a99a; }
+    body[data-ready="true"] .dot { background:#63885a; }
+    main { position:relative; min-height:0; margin:0 18px; border:1px solid var(--line); border-radius:14px; overflow:hidden; background:#f5f4ef; }
+    canvas { display:block; width:100%; height:100%; outline:none; touch-action:none; }
+    canvas:focus-visible { outline:2px solid var(--green); outline-offset:-3px; }
+    .hint { position:absolute; bottom:17px; left:20px; margin:0; color:#7c8177; font-size:11px; pointer-events:none; }
+    .view-label { position:absolute; top:18px; left:20px; margin:0; color:#78816f; font-size:11px; letter-spacing:.08em; pointer-events:none; }
+    .overlay { position:absolute; inset:0; display:grid; place-items:center; padding:24px; background:#f5f4ef; z-index:2; }
+    .overlay[hidden] { display:none; }
+    .message { width:min(430px,100%); text-align:center; }
+    .spinner { width:25px; height:25px; margin:0 auto 19px; border:2px solid #d9ded3; border-top-color:var(--green); border-radius:50%; animation:spin 1.1s linear infinite; }
+    @keyframes spin { to { transform:rotate(360deg); } }
+    .message strong { display:block; margin-bottom:9px; font-size:16px; font-weight:500; }
+    .message p { margin:0; color:var(--muted); font-size:12px; line-height:1.8; }
+    #error-detail { overflow-wrap:anywhere; margin-top:8px; }
+    #retry { margin-top:19px; }
+    footer { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:9px; padding:16px 18px 20px; }
+    .group { display:flex; gap:4px; padding:4px; border:1px solid var(--line); border-radius:10px; background:#efeee8; }
+    button { display:inline-flex; align-items:center; justify-content:center; gap:7px; min-height:36px; padding:0 16px; border:1px solid transparent; border-radius:7px; background:transparent; color:#465241; font:inherit; font-size:12px; white-space:nowrap; cursor:pointer; transition:background .16s,color .16s; }
+    button:hover:enabled { background:#e4e7de; }
+    button[aria-pressed="true"] { background:var(--green); color:#fff; }
+    button:disabled { cursor:default; opacity:.45; }
+    button:focus-visible { outline:2px solid var(--green); outline-offset:3px; }
+    .separate { min-height:46px; border:1px solid var(--line); border-radius:10px; background:#f9f8f4; }
+    .spin-icon { width:14px; height:14px; }
+    @media(max-width:640px) {
+      header { padding:17px 18px 13px; }
+      h1 { font-size:16px; }
+      .subtitle { font-size:11px; }
+      .badge { font-size:11px; }
+      main { margin:0 10px; border-radius:11px; }
+      .hint { left:12px; bottom:12px; font-size:10px; }
+      footer { gap:7px; padding:11px 8px 13px; }
+      button { padding:0 11px; min-height:34px; }
+      .separate { min-height:44px; }
+    }
+    @media(prefers-reduced-motion:reduce) {
+      button { transition:none; }
+      .spinner { animation-duration:2.2s; }
+    }
+  </style>
+  <script type="importmap">
+    { "imports": { "three": "/public/vendor/three.module.js" } }
+  </script>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>双马尾绿裙角色</h1>
+      <p class="subtitle">Blender 制作 · 立体模型预览</p>
+    </div>
+    <div class="badge"><span class="dot"></span><span id="status">准备载入</span></div>
+  </header>
+  <main id="viewport" aria-label="角色三维模型">
+    <p class="view-label" id="view-label">立体视角</p>
+    <p class="hint">拖动旋转 · 滚轮缩放 · 右键平移</p>
+    <div class="overlay" id="overlay" role="status" aria-live="polite">
+      <div class="message">
+        <div class="spinner" id="spinner" aria-hidden="true"></div>
+        <strong id="loading-title">正在载入角色</strong>
+        <p id="loading-detail">读取本地模型和材质，请稍候。</p>
+        <p id="error-detail" hidden></p>
+        <button class="separate" id="retry" type="button" hidden>重新载入</button>
+      </div>
+    </div>
+  </main>
+  <footer aria-label="观察模型">
+    <div class="group" aria-label="镜头方向">
+      <button type="button" data-view="front" aria-pressed="false" disabled>正面</button>
+      <button type="button" data-view="left" aria-pressed="false" disabled>左侧</button>
+      <button type="button" data-view="back" aria-pressed="false" disabled>背面</button>
+      <button type="button" data-view="right" aria-pressed="false" disabled>右侧</button>
+      <button type="button" data-view="threequarter" aria-pressed="false" disabled>立体</button>
+    </div>
+    <div class="group" aria-label="观察范围">
+      <button type="button" data-frame="full" aria-pressed="true" disabled>全身</button>
+      <button type="button" data-frame="portrait" aria-pressed="false" disabled>面部</button>
+    </div>
+    <button class="separate" id="spin" type="button" aria-pressed="false" disabled>
+      <svg class="spin-icon" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+        <path d="M15.8 7a6.2 6.2 0 1 0 .2 5M16 3.5V7h-3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span id="spin-label">自动旋转</span>
+    </button>
+  </footer>
+  <script type="module">
+    const modelURL = '/projects/6c8500bf-1c38-481a-babd-e5478a50dd67/exports/avatar-preview.glb';
+    const viewport = document.getElementById('viewport');
+    const overlay = document.getElementById('overlay');
+    const status = document.getElementById('status');
+    const label = document.getElementById('view-label');
+    const viewButtons = [...document.querySelectorAll('[data-view]')];
+    const frameButtons = [...document.querySelectorAll('[data-frame]')];
+    const spinButton = document.getElementById('spin');
+    const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    document.getElementById('retry').addEventListener('click', () => location.reload());
+
+    function showError(error) {
+      document.body.dataset.ready = 'false';
+      status.textContent = '载入未完成';
+      overlay.hidden = false;
+      document.getElementById('spinner').hidden = true;
+      document.getElementById('loading-title').textContent = '暂时无法显示模型';
+      document.getElementById('loading-detail').textContent =
+        '请确认模型已经导出，并从本地服务器打开此预览页。';
+      const detail = document.getElementById('error-detail');
+      detail.hidden = false;
+      detail.textContent = error?.message || '模型文件或预览组件尚未就绪。';
+      document.getElementById('retry').hidden = false;
+      [...viewButtons, ...frameButtons, spinButton].forEach(button => button.disabled = true);
+      console.error(error);
+    }
+
+    try {
+      const [THREE, {OrbitControls}, {GLTFLoader}] = await Promise.all([
+        import('three'),
+        import('/public/vendor/OrbitControls.js'),
+        import('/public/vendor/GLTFLoader.js')
+      ]);
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color('#f5f4ef');
+      const camera = new THREE.PerspectiveCamera(34, 1, 0.01, 100);
+      const renderer = new THREE.WebGLRenderer({antialias:true, alpha:false});
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+      renderer.outputColorSpace = THREE.SRGBColorSpace;
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.0;
+      renderer.shadowMap.enabled = true;
+      renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+      renderer.domElement.tabIndex = 0;
+      renderer.domElement.setAttribute('aria-label', '拖动可旋转的角色模型');
+      viewport.prepend(renderer.domElement);
+      const controls = new OrbitControls(camera, renderer.domElement);
+      controls.enableDamping = true;
+      controls.dampingFactor = 0.07;
+      controls.autoRotate = false;
+      controls.autoRotateSpeed = 0.75;
+      controls.minPolarAngle = 0.15;
+      controls.maxPolarAngle = Math.PI - 0.15;
+
+      scene.add(new THREE.HemisphereLight(0xfffbf4, 0xa0a69b, 1.6));
+      scene.add(new THREE.AmbientLight(0xffffff, 0.25));
+      const key = new THREE.DirectionalLight(0xfff6e7, 2.6);
+      key.position.set(-3, 5, 4);
+      key.castShadow = true;
+      key.shadow.mapSize.set(2048, 2048);
+      key.shadow.camera.left = key.shadow.camera.bottom = -2;
+      key.shadow.camera.right = key.shadow.camera.top = 2;
+      key.shadow.camera.near = 0.1;
+      key.shadow.camera.far = 12;
+      key.shadow.normalBias = 0.014;
+      key.shadow.bias = -0.0001;
+      scene.add(key);
+      const fill = new THREE.DirectionalLight(0xe8efff, 0.85);
+      fill.position.set(3, 2, 2);
+      scene.add(fill);
+      const rim = new THREE.DirectionalLight(0xffffff, 1.2);
+      rim.position.set(1, 3, -3);
+      scene.add(rim);
+      const ground = new THREE.Mesh(
+        new THREE.PlaneGeometry(12, 12),
+        new THREE.ShadowMaterial({color:0x686d5c, opacity:0.12})
+      );
+      ground.rotation.x = -Math.PI / 2;
+      ground.receiveShadow = true;
+      scene.add(ground);
+
+      let bounds, center, size;
+      let currentView = 'threequarter';
+      let currentFrame = 'full';
+      let transition = null;
+      let ready = false;
+      const viewNames = {front:'正面',left:'左侧',back:'背面',right:'右侧',threequarter:'立体视角'};
+
+      function updateButtons() {
+        viewButtons.forEach(button => button.setAttribute('aria-pressed',
+          String(button.dataset.view === currentView)));
+        frameButtons.forEach(button => button.setAttribute('aria-pressed',
+          String(button.dataset.frame === currentFrame)));
+        label.textContent = (currentFrame === 'portrait' ? '面部 · ' : '') +
+          (viewNames[currentView] || '自由视角');
+      }
+
+      function frameTarget() {
+        if (currentFrame === 'portrait') {
+          return {
+            target:new THREE.Vector3(center.x, bounds.max.y - size.y * 0.16, center.z),
+            height:size.y * 0.43,
+            width:size.y * 0.41,
+            depth:size.z
+          };
+        }
+        return {target:center.clone(),height:size.y,width:size.x,depth:size.z};
+      }
+
+      function preset(view = currentView || 'threequarter', instant = false) {
+        if (!ready) return;
+        currentView = view;
+        const frame = frameTarget();
+        const vertical = Math.tan(THREE.MathUtils.degToRad(camera.fov / 2));
+        const isSide = view === 'left' || view === 'right';
+        const visibleWidth = isSide ? Math.max(frame.depth, frame.width * 0.5) : frame.width;
+        const distance = 1.20 * Math.max(frame.height / (2 * vertical),
+          visibleWidth / (2 * vertical * camera.aspect));
+        const direction = {
+          front:[0,0,1], back:[0,0,-1], left:[1,0,0], right:[-1,0,0],
+          threequarter:[0.49,0.08,1]
+        }[view] || [0,0,1];
+        const destination = frame.target.clone().add(
+          new THREE.Vector3(...direction).normalize().multiplyScalar(distance));
+        controls.minDistance = size.y * 0.16;
+        controls.maxDistance = size.y * 9;
+        if (instant || reducedMotion) {
+          camera.position.copy(destination);
+          controls.target.copy(frame.target);
+          transition = null;
+          controls.update();
+        } else {
+          transition = {
+            started:performance.now(), from:camera.position.clone(), to:destination,
+            fromTarget:controls.target.clone(), toTarget:frame.target
+          };
+        }
+        updateButtons();
+      }
+
+      function resize() {
+        const width = viewport.clientWidth;
+        const height = viewport.clientHeight;
+        renderer.setSize(width, height, false);
+        camera.aspect = width / Math.max(height, 1);
+        camera.updateProjectionMatrix();
+      }
+      new ResizeObserver(resize).observe(viewport);
+      resize();
+
+      viewButtons.forEach(button => button.addEventListener('click',
+        () => preset(button.dataset.view)));
+      frameButtons.forEach(button => button.addEventListener('click', () => {
+        currentFrame = button.dataset.frame;
+        preset(currentView || 'front');
+      }));
+      spinButton.addEventListener('click', () => {
+        controls.autoRotate = !controls.autoRotate;
+        spinButton.setAttribute('aria-pressed', String(controls.autoRotate));
+        document.getElementById('spin-label').textContent =
+          controls.autoRotate ? '停止旋转' : '自动旋转';
+      });
+      controls.addEventListener('start', () => {
+        transition = null;
+        currentView = '';
+        updateButtons();
+      });
+      renderer.domElement.addEventListener('webglcontextlost', event => {
+        event.preventDefault();
+        showError(new Error('浏览器的 3D 渲染连接已中断，请重新载入。'));
+      });
+
+      status.textContent = '载入中';
+      const loader = new GLTFLoader();
+      const gltf = await loader.loadAsync(modelURL + '?v=' + Date.now(), progress => {
+        if (progress.lengthComputable && progress.total > 0) {
+          document.getElementById('loading-detail').textContent =
+            '正在读取模型和材质 · ' + Math.min(100, Math.round(progress.loaded / progress.total * 100)) + '%';
+        }
+      });
+      const model = gltf.scene;
+      let meshCount = 0;
+      model.traverse(object => {
+        if (object.isMesh) {
+          meshCount++;
+          object.castShadow = true;
+          object.receiveShadow = false;
+        }
+      });
+      if (!meshCount) throw new Error('模型文件中未发现可显示的网格。');
+      model.updateMatrixWorld(true);
+      bounds = new THREE.Box3().setFromObject(model);
+      size = bounds.getSize(new THREE.Vector3());
+      center = bounds.getCenter(new THREE.Vector3());
+      if (bounds.isEmpty() || ![...size.toArray(),...center.toArray()].every(Number.isFinite)
+          || size.y <= 0) throw new Error('模型尺寸不正确，无法定位镜头。');
+      scene.add(model);
+      ground.position.y = bounds.min.y - 0.002;
+      key.target.position.copy(center);
+      scene.add(key.target);
+      ready = true;
+      [...viewButtons, ...frameButtons, spinButton].forEach(button => button.disabled = false);
+      preset('threequarter', true);
+      overlay.hidden = true;
+      status.textContent = '可旋转查看';
+      document.body.dataset.ready = 'true';
+
+      let lastTime = performance.now();
+      renderer.setAnimationLoop(now => {
+        const delta = Math.min((now - lastTime) / 1000, 0.1);
+        lastTime = now;
+        if (transition) {
+          const t = Math.min((now - transition.started) / 420, 1);
+          const eased = t * t * (3 - 2 * t);
+          camera.position.lerpVectors(transition.from, transition.to, eased);
+          controls.target.lerpVectors(transition.fromTarget, transition.toTarget, eased);
+          if (t === 1) transition = null;
+        }
+        controls.update(delta);
+        renderer.render(scene, camera);
+      });
+    } catch (error) {
+      showError(error);
+    }
+  </script>
+</body>
+</html>

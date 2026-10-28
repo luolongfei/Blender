@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "defaultProject": "6c8500bf-1c38-481a-babd-e5478a50dd67",
+  "projectsRoot": "projects",
+  "stateRoot": "state",
+  "appPort": 8768,
+  "previewPort": 8769
+}

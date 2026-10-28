@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "projectId": "6c8500bf-1c38-481a-babd-e5478a50dd67",
+  "recordedAt": "2026-10-28T09:59:09+00:00",
+  "stage": "migration-checkpoint-review-candidate",
+  "route": "local-original-Blender-MCP",
+  "toolchainLock": "../../toolchain.lock.json",
+  "workingMaster": {
+    "path": "work/character.blend",
+    "bytes": 60560716,
+    "sha256": "6e7361e7f5c306325d3f33c4c9f6f56b1a489d5f4579bb4be951d4c3d59cc8c1",
+    "savedAtSource": "2026-10-28T17:18:09+08:00"
+  },
+  "currentExports": [
+    {
+      "path": "exports/avatar.blend",
+      "bytes": 57502979,
+      "sha256": "dcc12641026baf53579d072442c3139d1fdcef1e37452f1cc197347590c093f1"
+    },
+    {
+      "path": "exports/expression-review/avatar-preview.vrm",
+      "bytes": 76645100,
+      "sha256": "09c82321c484e5512607c9218b442bf998d5076be0d48db574970668e8617c99"
+    },
+    {
+      "path": "exports/expression-review/avatar-preview.glb",
+      "bytes": 75819164,
+      "sha256": "bc67ca334bfc62b860f412af03bae9eb60ac338e225b03aed694d2ede78ce9ef"
+    },
+    {
+      "path": "exports/expression-review/avatar-runtime.blend",
+      "bytes": 54493034,
+      "sha256": "9a3bfdcb54c93ed86d8ad80a3bb3615ef7f98988cf1fe25471daf5ea56f52a5a"
+    }
+  ],
+  "exportCorrespondence": {
+    "sourceSha256": "6e7361e7f5c306325d3f33c4c9f6f56b1a489d5f4579bb4be951d4c3d59cc8c1",
+    "verifiedAgainstCopiedManifest": true,
+    "sourceReport": "exports/avatar-source-report.json",
+    "exportReport": "exports/expression-review/avatar-export-report.json",
+    "runtimeSummary": "exports/expression-review/avatar-runtime-review-summary.json",
+    "runtimeSummaryReportHashesVerified": 12,
+    "motionFilesVerified": 4,
+    "currentDiagnostics": "exports/expression-review/",
+    "rootPreviewAliases": "exports/current-preview-aliases.json",
+    "otherRootDiagnosticReports": "historical"
+  },
+  "integratedChanges": [
+    "body_surface_clearance_refine",
+    "ear_orientation_refine",
+    "hair_front_fibres",
+    "hair_nape_finish"
+  ],
+  "candidatePreservation": {
+    "allCopied": true,
+    "unmergedCandidateAudit": "Not exhaustively reviewed; preserve work copies and consult their reports before reuse."
+  },
+  "canonicalCharakit": {
+    "path": "project.charakit",
+    "bytes": 87435255,
+    "sha256": "fabae567498479695c0abf8300612b712236ccb6754c118102a8939fc70b599d",
+    "latestPreviewRegistrationReported": true,
+    "productionStagesUnchanged": true,
+    "role": "Project assets and application state; Blender work/character.blend remains the editable production master."
+  },
+  "acceptance": {
+    "technicalChecks": "Passed within the scopes of the linked reports; not rerun during migration.",
+    "appearanceReviewedByUser": false,
+    "photorealisticClientDeliveryReady": false,
+    "authorMetadataFinalized": false
+  },
+  "knownLimitations": [
+    "按用户要求的真人感商业终稿标准，当前仍未达标，不能作为已经验收的最终成品。",
+    "面部近景仍有人偶感：眼睑、鼻唇细节与虹膜精细程度不一致，皮肤层次偏均匀。",
+    "头发主轮廓仍有成片和成束感；已有细丝几何和可动骨链，不等于逐根真人毛发外观或逐根物理仿真。",
+    "手部关节、甲床与衣料受力褶皱仍较简化，近景真实感需要继续雕刻和材质制作。",
+    "造型和表情的审美验收仍由用户／客户确认。",
+    "默认无腮红；当前提供表情和口型，尚未制作眼球追踪／LookAt。",
+    "运行版用于桌面审阅；目标软件、设备及性能预算尚未指定。",
+    "已测试的步行和招手不代表任意大幅动作都没有穿插。",
+    "随包自然动作按当前鞋底校准；原套件标准步行仅作对照，尚有鞋底高度偏差，不能视为本角色已适配的交付动作。",
+    "自然动作切换检查中有一帧双脚鞋底最低点约8.06毫米高于地面，不能称全部过渡始终精确贴地。",
+    "衣内身体使用隐藏重叠连接，包含躯干、双臂、下胫和足部；不是一体焊接的裸体解剖模型。",
+    "脚趾随当前刚性鞋一起运动；独立脚趾动作需要适配鞋的变形。",
+    "正式模型名、作者、使用及再分发条款尚未确认；VRM仍为审阅元数据。",
+    "当前运行版有 614,282 个三角形，高于项目脚本 300,000 的目标；尚未完成目标设备的帧率和内存验收。"
+  ],
+  "migration": {
+    "assetManifest": "../../asset-manifests/6c8500bf-1c38-481a-babd-e5478a50dd67.json",
+    "snapshotAt": "2026-10-28T09:56:08.226Z",
+    "assetFiles": 962,
+    "assetBytes": 7543228222,
+    "copyResult": "ok",
+    "sourceStableDuringSuccessfulCopy": true,
+    "localSnapshotHashVerification": "ok",
+    "extraFiles": 0,
+    "originalProducerMessageSent": false,
+    "originalProducerPauseConfirmed": false,
+    "scope": "Stable saved snapshot copied from the original Charakuru project. Subsequent original-workspace changes are not automatically included.",
+    "offMachineCopyVerified": false,
+    "newMachineBlenderAndMcpVerified": false,
+    "migrationValidation": {
+      "automatedTestsPassed": 11,
+      "javascriptSyntaxFiles": 26,
+      "pythonSyntaxFiles": 66,
+      "lockedToolkitFilesVerified": 277,
+      "appRestoredProject": true,
+      "appPendingRequest": null,
+      "previewRoutesAndVrmRange": true
+    }
+  },
+  "resume": [
+    "Restore this Git revision and all assets, then run assets verify before production writes.",
+    "Open work/character.blend with the pinned Blender/VRM Add-on environment; connect MCP and confirm the correct scene.",
+    "Use previews/motion-viewer.html via the workspace preview server for the current runtime model.",
+    "Continue the visual and performance issues recorded in exports/quality-assessment.json; do not regenerate Tripo candidates based on historical workflow stages."
+  ]
+}

@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <title>双马尾绿裙 · 表情查看</title>
+  <style>
+    :root{color-scheme:light;--paper:#f5f4ef;--ink:#29352c;--muted:#788075;--line:#dcded4;--green:#4e6348}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:13px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft Yahei",sans-serif}
+    button,input{font:inherit}
+    button{cursor:pointer;color:inherit}
+    button:disabled,input:disabled{opacity:.4;cursor:default}
+    button:focus-visible,input:focus-visible,canvas:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+    header{height:84px;padding:21px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    h1{font-size:20px;font-weight:600;margin:0 0 5px}
+    header p{font-size:12px;color:var(--muted);margin:0}
+    #status{font-size:12px;color:var(--muted);text-align:right}
+    main{height:calc(100svh - 105px);min-height:520px;margin:0 22px 21px;display:grid;grid-template-columns:minmax(0,1fr) 280px;border:1px solid var(--line);border-radius:14px;overflow:hidden}
+    #viewport{position:relative;min-width:0;background:var(--paper)}
+    canvas{display:block;width:100%;height:100%;touch-action:none}
+    .stage-label{position:absolute;left:23px;top:20px;pointer-events:none}
+    #expression-name{font-size:18px;font-weight:500}
+    #expression-detail{display:block;color:var(--muted);font-size:11px;margin-top:5px}
+    .viewbar{position:absolute;left:18px;right:18px;bottom:43px;display:flex;justify-content:center;flex-wrap:wrap;gap:5px}
+    .viewbar button{min-height:32px;font-size:11px;padding:0 10px;border:1px solid var(--line);border-radius:6px;background:#f5f4efed}
+    .viewbar button[aria-pressed=true]{background:#e4e9df;border-color:#bcc8b6}
+    .hint{position:absolute;bottom:19px;width:100%;text-align:center;color:var(--muted);font-size:11px;pointer-events:none}
+    aside{border-left:1px solid var(--line);padding:24px 20px;overflow:auto;background:#fafaf6}
+    .control-section+.control-section{margin-top:25px}
+    h2{font-weight:500;font-size:12px;margin:0 0 11px;color:#737d6f;letter-spacing:.06em}
+    .buttons{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+    .buttons button{height:35px;background:transparent;border:1px solid var(--line);border-radius:6px;font-size:12px}
+    .buttons button:hover:enabled,.viewbar button:hover:enabled{background:#e9ede3}
+    .buttons button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:#fff}
+    .vowels{grid-template-columns:repeat(5,minmax(0,1fr))}
+    .intensity-label{display:flex;justify-content:space-between;margin-bottom:10px;font-size:12px}
+    output{font-variant-numeric:tabular-nums;color:var(--muted)}
+    input[type=range]{width:100%;accent-color:var(--green);margin:0}
+    .switch-row{display:flex;align-items:center;justify-content:space-between;margin-top:15px;font-size:12px;gap:10px}
+    .toggle{border:1px solid var(--line);border-radius:15px;min-width:55px;height:27px;background:transparent;font-size:11px}
+    .toggle[aria-pressed=true]{background:#e6ecdf;border-color:#bdcdb2;color:#405938}
+    #demo{display:block;width:100%;height:39px;border:1px solid #bbc8b3;border-radius:7px;background:#e7eddf;color:#405938;font-size:12px}
+    #demo[aria-pressed=true]{background:var(--green);color:white;border-color:var(--green)}
+    .note{line-height:1.75;font-size:11px;color:var(--muted);margin:11px 0 0}
+    .overlay{position:absolute;inset:0;display:grid;place-items:center;padding:30px;background:var(--paper);z-index:3;text-align:center}
+    .overlay[hidden]{display:none}
+    .overlay strong{font-size:16px;font-weight:500}
+    .overlay p{max-width:390px;color:var(--muted);line-height:1.8;overflow-wrap:anywhere}
+    #retry{height:35px;padding:0 16px;border:1px solid var(--line);border-radius:6px;background:#e8edde}
+    @media(max-width:760px){
+      header{height:77px;padding:18px}h1{font-size:17px}#status{max-width:130px;font-size:11px}
+      main{height:auto;min-height:0;margin:0 10px 14px;grid-template-columns:1fr}
+      #viewport{height:62svh;min-height:370px}aside{border-left:0;border-top:1px solid var(--line);padding:20px;display:grid;grid-template-columns:1fr 1fr;gap:22px}
+      .control-section+.control-section{margin-top:0}.viewbar{left:8px;right:8px;gap:4px}.viewbar button{padding:0 7px;font-size:10px}
+    }
+    @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+  </style>
+  <script type="importmap">{"imports":{"three":"/public/vendor/three.module.js"}}</script>
+</head>
+<body>
+  <header>
+    <div><h1>双马尾绿裙 · 表情查看</h1><p>面部、眼睑、眉毛与口型</p></div>
+    <span id="status" role="status" aria-live="polite">准备载入</span>
+  </header>
+  <main>
+    <div id="viewport" aria-label="可旋转的角色面部">
+      <div class="stage-label"><span id="expression-name">自然</span><span id="expression-detail">默认面容</span></div>
+      <div class="viewbar" aria-label="观察角度">
+        <button type="button" data-angle="-90" aria-pressed="false" disabled>左侧面</button>
+        <button type="button" data-angle="-45" aria-pressed="false" disabled>左 45°</button>
+        <button type="button" data-angle="0" aria-pressed="true" disabled>正面</button>
+        <button type="button" data-angle="45" aria-pressed="false" disabled>右 45°</button>
+        <button type="button" data-angle="90" aria-pressed="false" disabled>右侧面</button>
+      </div>
+      <span class="hint">拖动旋转 · 滚轮缩放 · 右键平移</span>
+      <div id="overlay" class="overlay" role="status" aria-live="polite">
+        <div><strong id="loading-title">正在载入表情模型</strong><p id="loading-detail">读取本地角色、材质与表情。</p><button id="retry" type="button" hidden>重新载入</button></div>
+      </div>
+    </div>
+    <aside aria-label="表情控制">
+      <section class="control-section">
+        <h2>情绪</h2>
+        <div class="buttons">
+          <button type="button" data-expression="neutral" aria-pressed="true" disabled>自然</button>
+          <button type="button" data-expression="happy" aria-pressed="false" disabled>开心</button>
+          <button type="button" data-expression="angry" aria-pressed="false" disabled>生气</button>
+          <button type="button" data-expression="sad" aria-pressed="false" disabled>难过</button>
+          <button type="button" data-expression="relaxed" aria-pressed="false" disabled>放松</button>
+          <button type="button" data-expression="surprised" aria-pressed="false" disabled>惊讶</button>
+        </div>
+      </section>
+      <section class="control-section">
+        <h2>眼睑</h2>
+        <div class="buttons">
+          <button type="button" data-expression="blink" aria-pressed="false" disabled>闭眼</button>
+          <button type="button" data-expression="blinkLeft" aria-pressed="false" disabled>左眨眼</button>
+          <button type="button" data-expression="blinkRight" aria-pressed="false" disabled>右眨眼</button>
+        </div>
+      </section>
+      <section class="control-section">
+        <h2>口型</h2>
+        <div class="buttons vowels">
+          <button type="button" data-expression="aa" aria-pressed="false" disabled>啊</button>
+          <button type="button" data-expression="ih" aria-pressed="false" disabled>咿</button>
+          <button type="button" data-expression="ou" aria-pressed="false" disabled>呜</button>
+          <button type="button" data-expression="ee" aria-pressed="false" disabled>诶</button>
+          <button type="button" data-expression="oh" aria-pressed="false" disabled>哦</button>
+        </div>
+        <p class="note">口型按钮控制嘴部形变，不播放音频。</p>
+      </section>
+      <section class="control-section">
+        <label class="intensity-label" for="intensity"><span>表情强度</span><output id="intensity-value" for="intensity">100%</output></label>
+        <input id="intensity" type="range" min="0" max="100" step="1" value="100" disabled>
+        <div class="switch-row"><span>自然眨眼</span><button id="autoblink" class="toggle" type="button" aria-pressed="true" disabled>开启</button></div>
+        <div class="switch-row"><span>缓慢环绕 ±45°</span><button id="orbit" class="toggle" type="button" aria-pressed="false" disabled>关闭</button></div>
+      </section>
+      <section class="control-section">
+        <button id="demo" type="button" aria-pressed="false" disabled>播放表情与说话演示</button>
+        <p class="note">逐个展示情绪，再演示连续口型。点击任一表情即可退出演示。</p>
+      </section>
+    </aside>
+  </main>
+  <script type="module" src="./expression-viewer.mjs"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>双马尾绿裙 · 动作查看</title>
+<style>
+:root{color-scheme:light;--paper:#f5f4ef;--ink:#29352c;--muted:#788075;--line:#dcded4;--green:#4e6348}
+*{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:13px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
+button,input{font:inherit}button{cursor:pointer;color:inherit}button:disabled{opacity:.45;cursor:default}button:focus-visible,input:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+header{height:84px;padding:21px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}h1{font-size:20px;margin:0 0 5px;font-weight:600}header p{margin:0;color:var(--muted);font-size:12px}#status{color:var(--muted);font-size:12px}
+main{height:calc(100svh - 105px);min-height:520px;margin:0 22px 21px;display:grid;grid-template-columns:minmax(0,1fr) 270px;grid-template-rows:minmax(0,1fr);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+#viewport{position:relative;min-width:0;min-height:0}canvas{position:absolute;inset:0;display:block;width:100%;height:100%;touch-action:none}
+aside{padding:24px 20px;border-left:1px solid var(--line);background:#fafaf6;overflow:auto}section+section{margin-top:26px}h2{font-size:12px;color:#737d6f;font-weight:500;margin:0 0 11px}
+.buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}button{border:1px solid var(--line);border-radius:7px;background:transparent;min-height:36px;padding:0 10px;font-size:12px}
+button[aria-pressed=true]{color:white;background:var(--green);border-color:var(--green)}button:hover:enabled{background:#e7ecdf;color:var(--ink)}
+.row{display:flex;justify-content:space-between;align-items:center;margin-top:14px;gap:10px}.toggle{min-width:54px;min-height:27px;border-radius:15px;font-size:11px}
+input[type=number]{width:75px;border:1px solid var(--line);border-radius:6px;background:white;color:var(--ink);padding:8px;font:inherit}
+label{display:flex;justify-content:space-between;margin-bottom:10px;font-size:12px}output{color:var(--muted)}input[type=range]{width:100%;accent-color:var(--green)}
+.wide{display:block;width:100%;margin-top:9px}#record{background:#e6ecdf;border-color:#bdc9b5;color:#405938}
+.note{font-size:11px;color:var(--muted);line-height:1.8;margin:11px 0 0}.stage-label{position:absolute;left:23px;top:20px;pointer-events:none}#motion-name{font-size:18px}#motion-detail{display:block;font-size:11px;color:var(--muted);margin-top:5px}
+.viewbar{position:absolute;bottom:24px;left:15px;right:15px;display:flex;justify-content:flex-end;flex-wrap:wrap;gap:6px}.viewbar button{font-size:11px;min-height:32px;background:#f5f4efed}.viewbar button[aria-pressed=true]{color:var(--ink);background:#e4e9df}
+#overlay{position:absolute;inset:0;display:grid;place-items:center;padding:25px;background:var(--paper);z-index:3;text-align:center}#overlay[hidden]{display:none}#overlay p{max-width:420px;font-size:12px;line-height:1.8;color:var(--muted)}
+@media(max-width:760px){header{padding:18px;height:77px}h1{font-size:17px}main{height:auto;min-height:0;margin:0 10px 14px;grid-template-columns:1fr}#viewport{height:68svh;min-height:400px}aside{border-left:0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:23px;padding:20px}section+section{margin:0}}
+</style>
+<script type="importmap">{"imports":{"three":"/public/vendor/three.module.js"}}</script>
+</head>
+<body>
+<header><div><h1>双马尾绿裙 · 动作查看</h1><p>自然站姿、步行、招呼与面部表情</p></div><span id="status" role="status" aria-live="polite">准备载入</span></header>
+<main><div id="viewport">
+<div class="stage-label"><span id="motion-name">自然站姿</span><span id="motion-detail">轻微呼吸与重心变化</span></div>
+<div class="viewbar"><button data-view="front" disabled>正面</button><button data-view="oblique" aria-pressed="true" disabled>斜前方</button><button data-view="profile" disabled>侧面</button><button data-view="face" disabled>脸部</button></div>
+<div id="overlay"><div><strong id="loading-title">正在载入角色</strong><p id="loading-detail">读取本地模型、表情与动作。</p></div></div>
+</div>
+<aside>
+<section><h2>动作</h2><div class="buttons"><button data-mode="idle" aria-pressed="true" disabled>自然站姿</button><button data-mode="walk" disabled>柔和步行</button><button data-mode="greet" disabled>挥手招呼</button><button data-mode="standard" disabled>原标准步行</button></div><div class="row"><span>播放</span><button id="playing" class="toggle" aria-pressed="true" disabled>开启</button></div></section>
+<section><h2>动作节奏</h2><label for="speed"><span>速度</span><output id="speed-value">1.0×</output></label><input id="speed" type="range" min="50" max="140" value="100" step="5" disabled><div class="row"><span>头发与裙摆物理</span><button id="physics" class="toggle" aria-pressed="true" disabled>开启</button></div></section>
+<section><h2>面部</h2><div class="row"><span>自然眨眼</span><button id="blink" class="toggle" aria-pressed="true" disabled>开启</button></div><div class="row"><span>轻微表情</span><button id="expression" class="toggle" aria-pressed="true" disabled>开启</button></div><p class="note">默认面容保持自然。招呼时有轻微笑意。</p></section>
+<section><h2>完整演示</h2><button id="film" class="wide" disabled>播放 18 秒演示</button><button id="record" class="wide" disabled>录制 18 秒视频</button><p id="record-note" class="note">依次展示步行、招呼和脸部口型。录制后保存 WebM 视频，不含音频。</p></section>
+<section><h2>观察</h2><p class="note">拖动旋转，滚轮缩放。切换原标准步行可比较动作节奏与变形。</p><div class="row"><label for="seek-time">动作时刻（秒）</label><input id="seek-time" type="number" min="0" max="30" step=".01" value="5.90" disabled></div><button id="seek" class="wide" disabled>定位并暂停</button><p id="model-info" class="note"></p></section>
+</aside></main>
+<script type="module" src="./motion-viewer.mjs"></script>
+</body></html>

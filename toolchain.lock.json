@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "charakuru": {
+    "version": "1.1.0",
+    "path": "tools/charakuru/1.1.0",
+    "archive": {
+      "url": "https://github.com/nanocle/Charakuru/releases/download/v1.1.0/charakuru-1.1.0-2026-10-23T00-56-38-465Z.zip",
+      "sha256": "ad2b7d7de05f7b495bb5f05e6e9c6c13b7aa2339a0fa116f56f4a9f74183dd1b",
+      "rootDirectory": "charakuru-1.1.0-2026-10-23T00-56-38-465Z"
+    }
+  },
+  "environment": {
+    "nodeMinimumMajor": 22,
+    "blender": "5.2.3",
+    "vrmAddon": "4.10.2",
+    "blenderMcp": "2.2.4",
+    "uv": "0.13.5",
+    "mcpPython": "3.15.1",
+    "meaning": "Previously validated versions, not a claim of latest releases."
+  }
+}

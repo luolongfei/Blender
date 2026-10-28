@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <title>双马尾绿裙角色 · 动作与物理预览</title>
+  <style>
+    :root { color-scheme:light; --ink:#273329; --muted:#737b70; --line:#dddcd4; --green:#4e6348; }
+    * { box-sizing:border-box; }
+    body { margin:0; height:100vh; height:100svh; overflow:hidden; display:grid; grid-template-rows:auto minmax(0,1fr) auto; color:var(--ink); background:#f5f4ef; font:13px -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft Yahei",sans-serif; }
+    header { display:flex; align-items:center; justify-content:space-between; gap:18px; padding:20px 28px 16px; }
+    h1 { margin:0; font-size:19px; font-weight:600; }
+    .subtitle { margin:5px 0 0; color:var(--muted); font-size:12px; }
+    #status { color:var(--muted); font-size:12px; text-align:right; }
+    main { position:relative; min-height:0; margin:0 18px; border:1px solid var(--line); border-radius:14px; overflow:hidden; }
+    canvas { display:block; width:100%; height:100%; touch-action:none; outline:none; }
+    .hint { position:absolute; left:18px; bottom:14px; color:var(--muted); font-size:11px; pointer-events:none; }
+    #stats { position:absolute; right:18px; top:15px; color:var(--muted); font-size:11px; font-variant-numeric:tabular-nums; }
+    .overlay { position:absolute; inset:0; display:grid; place-items:center; padding:24px; text-align:center; background:#f5f4ef; z-index:2; }
+    .overlay[hidden] { display:none; }
+    .overlay strong { font-size:16px; font-weight:500; }
+    .overlay p { color:var(--muted); line-height:1.8; max-width:500px; overflow-wrap:anywhere; }
+    footer { display:flex; justify-content:center; gap:10px; flex-wrap:wrap; padding:14px 16px 18px; }
+    .group { display:flex; align-items:center; gap:4px; padding:4px; border:1px solid var(--line); border-radius:10px; background:#efeee8; }
+    button, select { color:#465241; font:inherit; font-size:12px; border:1px solid transparent; border-radius:7px; background:transparent; min-height:36px; padding:0 13px; }
+    button { cursor:pointer; }
+    button:hover:enabled { background:#e4e7de; }
+    button[aria-pressed="true"] { background:var(--green); color:white; }
+    button:disabled, select:disabled { opacity:.45; cursor:default; }
+    button:focus-visible, select:focus-visible, canvas:focus-visible { outline:2px solid var(--green); outline-offset:3px; }
+    .separator { height:22px; border-left:1px solid var(--line); margin:0 3px; }
+    @media(max-width:700px) { header { padding:16px 17px 13px; } h1 { font-size:16px; } main { margin:0 9px; } footer { gap:6px; padding:10px 6px 12px; } button, select { padding:0 9px; } .subtitle,#status { font-size:11px; } }
+  </style>
+  <script type="importmap">{"imports":{"three":"/public/vendor/three.module.js"}}</script>
+</head>
+<body>
+  <header>
+    <div><h1>双马尾绿裙角色</h1><p class="subtitle">实际 VRM · 标准步行动作与头发、裙摆物理</p></div>
+    <span id="status" role="status" aria-live="polite">准备载入</span>
+  </header>
+  <main id="viewport" aria-label="可旋转的 VRM 动作预览">
+    <span id="stats"></span>
+    <span class="hint">拖动旋转 · 滚轮缩放 · 右键平移</span>
+    <div id="overlay" class="overlay" role="status" aria-live="polite">
+      <div><strong id="loading-title">正在载入角色和动作</strong><p id="loading-detail">读取项目中的 VRM、材质和标准步行动作。</p><button id="retry" type="button" hidden>重新载入</button></div>
+    </div>
+  </main>
+  <footer aria-label="动作与观察控制">
+    <div class="group">
+      <button type="button" id="walk" aria-pressed="false" disabled>步行</button>
+      <button type="button" id="pause" aria-pressed="false" disabled>暂停</button>
+      <button type="button" id="rest" aria-pressed="false" disabled>T 姿势</button>
+      <span class="separator"></span>
+      <select id="speed" aria-label="动作速度" disabled><option value=".5">0.5 倍速</option><option value="1" selected>1 倍速</option><option value="1.5">1.5 倍速</option></select>
+    </div>
+    <div class="group">
+      <button type="button" id="physics" aria-pressed="true" disabled>物理开启</button>
+      <button type="button" id="reset" disabled>重置物理</button>
+    </div>
+    <div class="group" aria-label="镜头">
+      <button type="button" data-view="front" aria-pressed="false" disabled>正面</button>
+      <button type="button" data-view="threequarter" aria-pressed="true" disabled>立体</button>
+      <button type="button" data-view="back" aria-pressed="false" disabled>背面</button>
+      <button type="button" id="portrait" aria-pressed="false" disabled>面部</button>
+    </div>
+  </footer>
+  <script type="module" src="./vrm-viewer.mjs"></script>
+</body>
+</html>
