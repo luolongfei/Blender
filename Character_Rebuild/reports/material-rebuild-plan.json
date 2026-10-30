@@ -1,0 +1,33 @@
+{
+  "scope": "New Hunyuan GLB rebuild only; old rejected geometry and realistic skin maps were not used.",
+  "input": "character-hq-textured.glb",
+  "sourceSha256": "105b77790ff4b382b0ef83189827d774a596f4a8069cefdb8911ad85f93af3b2",
+  "inspectedImages": ["Character_Rebuild/diagnostics/original-textures/base-color-0.png", "Character_Rebuild/diagnostics/clothing/unlit-z-positive.png", "Character_Rebuild/reports/reference-audit-images/IMG_7224-original.png"],
+  "findings": [
+    "Original material omits metallicFactor; glTF default is 1. Rebuilt skin/cloth/hair should explicitly be non-metallic.",
+    "Original atlas contains usable garment details but also hair/skin boundary contamination and a false back button placket.",
+    "199 original triangles have nearly zero UV area; new baking alone does not fix them.",
+    "Approximate head/neck UV share is 11.245 percent and hands 2.873 percent; dedicated new face and hand UVs are appropriate."
+  ],
+  "module": "Character_Rebuild/scripts/materials.py",
+  "interfaces": {
+    "create_palette": "Returns skin/skin_back/sclera/iris/mouth/lash/brow plus hair/cloth material keys. sRGB palette is converted to linear shader values explicitly.",
+    "bake_iris_image": "Serial Blender bake of a newly authored UV iris shader to 1024 PNG: grey-brown iris, dark pupil/rim, small highlight; no old atlas resize.",
+    "bake_face_skin_image": "Serial Blender bake to new 2048 front skin image using actual face_spec.front_uv and eye positions, subtle cheek warmth only, no hair/eyes/mouth projected onto skin.",
+    "bake_repaired_body_atlas": "Serial Blender EMIT bake of copied retained mesh using explicit world-space, face-normal and optional luminance masks; preserves original UV and unaffected atlas colour. Returns exportable direct-image PBR material.",
+    "material_export_audit": "Reports material/image linkage, packed state, dimensions, metallic values and image colour spaces."
+  },
+  "proposedConfirmedBackRegion": {
+    "name": "remove_false_back_button_placket",
+    "center": [0, 0.085, 0.455],
+    "half_extents": [0.024, 0.055, 0.125],
+    "feather": 0.008,
+    "normal_direction": [0, 1, 0],
+    "normal_min": 0.35,
+    "color_srgb": [0.94, 0.89, 0.805],
+    "strength": 1,
+    "coordinateWarning": "These bounds use original Blender import coordinates (X,-glTF Z,glTF Y), without later root translation/scale. Refit or transform before use."
+  },
+  "validation": {"pythonSyntax": "passed", "actualBlenderBake": "not yet run by this subagent; root will serialize actual Blender execution", "appearance": "not reviewed; requires final fitted model and neutral-light comparisons"},
+  "limitations": ["Plain atlas repair colour is a conservative local replacement; inspect any loss of seam/crease detail.", "Front collar masks must follow actual separated hair/cloth geometry, not global dark-pixel replacement.", "No normal map is fabricated from the colour image.", "No original GLB, atlas, main Blender source or public state was modified by this task."]
+}

@@ -1,0 +1,75 @@
+{
+  "reviewCompleted": true,
+  "recordedAt": "2026-10-29T15:40:35.872Z",
+  "glbSha256": "4b70a67d9f2677b5d80e7d6d79a31fd6ff90d6d2c6c267c9a50ba678f3c904d8",
+  "blendSha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5",
+  "reviewers": [
+    "root: actual final/reimport images and numeric correspondence",
+    "visual_qa: all 10 reimport images and 12 final-source images"
+  ],
+  "reviewedImages": [
+    {
+      "path": "checks/reimport/front.png",
+      "sha256": "ec28166d2a19d9f831576c7908d9ab3186423473d07cebc3d3fc022d60bd4ef3"
+    },
+    {
+      "path": "checks/reimport/back.png",
+      "sha256": "fc5cbc3bfacb8ddef83a1b771defe7abc3660eb7c9615a6a8fadbc7955cca11f"
+    },
+    {
+      "path": "checks/reimport/face-front.png",
+      "sha256": "2c0619da3a93daa810960db7a348d4e99b048b69661cfddc32db80958e1cb2ad"
+    },
+    {
+      "path": "checks/reimport/face-side.png",
+      "sha256": "6391bd6d53b6d960c68994ea11be6a8454910fcc7f1547e8d5a6051736816fdd"
+    },
+    {
+      "path": "checks/reimport/face-other-side.png",
+      "sha256": "8fc41b4252a32cce8195c7bc136bd48a0906bc1f38bf5454e99187d1f52566dd"
+    },
+    {
+      "path": "checks/reimport/face-back-quarter.png",
+      "sha256": "3540dded58327e01ab9eca13cc93b7f42a3b1852a9fdf68995dcab7c525a215b"
+    },
+    {
+      "path": "checks/reimport/hand-top.png",
+      "sha256": "a812e1f717a215a4ef1523d5e200bf55e96e8499118799eaf43ec7b0ff120fae"
+    },
+    {
+      "path": "checks/reimport/hand-palm.png",
+      "sha256": "e3d2f34ee1e683b6646efaa0b5f89f4a8131609901bd54aadee10d7e7195a35b"
+    },
+    {
+      "path": "checks/reimport/hand-other-top.png",
+      "sha256": "06457c826d08e11f6f702c9ff21b5c71aa13a19b1d57c46168c90649c98492a4"
+    },
+    {
+      "path": "checks/reimport/hand-other-palm.png",
+      "sha256": "d8de163a09739ffba8db6d4ec21a66c107c02922fd9debd61547d7bfb3831ef6"
+    }
+  ],
+  "agentReview": {
+    "path": "reports/final-visual-agent-review.txt",
+    "sha256": "7616851db6f6cf1e6354fd8d5afc1f88a910220fa51aab3e29dc11070624bee2"
+  },
+  "bothHandsFiveFingersVisible": true,
+  "embeddedTexturesVisuallyPresent": true,
+  "lowTwinPonytailsPresent": true,
+  "sideEyePlaqueRemoved": true,
+  "rearScalpPokeoutsNotVisibleInReviewedViews": true,
+  "rearNeckHorizontalBandRemoved": true,
+  "noNewVisibleMissingPartsAfterReimport": true,
+  "sourceAndReimportAppearanceConsistent": true,
+  "TPoseAndWardrobePreserved": true,
+  "appearanceAcceptedByUser": false,
+  "exactReferenceReconstructionClaim": false,
+  "limitations": [
+    "Facial expression and nose/mouth transitions remain simplified relative to the original illustration.",
+    "Fringe roots, rear crown and ponytail tie transitions remain broad and visibly assembled; fine strand polish is limited.",
+    "Palm pads, knuckles and nails are simplified.",
+    "Small crease-like dents remain at shoulders/collar; most original garment triangle topology is retained.",
+    "No rig, expression system, animation, cloth physics or global inter-object collision certification."
+  ],
+  "conclusion": "Technical delivery and visual consistency were inspected. Known artistic limitations remain; no customer acceptance is inferred."
+}

@@ -1,0 +1,404 @@
+{
+  "frozenModules": {
+    "face_e4_refine_delta_v3.py": "bb6246849ac5ee20d792bd2c4488757e6f447264507e0132b79d7ddbef6a5e22",
+    "hair_continuity_delta_v5b.py": "03c7c59ff39d210b04b0477a62f478a660b8c3212e9683042b21d706906b3683",
+    "shoulder_refine_e4_v3.py": "063b1b932e426acfe32babd00db04c0fbc2b0d0725e16d209afe2cf3b651a04f",
+    "shoulder_refine_e4.py": "10412344e9f02b13f9d7b6bede1dea2ac1321086ac4a58375417784c15fd5f9a",
+    "ear_concha.py": "1fb6b2f6490c3b24b8c64d5a490bd9e13e265159e68acad45ba969b1bfe32a32"
+  },
+  "sourceStage": "E4-final-refined.blend",
+  "face": {
+    "source": "stages/E4-final-refined.blend",
+    "sourceSha256": "7a406fbbcf337e4098ebc98697766cdb3d88d8966286779c92a5e58e3e6928aa",
+    "operation": "Local existing-vertex delta; no topology/UV/material replacement",
+    "changes": [
+      {
+        "object": "Mouth_Closed_Line",
+        "movedVertices": 96,
+        "maximumMove": 0.00026144557126625003,
+        "basisMaxError": 2.9623775311762013e-08
+      },
+      {
+        "object": "Brow_L",
+        "movedVertices": 66,
+        "maximumMove": 0.01052998871050428,
+        "basisMaxError": 2.965312229800682e-08
+      },
+      {
+        "object": "Brow_R",
+        "movedVertices": 66,
+        "maximumMove": 0.010529988712628974,
+        "basisMaxError": 2.9653122181651625e-08
+      },
+      {
+        "object": "Eye_Sclera_R",
+        "movedVertices": 769,
+        "maximumMove": 0.012237299723459074,
+        "basisMaxError": 2.9892093721206316e-08
+      },
+      {
+        "object": "Head_Skin_Quad_Retopo",
+        "movedVertices": 3777,
+        "maximumMove": 0.01339071832377003,
+        "basisMaxError": 2.991793643958712e-08
+      },
+      {
+        "object": "Eye_UpperLash_L",
+        "movedVertices": 82,
+        "maximumMove": 0.011637299723459074,
+        "basisMaxError": 2.9533108819916195e-08
+      },
+      {
+        "object": "Eye_Iris_R",
+        "movedVertices": 513,
+        "maximumMove": 0.008431845919204303,
+        "basisMaxError": 2.9907079062632415e-08
+      },
+      {
+        "object": "Eye_Sclera_L",
+        "movedVertices": 769,
+        "maximumMove": 0.012237299723459074,
+        "basisMaxError": 2.989209372140666e-08
+      },
+      {
+        "object": "Eye_UpperLash_R",
+        "movedVertices": 82,
+        "maximumMove": 0.011637299723459074,
+        "basisMaxError": 2.9533108819916195e-08
+      },
+      {
+        "object": "Eye_Iris_L",
+        "movedVertices": 513,
+        "maximumMove": 0.008431845919204303,
+        "basisMaxError": 2.990707906292327e-08
+      }
+    ],
+    "scalpProtectedVertexCount": 5713,
+    "scalpExact": true,
+    "unaffectedHeadExact": true,
+    "otherMeshObjectsExact": true,
+    "uvExact": true,
+    "topologyExact": true,
+    "eyeDepth": [
+      {
+        "object": "Eye_Sclera_R",
+        "minBehindUncutSkinSurface": 0.0009000009824755357,
+        "maxBehindUncutSkinSurface": 0.002400012896248688
+      },
+      {
+        "object": "Eye_Iris_R",
+        "minBehindUncutSkinSurface": 0.0008624042784740185,
+        "maxBehindUncutSkinSurface": 0.0023500092055506686
+      },
+      {
+        "object": "Eye_Sclera_L",
+        "minBehindUncutSkinSurface": 0.0009000009824755357,
+        "maxBehindUncutSkinSurface": 0.002400012896248688
+      },
+      {
+        "object": "Eye_Iris_L",
+        "minBehindUncutSkinSurface": 0.0008624042784740185,
+        "maxBehindUncutSkinSurface": 0.0023500092055506686
+      }
+    ],
+    "noseTipAnalyticYBefore": -0.12515155811346598,
+    "noseTipAnalyticYAfter": -0.11875637352733259,
+    "rigAdded": false,
+    "eyeSocketAlignment": {
+      "field": "80 percent compensation of measured horizontal face slope; C2 horizontal falloff, broad 45mm vertical quartic-Gaussian transition, protected scalp cutoff",
+      "approxIrisCentreYawBeforeDegrees": 27.3,
+      "approxIrisCentreYawAfterDegrees": 5.9,
+      "appliedTo": "Skin socket, white, iris, upper lid ribbon and brows together; XZ and UV unchanged"
+    },
+    "appearanceStatus": "isolated candidate; requires actual same-camera comparison"
+  },
+  "fringe": {
+    "scope": "local coordinate polish only; no visual acceptance until same-camera render",
+    "capAndFittedHeadExact": true,
+    "protectedHashes": {
+      "Hair_Crown_SourceEnvelope": {
+        "geometry": "4112ce52573b638c08e61c7428e8421299fc81340f667244446299ac7190cbd4",
+        "uv": "b108b85c99a359cbfd5ec421218c90b5a6dc0fe4d46997dfaa883c18d1a76df9"
+      },
+      "Head_Skin_Quad_Retopo": {
+        "geometry": "254afe7535b5c143042e34867fa3efeb013b2ce528d10abbcfc4220c8ebfd4e5",
+        "uv": "e96c3d075655516bda87ea05b4fbd1a6a21f9fca3c8d2cd0d5922e446ad0540e"
+      },
+      "Temple_Left": {
+        "geometry": "fad50e1ab20ebd580f0601d584dd9382e0eca1dfa7cfbea53dbc45dd47fa2843",
+        "uv": "fde5b73d4107372d794256ac6d34fec78031e26ec52a7f0b4a52968c25f6ee73"
+      },
+      "Temple_Right": {
+        "geometry": "7d26be32c0cd347a9d41fa45a416aa36b712a5f7b41d90574f68912670491f4e",
+        "uv": "fde5b73d4107372d794256ac6d34fec78031e26ec52a7f0b4a52968c25f6ee73"
+      }
+    },
+    "records": [
+      {
+        "object": "Fringe_CentreLeft",
+        "vertices": 444,
+        "movedVertices": 396,
+        "maxDisplacement": 0.002800028504411376,
+        "maxRootEmbed": 0.0028,
+        "maxSideGapReduction": 0,
+        "tipLastFourRingsExact": true,
+        "uvExact": true,
+        "topologyExact": true,
+        "geometryBefore": "5f5dcd3ffc5d439b687e0b695760cbd0d9091e714d98b4a04315277319c3c786",
+        "geometryAfter": "19a65dffa368e24f1534cb2c1ec14a79a1ddf06967d02562c217941214c160d6"
+      },
+      {
+        "object": "Fringe_Left",
+        "vertices": 444,
+        "movedVertices": 396,
+        "maxDisplacement": 0.002799989924605439,
+        "maxRootEmbed": 0.0028,
+        "maxSideGapReduction": 0,
+        "tipLastFourRingsExact": true,
+        "uvExact": true,
+        "topologyExact": true,
+        "geometryBefore": "0bae2920de1cb2540e2b8720743b3f54bcd61aa935c73ab8dfb643955e8c2135",
+        "geometryAfter": "20cd7842311a6f5ef8e39e1b658db0e29ad215e5b47fcd91b3ae95aa5bc8be48"
+      },
+      {
+        "object": "Fringe_CentreRight",
+        "vertices": 444,
+        "movedVertices": 396,
+        "maxDisplacement": 0.0027999840169226314,
+        "maxRootEmbed": 0.0028,
+        "maxSideGapReduction": 0,
+        "tipLastFourRingsExact": true,
+        "uvExact": true,
+        "topologyExact": true,
+        "geometryBefore": "17b40db9d33fad5ae0d81c391fb6db2859cf444a71acd4898349f64ae77e1e7b",
+        "geometryAfter": "61292d5a462595f41418e101c505de6f4ea5bc47452c162f25c5a856f3a2b908"
+      },
+      {
+        "object": "Fringe_Right",
+        "vertices": 444,
+        "movedVertices": 396,
+        "maxDisplacement": 0.0027999813472955556,
+        "maxRootEmbed": 0.0028,
+        "maxSideGapReduction": 0,
+        "tipLastFourRingsExact": true,
+        "uvExact": true,
+        "topologyExact": true,
+        "geometryBefore": "db3c10ee16f17a60a5b7a8c805ec26a35018896c7c26cd735f51e3149193e97f",
+        "geometryAfter": "9c73c25b178c1811a4e1ef179fbb1e134f2b9c703d674ec47d633bf5957a98ed"
+      },
+      {
+        "object": "Fringe_LeftFine",
+        "vertices": 444,
+        "movedVertices": 396,
+        "maxDisplacement": 0.0027999986541482826,
+        "maxRootEmbed": 0.0028,
+        "maxSideGapReduction": 0,
+        "tipLastFourRingsExact": true,
+        "uvExact": true,
+        "topologyExact": true,
+        "geometryBefore": "731a4b04d9bd3e004adf6609b77d43dc23cf0774e0e0b22f26406e8db1dd50ce",
+        "geometryAfter": "7aab15dfd5c3991a08dca1ff1149647fa7610269e6cb120c04919d1feaafb713"
+      },
+      {
+        "object": "Fringe_RightFine",
+        "vertices": 444,
+        "movedVertices": 396,
+        "maxDisplacement": 0.0021405091135807946,
+        "maxRootEmbed": 0.0017206980878687475,
+        "maxSideGapReduction": 0,
+        "tipLastFourRingsExact": true,
+        "uvExact": true,
+        "topologyExact": true,
+        "geometryBefore": "c2c4a102807fa57057e60201f18e2801a99431401b73d448689c86963d406cc6",
+        "geometryAfter": "1d52c2b90dd28eed25b91b4e94103fdac24cb891d05e887f19cbf5e19438c2a7"
+      }
+    ],
+    "templesExact": true,
+    "newVertices": 0,
+    "newFaces": 0,
+    "newObjects": 0,
+    "newModifiers": 0
+  },
+  "shoulder": {
+    "depth_pass": {
+      "object": "Rebuild_Body_Clothing_SourceRetained",
+      "iterations": 70,
+      "step": 0.52,
+      "maximum_allowed_depth_shift": 0.016,
+      "moved_vertices": 2795,
+      "changed_bounds": {
+        "min": [
+          -0.30377545952796936,
+          -0.12756770849227905,
+          0.5159684419631958
+        ],
+        "max": [
+          0.3044853210449219,
+          0.059859585016965866,
+          0.6252506971359253
+        ]
+      },
+      "maximum_actual_depth_shift": 0.012065786868333817,
+      "mean_moved_depth_shift": 0.0017183360015102,
+      "x_z_exact": true,
+      "uv_exact": true,
+      "uv_sha256": "b11d250e7122178453ee369273fa0a4cd3fafeba6f78d8f184cf68e6a9349ec7",
+      "topology_before": {
+        "vertices": 75738,
+        "edges": 225243,
+        "faces": 149504,
+        "boundary_edges": 505,
+        "nonmanifold_edges": 0,
+        "connectivity_sha256": "b725a008b76c4855c69bf4e70711e2fd20086672cf7acd46f7a74521e6478009"
+      },
+      "topology_after": {
+        "vertices": 75738,
+        "edges": 225243,
+        "faces": 149504,
+        "boundary_edges": 505,
+        "nonmanifold_edges": 0,
+        "connectivity_sha256": "b725a008b76c4855c69bf4e70711e2fd20086672cf7acd46f7a74521e6478009"
+      },
+      "degenerate_triangles_before": 0,
+      "degenerate_triangles_after": 0,
+      "local_y_curvature_rms_before": 0.0006066671817587337,
+      "local_y_curvature_rms_after": 5.8723587788149906e-05,
+      "collar_refit": [
+        {
+          "object": "Rebuilt_FrontCollar_L",
+          "moved_vertices": 1192,
+          "max_depth_shift": 0.006056604671478272,
+          "x_z_exact": true,
+          "uv_exact": true,
+          "topology_exact": true
+        },
+        {
+          "object": "Rebuilt_FrontCollar_R",
+          "moved_vertices": 1194,
+          "max_depth_shift": 0.0057222544670104975,
+          "x_z_exact": true,
+          "uv_exact": true,
+          "topology_exact": true
+        }
+      ],
+      "limitations": "Topology/finite/area/UV checks cover this delta. This is not a global self-intersection or customer appearance acceptance claim."
+    },
+    "ridge_pass": {
+      "iterations": 24,
+      "positive_step": 0.45,
+      "negative_step": -0.48,
+      "maximum_allowed_local_xyz_shift": 0.007,
+      "moved_vertices": 1363,
+      "max_actual_xyz_shift": 0.004564789385806283,
+      "mean_xyz_shift": 0.0002274499650203146,
+      "upper_silhouette_vertices_fixed": 1438,
+      "boundary_vertices_fixed": 505,
+      "uv_exact": true,
+      "topology_exact": true,
+      "fairing_direction": "fixed original vertex normal; no tangential collapse",
+      "orientation_guard_steps": 4,
+      "orientation_guard_attenuated_vertices": 23,
+      "minimum_triangle_normal_cosine": 0.21196350611264864,
+      "minimum_triangle_area_ratio": 0.2820576878299516,
+      "degenerate_triangles_before": 0,
+      "degenerate_triangles_after": 0,
+      "collar_additional_refit": [
+        {
+          "object": "Rebuilt_FrontCollar_L",
+          "maximum_additional_depth_shift": 0.0010225281715393064,
+          "uv_exact": true,
+          "topology_exact": true,
+          "x_z_exact": true
+        },
+        {
+          "object": "Rebuilt_FrontCollar_R",
+          "maximum_additional_depth_shift": 0.0010320642453211324,
+          "uv_exact": true,
+          "topology_exact": true,
+          "x_z_exact": true
+        }
+      ]
+    },
+    "overall_delta": {
+      "moved_vertices": 2795,
+      "maximum_displacement": 0.012148943923140818,
+      "geometry_scope": "Front shoulder and old-collar support only; no body remesh, no topology/UV change, original broad folds and shoulder outline retained.",
+      "limitation": "No claim of global continuous collision testing or customer appearance acceptance."
+    }
+  },
+  "ears": {
+    "objects": [
+      {
+        "name": "Ear_L",
+        "location": [
+          0.11100000143051147,
+          0.023000000044703484,
+          0.7670000195503235
+        ],
+        "sourceLocalBounds": [
+          [
+            -0.01699998416006565,
+            -0.017999988049268723,
+            -0.03200000151991844
+          ],
+          [
+            0.016999995335936546,
+            0.017999976873397827,
+            0.03200000151991844
+          ]
+        ],
+        "radii": [
+          0.0169999897480011,
+          0.017999982461333275,
+          0.03200000151991844
+        ],
+        "vertices": 1058,
+        "polygons": 1104,
+        "uv": "Ear_Surface_UV",
+        "materials": [
+          "Rebuilt_skin_back"
+        ],
+        "shape": "Integral concha depression; original YZ silhouette exact; all new front vertices within old ellipsoid envelope"
+      },
+      {
+        "name": "Ear_R",
+        "location": [
+          -0.11100000143051147,
+          0.023000000044703484,
+          0.7670000195503235
+        ],
+        "sourceLocalBounds": [
+          [
+            -0.01699998416006565,
+            -0.017999988049268723,
+            -0.03200000151991844
+          ],
+          [
+            0.016999995335936546,
+            0.017999976873397827,
+            0.03200000151991844
+          ]
+        ],
+        "radii": [
+          0.0169999897480011,
+          0.017999982461333275,
+          0.03200000151991844
+        ],
+        "vertices": 1058,
+        "polygons": 1104,
+        "uv": "Ear_Surface_UV",
+        "materials": [
+          "Rebuilt_skin_back"
+        ],
+        "shape": "Integral concha depression; original YZ silhouette exact; all new front vertices within old ellipsoid envelope"
+      }
+    ],
+    "removedInnerPills": [
+      "Ear_Inner_L",
+      "Ear_Inner_R"
+    ],
+    "style": "simplified anime concha, helix and tragus; no pores",
+    "changesOutsideEars": false,
+    "sceneSaved": false
+  }
+}

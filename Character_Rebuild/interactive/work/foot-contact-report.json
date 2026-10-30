@@ -1,0 +1,169 @@
+{
+  "samples": [
+    {
+      "seconds": 0,
+      "side": "Left",
+      "stance": true,
+      "ankleTargetError": 1.5597359400584043e-07,
+      "soleZ": -0.9990763068199158,
+      "expectedSoleZ": -0.9990763664245605,
+      "soleError": 5.960464477539063e-08
+    },
+    {
+      "seconds": 0,
+      "side": "Right",
+      "stance": false,
+      "ankleTargetError": 1.5597359400584043e-07,
+      "soleZ": -0.9990540742874146,
+      "expectedSoleZ": -0.9990541338920593,
+      "soleError": 5.960464477539063e-08
+    },
+    {
+      "seconds": 0.35,
+      "side": "Left",
+      "stance": true,
+      "ankleTargetError": 1.5597359400584043e-07,
+      "soleZ": -0.9990763068199158,
+      "expectedSoleZ": -0.9990763664245605,
+      "soleError": 5.960464477539063e-08
+    },
+    {
+      "seconds": 0.35,
+      "side": "Right",
+      "stance": false,
+      "ankleTargetError": 5.612100378187963e-06,
+      "soleZ": -0.9940595626831055,
+      "expectedSoleZ": -0.9940541338920593,
+      "soleError": -5.428791046147019e-06
+    },
+    {
+      "seconds": 0.7,
+      "side": "Left",
+      "stance": true,
+      "ankleTargetError": 1.5597359400584043e-07,
+      "soleZ": -0.9990763068199158,
+      "expectedSoleZ": -0.9990763664245605,
+      "soleError": 5.960464477539063e-08
+    },
+    {
+      "seconds": 0.7,
+      "side": "Right",
+      "stance": false,
+      "ankleTargetError": 6.749358375368058e-08,
+      "soleZ": -0.9890540838241577,
+      "expectedSoleZ": -0.9890541338920593,
+      "soleError": 5.006790160244634e-08
+    },
+    {
+      "seconds": 1.05,
+      "side": "Left",
+      "stance": true,
+      "ankleTargetError": 1.5597359400584043e-07,
+      "soleZ": -0.9990763068199158,
+      "expectedSoleZ": -0.9990763664245605,
+      "soleError": 5.960464477539063e-08
+    },
+    {
+      "seconds": 1.05,
+      "side": "Right",
+      "stance": false,
+      "ankleTargetError": 5.612100378187963e-06,
+      "soleZ": -0.9940595626831055,
+      "expectedSoleZ": -0.9940541338920593,
+      "soleError": -5.428791046147019e-06
+    },
+    {
+      "seconds": 1.4,
+      "side": "Left",
+      "stance": false,
+      "ankleTargetError": 1.5597359400584043e-07,
+      "soleZ": -0.9990763068199158,
+      "expectedSoleZ": -0.9990763664245605,
+      "soleError": 5.960464477539063e-08
+    },
+    {
+      "seconds": 1.4,
+      "side": "Right",
+      "stance": true,
+      "ankleTargetError": 1.5597359400584043e-07,
+      "soleZ": -0.9990540742874146,
+      "expectedSoleZ": -0.9990541338920593,
+      "soleError": 5.960464477539063e-08
+    },
+    {
+      "seconds": 1.75,
+      "side": "Left",
+      "stance": false,
+      "ankleTargetError": 5.612100378187963e-06,
+      "soleZ": -0.9940818548202515,
+      "expectedSoleZ": -0.9940763664245605,
+      "soleError": -5.48839569092241e-06
+    },
+    {
+      "seconds": 1.75,
+      "side": "Right",
+      "stance": true,
+      "ankleTargetError": 1.5597359400584043e-07,
+      "soleZ": -0.9990540742874146,
+      "expectedSoleZ": -0.9990541338920593,
+      "soleError": 5.960464477539063e-08
+    },
+    {
+      "seconds": 2.1,
+      "side": "Left",
+      "stance": false,
+      "ankleTargetError": 6.749358375368058e-08,
+      "soleZ": -0.9890763163566589,
+      "expectedSoleZ": -0.9890763664245605,
+      "soleError": 5.006790160244634e-08
+    },
+    {
+      "seconds": 2.1,
+      "side": "Right",
+      "stance": true,
+      "ankleTargetError": 1.5597359400584043e-07,
+      "soleZ": -0.9990540742874146,
+      "expectedSoleZ": -0.9990541338920593,
+      "soleError": 5.960464477539063e-08
+    },
+    {
+      "seconds": 2.45,
+      "side": "Left",
+      "stance": false,
+      "ankleTargetError": 5.612100378187963e-06,
+      "soleZ": -0.9940818548202515,
+      "expectedSoleZ": -0.9940763664245605,
+      "soleError": -5.48839569092241e-06
+    },
+    {
+      "seconds": 2.45,
+      "side": "Right",
+      "stance": true,
+      "ankleTargetError": 1.5597359400584043e-07,
+      "soleZ": -0.9990540742874146,
+      "expectedSoleZ": -0.9990541338920593,
+      "soleError": 5.960464477539063e-08
+    },
+    {
+      "seconds": 2.8,
+      "side": "Left",
+      "stance": true,
+      "ankleTargetError": 1.5597359400584043e-07,
+      "soleZ": -0.9990763068199158,
+      "expectedSoleZ": -0.9990763664245605,
+      "soleError": 5.960464477539063e-08
+    },
+    {
+      "seconds": 2.8,
+      "side": "Right",
+      "stance": false,
+      "ankleTargetError": 1.5597359400584043e-07,
+      "soleZ": -0.9990540742874146,
+      "expectedSoleZ": -0.9990541338920593,
+      "soleError": 5.960464477539063e-08
+    }
+  ],
+  "maxAnkleTargetError": 5.612100378187963e-06,
+  "maxSoleHeightError": 5.48839569092241e-06,
+  "scope": "Nine times per foot; short in-place walk, original shoe sole baseline, no exhaustive collision simulation."
+}

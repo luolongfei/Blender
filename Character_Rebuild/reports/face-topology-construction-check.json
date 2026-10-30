@@ -1,0 +1,95 @@
+{
+  "scope": "Pure construction arrays only; not Blender geometry, visual or self-intersection acceptance",
+  "scriptSha256": "7ef7e8f781e4e1c999ba33c0c59609fd77dcf435af0a3f3d4d170a01f56e1d72",
+  "specSha256": "69385c78bfd4b3e8ed447528c15606e37826dafaa3b8c718627eb5392139048d",
+  "pieces": [
+    {
+      "name": "Head_Skin_Quad_Retopo",
+      "vertices": 13072,
+      "faces": 13094,
+      "finite": true,
+      "nonManifoldEdgesGt2": 0,
+      "boundaryEdges": 182
+    },
+    {
+      "name": "Neck_Clean_Quad_Sleeve",
+      "vertices": 1600,
+      "faces": 1536,
+      "finite": true,
+      "nonManifoldEdgesGt2": 0,
+      "boundaryEdges": 128
+    },
+    {
+      "name": "Eye_Sclera_L",
+      "vertices": 769,
+      "faces": 768,
+      "finite": true,
+      "nonManifoldEdgesGt2": 0,
+      "boundaryEdges": 64
+    },
+    {
+      "name": "Eye_Iris_L",
+      "vertices": 513,
+      "faces": 512,
+      "finite": true,
+      "nonManifoldEdgesGt2": 0,
+      "boundaryEdges": 64
+    },
+    {
+      "name": "Eye_UpperLash_L",
+      "vertices": 82,
+      "faces": 40,
+      "finite": true,
+      "nonManifoldEdgesGt2": 0,
+      "boundaryEdges": 82
+    },
+    {
+      "name": "Eye_Sclera_R",
+      "vertices": 769,
+      "faces": 768,
+      "finite": true,
+      "nonManifoldEdgesGt2": 0,
+      "boundaryEdges": 64
+    },
+    {
+      "name": "Eye_Iris_R",
+      "vertices": 513,
+      "faces": 512,
+      "finite": true,
+      "nonManifoldEdgesGt2": 0,
+      "boundaryEdges": 64
+    },
+    {
+      "name": "Eye_UpperLash_R",
+      "vertices": 82,
+      "faces": 40,
+      "finite": true,
+      "nonManifoldEdgesGt2": 0,
+      "boundaryEdges": 82
+    },
+    {
+      "name": "Brow_L",
+      "vertices": 66,
+      "faces": 32,
+      "finite": true,
+      "nonManifoldEdgesGt2": 0,
+      "boundaryEdges": 66
+    },
+    {
+      "name": "Brow_R",
+      "vertices": 66,
+      "faces": 32,
+      "finite": true,
+      "nonManifoldEdgesGt2": 0,
+      "boundaryEdges": 66
+    },
+    {
+      "name": "Mouth_Closed_Line",
+      "vertices": 96,
+      "faces": 48,
+      "finite": true,
+      "nonManifoldEdgesGt2": 0,
+      "boundaryEdges": 96
+    }
+  ]
+}

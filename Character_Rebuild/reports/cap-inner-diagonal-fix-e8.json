@@ -1,0 +1,179 @@
+{
+  "operation": "Two buried inner quads matched to outer diagonal; no point moved",
+  "beforeSelfContacts": {
+    "requested": true,
+    "status": "completed",
+    "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs.",
+    "method": "BVH broad phase, then closed triangle SAT; contact includes tangency and coplanar overlap.",
+    "toleranceWorldUnits": 1e-10,
+    "triangleLimit": 20000,
+    "candidateLimit": 300000,
+    "completeWithinDeclaredScope": true,
+    "doesNotProveNoGlobalIntersections": true,
+    "counts": {
+      "uniqueBroadPhasePairs": 8,
+      "narrowPhasePairs": 8,
+      "contacts": 8
+    },
+    "contactPairSamples": [
+      {
+        "triangles": [
+          2212,
+          4837
+        ],
+        "polygons": [
+          1106,
+          2450
+        ]
+      },
+      {
+        "triangles": [
+          2212,
+          4836
+        ],
+        "polygons": [
+          1106,
+          2450
+        ]
+      },
+      {
+        "triangles": [
+          2213,
+          4837
+        ],
+        "polygons": [
+          1106,
+          2450
+        ]
+      },
+      {
+        "triangles": [
+          2213,
+          4836
+        ],
+        "polygons": [
+          1106,
+          2450
+        ]
+      },
+      {
+        "triangles": [
+          1846,
+          4471
+        ],
+        "polygons": [
+          923,
+          2267
+        ]
+      },
+      {
+        "triangles": [
+          1846,
+          4470
+        ],
+        "polygons": [
+          923,
+          2267
+        ]
+      },
+      {
+        "triangles": [
+          1847,
+          4471
+        ],
+        "polygons": [
+          923,
+          2267
+        ]
+      },
+      {
+        "triangles": [
+          1847,
+          4470
+        ],
+        "polygons": [
+          923,
+          2267
+        ]
+      }
+    ],
+    "contacts": 8
+  },
+  "afterSelfContacts": {
+    "requested": true,
+    "status": "completed",
+    "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs.",
+    "method": "BVH broad phase, then closed triangle SAT; contact includes tangency and coplanar overlap.",
+    "toleranceWorldUnits": 1e-08,
+    "triangleLimit": 20000,
+    "candidateLimit": 300000,
+    "completeWithinDeclaredScope": true,
+    "doesNotProveNoGlobalIntersections": true,
+    "counts": {},
+    "contactPairSamples": [],
+    "contacts": 0
+  },
+  "allVertexPositionsExact": true,
+  "outerEvidenceBefore": {
+    "outerVertices": "db9a642bde7ec23a93273441dc14fcb701ed984080d18be3f536c79e31aae5cf",
+    "outerTopology": "cc09759c87626fc2647b18824bc9319de24110b4366fbb05021ae7cda6c32b18",
+    "outerLoopUV": "ed634a1d4ec2a269a5a0b6d5bf1b71474e6bd5494dacf27090fe8b6d8eec3531",
+    "outerCornerNormals": "3f5de75faf467f31cb6f9be1c546548030dbe2ca96aa9ea2614dd47392752361",
+    "outerTangents": "2fcf5e86129f3bca7156cf137c566c7907fa1ee1511b6855be90da338dfe308d",
+    "outerPolygons": 1344
+  },
+  "outerEvidenceAfter": {
+    "outerVertices": "db9a642bde7ec23a93273441dc14fcb701ed984080d18be3f536c79e31aae5cf",
+    "outerTopology": "cc09759c87626fc2647b18824bc9319de24110b4366fbb05021ae7cda6c32b18",
+    "outerLoopUV": "ed634a1d4ec2a269a5a0b6d5bf1b71474e6bd5494dacf27090fe8b6d8eec3531",
+    "outerCornerNormals": "3f5de75faf467f31cb6f9be1c546548030dbe2ca96aa9ea2614dd47392752361",
+    "outerTangents": "2fcf5e86129f3bca7156cf137c566c7907fa1ee1511b6855be90da338dfe308d",
+    "outerPolygons": 1344
+  },
+  "outerPositionTopologyUVNormalsTangentsExact": true,
+  "changes": [
+    {
+      "outerPolygon": 923,
+      "innerPolygon": 2267,
+      "newInnerTriangles": [
+        [
+          2332,
+          2331,
+          2267
+        ],
+        [
+          2268,
+          2332,
+          2267
+        ]
+      ]
+    },
+    {
+      "outerPolygon": 1106,
+      "innerPolygon": 2450,
+      "newInnerTriangles": [
+        [
+          2515,
+          2514,
+          2450
+        ],
+        [
+          2451,
+          2515,
+          2450
+        ]
+      ]
+    }
+  ],
+  "polygonsBefore": 2752,
+  "polygonsAfter": 2754,
+  "sourceTrianglesBefore": 5376,
+  "sourceTrianglesAfter": 5376,
+  "normalRebakeRequiredForOuterSurface": false,
+  "freshExportValidationRequired": true,
+  "source": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\stages\\E7-uv-normals-corrected.blend",
+  "sourceSha256": "fb285cbe33d0015f185cdf6a83e28e059e5043726b4640e347c2000117923cdf",
+  "sourceUnchanged": true,
+  "candidate": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\agents\\hair\\E8-inner-cap-diagonals-candidate.blend",
+  "candidateSha256": "2df29177e8c1352595e1c6db719e3e18cbf2b8e355c6ff4a02b510c8b8c72da8"
+}

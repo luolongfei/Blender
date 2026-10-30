@@ -1,0 +1,507 @@
+{
+  "source": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\character-rebuilt.blend",
+  "sourceSha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5",
+  "meshCount": 47,
+  "boneCount": 22,
+  "geometryUvUnchanged": true,
+  "restMaximumDisplacement": 8.560065398421926e-08,
+  "restDisplacements": {
+    "Rebuild_Body_Clothing_SourceRetained": 8.560065398421926e-08,
+    "Rebuilt_BackCollar_Band": 5.960464477539063e-08,
+    "Rebuilt_FrontCollar_L": 5.960464477539063e-08,
+    "Rebuilt_FrontCollar_R": 5.960464477539063e-08,
+    "Ear_R": 0.0,
+    "Ear_L": 0.0,
+    "Head_Skin_Quad_Retopo": 0.0,
+    "Neck_Clean_Quad_Sleeve": 5.960464477539063e-08,
+    "Eye_Sclera_L": 0.0,
+    "Eye_Iris_L": 0.0,
+    "Eye_UpperLash_L": 0.0,
+    "Eye_Sclera_R": 0.0,
+    "Eye_Iris_R": 0.0,
+    "Eye_UpperLash_R": 0.0,
+    "Brow_L": 0.0,
+    "Brow_R": 0.0,
+    "Mouth_Closed_Line": 0.0,
+    "Rebuilt_Hand_L": 0.0,
+    "Rebuilt_Hand_R": 0.0,
+    "Hair_Crown_SourceEnvelope": 0.0,
+    "Ponytail_Left_FabricTie": 0.0,
+    "Ponytail_Right_FabricTie": 0.0,
+    "Fringe_CentreLeft": 0.0,
+    "Fringe_Left": 0.0,
+    "Fringe_CentreRight": 0.0,
+    "Fringe_Right": 0.0,
+    "Fringe_LeftFine": 0.0,
+    "Fringe_RightFine": 0.0,
+    "Temple_Left": 0.0,
+    "Temple_Right": 0.0,
+    "Ponytail_Left_Layer_1": 0.0,
+    "Ponytail_Left_Layer_2": 0.0,
+    "Ponytail_Left_Layer_3": 0.0,
+    "Ponytail_Left_Layer_4": 0.0,
+    "Ponytail_Left_Layer_5": 0.0,
+    "Ponytail_Right_Layer_1": 0.0,
+    "Ponytail_Right_Layer_2": 0.0,
+    "Ponytail_Right_Layer_3": 0.0,
+    "Ponytail_Right_Layer_4": 0.0,
+    "Ponytail_Right_Layer_5": 0.0,
+    "Blouse_Button_1": 5.960464477539063e-08,
+    "Blouse_Button_2": 2.9802322387695312e-08,
+    "Blouse_Button_3": 0.0,
+    "Cuff_Inner_R": 8.462232866585662e-08,
+    "Forearm_UnderSleeve_R": 8.462232866585662e-08,
+    "Cuff_Inner_L": 8.462232866585662e-08,
+    "Forearm_UnderSleeve_L": 8.462232866585662e-08
+  },
+  "weights": [
+    {
+      "object": "Rebuild_Body_Clothing_SourceRetained",
+      "vertices": 75738,
+      "maxInfluences": 4,
+      "maxWeightSumError": 1.1102230246251565e-16,
+      "weightedBones": {
+        "LeftLowerArm": 3484,
+        "RightLowerArm": 3358,
+        "RightUpperArm": 4020,
+        "Hips": 44039,
+        "RightUpperLeg": 4814,
+        "RightFoot": 3788,
+        "RightLowerLeg": 4334,
+        "Chest": 7003,
+        "Spine": 4899,
+        "LeftFoot": 3758,
+        "LeftUpperArm": 3990,
+        "LeftUpperLeg": 4522,
+        "LeftLowerLeg": 4333
+      }
+    },
+    {
+      "object": "Rebuilt_BackCollar_Band",
+      "vertices": 960,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Chest": 960
+      }
+    },
+    {
+      "object": "Rebuilt_FrontCollar_L",
+      "vertices": 1274,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Chest": 1274
+      }
+    },
+    {
+      "object": "Rebuilt_FrontCollar_R",
+      "vertices": 1274,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Chest": 1274
+      }
+    },
+    {
+      "object": "Ear_R",
+      "vertices": 1058,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 1058
+      }
+    },
+    {
+      "object": "Ear_L",
+      "vertices": 1058,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 1058
+      }
+    },
+    {
+      "object": "Head_Skin_Quad_Retopo",
+      "vertices": 13880,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 13880
+      }
+    },
+    {
+      "object": "Neck_Clean_Quad_Sleeve",
+      "vertices": 1600,
+      "maxInfluences": 2,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Chest": 576,
+        "Neck": 1088,
+        "Head": 1024
+      }
+    },
+    {
+      "object": "Eye_Sclera_L",
+      "vertices": 769,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 769
+      }
+    },
+    {
+      "object": "Eye_Iris_L",
+      "vertices": 513,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 513
+      }
+    },
+    {
+      "object": "Eye_UpperLash_L",
+      "vertices": 82,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 82
+      }
+    },
+    {
+      "object": "Eye_Sclera_R",
+      "vertices": 769,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 769
+      }
+    },
+    {
+      "object": "Eye_Iris_R",
+      "vertices": 513,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 513
+      }
+    },
+    {
+      "object": "Eye_UpperLash_R",
+      "vertices": 82,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 82
+      }
+    },
+    {
+      "object": "Brow_L",
+      "vertices": 66,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 66
+      }
+    },
+    {
+      "object": "Brow_R",
+      "vertices": 66,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 66
+      }
+    },
+    {
+      "object": "Mouth_Closed_Line",
+      "vertices": 96,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 96
+      }
+    },
+    {
+      "object": "Rebuilt_Hand_L",
+      "vertices": 750,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "LeftHand": 750
+      }
+    },
+    {
+      "object": "Rebuilt_Hand_R",
+      "vertices": 750,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "RightHand": 750
+      }
+    },
+    {
+      "object": "Hair_Crown_SourceEnvelope",
+      "vertices": 2690,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 2690
+      }
+    },
+    {
+      "object": "Ponytail_Left_FabricTie",
+      "vertices": 480,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 480
+      }
+    },
+    {
+      "object": "Ponytail_Right_FabricTie",
+      "vertices": 480,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 480
+      }
+    },
+    {
+      "object": "Fringe_CentreLeft",
+      "vertices": 444,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 444
+      }
+    },
+    {
+      "object": "Fringe_Left",
+      "vertices": 444,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 444
+      }
+    },
+    {
+      "object": "Fringe_CentreRight",
+      "vertices": 444,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 444
+      }
+    },
+    {
+      "object": "Fringe_Right",
+      "vertices": 444,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 444
+      }
+    },
+    {
+      "object": "Fringe_LeftFine",
+      "vertices": 444,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 444
+      }
+    },
+    {
+      "object": "Fringe_RightFine",
+      "vertices": 444,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 444
+      }
+    },
+    {
+      "object": "Temple_Left",
+      "vertices": 492,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 492
+      }
+    },
+    {
+      "object": "Temple_Right",
+      "vertices": 492,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 492
+      }
+    },
+    {
+      "object": "Ponytail_Left_Layer_1",
+      "vertices": 492,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 492
+      }
+    },
+    {
+      "object": "Ponytail_Left_Layer_2",
+      "vertices": 492,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 492
+      }
+    },
+    {
+      "object": "Ponytail_Left_Layer_3",
+      "vertices": 492,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 492
+      }
+    },
+    {
+      "object": "Ponytail_Left_Layer_4",
+      "vertices": 492,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 492
+      }
+    },
+    {
+      "object": "Ponytail_Left_Layer_5",
+      "vertices": 492,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 492
+      }
+    },
+    {
+      "object": "Ponytail_Right_Layer_1",
+      "vertices": 492,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 492
+      }
+    },
+    {
+      "object": "Ponytail_Right_Layer_2",
+      "vertices": 492,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 492
+      }
+    },
+    {
+      "object": "Ponytail_Right_Layer_3",
+      "vertices": 492,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 492
+      }
+    },
+    {
+      "object": "Ponytail_Right_Layer_4",
+      "vertices": 492,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 492
+      }
+    },
+    {
+      "object": "Ponytail_Right_Layer_5",
+      "vertices": 492,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Head": 492
+      }
+    },
+    {
+      "object": "Blouse_Button_1",
+      "vertices": 266,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Chest": 266
+      }
+    },
+    {
+      "object": "Blouse_Button_2",
+      "vertices": 266,
+      "maxInfluences": 2,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Spine": 266,
+        "Chest": 266
+      }
+    },
+    {
+      "object": "Blouse_Button_3",
+      "vertices": 266,
+      "maxInfluences": 2,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "Hips": 266,
+        "Spine": 266
+      }
+    },
+    {
+      "object": "Cuff_Inner_R",
+      "vertices": 369,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "RightLowerArm": 369
+      }
+    },
+    {
+      "object": "Forearm_UnderSleeve_R",
+      "vertices": 362,
+      "maxInfluences": 2,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "RightLowerArm": 297,
+        "RightHand": 197
+      }
+    },
+    {
+      "object": "Cuff_Inner_L",
+      "vertices": 336,
+      "maxInfluences": 1,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "LeftLowerArm": 336
+      }
+    },
+    {
+      "object": "Forearm_UnderSleeve_L",
+      "vertices": 362,
+      "maxInfluences": 2,
+      "maxWeightSumError": 0,
+      "weightedBones": {
+        "LeftLowerArm": 297,
+        "LeftHand": 197
+      }
+    }
+  ],
+  "limitations": [
+    "Analytic weights for a limited motion preview, not a production rig.",
+    "Skirt follows pelvis; no cloth collision/simulation.",
+    "Head, eyes and hair follow the head rigidly; no facial or hair dynamics.",
+    "Hands preserve their five-finger geometry and follow hand bones; fingers have no independent controls.",
+    "Numerical model scale retained; physical human height is not calibrated."
+  ]
+}

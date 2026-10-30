@@ -1,0 +1,222 @@
+{
+  "date": "2026-10-29",
+  "task": "只读参考与可复用纹理核对；不修改模型、不启动渲染",
+  "searched": [
+    "当前工作区（含忽略资产）",
+    "用户附件目录",
+    "Windows Downloads"
+  ],
+  "missingExactRequestedFiles": [
+    "IMG_7225.PNG",
+    "IMG_7226.PNG",
+    "IMG_7227.PNG",
+    "IMG_7228.PNG"
+  ],
+  "exactCorrespondence": "未找到四个指定文件，不能声称现有分件图与它们逐字节或设计完全等同。按实际内容确认方向，不按文件顺序猜。",
+  "archiveSource": {
+    "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/project.charakit",
+    "entryToFile": {
+      "assets/5de4ca1e-e39a-4880-9d58-b9a6330c65f9.png": "IMG_7223-original.png",
+      "assets/11a865d8-95e4-4f3f-85cb-7b972052924c.png": "IMG_7224-original.png"
+    },
+    "originalArchiveUnmodified": true,
+    "extractedImagesNotGenerated": true
+  },
+  "references": [
+    {
+      "path": "Character_Rebuild/reports/reference-audit-images/IMG_7223-original.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\reports\\reference-audit-images\\IMG_7223-original.png",
+      "bytes": 2192526,
+      "sha256": "bfbccb51e908f33abcbcfa341faa8665a3711f310e0b26a0f712037c04cc8b49",
+      "width": 1024,
+      "height": 1536,
+      "visuallyInspected": true,
+      "description": "原始全身正面立绘：手臂自然下垂，头微倾，黑色低双马尾、米白圆领长袖、深绿褶裙、白袜、棕鞋。不是 T-pose 或严格正交图。",
+      "role": "identity-and-design"
+    },
+    {
+      "path": "Character_Rebuild/reports/reference-audit-images/IMG_7224-original.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\reports\\reference-audit-images\\IMG_7224-original.png",
+      "bytes": 2335057,
+      "sha256": "06401ee68cf5c27f7de49e3c75e9edbc7e3ee40891fea5178237966df79900d0",
+      "width": 1536,
+      "height": 1024,
+      "visuallyInspected": true,
+      "description": "原始整身四视图板。从左至右：正面、鼻尖/胸廓/鞋尖朝画面左、背面、鼻尖/胸廓/鞋尖朝画面右。手臂下垂；用于体积与服装和发型设计核对，不作为T-pose。",
+      "role": "primary-four-view-design"
+    },
+    {
+      "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/references/user-original-portrait-2026-10-28.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\references\\user-original-portrait-2026-10-28.png",
+      "bytes": 4313047,
+      "sha256": "81415fde84c35cc9aad049b9c95113918320a8921a17173cfeb197550ba98c1a",
+      "width": 1756,
+      "height": 1756,
+      "visuallyInspected": true,
+      "description": "用户直接提供的动漫肖像；头微倾、自然轻笑、暖肤色、深色眼睛、黑色双低马尾，保留身份优先级高。",
+      "role": "primary-identity"
+    },
+    {
+      "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/images/head/front.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\images\\head\\front.png",
+      "bytes": 1239553,
+      "sha256": "37a07e7515d0cd4986719d972817fbe15a5cc22dc796967aa1d4c31423050c47",
+      "width": 1254,
+      "height": 1254,
+      "visuallyInspected": true,
+      "description": "动漫头部/全部头发分件，正面；透明边缘可见少量色边/残余。旧 image_gen 派生参考，不能等同用户本次指定原始IMG文件。",
+      "role": "secondary-head-volume-reference"
+    },
+    {
+      "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/images/head/left.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\images\\head\\left.png",
+      "bytes": 1033593,
+      "sha256": "355f0c434aef2476424bc1b615dd3c83079afcdea5008bdbea03c21c8f46ba3e",
+      "width": 1254,
+      "height": 1254,
+      "visuallyInspected": true,
+      "description": "动漫头部/全部头发分件，前方朝画面左；透明边缘可见少量色边/残余。旧 image_gen 派生参考，不能等同用户本次指定原始IMG文件。",
+      "role": "secondary-head-volume-reference"
+    },
+    {
+      "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/images/head/back.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\images\\head\\back.png",
+      "bytes": 1227147,
+      "sha256": "399d99eb227223ae95fc6c0050f3773560ce97eb3bf22f3632e7801311b68467",
+      "width": 1254,
+      "height": 1254,
+      "visuallyInspected": true,
+      "description": "动漫头部/全部头发分件，背面；透明边缘可见少量色边/残余。旧 image_gen 派生参考，不能等同用户本次指定原始IMG文件。",
+      "role": "secondary-head-volume-reference"
+    },
+    {
+      "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/images/head/right.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\images\\head\\right.png",
+      "bytes": 1047369,
+      "sha256": "dd3299be688dcff48dd70b2f17a1d7ad8c2fa3c273f843a7ff102e0dbe5daca4",
+      "width": 1254,
+      "height": 1254,
+      "visuallyInspected": true,
+      "description": "动漫头部/全部头发分件，前方朝画面右；透明边缘可见少量色边/残余。旧 image_gen 派生参考，不能等同用户本次指定原始IMG文件。",
+      "role": "secondary-head-volume-reference"
+    },
+    {
+      "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/images/body/front.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\images\\body\\front.png",
+      "bytes": 535273,
+      "sha256": "a77993f1fb62168ef3aa335451512f901ff2da0f0e4201076ee26edd34d6410e",
+      "width": 1254,
+      "height": 1254,
+      "visuallyInspected": true,
+      "description": "无头/无发身体分件，T-pose，正面；透明边缘可见少量色边/残余。旧 image_gen 派生参考，不能等同用户本次指定原始IMG文件。",
+      "role": "t-pose-body-reference"
+    },
+    {
+      "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/images/body/left.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\images\\body\\left.png",
+      "bytes": 315401,
+      "sha256": "9e45df6d6dd6818651660a29c5346e1d3d52bb69ef5dbcfe103b18ae32ed5860",
+      "width": 1254,
+      "height": 1254,
+      "visuallyInspected": true,
+      "description": "无头/无发身体分件，T-pose，前方朝画面左；透明边缘可见少量色边/残余。旧 image_gen 派生参考，不能等同用户本次指定原始IMG文件。",
+      "role": "t-pose-body-reference"
+    },
+    {
+      "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/images/body/back.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\images\\body\\back.png",
+      "bytes": 513275,
+      "sha256": "3094cfc61a6422eada7756ab47f888b1deb49ec9f82a6f5733d4570f5e5b2887",
+      "width": 1254,
+      "height": 1254,
+      "visuallyInspected": true,
+      "description": "无头/无发身体分件，T-pose，背面；透明边缘可见少量色边/残余。旧 image_gen 派生参考，不能等同用户本次指定原始IMG文件。",
+      "role": "t-pose-body-reference"
+    },
+    {
+      "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/images/body/right.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\images\\body\\right.png",
+      "bytes": 312937,
+      "sha256": "1106d0aae9371fc9766b046c1d405a739b68a70eaae50a241d4a47dd9e7d06b9",
+      "width": 1254,
+      "height": 1254,
+      "visuallyInspected": true,
+      "description": "无头/无发身体分件，T-pose，前方朝画面右；透明边缘可见少量色边/残余。旧 image_gen 派生参考，不能等同用户本次指定原始IMG文件。",
+      "role": "t-pose-body-reference"
+    }
+  ],
+  "textures": [
+    {
+      "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/textures/face-basecolor.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\textures\\face-basecolor.png",
+      "bytes": 1261265,
+      "sha256": "772b69518944dd360801be3a368ac0d79eb7c6e8ac739ead01aed39471d04de8",
+      "width": 2048,
+      "height": 2048,
+      "visuallyInspected": true,
+      "description": "2048旧头部UV图，五官/头发位于UV左右边缘，中部大面积肤色；仅适配旧UV，不可直接套新模型。保留但不建议复用。",
+      "role": "optional-texture-reference"
+    },
+    {
+      "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/textures/face-skin-only-projection.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\textures\\face-skin-only-projection.png",
+      "bytes": 1154821,
+      "sha256": "468363a2267ad36a6da56524f582910cab872934dc652f569573c2d9b9662b44",
+      "width": 1254,
+      "height": 1254,
+      "visuallyInspected": true,
+      "description": "1254正面派生图，移除了眼眉嘴但仍包含全部头发；不能对全头无蒙版投射，否则污染皮肤及后脑。仅可在皮肤有效遮罩内取肤色。",
+      "role": "optional-texture-reference"
+    },
+    {
+      "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/textures/clothing-basecolor.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\textures\\clothing-basecolor.png",
+      "bytes": 4431356,
+      "sha256": "69c7f1ef04e143eeb900cc8bd234a9906141416115715acb7995281a7780e228",
+      "width": 4096,
+      "height": 4096,
+      "visuallyInspected": true,
+      "description": "4096旧服装UV图，有衬衫褶皱和绿色裙片；不兼容新GLB UV，最多参考调色/细节，须重新投射或重绘。",
+      "role": "optional-texture-reference"
+    },
+    {
+      "path": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/textures/hair-charcoal-basecolor.png",
+      "absolutePath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\textures\\hair-charcoal-basecolor.png",
+      "bytes": 934902,
+      "sha256": "1231518fda5ac572c65147f01d978c9a293d758ec55984626be6355c8095f37c",
+      "width": 1254,
+      "height": 1254,
+      "visuallyInspected": true,
+      "description": "1254深灰纵向细发丝纹理，视觉无白底污染，可选用于新发束UV的微弱细节；宏观发型仍必须靠新网格。",
+      "role": "optional-texture-reference"
+    }
+  ],
+  "priority": [
+    "本次新GLB体型/服装/T-pose基础",
+    "原始7223/7224及用户肖像的角色身份、低双马尾和服装设计",
+    "分件head/body图用于补充T-pose和头部体积；出现冲突时不要机械拟合派生图"
+  ],
+  "observedDifferences": [
+    "head/front 分件比原肖像眼睛更大，刘海更规整，双尾更饱满、更卷；不能把此派生变化自动当原设计要求。",
+    "分件body前后为T-pose；侧面近臂朝相机因透视缩短，不应误解为握拳或短臂。",
+    "原7224四视图存在轻微比例及轮廓差异，只用于确定形体；用正面身份优先、侧面体积、背面发束结构。",
+    "PNG透明边缘带少量彩色残余，不能未经遮罩直接烘入新皮肤和头发。"
+  ],
+  "notSuitable": [
+    "references/generated/*r11.png写实人物板",
+    "旧realistic皮肤毛孔/唇纹/解剖normal",
+    "旧角色模型或旧贴图UV直接移植"
+  ],
+  "modelingNotes": [
+    "双低马尾扎位在耳后下方，不提高扎位，不换成披发。原图尾束贴肩自然下垂，侧后图说明头皮向两低扎位汇聚。",
+    "面部采用简化动漫鼻口、较大深色虹膜、明确眼睑边缘，禁止套写实颅面比例。",
+    "手部参考中手指自然靠拢，重建后仍应保留独立五指及轻微间隙。掌侧/关节结构不可见部分需标推断。",
+    "全身reference可分别使用头/身体分件空物体，对齐标记并明确不同画布比例，不把两个1254画布同尺度叠加。"
+  ],
+  "limitations": [
+    "未生成任何新图像",
+    "未证明四视图为一致三维扫描",
+    "未读取或改变新GLB网格",
+    "没有外部授权推测，原始图来源仅依现有工程元数据和用户提供上下文"
+  ]
+}

@@ -1,0 +1,205 @@
+{
+  "scope": "construction only; no visual/collision acceptance",
+  "objects": [
+    {
+      "name": "cap",
+      "vertices": 2690,
+      "triangles": 5376,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Fringe_CentreLeft",
+      "vertices": 444,
+      "triangles": 884,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Fringe_Left",
+      "vertices": 444,
+      "triangles": 884,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Fringe_CentreRight",
+      "vertices": 444,
+      "triangles": 884,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Fringe_Right",
+      "vertices": 444,
+      "triangles": 884,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Fringe_LeftFine",
+      "vertices": 444,
+      "triangles": 884,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Fringe_RightFine",
+      "vertices": 444,
+      "triangles": 884,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Temple_Left",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Temple_Right",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "RearGather_Left_1",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "RearGather_Left_2",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "RearGather_Left_3",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "RearGather_Right_1",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "RearGather_Right_2",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "RearGather_Right_3",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Ponytail_Left_Layer_1",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Ponytail_Left_Layer_2",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Ponytail_Left_Layer_3",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Ponytail_Left_Layer_4",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Ponytail_Left_Layer_5",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Ponytail_Right_Layer_1",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Ponytail_Right_Layer_2",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Ponytail_Right_Layer_3",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Ponytail_Right_Layer_4",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    },
+    {
+      "name": "Ponytail_Right_Layer_5",
+      "vertices": 492,
+      "triangles": 980,
+      "badEdges": 0,
+      "positiveVolume": true,
+      "finite": true
+    }
+  ]
+}

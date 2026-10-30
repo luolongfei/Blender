@@ -1,0 +1,122 @@
+{
+  "scope": "Read-only inspection of the new root-level GLB; no Blender scene or model changes were made.",
+  "source": "character-hq-textured.glb",
+  "sourceBytes": 16438868,
+  "inspectionMethod": "Parsed original GLB mesh, UV and embedded PNG; produced CPU z-buffer orthographic unlit projections. These are diagnostic projections, not final Blender validation renders.",
+  "mesh": {
+    "objects": 1,
+    "triangles": 200000,
+    "exportedVertices": 127360,
+    "materials": 1,
+    "colorTexture": [
+      4096,
+      4096
+    ],
+    "coordinateSystem": "Original glTF coordinates, Y up. Visual inspection confirms positive Z is front.",
+    "bounds": {
+      "min": [
+        -0.9908958077,
+        -0.9990763664,
+        -0.247668013
+      ],
+      "max": [
+        0.9878259897,
+        0.9946864247,
+        0.2336365879
+      ]
+    }
+  },
+  "preserve": [
+    "Overall original T-pose, blouse torso contour, shoulder/sleeve volume, cuff positions and waist height.",
+    "Dark green skirt silhouette, length and the visible major vertical pleat rhythm. Do not globally smooth or voxel-remesh.",
+    "Leg lengths, white sock heights and brown shoe overall volumes, pending neutral-lit verification.",
+    "Original garment UV data and texture wherever no repair is needed; no unconditional re-unwrap or resolution increase."
+  ],
+  "observedIssues": [
+    {
+      "region": "Front collar / shoulder transition",
+      "evidence": "Dark irregular shapes appear on both sides of the collar in the Z+ view.",
+      "interpretation": "Could include both hair fused to the shirt and texture contamination; needs material/geometry inspection before removal.",
+      "action": "Separate hair replacement from retained garment, then repair actual contaminated garment texels only. Do not erase dark pixels globally."
+    },
+    {
+      "region": "Back blouse centre",
+      "evidence": "A centre placket and button pattern similar to the front is visible in the Z- view.",
+      "interpretation": "Confirmed texture leakage against the actual four-view design sheet: back has a continuous blouse panel with no button placket.",
+      "action": "Locally repaint the back centre and preserve the collar/shoulder gathering. Do not mirror front buttons onto the back."
+    },
+    {
+      "region": "Skirt sides and hem",
+      "evidence": "Small pale flecks and discontinuous-looking border marks are visible.",
+      "interpretation": "The unlit diagnostic alone does not distinguish every texture artifact from geometry damage.",
+      "action": "Check local boundary/non-manifold results and neutral material view. Fix actual edges locally, then repair local colour; preserve pleat ridges."
+    },
+    {
+      "region": "Leg side and knee-back",
+      "evidence": "Strong narrow warm/dark baked colour lines are visible, particularly at the side silhouette.",
+      "interpretation": "Directional shading or image seam baked into the colour image, not evidence of physical anatomy.",
+      "action": "Repaint affected skin regions to a quiet anime palette; keep authored knee cues subtle. No pores or realistic skin noise."
+    },
+    {
+      "region": "Cuffs, sock tops and shoe borders",
+      "evidence": "Contours are mostly readable in unlit projections; local edge quality remains unresolved.",
+      "action": "Inspect neutral close-ups after head and hand replacement. Keep reasonable garment openings open; do not close all boundaries indiscriminately."
+    }
+  ],
+  "approximateOriginalCoordinateBands": {
+    "note": "Only rough selection guides from the original glTF; NOT safe cut planes. Boundaries must be established on actual surface connectivity and current transforms.",
+    "blouseTorsoY": [
+      0.305,
+      0.63
+    ],
+    "sleevesAndCuffsY": [
+      0.45,
+      0.63
+    ],
+    "skirtY": [
+      -0.235,
+      0.3
+    ],
+    "exposedLegsY": [
+      -0.68,
+      -0.235
+    ],
+    "socksY": [
+      -0.89,
+      -0.68
+    ],
+    "shoesY": [
+      -0.9991,
+      -0.87
+    ]
+  },
+  "repairOrder": [
+    "Retain original correct body/garment geometry while the face, hands and hair are reconstructed independently.",
+    "After integration, use the original UV texture and spatial/face-normal masks to identify specific garment colour contamination.",
+    "Repair only confirmed damaged boundary edges or fragments; avoid global merge/remesh/smoothing.",
+    "Apply local colour repair/baking with surface-visibility masks, not unmasked front projection.",
+    "Verify full front, side, back and quarter with the same neutral Blender camera/light setup before and after.",
+    "Check exported GLB after clean re-import; a successful mesh export alone is not appearance acceptance."
+  ],
+  "diagnostics": [
+    "Character_Rebuild/diagnostics/clothing/unlit-z-positive.png",
+    "Character_Rebuild/diagnostics/clothing/unlit-z-negative.png",
+    "Character_Rebuild/diagnostics/clothing/unlit-x-positive.png",
+    "Character_Rebuild/diagnostics/clothing/unlit-x-negative.png",
+    "Character_Rebuild/diagnostics/clothing/height-bands.json"
+  ],
+  "script": "Character_Rebuild/scripts/clothing-audit.mjs",
+  "limitations": [
+    "No new model was authored or saved by this audit.",
+    "No Blender material/light validation, self-intersection test or geometric four-view registration was performed by this task.",
+    "No old rejected character geometry was reused.",
+    "No claim that clothing repair or final delivery is complete."
+  ],
+  "sourceSha256": "105b77790ff4b382b0ef83189827d774a596f4a8069cefdb8911ad85f93af3b2",
+  "referenceReviewed": "Character_Rebuild/reports/reference-audit-images/IMG_7224-original.png",
+  "referenceNotes": [
+    "Actual four-view design sheet visually inspected. It uses arms-down poses; retain the input model T-pose as explicitly requested.",
+    "Back blouse has no button placket. Rear repeated buttons on the GLB are confirmed wrong.",
+    "Above-knee dark green skirt with broad major pleats; white socks reach middle/lower shin. Overall input lengths are suitable starting points."
+  ]
+}

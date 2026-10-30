@@ -1,0 +1,68 @@
+{
+  "texture": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\textures\\hair-crown-flow-normal-v5-2048.png",
+  "textureSha256": "f6865585f534ed757db8b33b6202b0dd1fee2c6f966ba0b3fd09098f6e8e2816",
+  "imageSize": [
+    2048,
+    2048
+  ],
+  "bake": "Cycles NORMAL / TANGENT on actual cap copy with Bump height source",
+  "heightDistance": 0.0014,
+  "normalChannels": [
+    "+X",
+    "+Y",
+    "+Z"
+  ],
+  "rgbMin": [
+    0.3607843220233917,
+    0.4392157196998596,
+    0.9764706492424011
+  ],
+  "rgbMax": [
+    0.6392157077789307,
+    0.5568627715110779,
+    1
+  ],
+  "sampleCount": 6864,
+  "medianBakedTiltDegrees": 3.190129780333838,
+  "p95BakedTiltDegrees": 8.39479012677878,
+  "maxBakedTiltDegrees": 16.828576314178047,
+  "sourceCapHashes": {
+    "geometry": "f39b24124dd9b93fe04c4b400e390a72e35bd463be7652e2c2f97be5059cd7c2",
+    "uv": "b108b85c99a359cbfd5ec421218c90b5a6dc0fe4d46997dfaa883c18d1a76df9"
+  },
+  "capGeometryAndUVExact": true,
+  "innerShellUVOverlapsExcludedViaSeparateBakeTarget": true,
+  "outerFacesBaked": 1344,
+  "install": {
+    "oldMaterial": "Rebuilt_Hair_Crown_BakedFlow_V4",
+    "newMaterial": "Rebuilt_Hair_Crown_BakedNormal_V5",
+    "normalStrength": 0.85,
+    "normalImage": "Hair_Crown_Flow_Tangent_Normal_V5",
+    "imagePacked": true,
+    "imageColorSpace": "Non-Color",
+    "capGeometryUVExact": true,
+    "baseColorNetworkCopied": true,
+    "roughness": 0.5600000023841858
+  },
+  "source": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\stages\\E4-final-refined.blend",
+  "sourceSha256": "7a406fbbcf337e4098ebc98697766cdb3d88d8966286779c92a5e58e3e6928aa",
+  "sourceUnchanged": true,
+  "candidate": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\agents\\texture\\E5-hair-normal-candidate.blend",
+  "candidateSha256": "499106771affdec71fbb7d2f68814dea8e8baac5e5a2eee2d1e19f5024edc5c1",
+  "screenshot": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\checks\\hair-normal-v5\\back-quarter.png",
+  "allMeshGeometryUVExact": true,
+  "status": "visual-reviewed: restrained surface-flow detail selected for root integration; final integrated GLB still requires verification",
+  "function": "apply_crown_normal(cap, texture_path, report[sourceCapHashes], strength=.85)",
+  "scriptSha256": "be79f9295b832686286187dd516ebf0001634d1fd4605a7ceb9e7b3cc1c406ae",
+  "visualReview": {
+    "image": "Character_Rebuild/checks/hair-normal-v5/back-quarter.png",
+    "visuallyInspected": true,
+    "observations": [
+      "Soft directional strands are visible over crown and upper back, breaking up the featureless surface.",
+      "No added geometry strips, silhouette change, white streaks or strongly ribbed helmet effect in this view.",
+      "Original broad cap/ponytail shape is retained; this is surface polish, not new strand volumes.",
+      "Two tiny warm-colour points remain near rear cap centre and predate this material change; they are not fixed by a normal map."
+    ],
+    "scope": "One 600px back-quarter render under common neutral light. Other views and exported-GLB parity remain root checks."
+  }
+}

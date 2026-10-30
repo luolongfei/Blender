@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
 import {once} from 'node:events';
-import {inside, createPreviewServer} from '../scripts/workspace.mjs';
+import {inside, createPreviewServer, validatePythonFiles} from '../scripts/workspace.mjs';
 
 test('paths stay inside their assigned root', () => {
   const root = path.resolve(os.tmpdir(), 'test-workspace');
@@ -35,4 +35,18 @@ test('preview serves locked runtime and project resources, including binary rang
   assert.equal((await fetch(base + '/projects/a/secret.blend')).status, 403);
   assert.equal((await fetch(base + '/tool/public/runtime.mjs')).status, 404);
   assert.equal((await fetch(base + '/public/missing.mjs')).status, 404);
+});
+
+
+test('Python validation handles lists beyond Windows argument limits and reports syntax errors', async t => {
+  const directory = await fs.mkdtemp(path.join(os.tmpdir(), 'syntax-test-'));
+  t.after(() => fs.rm(inside(os.tmpdir(), path.relative(os.tmpdir(), directory)), {recursive: true, force: true}));
+  const valid = path.join(directory, '中文 source.py');
+  const invalid = path.join(directory, 'invalid.py');
+  await fs.writeFile(valid, 'value = 1\n');
+  await fs.writeFile(invalid, 'def broken(:\n');
+  const files = Array(2000).fill(valid);
+  assert.ok(files.join(' ').length > 32767);
+  await validatePythonFiles(files);
+  await assert.rejects(validatePythonFiles([...files, invalid]), /SyntaxError/);
 });

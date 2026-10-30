@@ -1,0 +1,4318 @@
+{
+  "schemaVersion": 1,
+  "input": "Character_Rebuild/interactive/animated-preview.glb",
+  "bytes": 18831996,
+  "sha256": "64febee7ea3285cc8f4ff91725fbc2df686daaaaf50e2508384abb8ddec40289",
+  "checkedAt": "2026-10-29T23:14:45.571Z",
+  "errors": [],
+  "warnings": [],
+  "scope": "GLB structure, finite numeric attributes, declared PBR and embedded image references. Not a full Khronos validator.",
+  "visualAcceptance": false,
+  "blenderReimportVerified": false,
+  "unchecked": [
+    "Visual likeness and texture appearance",
+    "Five-finger geometry and hair silhouette",
+    "Self-intersections and manifold topology",
+    "Physical scale and orientation against references",
+    "Compressed geometry decoding",
+    "Image pixel decoding and texture color-space appearance"
+  ],
+  "generator": "Khronos glTF Blender I/O v5.2.41",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "accessorCount": 561,
+  "allAccessorNumericValuesFinite": true,
+  "images": [
+    {
+      "index": 0,
+      "name": "iris-anime-1024",
+      "bufferView": 60,
+      "mimeType": "image/png",
+      "bytes": 27453,
+      "sha256": "88d7c992f4b56fd005654030c1d577307cf118c66992f7437a064a5795252644",
+      "format": "png",
+      "width": 1024,
+      "height": 1024
+    },
+    {
+      "index": 1,
+      "name": "hair-crown-flow-normal-v5-2048",
+      "bufferView": 141,
+      "mimeType": "image/png",
+      "bytes": 870152,
+      "sha256": "f6865585f534ed757db8b33b6202b0dd1fee2c6f966ba0b3fd09098f6e8e2816",
+      "format": "png",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "index": 2,
+      "name": "hair-crown-flow-v4-2048",
+      "bufferView": 142,
+      "mimeType": "image/png",
+      "bytes": 188770,
+      "sha256": "6af96ece565dbe690b6c734c8c230f63d625d0a0d7f9a6b1ea169e531d24f491",
+      "format": "png",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "index": 3,
+      "name": "face-skin-2048",
+      "bufferView": 149,
+      "mimeType": "image/png",
+      "bytes": 72041,
+      "sha256": "241bd4c8960b81f02cd668f761168b68bf05986c7ebcced9ad93ecb83ad6d48b",
+      "format": "png",
+      "width": 2048,
+      "height": 2048
+    },
+    {
+      "index": 4,
+      "name": "body-final-4096",
+      "bufferView": 246,
+      "mimeType": "image/png",
+      "bytes": 5882494,
+      "sha256": "69f40a3a9323716e5669a6cadca5f4a1ee499757660d2306c81b02b7cc73d6a7",
+      "format": "png",
+      "width": 4096,
+      "height": 4096
+    }
+  ],
+  "textures": [
+    {
+      "index": 0,
+      "source": 0,
+      "name": null
+    },
+    {
+      "index": 1,
+      "source": 1,
+      "name": null
+    },
+    {
+      "index": 2,
+      "source": 2,
+      "name": null
+    },
+    {
+      "index": 3,
+      "source": 3,
+      "name": null
+    },
+    {
+      "index": 4,
+      "source": 4,
+      "name": null
+    }
+  ],
+  "materials": [
+    {
+      "index": 0,
+      "name": "Rebuilt_Ivory_Buttons",
+      "baseColor": [
+        0.7874122858047485,
+        0.7105664610862732,
+        0.5704815983772278,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.6499999761581421,
+      "textures": {},
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 1,
+      "name": "Rebuilt_Final_brow",
+      "baseColor": [
+        0.03468407690525055,
+        0.030369549989700317,
+        0.02425433322787285,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.7799999713897705,
+      "textures": {},
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 2,
+      "name": "Rebuilt_Cuff_Inner",
+      "baseColor": [
+        0.7874122858047485,
+        0.6920710802078247,
+        0.5542217493057251,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8999999761581421,
+      "textures": {},
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 3,
+      "name": "Rebuilt_skin_back",
+      "baseColor": [
+        0.911407470703125,
+        0.6123368144035339,
+        0.4338795244693756,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.7200000286102295,
+      "textures": {},
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 4,
+      "name": "Rebuilt_Final_iris",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.6000000238418579,
+      "textures": {
+        "baseColor": {
+          "texture": 0,
+          "image": 0,
+          "texCoord": 0
+        }
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 5,
+      "name": "Rebuilt_Final_sclera",
+      "baseColor": [
+        0.9200515151023865,
+        0.868899405002594,
+        0.7599923014640808,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.5600000023841858,
+      "textures": {},
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 6,
+      "name": "Rebuilt_Final_lash",
+      "baseColor": [
+        0.010654846206307411,
+        0.009563541039824486,
+        0.008260390721261501,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.7599999904632568,
+      "textures": {},
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 7,
+      "name": "Rebuilt_Final_skin_back",
+      "baseColor": [
+        0.9130988121032715,
+        0.6104956865310669,
+        0.43415367603302,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.7200000286102295,
+      "textures": {},
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 8,
+      "name": "Rebuilt_Final_hair",
+      "baseColor": [
+        0.02862207219004631,
+        0.026113364845514297,
+        0.021980946883559227,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.5299999713897705,
+      "textures": {},
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 9,
+      "name": "Rebuilt_Hair_Crown_BakedNormal_V5",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.5600000023841858,
+      "textures": {
+        "baseColor": {
+          "texture": 2,
+          "image": 2,
+          "texCoord": 0
+        },
+        "normal": {
+          "texture": 1,
+          "image": 1,
+          "texCoord": 0
+        }
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 10,
+      "name": "Rebuilt_Final_skin",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.7200000286102295,
+      "textures": {
+        "baseColor": {
+          "texture": 3,
+          "image": 3,
+          "texCoord": 0
+        }
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 11,
+      "name": "Rebuilt_Final_mouth",
+      "baseColor": [
+        0.1259673833847046,
+        0.0454503558576107,
+        0.0300741046667099,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.7799999713897705,
+      "textures": {},
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 12,
+      "name": "Rebuilt_Final_hair_shadow",
+      "baseColor": [
+        0.018478473648428917,
+        0.01717584952712059,
+        0.015325203537940979,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.5799999833106995,
+      "textures": {},
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 13,
+      "name": "Rebuilt_RetainedBody_RepairedAtlas.001",
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8600000143051147,
+      "textures": {
+        "baseColor": {
+          "texture": 4,
+          "image": 4,
+          "texCoord": 1
+        }
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 14,
+      "name": "Rebuilt_blouse",
+      "baseColor": [
+        0.868899405002594,
+        0.7677687406539917,
+        0.6123368144035339,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8799999952316284,
+      "textures": {},
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    },
+    {
+      "index": 15,
+      "name": "Rebuilt_Final_blouse",
+      "baseColor": [
+        0.868899405002594,
+        0.7677687406539917,
+        0.6123368144035339,
+        1
+      ],
+      "metallic": 0,
+      "roughness": 0.8799999952316284,
+      "textures": {},
+      "alphaMode": "OPAQUE",
+      "doubleSided": true,
+      "extensions": []
+    }
+  ],
+  "meshes": [
+    {
+      "index": 0,
+      "name": "Sphere.004",
+      "bounds": {
+        "min": [
+          -0.005999996792525053,
+          0.5239999890327454,
+          0.11447399109601974
+        ],
+        "max": [
+          0.0059999991208314896,
+          0.5359999537467957,
+          0.11947398632764816
+        ],
+        "size": [
+          0.011999995913356543,
+          0.011999964714050293,
+          0.004999995231628418
+        ]
+      },
+      "triangles": 528,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 323,
+          "triangles": 528,
+          "material": 0,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 1,
+      "name": "Sphere.005",
+      "bounds": {
+        "min": [
+          -0.005999996792525053,
+          0.42899999022483826,
+          0.1782963126897812
+        ],
+        "max": [
+          0.0059999991208314896,
+          0.4410000145435333,
+          0.1832963079214096
+        ],
+        "size": [
+          0.011999995913356543,
+          0.012000024318695068,
+          0.004999995231628418
+        ]
+      },
+      "triangles": 528,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 323,
+          "triangles": 528,
+          "material": 0,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "name": "Sphere.006",
+      "bounds": {
+        "min": [
+          -0.005999996792525053,
+          0.33399999141693115,
+          0.15777216851711273
+        ],
+        "max": [
+          0.0059999991208314896,
+          0.3460000157356262,
+          0.16277216374874115
+        ],
+        "size": [
+          0.011999995913356543,
+          0.012000024318695068,
+          0.004999995231628418
+        ]
+      },
+      "triangles": 528,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 323,
+          "triangles": 528,
+          "material": 0,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "name": "Brow_L_Mesh.001",
+      "bounds": {
+        "min": [
+          -0.07900000363588333,
+          0.8208529949188232,
+          0.09160350263118744
+        ],
+        "max": [
+          -0.026000000536441803,
+          0.8271037936210632,
+          0.10251843184232712
+        ],
+        "size": [
+          0.05300000309944153,
+          0.00625079870223999,
+          0.010914929211139679
+        ]
+      },
+      "triangles": 64,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 66,
+          "triangles": 64,
+          "material": 1,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "name": "Brow_R_Mesh.001",
+      "bounds": {
+        "min": [
+          0.026000000536441803,
+          0.8208529949188232,
+          0.09160350263118744
+        ],
+        "max": [
+          0.07900000363588333,
+          0.8271037936210632,
+          0.10251843184232712
+        ],
+        "size": [
+          0.05300000309944153,
+          0.00625079870223999,
+          0.010914929211139679
+        ]
+      },
+      "triangles": 64,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 66,
+          "triangles": 64,
+          "material": 1,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "name": "Cuff_Inner_L",
+      "bounds": {
+        "min": [
+          0.7145000100135803,
+          0.5114381313323975,
+          -0.08446019142866135
+        ],
+        "max": [
+          0.7524999976158142,
+          0.583986222743988,
+          0.009437218308448792
+        ],
+        "size": [
+          0.03799998760223389,
+          0.07254809141159058,
+          0.09389740973711014
+        ]
+      },
+      "triangles": 448,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 336,
+          "triangles": 448,
+          "material": 2,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "name": "Cuff_Inner_R",
+      "bounds": {
+        "min": [
+          -0.7524999976158142,
+          0.5061424374580383,
+          -0.08655058592557907
+        ],
+        "max": [
+          -0.7145000100135803,
+          0.5865657329559326,
+          0.011183340102434158
+        ],
+        "size": [
+          0.03799998760223389,
+          0.08042329549789429,
+          0.09773392602801323
+        ]
+      },
+      "triangles": 492,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 369,
+          "triangles": 492,
+          "material": 2,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "name": "Ear_L.ConchaQuadSurface",
+      "bounds": {
+        "min": [
+          0.09400001913309097,
+          0.7350000143051147,
+          -0.04099997878074646
+        ],
+        "max": [
+          0.12609462440013885,
+          0.7990000247955322,
+          -0.005000011995434761
+        ],
+        "size": [
+          0.03209460526704788,
+          0.06400001049041748,
+          0.0359999667853117
+        ]
+      },
+      "triangles": 2112,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 1106,
+          "triangles": 2112,
+          "material": 3,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "name": "Ear_R.ConchaQuadSurface",
+      "bounds": {
+        "min": [
+          -0.12609460949897766,
+          0.7350000143051147,
+          -0.04099997878074646
+        ],
+        "max": [
+          -0.09400000423192978,
+          0.7990000247955322,
+          -0.005000011995434761
+        ],
+        "size": [
+          0.03209460526704788,
+          0.06400001049041748,
+          0.0359999667853117
+        ]
+      },
+      "triangles": 2112,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 1106,
+          "triangles": 2112,
+          "material": 3,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "name": "Eye_Iris_L_Mesh.001",
+      "bounds": {
+        "min": [
+          -0.06499999761581421,
+          0.7839658856391907,
+          0.08603660017251968
+        ],
+        "max": [
+          -0.03400000184774399,
+          0.8090209364891052,
+          0.0939352959394455
+        ],
+        "size": [
+          0.03099999576807022,
+          0.02505505084991455,
+          0.007898695766925812
+        ]
+      },
+      "triangles": 960,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 513,
+          "triangles": 960,
+          "material": 4,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "name": "Eye_Iris_R_Mesh.001",
+      "bounds": {
+        "min": [
+          0.03400000184774399,
+          0.7839658856391907,
+          0.08603660017251968
+        ],
+        "max": [
+          0.06499999761581421,
+          0.8090209364891052,
+          0.0939352959394455
+        ],
+        "size": [
+          0.03099999576807022,
+          0.02505505084991455,
+          0.007898695766925812
+        ]
+      },
+      "triangles": 960,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 513,
+          "triangles": 960,
+          "material": 4,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "name": "Eye_Sclera_L_Mesh.001",
+      "bounds": {
+        "min": [
+          -0.07699999958276749,
+          0.7839693427085876,
+          0.08214063942432404
+        ],
+        "max": [
+          -0.023000000044703484,
+          0.8090000152587891,
+          0.09388536959886551
+        ],
+        "size": [
+          0.053999999538064,
+          0.025030672550201416,
+          0.011744730174541473
+        ]
+      },
+      "triangles": 1472,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 769,
+          "triangles": 1472,
+          "material": 5,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "name": "Eye_Sclera_R_Mesh.001",
+      "bounds": {
+        "min": [
+          0.023000000044703484,
+          0.7839693427085876,
+          0.08214063942432404
+        ],
+        "max": [
+          0.07699999958276749,
+          0.8090000152587891,
+          0.09388536959886551
+        ],
+        "size": [
+          0.053999999538064,
+          0.025030672550201416,
+          0.011744730174541473
+        ]
+      },
+      "triangles": 1472,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 769,
+          "triangles": 1472,
+          "material": 5,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "name": "Eye_UpperLash_L_Mesh.001",
+      "bounds": {
+        "min": [
+          -0.07699999958276749,
+          0.7929999828338623,
+          0.08291354775428772
+        ],
+        "max": [
+          -0.023000000044703484,
+          0.8107115030288696,
+          0.09629219770431519
+        ],
+        "size": [
+          0.053999999538064,
+          0.017711520195007324,
+          0.013378649950027466
+        ]
+      },
+      "triangles": 80,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 82,
+          "triangles": 80,
+          "material": 6,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "name": "Eye_UpperLash_R_Mesh.001",
+      "bounds": {
+        "min": [
+          0.023000000044703484,
+          0.7929999828338623,
+          0.08291354775428772
+        ],
+        "max": [
+          0.07699999958276749,
+          0.8107115030288696,
+          0.09629219770431519
+        ],
+        "size": [
+          0.053999999538064,
+          0.017711520195007324,
+          0.013378649950027466
+        ]
+      },
+      "triangles": 80,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 82,
+          "triangles": 80,
+          "material": 6,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "name": "Sphere.008",
+      "bounds": {
+        "min": [
+          0.6670000553131104,
+          0.5195000171661377,
+          -0.07749997079372406
+        ],
+        "max": [
+          0.7770000100135803,
+          0.5755000114440918,
+          0.004499990493059158
+        ],
+        "size": [
+          0.10999995470046997,
+          0.0559999942779541,
+          0.08199996128678322
+        ]
+      },
+      "triangles": 720,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 423,
+          "triangles": 720,
+          "material": 7,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "name": "Sphere.007",
+      "bounds": {
+        "min": [
+          -0.7769999504089355,
+          0.5195000171661377,
+          -0.07749997079372406
+        ],
+        "max": [
+          -0.6669999957084656,
+          0.5755000114440918,
+          0.004499990493059158
+        ],
+        "size": [
+          0.10999995470046997,
+          0.0559999942779541,
+          0.08199996128678322
+        ]
+      },
+      "triangles": 720,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 423,
+          "triangles": 720,
+          "material": 7,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "name": "Fringe_CentreLeft_EditableMesh.001",
+      "bounds": {
+        "min": [
+          -0.061891619116067886,
+          0.8017072677612305,
+          0.004083189181983471
+        ],
+        "max": [
+          0.0026175808161497116,
+          0.9894887208938599,
+          0.1534218043088913
+        ],
+        "size": [
+          0.0645091999322176,
+          0.1877814531326294,
+          0.14933861512690783
+        ]
+      },
+      "triangles": 884,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 505,
+          "triangles": 884,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "name": "Fringe_CentreRight_EditableMesh.001",
+      "bounds": {
+        "min": [
+          0.002307920716702938,
+          0.8166012167930603,
+          -0.007404702715575695
+        ],
+        "max": [
+          0.05961081385612488,
+          0.9889633655548096,
+          0.1484512835741043
+        ],
+        "size": [
+          0.05730289313942194,
+          0.17236214876174927,
+          0.15585598628968
+        ]
+      },
+      "triangles": 884,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 505,
+          "triangles": 884,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "name": "Fringe_Left_EditableMesh.001",
+      "bounds": {
+        "min": [
+          -0.1130695715546608,
+          0.813667893409729,
+          -0.006529729347676039
+        ],
+        "max": [
+          -0.01130041666328907,
+          0.9880579710006714,
+          0.13734900951385498
+        ],
+        "size": [
+          0.10176915489137173,
+          0.17439007759094238,
+          0.14387873886153102
+        ]
+      },
+      "triangles": 884,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 505,
+          "triangles": 884,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "name": "Fringe_LeftFine_EditableMesh.001",
+      "bounds": {
+        "min": [
+          -0.07079517841339111,
+          0.818753182888031,
+          0.05067269876599312
+        ],
+        "max": [
+          -0.03158038482069969,
+          0.966830313205719,
+          0.1484680026769638
+        ],
+        "size": [
+          0.03921479359269142,
+          0.148077130317688,
+          0.09779530391097069
+        ]
+      },
+      "triangles": 884,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 505,
+          "triangles": 884,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "name": "Fringe_Right_EditableMesh.001",
+      "bounds": {
+        "min": [
+          0.005575009621679783,
+          0.7997081875801086,
+          -0.012504533864557743
+        ],
+        "max": [
+          0.12235917896032333,
+          0.9891781806945801,
+          0.12581446766853333
+        ],
+        "size": [
+          0.11678416933864355,
+          0.18946999311447144,
+          0.13831900153309107
+        ]
+      },
+      "triangles": 884,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 505,
+          "triangles": 884,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "name": "Fringe_RightFine_EditableMesh.001",
+      "bounds": {
+        "min": [
+          0.020209863781929016,
+          0.8147422671318054,
+          0.03665196895599365
+        ],
+        "max": [
+          0.08236236870288849,
+          0.9751920104026794,
+          0.14717154204845428
+        ],
+        "size": [
+          0.06215250492095947,
+          0.16044974327087402,
+          0.11051957309246063
+        ]
+      },
+      "triangles": 884,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 505,
+          "triangles": 884,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "name": "Hair_Crown_SourceEnvelope_EditableMesh.001",
+      "bounds": {
+        "min": [
+          -0.14903435111045837,
+          0.7405135035514832,
+          -0.17249806225299835
+        ],
+        "max": [
+          0.14735671877861023,
+          0.9945253729820251,
+          0.14196829497814178
+        ],
+        "size": [
+          0.2963910698890686,
+          0.254011869430542,
+          0.31446635723114014
+        ]
+      },
+      "triangles": 5376,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 3179,
+          "triangles": 5376,
+          "material": 9,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "name": "Head_Skin_Quad_Retopo_Mesh.001",
+      "bounds": {
+        "min": [
+          -0.12703920900821686,
+          0.6777999997138977,
+          -0.16518914699554443
+        ],
+        "max": [
+          0.12703920900821686,
+          0.9829999804496765,
+          0.12912079691886902
+        ],
+        "size": [
+          0.2540784180164337,
+          0.3051999807357788,
+          0.29430994391441345
+        ]
+      },
+      "triangles": 27556,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 7899,
+          "triangles": 14900,
+          "material": 10,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        },
+        {
+          "index": 1,
+          "vertices": 6443,
+          "triangles": 12656,
+          "material": 7,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "name": "Mouth_Closed_Line_Mesh.001",
+      "bounds": {
+        "min": [
+          -0.023000000044703484,
+          0.7280799746513367,
+          0.09661244601011276
+        ],
+        "max": [
+          0.023000000044703484,
+          0.7301999926567078,
+          0.1047249436378479
+        ],
+        "size": [
+          0.04600000008940697,
+          0.0021200180053710938,
+          0.008112497627735138
+        ]
+      },
+      "triangles": 94,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 96,
+          "triangles": 94,
+          "material": 11,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "name": "Neck_Clean_Quad_Sleeve_Mesh.001",
+      "bounds": {
+        "min": [
+          -0.05999999865889549,
+          0.5989999771118164,
+          -0.10999999940395355
+        ],
+        "max": [
+          0.05999999865889549,
+          0.7649999856948853,
+          0.05299999937415123
+        ],
+        "size": [
+          0.11999999731779099,
+          0.16600000858306885,
+          0.16299999877810478
+        ]
+      },
+      "triangles": 3072,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 1792,
+          "triangles": 3072,
+          "material": 7,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "name": "Ponytail_Left_FabricTie_EditableMesh.001",
+      "bounds": {
+        "min": [
+          -0.14437223970890045,
+          0.7267692685127258,
+          -0.12110545486211777
+        ],
+        "max": [
+          -0.09562775492668152,
+          0.7612307667732239,
+          -0.07889454811811447
+        ],
+        "size": [
+          0.04874448478221893,
+          0.03446149826049805,
+          0.042210906744003296
+        ]
+      },
+      "triangles": 960,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 539,
+          "triangles": 960,
+          "material": 12,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "name": "Ponytail_Left_Layer_1_EditableMesh",
+      "bounds": {
+        "min": [
+          -0.1867692619562149,
+          0.5615906119346619,
+          -0.133173868060112
+        ],
+        "max": [
+          -0.1080380454659462,
+          0.7504116296768188,
+          -0.08920534700155258
+        ],
+        "size": [
+          0.07873121649026871,
+          0.18882101774215698,
+          0.04396852105855942
+        ]
+      },
+      "triangles": 980,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 557,
+          "triangles": 980,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "name": "Ponytail_Left_Layer_2_EditableMesh",
+      "bounds": {
+        "min": [
+          -0.19341033697128296,
+          0.5826376676559448,
+          -0.16378669440746307
+        ],
+        "max": [
+          -0.11164093017578125,
+          0.7500584721565247,
+          -0.09940002858638763
+        ],
+        "size": [
+          0.08176940679550171,
+          0.16742080450057983,
+          0.06438666582107544
+        ]
+      },
+      "triangles": 980,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 557,
+          "triangles": 980,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "name": "Ponytail_Left_Layer_3_EditableMesh",
+      "bounds": {
+        "min": [
+          -0.15735934674739838,
+          0.5696312189102173,
+          -0.17463870346546173
+        ],
+        "max": [
+          -0.09961362928152084,
+          0.7477071285247803,
+          -0.10321728140115738
+        ],
+        "size": [
+          0.05774571746587753,
+          0.178075909614563,
+          0.07142142206430435
+        ]
+      },
+      "triangles": 980,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 557,
+          "triangles": 980,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 31,
+      "name": "Ponytail_Left_Layer_4_EditableMesh",
+      "bounds": {
+        "min": [
+          -0.15526016056537628,
+          0.5755791068077087,
+          -0.10790351778268814
+        ],
+        "max": [
+          -0.11121310293674469,
+          0.7419468760490417,
+          -0.08792921900749207
+        ],
+        "size": [
+          0.04404705762863159,
+          0.166367769241333,
+          0.019974298775196075
+        ]
+      },
+      "triangles": 980,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 557,
+          "triangles": 980,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 32,
+      "name": "Ponytail_Left_Layer_5_EditableMesh",
+      "bounds": {
+        "min": [
+          -0.1887432187795639,
+          0.6035967469215393,
+          -0.13690942525863647
+        ],
+        "max": [
+          -0.11618708074092865,
+          0.7458808422088623,
+          -0.10021471232175827
+        ],
+        "size": [
+          0.07255613803863525,
+          0.142284095287323,
+          0.036694712936878204
+        ]
+      },
+      "triangles": 980,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 557,
+          "triangles": 980,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 33,
+      "name": "Ponytail_Right_FabricTie_EditableMesh.001",
+      "bounds": {
+        "min": [
+          0.09562775492668152,
+          0.7267692685127258,
+          -0.12110545486211777
+        ],
+        "max": [
+          0.14437223970890045,
+          0.7612307667732239,
+          -0.07889454811811447
+        ],
+        "size": [
+          0.04874448478221893,
+          0.03446149826049805,
+          0.042210906744003296
+        ]
+      },
+      "triangles": 960,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 539,
+          "triangles": 960,
+          "material": 12,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 34,
+      "name": "Ponytail_Right_Layer_1_EditableMesh",
+      "bounds": {
+        "min": [
+          0.1080380454659462,
+          0.5615906119346619,
+          -0.133173868060112
+        ],
+        "max": [
+          0.1867692619562149,
+          0.7504116296768188,
+          -0.08920534700155258
+        ],
+        "size": [
+          0.07873121649026871,
+          0.18882101774215698,
+          0.04396852105855942
+        ]
+      },
+      "triangles": 980,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 557,
+          "triangles": 980,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 35,
+      "name": "Ponytail_Right_Layer_2_EditableMesh",
+      "bounds": {
+        "min": [
+          0.11164093017578125,
+          0.5826376676559448,
+          -0.16378669440746307
+        ],
+        "max": [
+          0.19341033697128296,
+          0.7500584721565247,
+          -0.09940002858638763
+        ],
+        "size": [
+          0.08176940679550171,
+          0.16742080450057983,
+          0.06438666582107544
+        ]
+      },
+      "triangles": 980,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 557,
+          "triangles": 980,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 36,
+      "name": "Ponytail_Right_Layer_3_EditableMesh",
+      "bounds": {
+        "min": [
+          0.09961362928152084,
+          0.5696312189102173,
+          -0.17463870346546173
+        ],
+        "max": [
+          0.15735934674739838,
+          0.7477071285247803,
+          -0.10321728140115738
+        ],
+        "size": [
+          0.05774571746587753,
+          0.178075909614563,
+          0.07142142206430435
+        ]
+      },
+      "triangles": 980,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 557,
+          "triangles": 980,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 37,
+      "name": "Ponytail_Right_Layer_4_EditableMesh",
+      "bounds": {
+        "min": [
+          0.11121310293674469,
+          0.5755791068077087,
+          -0.10790351778268814
+        ],
+        "max": [
+          0.15526016056537628,
+          0.7419468760490417,
+          -0.08792921900749207
+        ],
+        "size": [
+          0.04404705762863159,
+          0.166367769241333,
+          0.019974298775196075
+        ]
+      },
+      "triangles": 980,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 557,
+          "triangles": 980,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 38,
+      "name": "Ponytail_Right_Layer_5_EditableMesh",
+      "bounds": {
+        "min": [
+          0.11618708074092865,
+          0.6035967469215393,
+          -0.13690942525863647
+        ],
+        "max": [
+          0.1887432187795639,
+          0.7458808422088623,
+          -0.10021471232175827
+        ],
+        "size": [
+          0.07255613803863525,
+          0.142284095287323,
+          0.036694712936878204
+        ]
+      },
+      "triangles": 980,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 557,
+          "triangles": 980,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 39,
+      "name": "tmpad_f7e6l.ply.001",
+      "bounds": {
+        "min": [
+          -0.7524999976158142,
+          -0.9990763664245605,
+          -0.24766801297664642
+        ],
+        "max": [
+          0.7524999976158142,
+          0.6252506971359253,
+          0.23363658785820007
+        ],
+        "size": [
+          1.5049999952316284,
+          1.6243270635604858,
+          0.4813046008348465
+        ]
+      },
+      "triangles": 150973,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 105194,
+          "triangles": 150973,
+          "material": 13,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "TEXCOORD_1",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 40,
+      "name": "Rebuilt_BackCollar_EditableQuads",
+      "bounds": {
+        "min": [
+          -0.07598504424095154,
+          0.5771777033805847,
+          -0.11017736792564392
+        ],
+        "max": [
+          0.07599954307079315,
+          0.6229991316795349,
+          -0.027194345369935036
+        ],
+        "size": [
+          0.1519845873117447,
+          0.045821428298950195,
+          0.08298302255570889
+        ]
+      },
+      "triangles": 1916,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 1524,
+          "triangles": 1916,
+          "material": 14,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 41,
+      "name": "FrontCollar_L_EditableQuads",
+      "bounds": {
+        "min": [
+          0.002712839050218463,
+          0.5625618100166321,
+          -0.03143397718667984
+        ],
+        "max": [
+          0.11295481771230698,
+          0.6220000386238098,
+          0.09700216352939606
+        ],
+        "size": [
+          0.11024197866208851,
+          0.059438228607177734,
+          0.1284361407160759
+        ]
+      },
+      "triangles": 2544,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 1635,
+          "triangles": 2544,
+          "material": 15,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 42,
+      "name": "FrontCollar_R_EditableQuads.001",
+      "bounds": {
+        "min": [
+          -0.11278603225946426,
+          0.5625618100166321,
+          -0.03143208473920822
+        ],
+        "max": [
+          -0.0027292147278785706,
+          0.6220000386238098,
+          0.09641093015670776
+        ],
+        "size": [
+          0.1100568175315857,
+          0.059438228607177734,
+          0.12784301489591599
+        ]
+      },
+      "triangles": 2544,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 1612,
+          "triangles": 2544,
+          "material": 15,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 43,
+      "name": "Rebuilt_Hand_L.EditableTopology",
+      "bounds": {
+        "min": [
+          0.7460000514984131,
+          0.5220738053321838,
+          -0.08337713778018951
+        ],
+        "max": [
+          0.987109899520874,
+          0.5727074146270752,
+          0.055344369262456894
+        ],
+        "size": [
+          0.24110984802246094,
+          0.05063360929489136,
+          0.1387215070426464
+        ]
+      },
+      "triangles": 6064,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 3911,
+          "triangles": 6064,
+          "material": 7,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 44,
+      "name": "Rebuilt_Hand_R.EditableTopology",
+      "bounds": {
+        "min": [
+          -0.987109899520874,
+          0.5220738053321838,
+          -0.08337713032960892
+        ],
+        "max": [
+          -0.7460000514984131,
+          0.5727074146270752,
+          0.05534437298774719
+        ],
+        "size": [
+          0.24110984802246094,
+          0.05063360929489136,
+          0.1387215033173561
+        ]
+      },
+      "triangles": 6064,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 3927,
+          "triangles": 6064,
+          "material": 7,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 45,
+      "name": "Temple_Left_EditableMesh.001",
+      "bounds": {
+        "min": [
+          -0.13634717464447021,
+          0.6826740503311157,
+          0.03879864886403084
+        ],
+        "max": [
+          -0.08699221909046173,
+          0.9222002625465393,
+          0.08896999061107635
+        ],
+        "size": [
+          0.049354955554008484,
+          0.23952621221542358,
+          0.05017134174704552
+        ]
+      },
+      "triangles": 980,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 557,
+          "triangles": 980,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    },
+    {
+      "index": 46,
+      "name": "Temple_Right_EditableMesh.001",
+      "bounds": {
+        "min": [
+          0.08699221909046173,
+          0.6826740503311157,
+          0.03879864886403084
+        ],
+        "max": [
+          0.13634717464447021,
+          0.9222002625465393,
+          0.08896999061107635
+        ],
+        "size": [
+          0.049354955554008484,
+          0.23952621221542358,
+          0.05017134174704552
+        ]
+      },
+      "triangles": 980,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 557,
+          "triangles": 980,
+          "material": 8,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "index": 0,
+      "name": "LeftToes",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        1.862645149230957e-9,
+        0.20038460195064545,
+        4.842877388000488e-8
+      ],
+      "rotation": [
+        3.902659972965239e-9,
+        0.9545515775680542,
+        -0.2614002823829651,
+        0.14318275451660156
+      ],
+      "scale": [
+        0.9999999403953552,
+        1.0000001192092896,
+        0.9999999403953552
+      ],
+      "extensions": []
+    },
+    {
+      "index": 1,
+      "name": "LeftFoot",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        0
+      ],
+      "matrix": null,
+      "translation": [
+        -6.984919309616089e-9,
+        0.4200725853443146,
+        -6.984919309616089e-10
+      ],
+      "rotation": [
+        -0.4962729811668396,
+        0.10848996788263321,
+        -0.10415054112672806,
+        0.8550413846969604
+      ],
+      "scale": [
+        1.0000001192092896,
+        0.9999999403953552,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 2,
+      "name": "LeftLowerLeg",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        1
+      ],
+      "matrix": null,
+      "translation": [
+        4.889443516731262e-9,
+        0.5901262760162354,
+        3.4924596548080444e-10
+      ],
+      "rotation": [
+        0.001174288336187601,
+        0.0024886580649763346,
+        -0.002538646338507533,
+        0.9999930262565613
+      ],
+      "scale": [
+        1,
+        0.9999998807907104,
+        0.9999999403953552
+      ],
+      "extensions": []
+    },
+    {
+      "index": 3,
+      "name": "LeftUpperLeg",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        2
+      ],
+      "matrix": null,
+      "translation": [
+        0.10000000149011612,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.9999110698699951,
+        0.008422952145338058,
+        0.008422937244176865,
+        0.0060024140402674675
+      ],
+      "scale": [
+        1,
+        1.0000001192092896,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 4,
+      "name": "RightToes",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        -1.862645149230957e-9,
+        0.20038460195064545,
+        4.842877388000488e-8
+      ],
+      "rotation": [
+        3.902659972965239e-9,
+        -0.9545515775680542,
+        0.2614002823829651,
+        0.14318275451660156
+      ],
+      "scale": [
+        0.9999999403953552,
+        1.0000001192092896,
+        0.9999999403953552
+      ],
+      "extensions": []
+    },
+    {
+      "index": 5,
+      "name": "RightFoot",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        4
+      ],
+      "matrix": null,
+      "translation": [
+        6.984919309616089e-9,
+        0.4200725853443146,
+        -6.984919309616089e-10
+      ],
+      "rotation": [
+        -0.4962729811668396,
+        -0.10848996788263321,
+        0.10415054112672806,
+        0.8550413846969604
+      ],
+      "scale": [
+        1.0000001192092896,
+        0.9999999403953552,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 6,
+      "name": "RightLowerLeg",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        5
+      ],
+      "matrix": null,
+      "translation": [
+        -4.889443516731262e-9,
+        0.5901262760162354,
+        3.4924596548080444e-10
+      ],
+      "rotation": [
+        0.001174288336187601,
+        -0.0024886580649763346,
+        0.002538646338507533,
+        0.9999930262565613
+      ],
+      "scale": [
+        1,
+        0.9999998807907104,
+        0.9999999403953552
+      ],
+      "extensions": []
+    },
+    {
+      "index": 7,
+      "name": "RightUpperLeg",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        6
+      ],
+      "matrix": null,
+      "translation": [
+        -0.10000000149011612,
+        0,
+        0
+      ],
+      "rotation": [
+        -0.9999110698699951,
+        -0.008422952145338058,
+        -0.008422937244176865,
+        0.0060024140402674675
+      ],
+      "scale": [
+        1,
+        1.0000001192092896,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 8,
+      "name": "LeftHand",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        -7.450580596923828e-9,
+        0.2761530578136444,
+        3.387685865163803e-8
+      ],
+      "rotation": [
+        -0.01548855286091566,
+        -0.015488559380173683,
+        0.006098741665482521,
+        0.9997414946556091
+      ],
+      "scale": [
+        1.0000001192092896,
+        1.0000001192092896,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 9,
+      "name": "LeftLowerArm",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        8
+      ],
+      "matrix": null,
+      "translation": [
+        -3.259629011154175e-9,
+        0.2806171476840973,
+        -6.379559636116028e-8
+      ],
+      "rotation": [
+        0.034871719777584076,
+        0.03426481783390045,
+        -0.033198583871126175,
+        0.9982523322105408
+      ],
+      "scale": [
+        1,
+        1,
+        0.9999999403953552
+      ],
+      "extensions": []
+    },
+    {
+      "index": 10,
+      "name": "LeftUpperArm",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        9
+      ],
+      "matrix": null,
+      "translation": [
+        -1.731272902816272e-10,
+        0.14000001549720764,
+        6.069743108128023e-8
+      ],
+      "rotation": [
+        -0.01909598894417286,
+        -0.019095970317721367,
+        0.027111316099762917,
+        0.9992675185203552
+      ],
+      "scale": [
+        1,
+        1.0000001192092896,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 11,
+      "name": "LeftShoulder",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        10
+      ],
+      "matrix": null,
+      "translation": [
+        0.05000000074505806,
+        0.1300000250339508,
+        -0.005000000819563866
+      ],
+      "rotation": [
+        -0.5,
+        -0.5,
+        -0.5,
+        0.5
+      ],
+      "scale": [
+        1,
+        0.9999999403953552,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 12,
+      "name": "Head",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0.12999999523162842,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 13,
+      "name": "Neck",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        12
+      ],
+      "matrix": null,
+      "translation": [
+        0,
+        0.14000001549720764,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 14,
+      "name": "RightHand",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        7.450580596923828e-9,
+        0.2761530578136444,
+        3.387685865163803e-8
+      ],
+      "rotation": [
+        -0.01548855286091566,
+        0.015488559380173683,
+        -0.006098741665482521,
+        0.9997414946556091
+      ],
+      "scale": [
+        1.0000001192092896,
+        1.0000001192092896,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 15,
+      "name": "RightLowerArm",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        14
+      ],
+      "matrix": null,
+      "translation": [
+        3.259629011154175e-9,
+        0.2806171476840973,
+        -6.379559636116028e-8
+      ],
+      "rotation": [
+        0.034871719777584076,
+        -0.03426481783390045,
+        0.033198583871126175,
+        0.9982523322105408
+      ],
+      "scale": [
+        1,
+        1,
+        0.9999999403953552
+      ],
+      "extensions": []
+    },
+    {
+      "index": 16,
+      "name": "RightUpperArm",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        15
+      ],
+      "matrix": null,
+      "translation": [
+        1.731272902816272e-10,
+        0.14000001549720764,
+        6.069743108128023e-8
+      ],
+      "rotation": [
+        -0.01909598894417286,
+        0.019095970317721367,
+        -0.027111316099762917,
+        0.9992675185203552
+      ],
+      "scale": [
+        1,
+        1.0000001192092896,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 17,
+      "name": "RightShoulder",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        16
+      ],
+      "matrix": null,
+      "translation": [
+        -0.05000000074505806,
+        0.1300000250339508,
+        -0.005000000819563866
+      ],
+      "rotation": [
+        -0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "scale": [
+        1,
+        0.9999999403953552,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 18,
+      "name": "Chest",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        11,
+        13,
+        17
+      ],
+      "matrix": null,
+      "translation": [
+        0,
+        0.13999998569488525,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        0.9999999403953552,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 19,
+      "name": "Spine",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        18
+      ],
+      "matrix": null,
+      "translation": [
+        0,
+        0.12000000476837158,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 20,
+      "name": "Hips",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        3,
+        7,
+        19
+      ],
+      "matrix": null,
+      "translation": [
+        0,
+        1.1589999198913574,
+        -0.019999999552965164
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 21,
+      "name": "Root",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        20
+      ],
+      "matrix": null,
+      "translation": [
+        0,
+        -0.9990000128746033,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 22,
+      "name": "Blouse_Button_1",
+      "mesh": 0,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 23,
+      "name": "Blouse_Button_2",
+      "mesh": 1,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 24,
+      "name": "Blouse_Button_3",
+      "mesh": 2,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 25,
+      "name": "Brow_L",
+      "mesh": 3,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 26,
+      "name": "Brow_R",
+      "mesh": 4,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 27,
+      "name": "Cuff_Inner_L",
+      "mesh": 5,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 28,
+      "name": "Cuff_Inner_R",
+      "mesh": 6,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 29,
+      "name": "Ear_L",
+      "mesh": 7,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 30,
+      "name": "Ear_R",
+      "mesh": 8,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 31,
+      "name": "Eye_Iris_L",
+      "mesh": 9,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 32,
+      "name": "Eye_Iris_R",
+      "mesh": 10,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 33,
+      "name": "Eye_Sclera_L",
+      "mesh": 11,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 34,
+      "name": "Eye_Sclera_R",
+      "mesh": 12,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 35,
+      "name": "Eye_UpperLash_L",
+      "mesh": 13,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 36,
+      "name": "Eye_UpperLash_R",
+      "mesh": 14,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 37,
+      "name": "Forearm_UnderSleeve_L",
+      "mesh": 15,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 38,
+      "name": "Forearm_UnderSleeve_R",
+      "mesh": 16,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 39,
+      "name": "Fringe_CentreLeft",
+      "mesh": 17,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 40,
+      "name": "Fringe_CentreRight",
+      "mesh": 18,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 41,
+      "name": "Fringe_Left",
+      "mesh": 19,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 42,
+      "name": "Fringe_LeftFine",
+      "mesh": 20,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 43,
+      "name": "Fringe_Right",
+      "mesh": 21,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 44,
+      "name": "Fringe_RightFine",
+      "mesh": 22,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 45,
+      "name": "Hair_Crown_SourceEnvelope",
+      "mesh": 23,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 46,
+      "name": "Head_Skin_Quad_Retopo",
+      "mesh": 24,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 47,
+      "name": "Mouth_Closed_Line",
+      "mesh": 25,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 48,
+      "name": "Neck_Clean_Quad_Sleeve",
+      "mesh": 26,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 49,
+      "name": "Ponytail_Left_FabricTie",
+      "mesh": 27,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 50,
+      "name": "Ponytail_Left_Layer_1",
+      "mesh": 28,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 51,
+      "name": "Ponytail_Left_Layer_2",
+      "mesh": 29,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 52,
+      "name": "Ponytail_Left_Layer_3",
+      "mesh": 30,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 53,
+      "name": "Ponytail_Left_Layer_4",
+      "mesh": 31,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 54,
+      "name": "Ponytail_Left_Layer_5",
+      "mesh": 32,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 55,
+      "name": "Ponytail_Right_FabricTie",
+      "mesh": 33,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 56,
+      "name": "Ponytail_Right_Layer_1",
+      "mesh": 34,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 57,
+      "name": "Ponytail_Right_Layer_2",
+      "mesh": 35,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 58,
+      "name": "Ponytail_Right_Layer_3",
+      "mesh": 36,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 59,
+      "name": "Ponytail_Right_Layer_4",
+      "mesh": 37,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 60,
+      "name": "Ponytail_Right_Layer_5",
+      "mesh": 38,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 61,
+      "name": "Rebuild_Body_Clothing_SourceRetained",
+      "mesh": 39,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 62,
+      "name": "Rebuilt_BackCollar_Band",
+      "mesh": 40,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 63,
+      "name": "Rebuilt_FrontCollar_L",
+      "mesh": 41,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 64,
+      "name": "Rebuilt_FrontCollar_R",
+      "mesh": 42,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 65,
+      "name": "Rebuilt_Hand_L",
+      "mesh": 43,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 66,
+      "name": "Rebuilt_Hand_R",
+      "mesh": 44,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 67,
+      "name": "Temple_Left",
+      "mesh": 45,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 68,
+      "name": "Temple_Right",
+      "mesh": 46,
+      "skin": 0,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    },
+    {
+      "index": 69,
+      "name": "PreviewHumanoid",
+      "mesh": null,
+      "skin": null,
+      "camera": null,
+      "children": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        21
+      ],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    }
+  ],
+  "skins": [
+    {
+      "index": 0,
+      "name": "PreviewHumanoid",
+      "joints": 22,
+      "inverseBindMatrices": 6
+    }
+  ],
+  "animations": [
+    {
+      "index": 0,
+      "name": "idle",
+      "channels": 66,
+      "samplers": 66
+    },
+    {
+      "index": 1,
+      "name": "look",
+      "channels": 66,
+      "samplers": 66
+    },
+    {
+      "index": 2,
+      "name": "Tpose",
+      "channels": 66,
+      "samplers": 66
+    },
+    {
+      "index": 3,
+      "name": "walk",
+      "channels": 66,
+      "samplers": 66
+    },
+    {
+      "index": 4,
+      "name": "wave",
+      "channels": 66,
+      "samplers": 66
+    }
+  ],
+  "summary": {
+    "nodes": 70,
+    "meshes": 47,
+    "trianglesPerMeshDefinitions": 238527,
+    "trianglesAcrossMeshNodes": 238527,
+    "materials": 16,
+    "images": 5,
+    "textures": 5,
+    "skins": 1,
+    "animations": 5,
+    "containsSkeleton": true,
+    "allImagesEmbedded": true,
+    "cameraNodes": 0,
+    "lightNodes": 0
+  },
+  "defaultScene": 0,
+  "scenes": [
+    {
+      "index": 0,
+      "name": "Scene",
+      "roots": [
+        69
+      ]
+    }
+  ],
+  "passed": true
+}

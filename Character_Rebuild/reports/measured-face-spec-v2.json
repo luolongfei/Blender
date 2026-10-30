@@ -1,0 +1,390 @@
+{
+  "schemaVersion": 1,
+  "source": "character-hq-textured.glb",
+  "coordinates": "Blender imported scale: X original X, Y minus original Z, Z original Y; face -Y; no rescale",
+  "measurementSource": "face-measurements.json frontSurfaceEnvelope; checks/before/face-front.png and face-side.png (ortho 0.64, target Z 0.78)",
+  "status": "v2 unrendered correction after rejecting v1 horizontal bands, round exposed eyes and lip bulge",
+  "profileConvention": "z,half_width,centre_y,front_depth,back_depth",
+  "profile": [
+    [
+      0.678,
+      0.003,
+      -0.073,
+      0.003,
+      0.003
+    ],
+    [
+      0.685,
+      0.017,
+      -0.059,
+      0.027,
+      0.016
+    ],
+    [
+      0.69,
+      0.028,
+      -0.046,
+      0.043,
+      0.032
+    ],
+    [
+      0.7,
+      0.048,
+      -0.015,
+      0.078,
+      0.06
+    ],
+    [
+      0.71,
+      0.06,
+      0.002,
+      0.097,
+      0.053
+    ],
+    [
+      0.72,
+      0.07,
+      0.015,
+      0.112,
+      0.052000000000000005
+    ],
+    [
+      0.73,
+      0.079,
+      0.02,
+      0.12,
+      0.06
+    ],
+    [
+      0.74,
+      0.087,
+      0.021,
+      0.126,
+      0.071
+    ],
+    [
+      0.75,
+      0.093,
+      0.022,
+      0.132,
+      0.08299999999999999
+    ],
+    [
+      0.76,
+      0.099,
+      0.022,
+      0.13,
+      0.11
+    ],
+    [
+      0.77,
+      0.103,
+      0.022,
+      0.124,
+      0.115
+    ],
+    [
+      0.78,
+      0.108,
+      0.021,
+      0.118,
+      0.122
+    ],
+    [
+      0.79,
+      0.112,
+      0.02,
+      0.118,
+      0.128
+    ],
+    [
+      0.8,
+      0.115,
+      0.018,
+      0.122,
+      0.135
+    ],
+    [
+      0.82,
+      0.12,
+      0.016,
+      0.126,
+      0.145
+    ],
+    [
+      0.85,
+      0.126,
+      0.017,
+      0.139,
+      0.148
+    ],
+    [
+      0.88,
+      0.127,
+      0.018,
+      0.136,
+      0.147
+    ],
+    [
+      0.9,
+      0.12,
+      0.018,
+      0.126,
+      0.138
+    ],
+    [
+      0.94,
+      0.096,
+      0.026,
+      0.095,
+      0.11
+    ],
+    [
+      0.97,
+      0.055,
+      0.039,
+      0.055,
+      0.068
+    ],
+    [
+      0.983,
+      0.014,
+      0.041,
+      0.023,
+      0.03
+    ]
+  ],
+  "neck_profile": [
+    [
+      0.599,
+      0.058,
+      0.034,
+      0.087,
+      0.05
+    ],
+    [
+      0.612,
+      0.051,
+      0.034,
+      0.062,
+      0.05
+    ],
+    [
+      0.64,
+      0.049,
+      0.033,
+      0.049,
+      0.049
+    ],
+    [
+      0.68,
+      0.05,
+      0.035,
+      0.051,
+      0.055
+    ],
+    [
+      0.705,
+      0.054,
+      0.035,
+      0.061,
+      0.065
+    ],
+    [
+      0.73,
+      0.06,
+      0.035,
+      0.075,
+      0.075
+    ]
+  ],
+  "close_chin": true,
+  "nose": {
+    "lobes": [
+      [
+        0,
+        0.758,
+        0.012,
+        0.014,
+        0.021
+      ],
+      [
+        0,
+        0.78,
+        0.01,
+        0.019,
+        0.004
+      ]
+    ]
+  },
+  "cheek": {
+    "centres_x": [
+      -0.059,
+      0.059
+    ],
+    "z": 0.755,
+    "width": 0.023,
+    "height": 0.02,
+    "depth": 0.0008
+  },
+  "eyes": [
+    {
+      "name": "L",
+      "x": -0.05,
+      "z": 0.794,
+      "half_width": 0.027,
+      "upper": 0.015,
+      "lower": 0.01,
+      "tilt": -0.001,
+      "bulge": 0.0027,
+      "rim_recess": 0.0013,
+      "socket_depth": 0.0012,
+      "lash_width": 0.0017,
+      "iris": {
+        "dx": 0.0005,
+        "dz": 0.002,
+        "radius_x": 0.0155,
+        "radius_z": 0.018
+      },
+      "almond_power": 1.4
+    },
+    {
+      "name": "R",
+      "x": 0.05,
+      "z": 0.794,
+      "half_width": 0.027,
+      "upper": 0.015,
+      "lower": 0.01,
+      "tilt": 0.001,
+      "bulge": 0.0027,
+      "rim_recess": 0.0013,
+      "socket_depth": 0.0012,
+      "lash_width": 0.0017,
+      "iris": {
+        "dx": -0.0005,
+        "dz": 0.002,
+        "radius_x": 0.0155,
+        "radius_z": 0.018
+      },
+      "almond_power": 1.4
+    }
+  ],
+  "brows": [
+    {
+      "name": "L",
+      "points": [
+        [
+          -0.079,
+          0.821
+        ],
+        [
+          -0.056,
+          0.83
+        ],
+        [
+          -0.026,
+          0.823
+        ]
+      ],
+      "width": 0.0021
+    },
+    {
+      "name": "R",
+      "points": [
+        [
+          0.026,
+          0.823
+        ],
+        [
+          0.056,
+          0.83
+        ],
+        [
+          0.079,
+          0.821
+        ]
+      ],
+      "width": 0.0021
+    }
+  ],
+  "mouth": {
+    "x": 0.0,
+    "z": 0.7285,
+    "half_width": 0.023,
+    "upper": 0.00045,
+    "lower": 0.00042,
+    "corner_lift": 0.0017,
+    "tilt": 0.0,
+    "rim_recess": 0.00015,
+    "socket_depth": 0.0007
+  },
+  "front_uv": {
+    "left": -0.13,
+    "right": 0.13,
+    "bottom": 0.675,
+    "top": 0.99
+  },
+  "radial_segments": 112,
+  "height_segments": 112,
+  "crown_cap_height": 0.003,
+  "inferredParts": [
+    "Cranium beneath hair reconstructed conservatively 15-25 mm inside existing hair envelope, not a scan.",
+    "Separate quad neck sleeve, lower head junction inserted behind pointed chin; needs integrated visual review.",
+    "Symmetric eye heights and shallow smile corrected from distorted original texture; original portrait tilt not baked into head anatomy.",
+    "Mouth thickness reduced to stylised closed line; no rig, oral cavity or expression system created.",
+    "Eye whites and irises are curved surface meshes fitted to actual eyelid openings, not full rigged eyeballs.",
+    "V2 preserves measured width/back profile but replaces noisy piecewise frontal depth with a C2 continuous curve; removes mouth Gaussian; deeper lid recess and true clipped iris.",
+    "Lower rear jaw profile reduced by up to 33 mm to remove the straight wedge under the ear. Circumference is C1 continuous at front/back join; rear upper cranial bounds remain unchanged."
+  ],
+  "version": "v2 continuous-front and inset almond eyes; measured width/back unchanged",
+  "front_curve": [
+    [
+      0.678,
+      -0.076
+    ],
+    [
+      0.69,
+      -0.087
+    ],
+    [
+      0.71,
+      -0.099
+    ],
+    [
+      0.735,
+      -0.104
+    ],
+    [
+      0.765,
+      -0.105
+    ],
+    [
+      0.795,
+      -0.105
+    ],
+    [
+      0.83,
+      -0.113
+    ],
+    [
+      0.87,
+      -0.126
+    ],
+    [
+      0.91,
+      -0.118
+    ],
+    [
+      0.94,
+      -0.069
+    ],
+    [
+      0.97,
+      -0.016
+    ],
+    [
+      0.983,
+      0.018
+    ]
+  ]
+}

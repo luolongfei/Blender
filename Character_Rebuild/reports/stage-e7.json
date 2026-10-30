@@ -1,0 +1,35 @@
+{
+  "neck": {
+    "normalsReversed": true,
+    "minOutwardRadialDot": 0.42670679092407227,
+    "uvReunwrapped": true
+  },
+  "uvRepairs": [
+    {
+      "object": "Head_Skin_Quad_Retopo",
+      "collapsedTrianglesBefore": 412,
+      "reunwrappedPolygons": 206,
+      "collapsedTrianglesAfter": 0,
+      "placement": "Separate non-collapsed UV islands in unpainted uniform-skin corner of original 2K face atlas",
+      "geometryUnchanged": true
+    },
+    {
+      "object": "Rebuilt_BackCollar_Band",
+      "collapsedTrianglesBefore": 488,
+      "collapsedTrianglesAfter": 0,
+      "material": "Pure ivory PBR; UV change does not alter albedo"
+    },
+    {
+      "object": "Rebuilt_FrontCollar_L",
+      "collapsedTrianglesBefore": 240,
+      "collapsedTrianglesAfter": 0,
+      "material": "Pure ivory PBR; UV change does not alter albedo"
+    },
+    {
+      "object": "Rebuilt_FrontCollar_R",
+      "collapsedTrianglesBefore": 240,
+      "collapsedTrianglesAfter": 0,
+      "material": "Pure ivory PBR; UV change does not alter albedo"
+    }
+  ]
+}

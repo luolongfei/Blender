@@ -1,59 +1,49 @@
 {
   "schemaVersion": 1,
   "projectId": "6c8500bf-1c38-481a-babd-e5478a50dd67",
-  "recordedAt": "2026-10-28T18:42:48+08:00",
-  "stage": "migration-checkpoint-review-candidate",
-  "route": "local-original-Blender-MCP",
+  "recordedAt": "2026-10-30T00:56:47.311Z",
+  "stage": "hunyuan-static-rebuild-delivered; file-validation-passed; artistic-refinement-still-needed",
+  "route": "local-Blender-rebuild-of-user-hunyuan-input",
   "toolchainLock": "../../toolchain.lock.json",
   "workingMaster": {
     "path": "work/character.blend",
-    "bytes": 60560716,
-    "sha256": "6e7361e7f5c306325d3f33c4c9f6f56b1a489d5f4579bb4be951d4c3d59cc8c1",
-    "savedAtSource": "2026-10-28T17:18:09+08:00"
+    "bytes": 16784776,
+    "sha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5",
+    "integratedFrom": {
+      "path": "../../Character_Rebuild/character-rebuilt.blend",
+      "sha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5"
+    },
+    "savedAtSource": "2026-10-29T15:41:11.369Z"
   },
   "currentExports": [
     {
-      "path": "exports/avatar.blend",
-      "bytes": 57502979,
-      "sha256": "dcc12641026baf53579d072442c3139d1fdcef1e37452f1cc197347590c093f1"
+      "path": "../../Character_Rebuild/character-rebuilt.blend",
+      "bytes": 16784776,
+      "sha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5"
     },
     {
-      "path": "exports/expression-review/avatar-preview.vrm",
-      "bytes": 76645100,
-      "sha256": "09c82321c484e5512607c9218b442bf998d5076be0d48db574970668e8617c99"
-    },
-    {
-      "path": "exports/expression-review/avatar-preview.glb",
-      "bytes": 75819164,
-      "sha256": "bc67ca334bfc62b860f412af03bae9eb60ac338e225b03aed694d2ede78ce9ef"
-    },
-    {
-      "path": "exports/expression-review/avatar-runtime.blend",
-      "bytes": 54493034,
-      "sha256": "9a3bfdcb54c93ed86d8ad80a3bb3615ef7f98988cf1fe25471daf5ea56f52a5a"
+      "path": "../../Character_Rebuild/character-rebuilt-textured.glb",
+      "bytes": 15210992,
+      "sha256": "4b70a67d9f2677b5d80e7d6d79a31fd6ff90d6d2c6c267c9a50ba678f3c904d8"
     }
   ],
   "exportCorrespondence": {
-    "sourceSha256": "6e7361e7f5c306325d3f33c4c9f6f56b1a489d5f4579bb4be951d4c3d59cc8c1",
-    "verifiedAgainstCopiedManifest": true,
-    "sourceReport": "exports/avatar-source-report.json",
-    "exportReport": "exports/expression-review/avatar-export-report.json",
-    "runtimeSummary": "exports/expression-review/avatar-runtime-review-summary.json",
-    "runtimeSummaryReportHashesVerified": 12,
-    "motionFilesVerified": 4,
-    "currentDiagnostics": "exports/expression-review/",
-    "rootPreviewAliases": "exports/current-preview-aliases.json",
-    "otherRootDiagnosticReports": "historical"
+    "sourceSha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5",
+    "glbSha256": "4b70a67d9f2677b5d80e7d6d79a31fd6ff90d6d2c6c267c9a50ba678f3c904d8",
+    "sourceStage": "Character_Rebuild/stages/E8-delivery-source.blend",
+    "sourceReport": "../../Character_Rebuild/reports/final-source-geometry.json",
+    "reimportReport": "../../Character_Rebuild/reports/clean-reimport.json",
+    "visualReport": "../../Character_Rebuild/reports/final-visual-review.json",
+    "sameMasterBytesVerified": true
   },
   "integratedChanges": [
-    "body_surface_clearance_refine",
-    "ear_orientation_refine",
-    "hair_front_fibres",
-    "hair_nape_finish"
+    "Hunyuan static rebuild adopted as working master; previous R09 master preserved in work/stage-backups",
+    "Independent interactive preview derived from static master; does not replace the master"
   ],
   "candidatePreservation": {
-    "allCopied": true,
-    "unmergedCandidateAudit": "The final producer handoff confirms no required fixes remain unmerged. Historical checkpoints and candidates remain preserved."
+    "scope": "Current and historical assets remain local. R11 stopped work and unmerged candidates are retained.",
+    "allHistoricalWorkRetained": true,
+    "unmergedCandidateAudit": "See reconstructionR11.stoppedHandoff.notMerged. These R11 candidates were not incorporated into the Hunyuan rebuild."
   },
   "canonicalCharakit": {
     "path": "project.charakit",
@@ -61,29 +51,21 @@
     "sha256": "fabae567498479695c0abf8300612b712236ccb6754c118102a8939fc70b599d",
     "latestPreviewRegistrationReported": true,
     "productionStagesUnchanged": true,
-    "role": "Project assets and application state; Blender work/character.blend remains the editable production master."
+    "role": "Project assets and application state; Blender work/character.blend remains the editable production master.",
+    "currentModelState": false,
+    "scope": "Historical application assets/state; do not use this to overwrite the newer Blender master."
   },
   "acceptance": {
-    "technicalChecks": "Passed within the scopes of the linked reports; not rerun during migration.",
+    "technicalChecks": "Static GLB clean reimport and 47 individual mesh internal-contact checks recorded. Independent motion preview reimport and browser checks recorded. Not a global collision or production-rig certification.",
     "appearanceReviewedByUser": false,
     "photorealisticClientDeliveryReady": false,
     "authorMetadataFinalized": false
   },
   "knownLimitations": [
-    "按用户要求的真人感商业终稿标准，当前仍未达标，不能作为已经验收的最终成品。",
-    "面部近景仍有人偶感：眼睑、鼻唇细节与虹膜精细程度不一致，皮肤层次偏均匀。",
-    "头发主轮廓仍有成片和成束感；已有细丝几何和可动骨链，不等于逐根真人毛发外观或逐根物理仿真。",
-    "手部关节、甲床与衣料受力褶皱仍较简化，近景真实感需要继续雕刻和材质制作。",
-    "造型和表情的审美验收仍由用户／客户确认。",
-    "默认无腮红；当前提供表情和口型，尚未制作眼球追踪／LookAt。",
-    "运行版用于桌面审阅；目标软件、设备及性能预算尚未指定。",
-    "已测试的步行和招手不代表任意大幅动作都没有穿插。",
-    "随包自然动作按当前鞋底校准；原套件标准步行仅作对照，尚有鞋底高度偏差，不能视为本角色已适配的交付动作。",
-    "自然动作切换检查中有一帧双脚鞋底最低点约8.06毫米高于地面，不能称全部过渡始终精确贴地。",
-    "衣内身体使用隐藏重叠连接，包含躯干、双臂、下胫和足部；不是一体焊接的裸体解剖模型。",
-    "脚趾随当前刚性鞋一起运动；独立脚趾动作需要适配鞋的变形。",
-    "正式模型名、作者、使用及再分发条款尚未确认；VRM仍为审阅元数据。",
-    "当前运行版有 614,282 个三角形，高于项目脚本 300,000 的目标；尚未完成目标设备的帧率和内存验收。"
+    "Face expression, strand roots/tips and fine garment folds remain simplified relative to the original art.",
+    "The master and static exports have no rig or animation. The independent preview has 22 bones and four basic motions, without facial/finger controls or hair/cloth physics.",
+    "Old VRM, R09/R11 runtime exports and migration manifest are historical; they do not validate or back up the current master.",
+    "No global continuous collision certification, production-rig certification, client appearance acceptance or verified off-machine asset backup."
   ],
   "migration": {
     "assetManifest": "../../asset-manifests/6c8500bf-1c38-481a-babd-e5478a50dd67.json",
@@ -96,9 +78,17 @@
     "extraFiles": 0,
     "originalProducerMessageSent": false,
     "originalProducerPauseConfirmed": false,
-    "scope": "Final producer handoff reconciled. All 963 asset entries match the original completed archive manifest; the local snapshot passed a fresh full hash verification.",
+    "scope": "Historical 2026-10-28 migration verification only. It does not cover later reconstructed masters, independent candidates or Character_Rebuild assets. No current full-workspace or off-machine backup is asserted.",
     "offMachineCopyVerified": false,
-    "newMachineBlenderAndMcpVerified": false,
+    "newMachineBlenderAndMcpVerified": true,
+    "newMachineBlenderAndMcpVerification": {
+      "date": "2026-10-28",
+      "platform": "Windows",
+      "report": "../../docs/WINDOWS_SETUP_RESULT.md",
+      "localEvidence": "../../state/windows-mcp-verification.json",
+      "scope": "Windows Blender opened the unchanged master; persisted VRM/MCP addons, 19 packed images decoded, 128 bones and zero linked libraries verified through MCP STDIO SDK using Codex configuration. Current chat native tool catalog reload remains pending; no render, motion or client acceptance claimed.",
+      "masterSaved": false
+    },
     "migrationValidation": {
       "automatedTestsPassed": 11,
       "javascriptSyntaxFiles": 26,
@@ -140,13 +130,2114 @@
         "rigBones": 128,
         "linkedLibraries": 0
       }
-    }
+    },
+    "historicalManifestDoesNotCoverR09Master": true,
+    "r09LocalRollbackCheckpoint": {
+      "path": "work/master-integration-r09/r09-refined-v2/checkpoint.json",
+      "sha256": "7453c7818af2b04fb79a83b58be2bad2e8986456499685c563b1bc2e2ff1aa28",
+      "wholeProjectFrozen": false,
+      "offMachineCopyVerified": false
+    },
+    "currentWorkspaceCovered": false
   },
   "resume": [
-    "Restore this Git revision and all assets, then run assets verify before production writes.",
-    "Read docs/HANDOFF.md; finish_comprehensive_refinement.py and early generation/shape patches have already been applied and must not be blindly rerun.",
-    "Open work/character.blend with the pinned Blender/VRM Add-on environment; connect MCP and confirm the correct scene.",
-    "Use previews/motion-viewer.html via the workspace preview server for the current runtime model.",
-    "Continue the visual and performance issues recorded in exports/quality-assessment.json; do not regenerate Tripo candidates based on historical workflow stages."
-  ]
+    "Read README.md and docs/HANDOFF.md. Use workingMaster and hunyuanStaticRebuild for current files; reconstructionR01 through R11 are historical.",
+    "Restore the current local assets separately from Git. The old migration manifest does not cover the current workspace; do not overwrite it or the current master to make historical verification pass.",
+    "Open work/character.blend only after checking its recorded SHA-256. Do not rerun historical generation or integration scripts.",
+    "Start node Character_Rebuild/scripts/serve_delivery.mjs --port 52860 for the current independent motion preview and static review gallery.",
+    "R11 remains stopped. Do not resume model production from historical queues without a new user request."
+  ],
+  "reconstructionR01": {
+    "status": "superseded-by-reference-led-r02; preserved historical candidates",
+    "integratedIntoMaster": false,
+    "report": "work/reconstruction-r01/review-summary.json",
+    "research": "work/reconstruction-r01/asset-research.json",
+    "sources": [
+      {
+        "path": "work/reconstruction-r01/candidate-review-A.blend",
+        "sha256": "14727372830ceaaccd1d9b9f0ade7f4be2c16b082be478b4f500f8aa2bd30f73",
+        "bytes": 53740619
+      },
+      {
+        "path": "work/reconstruction-r01/candidate-review-B.blend",
+        "sha256": "c856df91c4a54b73a42e8d4e9853f8cbae5a2303c50d74fba68ccc24e327f32a",
+        "bytes": 53739969
+      }
+    ],
+    "comparison": "previews/reconstruction-r01/face-comparison.png",
+    "oldExportsStillMatchMigrationMaster": true,
+    "newCandidateAnimationValidated": false,
+    "acceptance": "not accepted, not AAA/photoreal final",
+    "historicalOnly": true,
+    "scope": "Preserved stage record. All current/next/master references inside this block describe that historical stage, not the current working master or an instruction to resume."
+  },
+  "reconstructionR02": {
+    "status": "historical; superseded by Hunyuan static rebuild; do not resume old queue",
+    "integratedIntoMaster": true,
+    "currentSavedCandidate": {
+      "path": "work/reconstruction-r02/reference-production-refined-r09.blend",
+      "bytes": 162979646,
+      "sha256": "1c0b0210114170f0ce6e09b266b4a9ded58f29bf1df45a6e2be13e9b5c77aa72"
+    },
+    "masterVerifiedUnchanged": false,
+    "reference": {
+      "path": "references/user-original-portrait-2026-10-28.png",
+      "bytes": 4313047,
+      "sha256": "81415fde84c35cc9aad049b9c95113918320a8921a17173cfeb197550ba98c1a"
+    },
+    "visibleReviews": "previews/reconstruction-r02/",
+    "implemented": [
+      "Reference-led head, dark eyes, cranial groom and native hair strands",
+      "Independent blink, jaw/oral cavity and expanded facial controls",
+      "R04 neck interface stitching and erroneous neck/arm skinning repairs",
+      "R04 eyeballs retracted 3 mm with matching orbital and eyelash adjustments; eye pivots recentered",
+      "IK/FK controls and authored diagnostic actions; authored clips remain explicitly distinct from motion capture",
+      "301-frame authored full-body cloth simulation baked and converted to an external Blender cache",
+      "Matching 301-frame twin-tail offsets embedded as native shape keys and Geometry Nodes, without playback handlers or external hair-cache dependency",
+      "CMU 07_01 human motion-capture retarget v4; actual 631-sample foot audit passed its finite probe thresholds"
+    ],
+    "checks": {
+      "blink": "Historical closed-eye and expression reviews exist; new R04 combinations still need final appearance review",
+      "ikFk": "Four limb probe reports saved; not all poses certified",
+      "cloth": "301-frame authored body cache externalized; frame 229 internal/external vertex comparison was exactly equal. External path present after combined-source reopen; final delivery relocation still unverified",
+      "nativeHair": "301-frame authored-body cache evaluated in Blender at frames 1, 61, 101.375, 151, 229 and 301 with zero point error. Saved-source reopen comparison at 1, 101.375, 229 and 301 also had zero error. Supports only its recorded action; selecting another action does not automatically select matching dynamics",
+      "combinedReopen": {
+        "report": "previews/reconstruction-r02/combined-r04/render-report.json",
+        "reportedSourceSha256": "1a21801c859e6bdaecf7b6a4afe2058b4675a272c1082767f4c231ccd314e241",
+        "matchesCurrentSavedCandidate": false,
+        "renderedFrames": [
+          1,
+          61,
+          151,
+          229
+        ],
+        "scope": "Four sparse rendered frames and sampled coordinate parity; not a continuous-motion, collision, visual-likeness or client-acceptance certificate"
+      },
+      "cmuMocap": "v1/v2 had contact failures; v4 actual 0.125-frame audit covered 631 samples with no penetration or sliding flags (2 mm / 0.05 m/s thresholds). Numerical contact does not establish naturalness; head gaze and matching cloth remain in progress",
+      "continuousVideo": "R03 facial video and 10.067-second R04 combined body video exist. Both describe historical sources; R06 CMU body-only video has mismatched physics disabled and is diagnostic",
+      "source": "R04 work checkpoints are separate from the formal master; migration master and old exports remain preserved",
+      "currentCombinedWalk": {
+        "report": "work/reconstruction-r02/combined-walk-reopen-r08.json",
+        "matchesCurrentSavedCandidate": true,
+        "clothMaxPayloadErrorMeters": 3.5762786865234375e-7,
+        "hairMaxPointErrorMeters": 0,
+        "visualReview": "Four actual frames 1/15/35/61 rendered; no large garment breakthrough seen at this view. Continuous motion and additional views pending.",
+        "scope": "80-frame CMU-derived walk with authored blink; embedded cloth payload and guide dynamics. No external cache needed for these two playback objects."
+      },
+      "priorEvidence": "Other R03/R04/R05 and CMU foot records remain historical and apply only to their explicit source/geometry/action."
+    },
+    "evidence": {
+      "nativeHair": "work/reconstruction-r02/native-hair-body-r04.json",
+      "clothBake": "work/reconstruction-r02/cloth-dynamic-r04-report.json",
+      "clothExternalComparison": "work/reconstruction-r02/cloth-cache-portability-r04.json",
+      "combinedReopen": "previews/reconstruction-r02/combined-r04/render-report.json",
+      "cmuFootAudit": "work/reconstruction-r02/cmu-v4-foot-audit-r06-eighth.json",
+      "r04BodyVideo": "previews/reconstruction-r02/continuous-body-r04/performance-preview.mp4",
+      "combinedWalkR07": "work/reconstruction-r02/combined-walk-r07.json",
+      "combinedWalkReopenR07": "work/reconstruction-r02/combined-walk-reopen-r08.json",
+      "combinedWalkSparseR07": "previews/reconstruction-r02/combined-walk-sparse-r07/render-report.json",
+      "currentCombinedWalkSparse": "previews/reconstruction-r02/combined-walk-sparse-r08/render-report.json"
+    },
+    "remaining": [
+      "Final continuous matched body/hair/cloth video",
+      "Refresh and reopen actual VRM/runtime from final adopted source",
+      "Final front/quarter/profile/back and expression appearance review",
+      "Verified delivery package and dependency relocation; no new off-machine backup claimed"
+    ],
+    "acceptance": {
+      "userAppearanceApproval": false,
+      "photorealFinalReady": false
+    },
+    "oldExports": "Still correspond to migration master; not proof of reconstructed character validation",
+    "backup": "Working checkpoints saved locally; no new off-machine backup asserted",
+    "latestGeometryPass": {
+      "stage": "R09 local likeness refinement in progress",
+      "changes": [
+        "R08 optional production UV, preserving original shader and UV state",
+        "R09 lower-face proportion candidate: 11 percent weighted vertical compression; protected ocular region unchanged",
+        "All head relative keys and oral attachments mapped consistently, with driven jaw compensation",
+        "Posterior scalp coverage added and first bounded forelock flow pass saved independently",
+        "Measured posterior root curvature and scalp/gather strands transported together; real rear views adopted",
+        "Larger forelock-volume candidate rejected after visible sheet-like result; retained as history"
+      ],
+      "neutralVisualEvidence": "previews/reconstruction-r02/face-proportion-r09/render-report.json",
+      "knownLimits": [
+        "Still visibly stylized CG, not established as AAA/photoreal",
+        "Posterior root curvature adopted after actual back/rear-quarter views; final full character review remains",
+        "First bounded forelock change had only a small visible effect; volume redesign is in progress",
+        "Actual R09 EE/OU renders still expose square perioral and chin deformation; correction is pending"
+      ],
+      "appearanceDecision": "work/reconstruction-r02/appearance-visible-decision-r09.json"
+    },
+    "masterIntegrated": true,
+    "integratedMaster": {
+      "path": "work/character.blend",
+      "bytes": 162979650,
+      "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+    },
+    "latestMasterIntegration": "work/master-integration-r09/r09-refined-v2/installed.json",
+    "historicalOnly": true,
+    "scope": "Preserved stage record. All current/next/master references inside this block describe that historical stage, not the current working master or an instruction to resume."
+  },
+  "reconstructionR09": {
+    "currentSavedCandidate": {
+      "path": "work/reconstruction-r02/reference-production-refined-r09.blend",
+      "bytes": 162979646,
+      "sha256": "1c0b0210114170f0ce6e09b266b4a9ded58f29bf1df45a6e2be13e9b5c77aa72"
+    },
+    "bodyAction": {
+      "path": "work/reconstruction-r02/body-action-r09.blend",
+      "bytes": 119749207,
+      "sha256": "183b71ff095b036b4dbc4aa42f38a247fe4b3c4329d817a522bc01d1e18f2572"
+    },
+    "bodyActionReview": "previews/reconstruction-r02/body-poses-r09/render-report.json",
+    "bodyCombined": {
+      "path": "work/reconstruction-r02/reference-body-combined-r09.blend",
+      "bytes": 159352540,
+      "sha256": "6f7d02e9b8dd5f712987726d6798f994c7713ae86a602754b6bad721095839ef"
+    },
+    "bodyCombinedReopen": "work/reconstruction-r02/reference-body-combined-r09.blend.reopen.json",
+    "bodyCombinedVisualEvidence": "previews/reconstruction-r02/body-combined-sparse-r09/render-report.json",
+    "bodyCombinedStatus": "Matching 301-frame native hair/cloth integrated and fresh reopened. Five actual rendered poses completed; squat/bend/reach inspected without the prior large garment penetrations. Continuous video remains pending.",
+    "rootSurface": {
+      "path": "work/reconstruction-r02/reference-root-flow-r09.blend",
+      "bytes": 148943695,
+      "sha256": "b7ebc1ede9b9e73483b6835945630280bf4765c70df620317bf9c3da8b0ca0b0"
+    },
+    "groomVisualDecision": "work/reconstruction-r02/groom-visible-decision-r09.json",
+    "clothNative": {
+      "path": "work/reconstruction-r02/body-cloth-native-r09.blend",
+      "bytes": 129685606,
+      "sha256": "e4c3369a779ce00ec451dea2b2ae206901db48b51b9e2ffbdf741bc85b3dd521"
+    },
+    "clothEvidenceDirectory": "work/reconstruction-r02/cloth-body-r09",
+    "clothStatus": "301 recorded simulation frames saved with native playback; fresh-file finite parity and four actual poses completed. Squat/bend cloth visually covers the previous leg penetration. Final matched hair/cloth combination remains pending.",
+    "clothVisualEvidence": "previews/reconstruction-r02/cloth-poses-r09/render-report.json",
+    "clothMergePayload": {
+      "path": "work/reconstruction-r02/body-cloth-payload-r09.blend",
+      "bytes": 7055586,
+      "sha256": "4ef3ccf5729c4503fbb09bcd4b2b69c6c1cbc1f090466b8cf47626964235608b"
+    },
+    "lowerFaceEvidence": "work/reconstruction-r02/reference-lower-face-candidate-r09.json",
+    "r08WalkVideo": "previews/reconstruction-r02/combined-walk-continuous-r08/walk-preview-r08.mp4",
+    "r08FaceSparse": "previews/reconstruction-r02/face-performance-sparse-r08/render-report.json",
+    "runtimeSource": {
+      "path": "work/runtime-r06/r09-tail-colliders.blend",
+      "bytes": 229626383,
+      "sha256": "608506140f4add871c199141b0be27932c08aef9ec9712957ca23a06113ae4de"
+    },
+    "runtimePreview": {
+      "path": "work/runtime-r06/preview-tail-colliders-r09/review-preview.vrm",
+      "bytes": 85321500,
+      "sha256": "a525dd967002848abd874db60297e115ef22a972bc502a01b2703592efa47bb6"
+    },
+    "runtimeStatus": "Saved Blender runtime is still prior collider-link candidate. A separately identified JSON-parameter VRM test materially reduces shoulder clipping in the actual viewer; its tested settings remain to be integrated into the editable runtime.",
+    "runtimeParameterCandidate": {
+      "path": "work/runtime-r06/preview-tail-envelope-test-r09/test-preview.vrm",
+      "bytes": 85321716,
+      "sha256": "baede9f103b4dc5ac2cb1c27eab40505526152667eabe40a4cc6bff4c635c28d"
+    },
+    "runtimeParameterComparison": "work/runtime-r06/r09-tail-profile-comparison.json",
+    "runtimePriorVisualEvidence": "work/runtime-r06/runtime-viewer-observation-r08.json",
+    "masterIntegrated": true,
+    "newFormalExports": false,
+    "offMachineCopyVerified": false,
+    "appearanceDecision": "work/reconstruction-r02/appearance-visible-decision-r09.json",
+    "integratedIntoMaster": true,
+    "masterVerifiedUnchanged": false,
+    "integratedMaster": {
+      "path": "work/character.blend",
+      "bytes": 162979650,
+      "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+    },
+    "remaining": [
+      "Final continuous matched body/hair/cloth video",
+      "Refresh and reopen actual VRM/runtime from final adopted source",
+      "Final front/quarter/profile/back and expression appearance review",
+      "Verified delivery package and dependency relocation; no new off-machine backup claimed"
+    ],
+    "latestMasterIntegration": "work/master-integration-r09/r09-refined-v2/installed.json",
+    "historicalOnly": true,
+    "scope": "Preserved stage record. All current/next/master references inside this block describe that historical stage, not the current working master or an instruction to resume.",
+    "status": "historical; previous master integration preserved in stage backup"
+  },
+  "priorDeliveryLimitations": [
+    "按用户要求的真人感商业终稿标准，当前仍未达标，不能作为已经验收的最终成品。",
+    "面部近景仍有人偶感：眼睑、鼻唇细节与虹膜精细程度不一致，皮肤层次偏均匀。",
+    "头发主轮廓仍有成片和成束感；已有细丝几何和可动骨链，不等于逐根真人毛发外观或逐根物理仿真。",
+    "手部关节、甲床与衣料受力褶皱仍较简化，近景真实感需要继续雕刻和材质制作。",
+    "造型和表情的审美验收仍由用户／客户确认。",
+    "默认无腮红；当前提供表情和口型，尚未制作眼球追踪／LookAt。",
+    "运行版用于桌面审阅；目标软件、设备及性能预算尚未指定。",
+    "已测试的步行和招手不代表任意大幅动作都没有穿插。",
+    "随包自然动作按当前鞋底校准；原套件标准步行仅作对照，尚有鞋底高度偏差，不能视为本角色已适配的交付动作。",
+    "自然动作切换检查中有一帧双脚鞋底最低点约8.06毫米高于地面，不能称全部过渡始终精确贴地。",
+    "衣内身体使用隐藏重叠连接，包含躯干、双臂、下胫和足部；不是一体焊接的裸体解剖模型。",
+    "脚趾随当前刚性鞋一起运动；独立脚趾动作需要适配鞋的变形。",
+    "正式模型名、作者、使用及再分发条款尚未确认；VRM仍为审阅元数据。",
+    "当前运行版有 614,282 个三角形，高于项目脚本 300,000 的目标；尚未完成目标设备的帧率和内存验收。"
+  ],
+  "priorMasterHistory": [
+    {
+      "path": "work/character.blend",
+      "bytes": 60560716,
+      "sha256": "6e7361e7f5c306325d3f33c4c9f6f56b1a489d5f4579bb4be951d4c3d59cc8c1"
+    }
+  ],
+  "masterIntegrationR09": {
+    "stageRecord": "work/master-integration-r09/r09-refined-v2/stage.json",
+    "stageRecordSha256": "c24ef7bac5abe0825f27621f70ac1e6001f123b9da88894e04bec75639128817",
+    "checkpointSha256": "7453c7818af2b04fb79a83b58be2bad2e8986456499685c563b1bc2e2ff1aa28",
+    "installedAt": "2026-10-28T22:56:23.920613+00:00",
+    "adoptedSource": {
+      "path": "work/reconstruction-r02/reference-production-refined-r09.blend",
+      "bytes": 162979646,
+      "sha256": "1c0b0210114170f0ce6e09b266b4a9ded58f29bf1df45a6e2be13e9b5c77aa72"
+    },
+    "master": {
+      "path": "work/character.blend",
+      "bytes": 162979650,
+      "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+    },
+    "stagedReopen": {
+      "path": "work/master-integration-r09/r09-refined-v2/staged-reopen.json",
+      "sha256": "8ea0083c9065a317cf39ec22ed31faddf7973486bed08a59e12add021bc1623a"
+    },
+    "previousMasterBackup": {
+      "path": "work/master-integration-r09/r09-refined-v2/migration-master.blend",
+      "bytes": 60560716,
+      "sha256": "6e7361e7f5c306325d3f33c4c9f6f56b1a489d5f4579bb4be951d4c3d59cc8c1"
+    },
+    "status": "fresh-master-finite-verification-passed; delivery-work-remains",
+    "exportsWritten": false,
+    "appearanceAccepted": false,
+    "record": "work/master-integration-r09/r09-refined-v2/installed.json",
+    "recordSha256": "63afe09f004bda1214a31588469619e5614968bdc6bfbca6f22daf56e06823f9",
+    "freshMasterReopen": {
+      "path": "work/master-integration-r09/r09-refined-v2/master-reopen.json",
+      "sha256": "51d6790cbf6af5f3ee4130a738f37d9b4939cdfffa2c2a61093d8ac210aebba6"
+    },
+    "historicalOnly": true,
+    "scope": "Preserved stage record. All current/next/master references inside this block describe that historical stage, not the current working master or an instruction to resume."
+  },
+  "currentExportsStatus": "Current static exports are Character_Rebuild/character-rebuilt.blend and character-rebuilt-textured.glb. Independent motion preview is recorded in interactiveMotionPreview. Fixed exports/avatar.* and previous VRM/runtime files are historical.",
+  "remainingR09Delivery": [
+    "Final continuous matched body/hair/cloth video",
+    "Refresh and reopen actual VRM/runtime from final adopted source",
+    "Final front/quarter/profile/back and expression appearance review",
+    "Verified delivery package and dependency relocation; no new off-machine backup claimed"
+  ],
+  "knownLimitationsBeforeR09Integration": [
+    "Current R09 source is still a working candidate; the fixed master and formal export names still contain the older delivery.",
+    "Current physical renders remain visibly stylized; AAA/photoreal appearance and user/client acceptance have not been established.",
+    "R09 forelock stiffness and box-like mouth morphs still need source refinement and actual combined review; a larger sheet-like forelock candidate was rejected.",
+    "R09 body action has matching hair and cloth with fresh reopen and five pose renders; continuous motion video is still pending.",
+    "Runtime target device and performance budget are not specified; no frame-rate guarantee.",
+    "Author metadata and redistribution license are not invented; review VRM metadata remains explicit placeholder."
+  ],
+  "reconstructionR10": {
+    "recordedAt": "2026-10-28T23:12:20.588953+00:00",
+    "baselineMaster": {
+      "path": "work/character.blend",
+      "bytes": 162979650,
+      "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+    },
+    "candidateBaseline": {
+      "path": "work/reconstruction-r02/reference-production-refined-r09.blend",
+      "bytes": 162979646,
+      "sha256": "1c0b0210114170f0ce6e09b266b4a9ded58f29bf1df45a6e2be13e9b5c77aa72"
+    },
+    "currentSourceDetails": [
+      {
+        "case": "hand-left",
+        "report": {
+          "path": "previews/reconstruction-r02/master-details-r09/hand-left-report.json",
+          "bytes": 75723,
+          "sha256": "20e9becf9904c6ded02608783cbe5c2d9f1f9d0f24e35fe3d11e8f718b997d3c"
+        },
+        "image": {
+          "path": "previews/reconstruction-r02/master-details-r09/hand-left.png",
+          "bytes": 661269,
+          "sha256": "1c04213f9a8554cdd45e4bb62eb73b44b3371f7bbc0b551bb7c1150acbc6daa6"
+        }
+      },
+      {
+        "case": "hand-right",
+        "report": {
+          "path": "previews/reconstruction-r02/master-details-r09/hand-right-report.json",
+          "bytes": 75732,
+          "sha256": "de64fe108a6ddc2d6f1597cfb1035ba76f74f8c6a586b7fd9b91be2dcb3c57f8"
+        },
+        "image": {
+          "path": "previews/reconstruction-r02/master-details-r09/hand-right.png",
+          "bytes": 656422,
+          "sha256": "a4a751dd8098cb2fe50a48e6ae957600107acaefb88f0c9b6ff103d08be78488"
+        }
+      },
+      {
+        "case": "eye-mouth",
+        "report": {
+          "path": "previews/reconstruction-r02/master-details-r09/eye-mouth-report.json",
+          "bytes": 74339,
+          "sha256": "304dfc95696ca9d45d5b0987ac190a87e7c61201e822313efd86507c2866df11"
+        },
+        "image": {
+          "path": "previews/reconstruction-r02/master-details-r09/eye-mouth.png",
+          "bytes": 777691,
+          "sha256": "ff5ccc60a1acb84a7f6b870e83cf01ac8a4ddc06d32113362dca139f4dff2ee7"
+        }
+      },
+      {
+        "case": "face-side",
+        "report": {
+          "path": "previews/reconstruction-r02/master-details-r09/face-side-report.json",
+          "bytes": 74390,
+          "sha256": "4f57f3d2ebd574dd6828d9f59d608fc254f411f36cafae69b1106fb405416f21"
+        },
+        "image": {
+          "path": "previews/reconstruction-r02/master-details-r09/face-side.png",
+          "bytes": 694681,
+          "sha256": "edee568004e3453ff65dd9d63434924f71556bf7e79fc54c2a4e7fe583680595"
+        }
+      }
+    ],
+    "crownObservation": {
+      "path": "work/reconstruction-r02/crown-observation-r10.json",
+      "bytes": 17458,
+      "sha256": "9a51b797374497bdb5ef2ca7e8ac340974b32f10ad1f6bdac6003aad7098537f"
+    },
+    "sourceChangedByObservation": false,
+    "newR10GeometrySaved": false,
+    "visibleFindings": [
+      "Current left/right hand images retain overly flat dorsal volumes and simple cylindrical digits; nails look like thin patches.",
+      "Current crown is narrow/low relative to the original portrait after eye-line alignment; whole-crown coherent volume should be tested.",
+      "Actual profile exposes an abrupt dark nape shell edge. Crown-volume change alone cannot establish a natural nape.",
+      "Iris broad grey reflection is reduced, but skin/face and hair remain visibly stylized CG."
+    ],
+    "next": [
+      "Observe and assess installed CC0 Human Base Meshes realistic hand asset before choosing shape transfer/replacement.",
+      "Prepare one reversible coherent root/scalp/fringe/gather crown candidate from the exact actual observed arrays; preserve tied-tail anchors.",
+      "Actually render adopted geometry and key poses before final runtime bakes and continuous delivery videos."
+    ],
+    "clientAppearanceAccepted": false,
+    "photorealisticDeliveryReady": false,
+    "decisionFile": "work\\reconstruction-r02\\current-detail-decision-r10.json",
+    "crownDecision": {
+      "recordedAt": "2026-10-28T23:41:50.568033+00:00",
+      "baselineMaster": {
+        "path": "work/character.blend",
+        "bytes": 162979650,
+        "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+      },
+      "rejectedCandidate": {
+        "path": "work/reconstruction-r02/reference-crown-volume-r10.blend",
+        "bytes": 180756808,
+        "sha256": "3fe0565d295e74593f61f8d9eb727db2d4664dd4369652690ab68037a3491cce"
+      },
+      "decision": "reject-entire-crown-volume-candidate",
+      "images": [
+        {
+          "path": "previews/reconstruction-r02/crown-volume-r10/face-front.png",
+          "bytes": 583058,
+          "sha256": "33f6c2f4db523ff0ca3e1127e6713e6552c02b30172b42deec4fb02a59f2126a"
+        },
+        {
+          "path": "previews/reconstruction-r02/crown-volume-r10/face-quarter.png",
+          "bytes": 612530,
+          "sha256": "6a69b0c6cd12e92b5c1639bb6470fd6cdd12c135cf16dbc9a2526f732e3102f1"
+        },
+        {
+          "path": "previews/reconstruction-r02/crown-volume-r10/face-side.png",
+          "bytes": 571744,
+          "sha256": "70d5311b05910a97ef6dc1a6ca967110fc79b8b5db42d447be659015bf795732"
+        }
+      ],
+      "reason": [
+        "Front and quarter show a hat-like side ledge and bent fringe ribbons.",
+        "The attached opaque root substrate was expanded into the outer hair volume.",
+        "Surface clearance and continuity checks do not establish convincing hair appearance."
+      ],
+      "next": "Retain the attached R09 PN root substrate; form outer volume through layered, free-arching fibre paths. Inspect a mature official Curves asset before adopting a new groom.",
+      "retainedCandidate": {
+        "path": "work/reconstruction-r02/reference-production-refined-r09.blend",
+        "bytes": 162979646,
+        "sha256": "1c0b0210114170f0ce6e09b266b4a9ded58f29bf1df45a6e2be13e9b5c77aa72"
+      },
+      "clientAppearanceAccepted": false,
+      "photorealisticDeliveryReady": false,
+      "userDirection": {
+        "physicalBehaviour": "Actions and details must obey physical behaviour; inspect gravity, inertia, contact, joint volume and settling with actual motion.",
+        "skinAppearance": "Natural Asian/Japanese adult woman complexion with light makeup, optionally slightly fairer; preserve warm undertone, subtle blood colour and skin detail. Do not infer a fixed ethnic colour swatch.",
+        "approval": "User delegates routine and artistic decisions; do not wait for confirmations.",
+        "parallelWork": "Use all available subagent slots for independent edits; sole integrator controls master and serial heavy Blender jobs on current hardware."
+      }
+    },
+    "currentNext": "Retain the attached R09 PN root substrate; form outer volume through layered, free-arching fibre paths. Inspect a mature official Curves asset before adopting a new groom.",
+    "userFaceRejection": {
+      "recordedAt": "2026-10-28T23:56:05.174445+00:00",
+      "userFeedback": "用户明确拒绝当前面部外观，认为与预期完全不同；要求精致、自然的日本女性面部。",
+      "faceAppearanceAccepted": false,
+      "priority": "Full adult feminine face structure reconstruction before further skin polish, continuous delivery rendering or runtime release.",
+      "designDirection": "Natural adult female anatomy and refined soft facial forms informed by the requested Japanese woman appearance; preserve original character identity cues without forcing enlarged round eyes or flattened nose. Do not imply one universal ethnic face geometry.",
+      "preserveRequirements": [
+        "Original black low twin tails and clothing design intent",
+        "Physically credible motion and details",
+        "Natural warm skin with subtle light makeup; slightly fair appearance permitted"
+      ],
+      "parallelism": {
+        "userRequestedSubagents": 10,
+        "availableConcurrentSubagents": 3,
+        "streams": [
+          "Face geometry reconstruction",
+          "Reusable mature female face asset research",
+          "Independent visible face review and proportion checks"
+        ],
+        "integrator": "Only root writes the working master and runs heavy Blender tasks serially."
+      },
+      "currentMaster": {
+        "path": "work/character.blend",
+        "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+      },
+      "notDeliveryReady": true,
+      "retainedIndependentWork": {
+        "handCandidate": "work/reconstruction-r02/reference-asset-hands-r10-v2.blend",
+        "handSha256": "7f45d5a151c8b5efb61afda46d482d97dc60ed5774a988847d82cd6447dd9b4b",
+        "handStatus": "Actually saved and both dorsal stills rendered; no finger-flex, appearance adoption or master integration yet.",
+        "tailShapeHelper": "work/local-model/tail_shape_candidate_r10.py",
+        "tailStatus": "Offline continuity calculation only; not executed in Blender or adopted. Face takes priority.",
+        "skinStatus": "Actual current material observation completed; light-foundation helper remains unapplied until new face direction is established."
+      }
+    },
+    "historicalOnly": true,
+    "scope": "Preserved stage record. All current/next/master references inside this block describe that historical stage, not the current working master or an instruction to resume.",
+    "status": "historical; superseded; do not resume old queue"
+  },
+  "currentUserDirection": {
+    "route": "Local Blender; current Hunyuan static rebuild and independent basic motion preview",
+    "productionStatus": "No model production authorized by this repository housekeeping task; R11 remains stopped",
+    "repositoryTask": "Organize source and evidence, validate, commit and push main; keep all large assets locally without deletion"
+  },
+  "currentFaceDirection": {
+    "scope": "Current static anime rebuild; historical R10/R11 face directions are retained in priorProductionSummary",
+    "appearanceAccepted": false,
+    "remaining": "Face expression, strand roots/tips and fine garment folds remain simplified relative to the original art."
+  },
+  "reconstructionR11": {
+    "recordedAt": "2026-10-29T00:41:25.705260+00:00",
+    "status": "paused-by-user; dissatisfied-with-appearance; existing-work-handoff-only",
+    "headCandidate": {
+      "path": "work/reconstruction-r02/reference-adult-female-head-r11.blend",
+      "bytes": 191366662,
+      "sha256": "080f5d5d6b214deace3148923028f7ffac1a12ce748d953008e2e2be79ec3e48"
+    },
+    "latestIndependentCandidate": {
+      "path": "work/reconstruction-r02/reference-adult-fitted-bands-r11.blend",
+      "bytes": 244742365,
+      "sha256": "8fd87255aa7576eeaa486cad396773350b608b27b5e57914332165afa67eb2d9"
+    },
+    "masterChanged": false,
+    "currentMaster": {
+      "path": "work/character.blend",
+      "bytes": 162979650,
+      "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+    },
+    "userObjectiveCopy": {
+      "path": "references/user-goal-objective-20261028-update.md",
+      "bytes": 12062,
+      "sha256": "9d6c347c2663c073cea766fb96ce13a8b25c63abe11920d0cac178a66b2a7c72"
+    },
+    "actualSixViews": [
+      {
+        "case": "structure-front",
+        "image": {
+          "path": "previews/reconstruction-r02/adult-female-head-r11/structure-front.png",
+          "bytes": 1083438,
+          "sha256": "3fe282ad46d49713613fd2895a4f15daae3aa9d9782a7341448d9505093537a7"
+        },
+        "report": {
+          "path": "previews/reconstruction-r02/adult-female-head-r11/structure-front.json",
+          "bytes": 5129,
+          "sha256": "b94340b974b8eb06e575831cd667b461fc8f19aa75b95394f13679e3d91d4032"
+        }
+      },
+      {
+        "case": "structure-quarter",
+        "image": {
+          "path": "previews/reconstruction-r02/adult-female-head-r11/structure-quarter.png",
+          "bytes": 1081837,
+          "sha256": "0eac1ddf8bb5815c2650e22f6f4dd9d1ecae0521e598f99df12440622d90a54d"
+        },
+        "report": {
+          "path": "previews/reconstruction-r02/adult-female-head-r11/structure-quarter.json",
+          "bytes": 5221,
+          "sha256": "a506a28fdfae9d70135b6c4479bedb646f8b2c11a0db850450fa8e389b103fb7"
+        }
+      },
+      {
+        "case": "structure-side",
+        "image": {
+          "path": "previews/reconstruction-r02/adult-female-head-r11/structure-side.png",
+          "bytes": 1046835,
+          "sha256": "27cf413ee8a497e424f7416eb5dabad01ec8c05f5c5c7c417707729b9272fa44"
+        },
+        "report": {
+          "path": "previews/reconstruction-r02/adult-female-head-r11/structure-side.json",
+          "bytes": 5177,
+          "sha256": "01aab193bc30a66a8308285a08eb25d7bc691a414b68470594494026d9454396"
+        }
+      },
+      {
+        "case": "groom-front",
+        "image": {
+          "path": "previews/reconstruction-r02/adult-female-head-r11/groom-front.png",
+          "bytes": 1323664,
+          "sha256": "2797f8f944692913390edb08ac009aff1fc49a356b4c30d5b02bbcd1155a17e8"
+        },
+        "report": {
+          "path": "previews/reconstruction-r02/adult-female-head-r11/groom-front.json",
+          "bytes": 4780,
+          "sha256": "c1015e14b770bbd194e04a58d5076574ec75960dccec8d3c987e8ea2fba91dfd"
+        }
+      },
+      {
+        "case": "groom-quarter",
+        "image": {
+          "path": "previews/reconstruction-r02/adult-female-head-r11/groom-quarter.png",
+          "bytes": 1403906,
+          "sha256": "2996afe6a06e5e1df4d54ab0286c967cec7b88afa74aa98364267014148b93ea"
+        },
+        "report": {
+          "path": "previews/reconstruction-r02/adult-female-head-r11/groom-quarter.json",
+          "bytes": 4872,
+          "sha256": "e8df2bfd5a0c6341e76751d841e08ae1d115a05c183d9eea47228e393c155a77"
+        }
+      },
+      {
+        "case": "groom-side",
+        "image": {
+          "path": "previews/reconstruction-r02/adult-female-head-r11/groom-side.png",
+          "bytes": 1280654,
+          "sha256": "3e7459211f2fffd0f3025c13edde155f253671ccf18dc3da009dce83883546fc"
+        },
+        "report": {
+          "path": "previews/reconstruction-r02/adult-female-head-r11/groom-side.json",
+          "bytes": 4828,
+          "sha256": "d866b8d186ab2c676a4e36af566bd3fd00af1f19766d9cf8c0d812824c7579bd"
+        }
+      }
+    ],
+    "independentVisibleReview": {
+      "path": "work/reconstruction-r02/adult-female-head-visible-review-r11.json",
+      "bytes": 5059,
+      "sha256": "661292a4520b45869cff2887379cf2185ef7b549156510b84945293db47c9a36"
+    },
+    "actualNeckObservation": {
+      "path": "work/reconstruction-r02/adult-neck-observation-r11.json",
+      "bytes": 39857,
+      "sha256": "0269468ce19cc47ba9d3a3ef4b291a9591cc7473298a3ba3aa33fe7811834c4b"
+    },
+    "workingObjects": {
+      "head": "R11 Female head study",
+      "eyes": [
+        "R11 Adult sclera L",
+        "R11 Adult sclera R"
+      ],
+      "collection": "R11 Adult female face candidate"
+    },
+    "visibleDecision": {
+      "faceBase": "Retain adult eye/nose/lip volume for further shaping and expression work.",
+      "neckBodyFit": "FAILED: exposed upper-chest/shoulder stub and jagged posterior cut edge.",
+      "groomFit": "FAILED: new scalp penetrates old crown, temples/nape have floating shell gaps, fringe crosses an eye.",
+      "brows": "Actually added to a new independent copy; neutral stills are being produced.",
+      "appearanceAccepted": false,
+      "photorealisticReady": false
+    },
+    "next": [
+      "Repair actual donor GN curl/clump/profile behavior and posterior volume, then render full hairstyle.",
+      "Recompute and actually review blink/smile from latest static face, then bind new head/neck and attachments.",
+      "Finish hands/body/garment refinements and rebake matching motion, physics and runtime delivery."
+    ],
+    "limitations": [
+      "Current head is a static shape candidate with rigid head-parent motion, not a new verified face rig.",
+      "Legacy scripts hardcoded to R01 Head cannot be treated as new-head adaptation.",
+      "Old hair/cloth caches remain as existing context; new-head collision compatibility is not proven.",
+      "No new final exports or off-machine backup."
+    ],
+    "lookProgress": {
+      "recordedAt": "2026-10-29T00:59:13.489952+00:00",
+      "latestIndependentCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-female-lashes-r11.blend",
+        "bytes": 208647155,
+        "sha256": "9be0d305a1fa57a949df84f5b8db4087e8238d6feab05000118934239ddd7ab4"
+      },
+      "skinCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-female-skin-r11.blend",
+        "bytes": 208558572,
+        "sha256": "def05a42f5121495a55a5eddee14587f3064fcd099abeec1def7c42b11f73048"
+      },
+      "groomCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-female-groom-r11.blend",
+        "bytes": 208627988,
+        "sha256": "bb678dd0f2f327cd0699ac203821fae24a051afc2ca09ab552ed9b05c3354891"
+      },
+      "actualLookViews": [
+        {
+          "case": "groom-front",
+          "image": {
+            "path": "previews/reconstruction-r02/adult-female-skin-r11/groom-front.png",
+            "bytes": 1294041,
+            "sha256": "1ebeee28f308c387e4978b5c3b55162fcc6d24f0824d8b6c8c3fce074f910e0c"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-female-skin-r11/groom-front.json",
+            "bytes": 4780,
+            "sha256": "046cc08c1a45938ca93775fef11ed8318af3afc12b2b235434685fa90a78c65e"
+          }
+        },
+        {
+          "case": "groom-quarter",
+          "image": {
+            "path": "previews/reconstruction-r02/adult-female-skin-r11/groom-quarter.png",
+            "bytes": 1359423,
+            "sha256": "42fcdcbd8334aeb3f3e18f1f62bb75288fe3889d470fd2810fa101473c2dfd8c"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-female-skin-r11/groom-quarter.json",
+            "bytes": 4872,
+            "sha256": "14bdb3a7d743f3370efe568cb437d56230c6d0de517a654e46523eba141e4f9f"
+          }
+        }
+      ],
+      "actualFaceContactAudit": {
+        "path": "work/reconstruction-r02/face-contact-actual-r11.json",
+        "bytes": 223099,
+        "sha256": "cf6c75f5278b4d42aae9286fbfec6f105faa624712f741174f639e09dd6c2ca7"
+      },
+      "actualAnatomicalNeckObservation": {
+        "path": "work/reconstruction-r02/adult-neck-anatomical-observation-r11.json",
+        "bytes": 3692,
+        "sha256": "fd488c140e2e2cb7be91953653b1f4210ac68710360f006f77d5c6bc54906ff5"
+      },
+      "visibleDecision": {
+        "scalpContact": "Improved visible scalp fit; retained as a geometric starting point.",
+        "crownAndFringe": "REJECTED: short cap-like fringe, coarse parallel strips and lateral floating turn; active re-combing task.",
+        "skin": "Restrained warmer base and lip variation saved; does not establish photorealism or specific ethnic appearance.",
+        "neck": "Visible shoulder stub and incomplete cervical connection remain; bridge task active.",
+        "lashes": "Saved after local-normal root-growth fix; neutral macro and face renders pending.",
+        "appearanceAccepted": false
+      },
+      "masterChanged": false,
+      "currentMaster": {
+        "path": "work/character.blend",
+        "bytes": 162979650,
+        "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+      },
+      "formalExportsChanged": false,
+      "pending": [
+        "Continuous neck/body fit and neck weights",
+        "New crown/fringe style",
+        "Face shape and expressive refinement",
+        "Brow/lash surface binding with blink and gaze",
+        "Oral rig and speech",
+        "Integrated motion/physics and runtime refresh"
+      ],
+      "limits": [
+        "Working copy includes rejected fringe pending replacement.",
+        "Old tail/cloth caches are retained context, not new-head collision evidence.",
+        "No new off-machine backup or frozen full-project archive."
+      ]
+    },
+    "contourProgress": {
+      "recordedAt": "2026-10-29T01:53:53.565457+00:00",
+      "latestIndependentCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-dark-iris-r11.blend",
+        "bytes": 223968509,
+        "sha256": "504503e475b1ccdf05a8f30008baacefa5f22fc8f7108ceb5ed74b05de6dcb6d"
+      },
+      "actualLookViews": [
+        {
+          "case": "structure-front",
+          "image": {
+            "path": "previews/reconstruction-r02/adult-face-contour-r11/structure-front.png",
+            "bytes": 1065297,
+            "sha256": "ee4000d9414945a5859307557c5cbfc1bfa39ff0d5b914688794266f14fda041"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-face-contour-r11/structure-front.json",
+            "bytes": 5234,
+            "sha256": "07ee7b6ecbc0ee23900d43d56f6e3fef5d34399aaa147719546562550cac64d0"
+          }
+        },
+        {
+          "case": "structure-quarter",
+          "image": {
+            "path": "previews/reconstruction-r02/adult-face-contour-r11/structure-quarter.png",
+            "bytes": 1069644,
+            "sha256": "124df91179a52d15ef44eab61cacc3d939e21a009595e253c8b7dddc823c4753"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-face-contour-r11/structure-quarter.json",
+            "bytes": 5328,
+            "sha256": "c7dad633d3938ff790b4730d09a15579e62b09314dcb7fd1bf01764596a823bf"
+          }
+        },
+        {
+          "case": "eyes",
+          "image": {
+            "path": "previews/reconstruction-r02/adult-face-contour-r11/eyes.png",
+            "bytes": 1078665,
+            "sha256": "91f0ce757ed4ef0639769941ebc794daea0daddf3611c7d4193b5b063d5a64c9"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-face-contour-r11/eyes.json",
+            "bytes": 3946,
+            "sha256": "d18110f530869b413e64a044fc2b70bf5f8558e6c27cf27fd381b5170a2314c5"
+          }
+        }
+      ],
+      "actualStages": [
+        {
+          "path": "work/reconstruction-r02/reference-adult-eye-surface-r11.eye-surface.json",
+          "bytes": 104225,
+          "sha256": "b54be1fe06dae86643f8352fc8f2b3a03ffe8fa1ac57a896785250cc4cf649f3"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-face-fibres-bound-r11.fibre-binding.json",
+          "bytes": 20041,
+          "sha256": "649c5dcb9de4e7312696dd9ba3b8d6b5b22aea82d25de1f8d68b980f3339483f"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-jaw-contour-r11.json",
+          "bytes": 2848,
+          "sha256": "3164f5849f98cd83a1a2fdc6a49e2d7912d8fc1972b61132aba9ec5c95a615de"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-upper-lid-r11.json",
+          "bytes": 8902,
+          "sha256": "94a429ffdfacc6f431ade2ccd4a48e5b74768349c9c275dc2a6d34713ecec014"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-dark-iris-r11.iris.json",
+          "bytes": 3620,
+          "sha256": "acfb477c7600d4443c48874131d713cf3593a262e9a281048f631a246ded432f"
+        }
+      ],
+      "generatedResources": [
+        {
+          "path": "references/generated/realistic-character-three-views-r11.png",
+          "bytes": 2485349,
+          "sha256": "330c2c5ab2033217e36a54fe3b367367cbe29a0d68d04a28293f8a3d269176c3"
+        },
+        {
+          "path": "references/generated/realistic-character-three-views-r11.json",
+          "bytes": 2802,
+          "sha256": "fb04c64b9fe187369e2c118942e887f50258aae6fe14d45656be0665bdecf89e"
+        },
+        {
+          "path": "textures/generated-r11/iris-dark-brown-r11.png",
+          "bytes": 2198671,
+          "sha256": "8aa48663c77fec6c668c4bc67c0673776fde6d3ae9c4a3fed81a64b776ae3e0e"
+        },
+        {
+          "path": "textures/generated-r11/iris-dark-brown-r11.json",
+          "bytes": 1998,
+          "sha256": "0d14d8806ac9112f48e9bda7962c17a330beebbe1059074e094781228fb7dfcb"
+        }
+      ],
+      "visibleDecision": {
+        "iris": "New generated dark brown iris is visibly darker/more suitable; original pixels packed. Not a calibrated scan or full eye optics.",
+        "face": "Adult anatomy retained as foundation; target softness, eye proportions, expression and likeness remain unfinished.",
+        "lashes": "Current bound v3 lashes render too pale; independent opaque mascara candidate pending actual image.",
+        "lips": "Existing lip volume reads as skin plus dark mouth slit; restrained real lip-body material candidate pending.",
+        "neck": "Current bridge retains lateral low-neck bulges and posterior angle; first contour attempt failed before save because upperChest group was absent on bridge.",
+        "groom": "277676 refined crown rejected: two tall bright crown masses, needle fringe, exposed cap; retained separately. Current face uses older bb678d groom context.",
+        "appearanceAccepted": false
+      },
+      "donorHairPreview": {
+        "image": {
+          "path": "previews/reconstruction-r02/hair-donor-native-r11/donor-quarter.png",
+          "bytes": 819263,
+          "sha256": "7f1762b5cb576a8415dedd4895747b9be98fee6e44a39e760196703338fd0ca3"
+        },
+        "report": {
+          "path": "previews/reconstruction-r02/hair-donor-native-r11/donor-quarter.json",
+          "bytes": 1059,
+          "sha256": "28e262b1e676d1294713c989d742fdead5819d0d75e61b3354f1df825ff94426"
+        },
+        "decision": "Native author guide/GN system looks more organically layered; independent target fit in progress, not yet character hairstyle.",
+        "author": "Daniel Bystedt",
+        "license": "CC BY-SA; version not established by available official evidence"
+      },
+      "masterChanged": false,
+      "currentMaster": {
+        "path": "work/character.blend",
+        "bytes": 162979650,
+        "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+      },
+      "formalExportsChanged": false,
+      "limits": [
+        "Generated three-view is design direction, never actual Blender evidence or calibrated reconstruction photographs.",
+        "Requested image2.5 could not be selected/verified by built-in image tool; actual model not exposed.",
+        "Old tail/cloth caches do not prove new head/groom collision quality. New integrated motions/physics/VRM remain unfinished.",
+        "No new off-machine backup or frozen full-project archive."
+      ]
+    },
+    "makeupNeckProgress": {
+      "recordedAt": "2026-10-29T02:18:15.079453+00:00",
+      "latestIndependentCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-low-neck-r11.blend",
+        "bytes": 223945115,
+        "sha256": "3a6baaa6271917cdd0c4c2b75c374651262ddde62d7ec7cb88e849fb31bb9d7f"
+      },
+      "actualLookViews": [
+        {
+          "case": "structure-front",
+          "sourceSha256": "3a6baaa6271917cdd0c4c2b75c374651262ddde62d7ec7cb88e849fb31bb9d7f",
+          "image": {
+            "path": "previews/reconstruction-r02/adult-low-neck-r11/structure-front.png",
+            "bytes": 1065403,
+            "sha256": "16a1a95b4e76c9bf672761d8b635eae34a0b2a3a9bc727856aafcca8116c4567"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-low-neck-r11/structure-front.json",
+            "bytes": 5233,
+            "sha256": "838d382d5a6b1399e45885f607df377569e848b38ecdca8c950d8d485d7edee5"
+          }
+        },
+        {
+          "case": "structure-side",
+          "sourceSha256": "3a6baaa6271917cdd0c4c2b75c374651262ddde62d7ec7cb88e849fb31bb9d7f",
+          "image": {
+            "path": "previews/reconstruction-r02/adult-low-neck-r11/structure-side.png",
+            "bytes": 1034585,
+            "sha256": "0ed55af92970e8c29bc7c085da1c3accea3939f0e907bec2dd49ead05283dd98"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-low-neck-r11/structure-side.json",
+            "bytes": 5282,
+            "sha256": "c59911f035a09e0fd179fccb857d5ddadd9d6fd97e17e31f3767e5b73b7e29f2"
+          }
+        },
+        {
+          "case": "mouth",
+          "sourceSha256": "3a6baaa6271917cdd0c4c2b75c374651262ddde62d7ec7cb88e849fb31bb9d7f",
+          "image": {
+            "path": "previews/reconstruction-r02/adult-makeup-r11/mouth.png",
+            "bytes": 829971,
+            "sha256": "244ee815dbc44a0eb53d8394335cfb54ca8097b65019f8878e4696c3e88777ca"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-makeup-r11/mouth.json",
+            "bytes": 3945,
+            "sha256": "0c8779cf57754bf18e4f762abc37ed60c2e0b2178cf44d9d137453b838a929fd"
+          }
+        },
+        {
+          "case": "structure-front",
+          "sourceSha256": "be47284ec4b41518c3dfcd972f1206f767c2de8bb94d9c550ecc89349a3ac01a",
+          "image": {
+            "path": "previews/reconstruction-r02/adult-makeup-r11/structure-front.png",
+            "bytes": 1066111,
+            "sha256": "59bcb39a6e4b4cf4dffdc57bff913fee3d77b776397cea1355b7b349a67f743c"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-makeup-r11/structure-front.json",
+            "bytes": 5232,
+            "sha256": "b553e90b45feef2e2e660cfc8c25616cd338ac3d299efea3092fce7149dc47b1"
+          }
+        },
+        {
+          "case": "eyes",
+          "sourceSha256": "be47284ec4b41518c3dfcd972f1206f767c2de8bb94d9c550ecc89349a3ac01a",
+          "image": {
+            "path": "previews/reconstruction-r02/adult-makeup-r11/eyes.png",
+            "bytes": 1081238,
+            "sha256": "db2c489fea0236066b04a0ba499011dff9e552ad4c0dbc4f3157f4f19656c55f"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-makeup-r11/eyes.json",
+            "bytes": 3944,
+            "sha256": "98bd865577b23899c449f840ecd1261edb089f14d58ea9ce0e09546d4f10aba8"
+          }
+        }
+      ],
+      "stages": [
+        {
+          "path": "work/reconstruction-r02/reference-adult-rose-lips-r11.lip-surface.json",
+          "bytes": 7253,
+          "sha256": "95adf98806e86eff6284f410f70f0961f69b899db733868b5c171d4511aa71bb"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-mascara-r11.mascara.json",
+          "bytes": 8948,
+          "sha256": "afba46ee10471602584e212cd1a384ea22aedda179bebd8af7c294f59cdf159f"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-low-neck-r11.json",
+          "bytes": 8984,
+          "sha256": "306218f71f3a8db243a759997130a798afcc3823e69939273d381296a4cfea01"
+        }
+      ],
+      "visibleDecision": {
+        "neck": "Low side stubs and posterior angular step reduced, but overall thickness and posterior lower seam remain visibly unfinished.",
+        "lips": "Restrained pink lip body is visible, but upper-lip bow/edge and volumetric detail are insufficient; no speech/contact acceptance.",
+        "lashes": "Opaque mascara material correctly assigned/evaluated, but actual same-light image remains pale. Red-emission temporary diagnostic identifies current fibres; optical/denoising study pending.",
+        "eyes": "Current adult scale looks too small relative to character reference; measured coherent globe/lid size candidate in progress.",
+        "groom": "Native donor scalp domain mapped, then source-buried secondary guide tails triggered strict skin correction guard. No donor candidate saved yet.",
+        "appearanceAccepted": false
+      },
+      "masterChanged": false,
+      "master": {
+        "path": "work/character.blend",
+        "bytes": 162979650,
+        "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+      },
+      "formalExportsChanged": false,
+      "limitations": [
+        "Retained old groom and old dynamics are context only.",
+        "No newly accepted facial performance, continuous body/hair/cloth video, final VRM or backup freeze."
+      ]
+    },
+    "eyeDonorProgress": {
+      "recordedAt": "2026-10-29T02:56:41.556255+00:00",
+      "latestIndependentCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-eye-proportion-r11.blend",
+        "bytes": 250123764,
+        "sha256": "c2afb5d4499ff44475b57f09853c1d64d2d22b39bdab71b97f42e801ef605553"
+      },
+      "donorFitSource": {
+        "path": "work/reconstruction-r02/reference-adult-donor-groom-r11.blend",
+        "bytes": 249984446,
+        "sha256": "e10888af4c641d3c32338850dfd467b4e830199ac6ad23b6de5ba9874df98997"
+      },
+      "actualDonorViews": [
+        {
+          "image": {
+            "path": "previews/reconstruction-r02/adult-donor-fit-r11/groom-front.png",
+            "bytes": 1407848,
+            "sha256": "0551d6e1d9cb0d126bf1111604ec3b63a528c62af801b5416b29d0629834ec01"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-donor-fit-r11/groom-front.json",
+            "bytes": 4803,
+            "sha256": "42fc1b902e5e10fcb7898fd9ca694ffebec24fb72575ec573809a363c8f63b3e"
+          },
+          "sourceSha256": "e10888af4c641d3c32338850dfd467b4e830199ac6ad23b6de5ba9874df98997"
+        },
+        {
+          "image": {
+            "path": "previews/reconstruction-r02/adult-donor-fit-r11/groom-quarter.png",
+            "bytes": 1406329,
+            "sha256": "494fdb2958657b087127e2b5b03a43083e6e44e47406f90ec8012f80da968181"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-donor-fit-r11/groom-quarter.json",
+            "bytes": 4897,
+            "sha256": "d30db46320fe06f7aa7ac19dcb7cbfe7a8d720da04963ad16d044786fdd52f64"
+          },
+          "sourceSha256": "e10888af4c641d3c32338850dfd467b4e830199ac6ad23b6de5ba9874df98997"
+        }
+      ],
+      "currentGeometryObservations": [
+        {
+          "report": {
+            "path": "work/reconstruction-r02/adult-blink-current-size-r11.json",
+            "bytes": 920552,
+            "sha256": "54c359b0f73e72a0a91c2108875af4cb5569e938c9ab4c1d4795bf542f43f3b1"
+          },
+          "arrays": {
+            "path": "work/reconstruction-r02/adult-blink-current-size-r11.npz",
+            "bytes": 3968862,
+            "sha256": "8328fb47789a3c6cf3b2ab7f1f6e4135503e1acfbbefe2219339841fed1ec062"
+          },
+          "sourceSha256": "c2afb5d4499ff44475b57f09853c1d64d2d22b39bdab71b97f42e801ef605553"
+        },
+        {
+          "report": {
+            "path": "work/reconstruction-r02/adult-neck-precision-r11.json",
+            "bytes": 251290,
+            "sha256": "f1b32b8dfca5a953fd87d38545a15d5da37900af9fb2381ba824dd8959ccbc04"
+          },
+          "arrays": {
+            "path": "work/reconstruction-r02/adult-neck-precision-r11.npz",
+            "bytes": 23417152,
+            "sha256": "2b53c2863ce3345cb2f747959634d8931e9727152c3457264b9cc99788042229"
+          },
+          "sourceSha256": "c2afb5d4499ff44475b57f09853c1d64d2d22b39bdab71b97f42e801ef605553"
+        }
+      ],
+      "stages": [
+        {
+          "path": "work/reconstruction-r02/reference-adult-donor-groom-r11.donor-fit.json",
+          "bytes": 15025,
+          "sha256": "17d964dc14b0efadb029d06dd9d0ced30488e97a7fa54b31ccc75fb445a708bc"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-eye-proportion-r11.json",
+          "bytes": 22422,
+          "sha256": "ebe9eb4ebb65af136d9d482c9b3297878ea01bb5d0a4ecb38b7ba15566e02e6a"
+        }
+      ],
+      "lashOpticsDiagnostic": {
+        "path": "previews/reconstruction-r02/lash-reflection-r11/report.json",
+        "bytes": 1174,
+        "sha256": "2cce329e9c7b45488a11d9f65b673bd34d026b5d056670277caabac5c30524f2"
+      },
+      "visibleDecision": {
+        "donor": "Retain genuine layered author groom as foundation; currently loose short hair, not reference bangs or twin-tail styling. Float ties and dark temple block remain.",
+        "eyes": "24.6 mm eyes and coherent orbital deformation actually saved and observed. New proportion beauty images pending. Small outer-corner deep-socket diagnostic remains, not declared seamless.",
+        "lowerFace": "Previous retry failed protected-surface displacement validation, no shortened-face candidate saved at time of this record. Diagnostic retry running.",
+        "lashes": "128-sample single-eye diagnostics show black fibres at roughness .5; .85 produced no material visible benefit. Retain .5. Full-face readability and comb-like style still unfinished.",
+        "neck": "Actual current/rest seam probe completed. Width, posterior seam and material continuity still under repair.",
+        "appearanceAccepted": false,
+        "photorealisticReady": false
+      },
+      "masterChanged": false,
+      "formalExportsChanged": false,
+      "master": {
+        "path": "work/character.blend",
+        "bytes": 162979650,
+        "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+      },
+      "limitations": [
+        "No installed/verified new blink or gaze yet.",
+        "No new accepted continuous motion, physics, runtime output, or off-machine backup.",
+        "Generated design references are not Blender evidence; actual image model is not exposed."
+      ]
+    },
+    "lowerFaceProgress": {
+      "recordedAt": "2026-10-29T03:09:30.575065+00:00",
+      "latestIndependentCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-lower-face-r11.blend",
+        "bytes": 250129225,
+        "sha256": "9fc66ef37f9fbda70cb5260dfc81344b43da7ff6888e7a31372c425cf484a379"
+      },
+      "actualViews": [
+        {
+          "case": "structure-front",
+          "sourceSha256": "9fc66ef37f9fbda70cb5260dfc81344b43da7ff6888e7a31372c425cf484a379",
+          "image": {
+            "path": "previews/reconstruction-r02/adult-proportions-r11/structure-front.png",
+            "bytes": 1066997,
+            "sha256": "c79772e9aea4634bb32ae736a052aeeabb62d66c057499398ce03be639f77c33"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-proportions-r11/structure-front.json",
+            "bytes": 5024,
+            "sha256": "2502af0838d083d48154e540a0b52a76c2b34b51d982bbd6d5f78f998bd237ec"
+          }
+        },
+        {
+          "case": "structure-quarter",
+          "sourceSha256": "9fc66ef37f9fbda70cb5260dfc81344b43da7ff6888e7a31372c425cf484a379",
+          "image": {
+            "path": "previews/reconstruction-r02/adult-proportions-r11/structure-quarter.png",
+            "bytes": 1070917,
+            "sha256": "5192ab8bd9ba6f6c2b0001fc508b61a1f8323ff63f6059809cb41ca9025f0db5"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-proportions-r11/structure-quarter.json",
+            "bytes": 5118,
+            "sha256": "2539e12444d1956a2aeb5130d622039a5fbc4086fc8f563f76165ffe94fddb4d"
+          }
+        },
+        {
+          "case": "structure-side",
+          "sourceSha256": "9fc66ef37f9fbda70cb5260dfc81344b43da7ff6888e7a31372c425cf484a379",
+          "image": {
+            "path": "previews/reconstruction-r02/adult-proportions-r11/structure-side.png",
+            "bytes": 1035902,
+            "sha256": "93cbcf7d3373064b880b39ad7ef9ec27343d1738b6fdab9208cad8bcb4eaa0fb"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-proportions-r11/structure-side.json",
+            "bytes": 5073,
+            "sha256": "f72d1acb0edcec892fde15173a83db0f82b7b0392b40fe372b6b0685e925ffdb"
+          }
+        }
+      ],
+      "actualStage": {
+        "path": "work/reconstruction-r02/reference-adult-lower-face-r11.lower-face.json",
+        "bytes": 30344,
+        "sha256": "f875f0d49e9752206a6838ae7d5c8fa0088ea37f575a20128876ea9a67979f8c"
+      },
+      "visibleDecision": {
+        "retain": "Lower-face shortening visibly reduces excessive chin length; retain for further reconstruction.",
+        "pending": "Nose remains projected/angular, upper lip and mouth corners insufficiently soft, brows/lashes pale, eye expression stiff. Neck width/seams and reference hairstyle remain unfinished.",
+        "appearanceAccepted": false,
+        "photorealisticReady": false
+      },
+      "generatedExpressionReference": [
+        {
+          "path": "references/generated/realistic-character-expression-board-r11.png",
+          "bytes": 2284726,
+          "sha256": "44bf9c2b2cce9255f2d58189cd9caaeb01e944455a3f65fd78288158b5fdd8cd"
+        },
+        {
+          "path": "references/generated/realistic-character-expression-board-r11.json",
+          "bytes": 5025,
+          "sha256": "186d80e860bb78575fa0440dfd52a65d2fa685694a3bf9766bbc16653d4878a5"
+        }
+      ],
+      "generatedReferenceScope": "Concept/reference only; not actual Blender or physical contact evidence. Actual generation model not exposed.",
+      "master": {
+        "path": "work/character.blend",
+        "bytes": 162979650,
+        "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+      },
+      "masterChanged": false,
+      "formalExportsChanged": false,
+      "pendingExecution": "Narrow-neck, upper-neck bridge, upper lip and donor restyle v2 are being executed separately; this record does not claim they succeeded."
+    },
+    "staticAssemblyProgress": {
+      "recordedAt": "2026-10-29T03:34:13.088677+00:00",
+      "latestIndependentCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-upper-neck-seam-r11.blend",
+        "bytes": 228353627,
+        "sha256": "491b6c85c9c5261e619bba14a5b622bd09dc237d52eb2474d26509f0eb5ba707"
+      },
+      "lastFaceCandidateBeforeRejectedGroom": {
+        "path": "work/reconstruction-r02/reference-adult-brow-finish-r11.blend",
+        "bytes": 226458081,
+        "sha256": "d4e5facee0721371ddfdf8762489d07ffd6b94120fca6058e753e4ea44d8f5c0"
+      },
+      "groomAppearanceRejectedCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-c-tails-r11.blend",
+        "bytes": 228425647,
+        "sha256": "c55bcc610afaf65b8068b5ccadb7b7351b50fe79d89c7a73e4b87fdce48bd25e"
+      },
+      "actualGroomViews": [
+        {
+          "image": {
+            "path": "previews/reconstruction-r02/adult-style-combined-r11/groom-front.png",
+            "bytes": 1445690,
+            "sha256": "31a87de95ea0f4d80afb86d730ccce698c89e18d1d1125b91b096410f3ccf7fd"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-style-combined-r11/groom-front.json",
+            "bytes": 4799,
+            "sha256": "024e6afeecead850836d9eacd7d20bebdcfa13fbb518252a9cf078222e047b45"
+          },
+          "sourceSha256": "c55bcc610afaf65b8068b5ccadb7b7351b50fe79d89c7a73e4b87fdce48bd25e"
+        },
+        {
+          "image": {
+            "path": "previews/reconstruction-r02/adult-style-combined-r11/groom-quarter.png",
+            "bytes": 1478154,
+            "sha256": "8422f4ff63c0627c9aee384c3e711baef87d4b8e7451f53b8e8cadacfdf94944"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-style-combined-r11/groom-quarter.json",
+            "bytes": 4892,
+            "sha256": "f1497a3100c167bab1ad9c13e25ac5591b5dd0e381c55711135c9c8fe8a5518a"
+          },
+          "sourceSha256": "c55bcc610afaf65b8068b5ccadb7b7351b50fe79d89c7a73e4b87fdce48bd25e"
+        },
+        {
+          "image": {
+            "path": "previews/reconstruction-r02/adult-style-combined-r11/groom-side.png",
+            "bytes": 1398191,
+            "sha256": "21778aa688b583aadb0275472b0ecf054525b2f9e55e1cc9c5bb5b675008c9d5"
+          },
+          "report": {
+            "path": "previews/reconstruction-r02/adult-style-combined-r11/groom-side.json",
+            "bytes": 4848,
+            "sha256": "190716dd4c568bced04c72fd2fdb465f96621d6d6ceed6715d49d5323aad26fc"
+          },
+          "sourceSha256": "c55bcc610afaf65b8068b5ccadb7b7351b50fe79d89c7a73e4b87fdce48bd25e"
+        }
+      ],
+      "actualStages": [
+        {
+          "path": "work/reconstruction-r02/reference-adult-neck-proportion-r11.neck-continuity.json",
+          "bytes": 283707,
+          "sha256": "5f18182183eb7e4396631ecba8f2fbad08847fa0b780521ff74f4c18c5e2b187"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-upper-lip-r11.upper-lip.json",
+          "bytes": 28607,
+          "sha256": "cba28aec5ac60742614f41568503b43d0908c58c52a6b406e2546f04063a976d"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-soft-nose-r11.nose-contour.json",
+          "bytes": 21745,
+          "sha256": "fdd2f2a6d7fa6135fa4134b9ef0534b723e21eede15559fbe84365289cb619e4"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-brow-finish-r11.brow-finish.json",
+          "bytes": 12925,
+          "sha256": "452858c06dee0370608f02522b6645c7768c573952c884377a6ff04258f42877"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-donor-restyle-v2-r11.donor-restyle.json",
+          "bytes": 290558,
+          "sha256": "2d62be613e4697939f61072abfe3cf8d71495282bfff5c44fbb5cafcf52fd522"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-c-tails-r11.tail-shape.json",
+          "bytes": 46999,
+          "sha256": "716870ebe9f78b02e12f99de8dc75476090fff42c9032907f8807551bc6280ab"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-upper-neck-seam-r11.upper-neck-seam.json",
+          "bytes": 30080,
+          "sha256": "80a2ed22753150cf8bcf88daab73519ad453cc7da4b28152ef37d724f758bf74"
+        }
+      ],
+      "actualGroomDiagnostic": [
+        {
+          "path": "work/reconstruction-r02/donor-gn-stages-r11.json",
+          "bytes": 84057,
+          "sha256": "057505808ddbfb3e7f4ddf6dfd7c688c275185f5eb2f05fcadb3ae658a11782e"
+        },
+        {
+          "path": "work/reconstruction-r02/donor-gn-stages-r11.npz",
+          "bytes": 19376267,
+          "sha256": "2468abee011b869dd1ca8c0bf12e5b488881b1a775288555eae9d53acbfdad52"
+        }
+      ],
+      "visibleDecision": {
+        "groom": "REJECTED: forehead scalp exposure, tangled/upright fringe, radiating needles near ties, oversized posterior volume and dense temple blocks.",
+        "face": "Shorter lower face retained for continued work; upper lip/nose/brow changes actually saved and seen in combined views, but natural expression and photoreal appearance remain unfinished.",
+        "neck": "Narrowed geometry saved. New 2592-vertex upper seam bridge saved after explicit sharp/custom-normal attribute handling; no actual image of this latest bridge yet. Lower seam and neck skinning remain pending.",
+        "tails": "Shorter curved tails saved; entire tips still need full-frame review. Old native motion deliberately retired; new dynamics unbaked.",
+        "appearanceAccepted": false,
+        "photorealisticReady": false
+      },
+      "blink": "First install refused outdated c2 eye-region observation after nasal sculpting; no blink candidate saved. New current-shape observation/installation is running separately.",
+      "master": {
+        "path": "work/character.blend",
+        "bytes": 162979650,
+        "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+      },
+      "masterChanged": false,
+      "formalExportsChanged": false,
+      "limits": [
+        "Latest source contains rejected groom for active repair, not an adopted delivery.",
+        "Old motion/runtime reports do not validate the new head, groom, bridge or tails.",
+        "Interactive Blender is currently running a separate 9fc lower-face preview; root has not overwritten its session.",
+        "No new off-machine backup or full-project freeze."
+      ]
+    },
+    "performanceProgress": {
+      "recordedAt": "2026-10-29T04:11:58.457617+00:00",
+      "latestIndependentCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-natural-smile-r11.blend",
+        "bytes": 228641213,
+        "sha256": "b0c7089ca09022bd59ae6b1068b68f78f46629ad87722f60ef54df5aa0858447"
+      },
+      "blinkCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-blink-r11.blend",
+        "bytes": 228619273,
+        "sha256": "28250e7948afa3f8a9fc7e29caef8034a1a97f4e17b926b984e42cf5307fe1dc"
+      },
+      "reports": [
+        {
+          "path": "work/reconstruction-r02/reference-adult-blink-r11.blink.json",
+          "bytes": 82922,
+          "sha256": "7048eeb028677af7c9a3fd806c84b1e2edc6f410227e38704502b2c2df61ffda"
+        },
+        {
+          "path": "work/reconstruction-r02/reference-adult-natural-smile-r11.natural-smile.json",
+          "bytes": 101297,
+          "sha256": "fe87af800edc88fb828b82c4bbcd63f2297a7627e0d959d703505139b7a87c4a"
+        },
+        {
+          "path": "work/reconstruction-r02/fibre-parity-reference-change-r11.json",
+          "bytes": 1875,
+          "sha256": "e141d8d309a525f9da45256db00280852781bb1f9ce8b52f598c1abdff489d25"
+        }
+      ],
+      "actualClosedEyeReview": {
+        "image": {
+          "path": "previews/reconstruction-r02/blink-closure-diagnostic-r11/frame-0001.png",
+          "bytes": 629629,
+          "sha256": "89f0d417d26fa0154a8490224e94b65d8244f6b93de59e5212a85078cbaad13d"
+        },
+        "report": {
+          "path": "previews/reconstruction-r02/blink-closure-diagnostic-r11/render-report.json",
+          "bytes": 13424,
+          "sha256": "e5ef6da5953984a95599b53387e815f78bd074ace99e9d2f3a1505913ff20469"
+        },
+        "decision": "REJECTED closure: clear sclera gaps at both corners, exaggerated U-shaped upper lid and thick lid contour. The center closes. Corrective geometry is prepared but not established by this report."
+      },
+      "actualFindings": {
+        "fibreBinding": "Stepwise float32 reference using actual GN input passes unchanged 2-micron tolerance; older double-reference discrepancy retained in reports. This validates transport, not lid contact.",
+        "smile": "Saved at zero with measured cheek/lower-lid movement. Full smile appearance pending; local lip-section crossing still requires signed-depth diagnosis.",
+        "groomV4": "Rejected before save: big/small clumps select 488/145 cross-group guides and move roots about 8.97 mm. Role partition reduced head-contact maximum correction from 39.17 to 9.75 mm; no final point below -0.5 mm skin clearance. V5 is being executed separately.",
+        "collar": "First candidate rejected before save because left collar orientation folded. Independent continuous-displacement repair in progress.",
+        "wrist": "First candidate stopped before save because triangulation changed during pose comparison. V2 checks copied original polygon/loop topology separately from triangulation; not yet executed."
+      },
+      "master": {
+        "path": "work/character.blend",
+        "bytes": 162979650,
+        "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+      },
+      "masterChanged": false,
+      "formalExportsChanged": false,
+      "appearanceAccepted": false,
+      "photorealisticReady": false,
+      "limits": [
+        "No new motion or runtime acceptance.",
+        "No frozen or verified off-machine backup.",
+        "Generated references and lip-striation resource are not production render evidence."
+      ]
+    },
+    "groomClosureProgress": {
+      "recordedAt": "2026-10-29T04:34:31.805409+00:00",
+      "latestIndependentCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-neck-surface-r11.blend",
+        "bytes": 231496792,
+        "sha256": "43eef27aa61adaf8af5ba00faf73f9bdcc30d8ea5409d891ce5769dca4ce8ef6"
+      },
+      "hairCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-unified-hair-r11.blend",
+        "bytes": 231839721,
+        "sha256": "b8b858b59ada63947489cf64c3e970c819582c24ff8f06f1deee7382e70e3eb1"
+      },
+      "actualHairReview": {
+        "image": {
+          "path": "previews/reconstruction-r02/adult-full-groom-v5-r11/full-groom-front.png",
+          "bytes": 1936595,
+          "sha256": "35e20a866f5ba1052d0626c06f7d6f840f5ab31122a041a21375ee5e1953cbbe"
+        },
+        "report": {
+          "path": "previews/reconstruction-r02/adult-full-groom-v5-r11/full-groom-front.json",
+          "bytes": 11215,
+          "sha256": "043bb442c000e801bf5414655bbb390bbba867cff53760cfb485ba12eeaafcbe"
+        },
+        "decision": "REJECTED: exposed anterior crown, blunt brush-like fringe, thick side curtains and hard tail bends. Fewer tangles and unified tail/crown colour are improvements, not hairstyle acceptance."
+      },
+      "closureCandidate": {
+        "path": "work/reconstruction-r02/reference-adult-blink-closure-r11.blend",
+        "bytes": 231747584,
+        "sha256": "a4dffd574b64b008f9fc4c1fdf481c6a72c6df42e45e8c424de8b70b2ac69ac2"
+      },
+      "closureResidualAreaSquareMillimeters": {
+        "L": 5.188038144828768,
+        "R": 5.311566447745657
+      },
+      "closureAccepted": false,
+      "neckSurface": "Actual material continuity candidate saved; original head/body and bridge geometry preserved. Image review pending.",
+      "failedCandidates": {
+        "eyeDepthV1": "Rejected before mutation because current eye transform is not uniform scale; full-matrix v2 prepared.",
+        "roundedJawV1": "Rejected before save: protected region max 0.252210 mm, eye/ear max 0.002415 mm; exact domain diagnostic required."
+      },
+      "artDirection": {
+        "identityReference": "references/user-original-portrait-2026-10-28.png",
+        "priority": "Original user anime design is authoritative; generated realistic views are supporting references only.",
+        "hair": "Keep black low twin tails, original behind-ear ties, layered separated fringe and fine face-framing strands. Repair grooming without redesigning the hairstyle.",
+        "face": "Requested adult Japanese / East Asian woman appearance; follow the specific original gentle character, not a formula for ethnicity.",
+        "skin": "Natural Asian complexion, slightly fair with restrained makeup.",
+        "approvalRequiredForRoutineWork": false
+      },
+      "masterChanged": false,
+      "formalExportsChanged": false,
+      "appearanceAccepted": false,
+      "photorealisticReady": false
+    },
+    "artDirectionLatest": {
+      "identityReference": "references/user-original-portrait-2026-10-28.png",
+      "priority": "Original user anime design is authoritative; generated realistic views are supporting references only.",
+      "hair": "Keep black low twin tails, original behind-ear ties, layered separated fringe and fine face-framing strands. Repair grooming without redesigning the hairstyle.",
+      "face": "Requested adult Japanese / East Asian woman appearance; follow the specific original gentle character, not a formula for ethnicity.",
+      "skin": "Natural Asian complexion, slightly fair with restrained makeup.",
+      "approvalRequiredForRoutineWork": false,
+      "defaultExpression": "Natural relaxed resting face: attentive relaxed eyes, lips gently together, relaxed jaw, very slight friendly warmth. Mild closed-mouth smile is a subtle variation, not a forced permanent grin. Choose actual control strengths from production model renders.",
+      "defaultExpressionReference": "references/generated/natural-default-expression-reference-r11.png",
+      "defaultExpressionReferenceSha256": "f1e9a592db70989df2fe7e891d0bc157c4c48326653a5b066b76857d3339b6f2",
+      "defaultExpressionReferenceProvenance": "references/generated/natural-default-expression-reference-r11.json",
+      "imageGenerationRequestedModel": "image2.5 requested by user; built-in image_gen does not expose the actual model, so model is unverified."
+    },
+    "savedStageLedger": {
+      "warm-smile-with-rounded-jaw-and-collar": {
+        "recordedAt": "2026-10-29T04:58:19.432360+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-warm-smile-r11.blend",
+          "bytes": 231942792,
+          "sha256": "662054a7e58ea65ae575b99ad8b2c3257c6dfdd013296a1bcfc2f6cd63590e18"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/reference-adult-warm-smile-r11.warm-smile.json",
+            "bytes": 14651,
+            "sha256": "b68c157f9fd8ce77261f93a25463a603621ce3d186a1d566de4084bc66ccaac6"
+          },
+          {
+            "path": "work/reconstruction-r02/reference-adult-rounded-jaw-r11.jaw-taper.json",
+            "bytes": 15523,
+            "sha256": "053bbf18b7820bf8ed5cb9130f2c4f2db420a862849ce14369c3bd7ced139bff"
+          }
+        ],
+        "note": "Actual saved assembly: internal iris v2, partial blink corner closure, neck surface continuity, collar v2, rounded jaw v4 and new warm smile at zero. Warm smile renders pending. Groom remains rejected v5; v6 failed before save due 11 dense strands entering eye envelope. No delivery or appearance acceptance.",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "warm-smile-front-actual-review": {
+        "recordedAt": "2026-10-29T05:15:13.466432+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-warm-smile-r11.blend",
+          "bytes": 231942792,
+          "sha256": "662054a7e58ea65ae575b99ad8b2c3257c6dfdd013296a1bcfc2f6cd63590e18"
+        },
+        "reports": [
+          {
+            "path": "previews/reconstruction-r02/warm-smile-front-r11/render-report.json",
+            "bytes": 29223,
+            "sha256": "73a285e10af3420a0d1b9f954a0439c9b091b5eb7d5826a4b5031bbfce8c7e7c"
+          },
+          {
+            "path": "work/reconstruction-r02/adult-blink-corner-dependency-diff-r11.json",
+            "bytes": 13235,
+            "sha256": "a8cf178d2fea2badad377c6f24057f561583b5ed7eb4dc46e57215951cba3d65"
+          }
+        ],
+        "note": "Actually viewed front renders at warm smile 0, 0.5 and 1. Mouth-corner lift is visible at 1 and less downturned; neutral jaw contour and collar v2 are smoother, with prior collar facet-like colour blocks absent in front. Still synthetic/stiff eyelids and incomplete hairstyle; not photoreal/appearance accepted. Full blink corner v3 pending, actual dependency probe verifies all 13574 dependency points unchanged.",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "reference-fringe-v8-actual-saved": {
+        "recordedAt": "2026-10-29T05:28:09.949063+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-front-groom-v8-r11.blend",
+          "bytes": 233914977,
+          "sha256": "cf8fbec30e7cabb58ed31c2bd2cf0ba74abe0e3effcc162b1d3b94291cc6d59a"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/reference-adult-front-groom-v8-r11.groom-fringe-selection.json",
+            "bytes": 88629,
+            "sha256": "6ffdf1ad6f7fc9e8c6b08e0ee5409f9ff2ef502c127f3e77c8a72ca81e55d3e0"
+          }
+        ],
+        "note": "在662温柔笑/下颌/领片源上实际保存v8；26046根真实评估发丝的检查无错误，未选曲线与全部根部保护。继承v6外观仍有中央刘海厚、主要露额在左和左鬓上翘问题，须局部修形，不是外观通过。v3眼角安装在实际重三角化检查停止，尚未装入本源。主源和正式交付不变。",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "late-blink-corner-v4-actual-saved": {
+        "recordedAt": "2026-10-29T05:31:57.698001+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-blink-corner-r11-v4.blend",
+          "bytes": 233060060,
+          "sha256": "75853207647611ad8ccfb588c627e4a9d3aa6c54aeb83a7b2d12662554ec3805"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/reference-adult-blink-corner-r11-v4.blink-corner.json",
+            "bytes": 39928,
+            "sha256": "a76dfd87f098794831448d274588f34966174746c846b6fcf1dc18bc921deaa1"
+          },
+          {
+            "path": "work/reconstruction-r02/reference-adult-blink-corner-r11-v4.topology.json",
+            "bytes": 3049,
+            "sha256": "cabed6f57f3e83186c932a9fc19ce7daee104874bf89713640dc59a0e69696b6"
+          }
+        ],
+        "note": "v8源上实际保存眼角末段局部GN修复。真实面/角点/边索引完全不变；full闭眼26个三角行重选对角线已记录。双眼front-visible采样=0，局部自交0，修正域实际眼球径向间距约20µm，中性整头和眉睫保持；仍需两张近景和笑眨眼组合，不等于全动作/眼睑外观通过。",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "upper-lid-outer-relief-actual-saved": {
+        "recordedAt": "2026-10-29T05:45:12.639828+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-upper-lid-relief-r11.blend",
+          "bytes": 232893627,
+          "sha256": "41ce34d8a6f52e59b29ea40c80e33758359fbffb9ca7c217c1c29be6ee8122e8"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/reference-adult-upper-lid-relief-r11.upper-lid-relief.json",
+            "bytes": 932122,
+            "sha256": "5d42030198d1fcc1cefcffc322aaafcc9a0dd9e869a91967f834032c6f0cf71d"
+          }
+        ],
+        "note": "在758闭眼/v8源上实际保存外睑局部0.30mm平滑内收；.4眨眼最大0.15mm，.8/.9/1全头坐标精确不变。保护实际眼缘/角端/贴球层，原keys/绑定保留；新的中性及半闭外观尚未看图。未写主源。",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "restrained-brow-radius-actual-saved": {
+        "recordedAt": "2026-10-29T05:53:40.390162+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-brow-radius-r11.blend",
+          "bytes": 232758931,
+          "sha256": "9497a254935e484b3e0d454a063080eb7071e3ee807ed3f99d743f51cca9f64e"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/reference-adult-brow-radius-r11.brow-radius.json",
+            "bytes": 89504,
+            "sha256": "132d353acf80d8b05fec12b56ebc153c34d5425499c28bae598e6d543bb8c840"
+          },
+          {
+            "path": "previews/reconstruction-r02/neutral-lighting-ab-r11-v2-front/lighting-comparison.json",
+            "bytes": 114990,
+            "sha256": "d57004d07915cfa7381bb5fafd18a28e7fadfe0dc7b9e1832cba98e1578d4448"
+          }
+        ],
+        "note": "两张真实眉睫对照已查看，仅采用眉半径1.5倍，原数据和旧绑定记录保留。睫毛1.35/1.15加粗仍发白，明确不采用；新源仍保持原睫毛。41ce灯光A/B已完成并查看：原光过平，新neutral过硬且发丝层次低，尚未采用新灯光；脸形/皮肤仍需制作。",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "original-fringe-local-v9c-actual-saved": {
+        "recordedAt": "2026-10-29T05:55:12.605674+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-front-groom-v9c-r11.blend",
+          "bytes": 235134876,
+          "sha256": "f501fc1f4c1004bd265fb3df20c63029f6a003764fedf5f0c0528bcf7bcf93e4"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/reference-adult-front-groom-v9c-r11.groom-fringe-local.json",
+            "bytes": 1611545,
+            "sha256": "9b503f573434f1208696bfecdc4111f7e351982c82034f2cc1deb0704a207d90"
+          },
+          {
+            "path": "work/reconstruction-r02/fringe-v9-contract-transitions-r11.json",
+            "bytes": 1066583,
+            "sha256": "ec080027ff088acac8ab8f6d0f93dfb7649031535d8b6f84a9d5cf68045544ba"
+          }
+        ],
+        "note": "9497新眉源上成功局部修刘海98 guides，中央宽细分束、露额方向和左鬓轮廓调整，双尾/发圈/全脸/既有闭眼/上睑字段保留。前一版本失败已用真实probe确认为POSE与REST的骨父对象matrixLocal比较；恢复原姿态差异为空。v9c同姿态保护与26,046实际密集发丝检查通过，完整头部新图正在生成，尚未外观采用。",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "natural-skin-v2-actual-and-combined-review": {
+        "recordedAt": "2026-10-29T06:28:20.558791+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-natural-skin-refinement-r11.blend",
+          "bytes": 233661254,
+          "sha256": "9257f2e5db33e57b22883a5099356d48b43620f6fe6eb023af8884a20abaa732"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/reference-adult-natural-skin-refinement-r11.skin-refinement.json",
+            "bytes": 19926,
+            "sha256": "8801585d3e9e8ff30c2cc7619edd082a64ad4745e177bdb9ae3061f3577b27e7"
+          },
+          {
+            "path": "previews/reconstruction-r02/adult-combined-portrait-r11-v1/combined-portrait-front.json",
+            "bytes": 146393,
+            "sha256": "c4be42d3662521466966a14234001d6e6952edca01c68ebd6f31470371f3c4e8"
+          }
+        ],
+        "note": "自然肤色/局部粗糙度/柔和玫瑰唇已实际保存，真实432点颈接缝输入不变；旧v1因不存在Subsurface IOR参数停止，v2仅准确记录实际接口。800x933组合图已查看，包含临时balanced灯和warm.6同变，不能单归材质。肤色/唇色可暂保留继续，脸形/睫毛/黑发层次仍不合格；balanced灯未保存为源灯光。当前下唇连续形体、手腕真实L1整合及新前发/睫毛仍在制作。",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "lower-face-continuity-actual-c4dc": {
+        "recordedAt": "2026-10-29T06:49:22.210894+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-lower-face-continuity-r11.blend",
+          "bytes": 233282980,
+          "sha256": "c4dc5c9112e439f71f4287ed9b739882151977acba176e89f041ecc474de5707"
+        },
+        "reports": [],
+        "note": "Actual lower-lip/mentolabial continuity install passed neutral and smile guards; mouth opening, oral interior, eye ROI, neck boundary unchanged. Quarter A/B appearance review pending. Main and formal exports unchanged.",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "lower-face-quarter-appearance-reset-284d": {
+        "recordedAt": "2026-10-29T07:06:05.408828+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-lower-face-review-reset-r11.blend",
+          "bytes": 232901823,
+          "sha256": "284d4151b03232ccaa3e4ba81005f7c7bbf5c95fbc0740713200693d0947f778"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/reference-adult-lower-face-review-reset-r11.json",
+            "bytes": 796,
+            "sha256": "460727081ce6a4aa18f8626960cb34f010895d646591387dc583f9ccccd01304"
+          },
+          {
+            "path": "previews/reconstruction-r02/lower-face-continuity-quarter-r11/render-report.json",
+            "bytes": 4873,
+            "sha256": "7eeef8a161038b0c8a0934efed9c8cf00321b6ae4855d8c89abb5ee8d30f69d2"
+          }
+        ],
+        "note": "Actual quarter A/B viewed by root. Strength-one continuity created a thin lip-root ridge and is rejected. Editable layer retained at zero in this successor; original c4dc preserved. Main/formal exports unchanged; overall appearance incomplete.",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "original-fringe-v10e-actual-saved": {
+        "recordedAt": "2026-10-29T07:15:19.920829+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-front-detail-v10e-r11.blend",
+          "bytes": 235784351,
+          "sha256": "8dea7f21c32923ca82f3be208e5ed5e362e31f45d4e215c18f44a7137f89a706"
+        },
+        "reports": [],
+        "note": "Actual 26046 dense curves passed; unchanged 23314 curves protected; guide88/94 interpolation influence verified from current actual source. Central native path checks passed. Lower-face rejected layer remains zero. Full front visual review pending; source not appearance accepted.",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "upper-lid-roll-actual-bd8e": {
+        "recordedAt": "2026-10-29T07:28:57.874009+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-upper-lid-roll-r11.blend",
+          "bytes": 233987074,
+          "sha256": "bd8e02b1510ec878c1fdc59761243506d11433d1404842b221d03ae8bd14a25a"
+        },
+        "reports": [],
+        "note": "Actual upper roll candidate saved after eight finite neutral/blink/warm states; max .638652mm, blink .5 and later exact. New outer-end shape not included. Visual review pending, no main update or formal acceptance.",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "lower-face-continuity-v2-actual-31df": {
+        "recordedAt": "2026-10-29T07:33:21.251163+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-lower-face-continuity-v2-r11.blend",
+          "bytes": 233394060,
+          "sha256": "31df467c65168468b2a246e169e165a3f3e870bcb0eccabac8d0377c565c8b4b"
+        },
+        "reports": [],
+        "note": "Actual full-profile lower-face v2 saved on bd8e upper-roll source; original rejected v1 remains zero. Neutral/.5/1 warm and protected domains pass; max1.457mm. Actual visual A/B pending, neutral lip opening remains separate unresolved issue.",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "eye-mouth-local-visual-reviewed-31df": {
+        "recordedAt": "2026-10-29T07:52:36.542912+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-lower-face-continuity-v2-r11.blend",
+          "bytes": 233394060,
+          "sha256": "31df467c65168468b2a246e169e165a3f3e870bcb0eccabac8d0377c565c8b4b"
+        },
+        "reports": [
+          {
+            "path": "previews/reconstruction-r02/upper-lid-roll-eyes-r11/render-report.json",
+            "bytes": 22354,
+            "sha256": "1ce3a10be8fe93cbbbcd51f41d466a1937f634f11c4450899a113d833a8cd5fc"
+          },
+          {
+            "path": "previews/reconstruction-r02/lower-face-continuity-v2-quarter-r11/render-report.json",
+            "bytes": 4876,
+            "sha256": "2e0aa3b9f56968e481059cd160c3d8f19e319f2479322a2b17773ff502bbeb49"
+          },
+          {
+            "path": "references/generated/natural-default-expression-reference-r11.json",
+            "bytes": 3437,
+            "sha256": "29db3402140385292f0eba8ab102317456d3aa349ef096adee4a522b6be4af5e"
+          }
+        ],
+        "note": "Root and face agent viewed actual same-source eye0/1 and mouth-quarter0/1. Roll reduces outer puffiness but blunt canthi/dark recesses and old upright lashes unresolved. Mouth v2 removes v1 thin ridge and improves continuity; retain as partial progress, real front lip gap remains. New generated natural-rest board is direction only, not production render. Overall appearance not accepted.",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "refined-hands-v6-3d14": {
+        "recordedAt": "2026-10-29T08:26:50.031456+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-refined-hands-r11-v6.blend",
+          "bytes": 233648786,
+          "sha256": "3d14a1adc5217d16d74a8aa3ace68547b773fe8b4b93485de7127344bf3e11fc"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/refined-hand-integrate-r11-v6.log",
+            "bytes": 3953,
+            "sha256": "979d5d065f6e4af4c8d34f8bf4ce323e50bdf416056111e85b628184d95ac69c"
+          }
+        ],
+        "note": "实际静置、屈腕、伸腕三姿态两侧连续表面交叉与接触均0，手腕连接候选已保存；外观尚待近景，主源与正式导出未更新。",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "radial-outer-eye-v2-bc96": {
+        "recordedAt": "2026-10-29T08:36:44.039070+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-outer-eye-radial-r11-v2.blend",
+          "bytes": 233895359,
+          "sha256": "bc96db152f846e2caba56b711ff2bb16573a0c417a18601847d6d01f24202b84"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/outer-eye-radial-install-r11-v2.log",
+            "bytes": 1705,
+            "sha256": "49da3c21fe5dd4915233af69f858de1ec7818d978810013f377eed5bb7af9f44"
+          }
+        ],
+        "note": "实际九态原生外眼角修形检查完成并保存，静态外观待同机位AB；早段闭合和内衬需新观察重建，不是眨眼完整验收。继承手v6，主源未更新。",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "outer-eye-rejected-and-reset-5f30": {
+        "recordedAt": "2026-10-29T08:43:17.570232+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-outer-eye-review-reset-r11.blend",
+          "bytes": 233894899,
+          "sha256": "5f30122cf574029b53682d9d690b94aea5e3e12f343fc8b5b63bacca6d8a1d72"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/reference-adult-outer-eye-review-reset-r11.json",
+            "bytes": 806,
+            "sha256": "2c3523f1de225c4af22846926576a97529ce15179003aee9b83e7d19190c6558"
+          },
+          {
+            "path": "previews/reconstruction-r02/outer-eye-radial-eyes-r11-v2/render-report.json",
+            "bytes": 27334,
+            "sha256": "5413006cb9ba68da15b41e3920a34528f2263af392e00df0801424723819fe89"
+          }
+        ],
+        "note": "同机位眼图拒绝radial强度1新增外侧皮肤折板和纵向沟；只将该Key1复位0，保留可编辑层、新手和其他修形。旧眼角仍待改，不是外观通过。",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "relaxed-lip-seal-v2-29e3": {
+        "recordedAt": "2026-10-29T08:52:16.911459+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-relaxed-lip-seal-r11.blend",
+          "bytes": 233986070,
+          "sha256": "29e3e6b59a08487643d28642975a6ab1f92ca4af830f484af291f25434e08df8"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/reference-adult-relaxed-lip-seal-r11.relaxed-lip-seal.json",
+            "bytes": 1517317,
+            "sha256": "11fab7008de62971ac3cc314243d99fe82f07ff0e719c73baa7ca34266f0bca6"
+          }
+        ],
+        "note": "自然闭口候选实际五个中间/满强度与warm组合完成，旧口角真实穿入仍保留，整体外观待正面/quarter实图裁决。outer眼角拒绝层默认0，其他当前成果保留；非完整口腔/交付验收。",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "natural-rest-whole-face-review-29e3": {
+        "recordedAt": "2026-10-29T09:06:52.571547+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-relaxed-lip-seal-r11.blend",
+          "bytes": 233986070,
+          "sha256": "29e3e6b59a08487643d28642975a6ab1f92ca4af830f484af291f25434e08df8"
+        },
+        "reports": [
+          {
+            "path": "previews/reconstruction-r02/natural-rest-overall-r11/render-report.json",
+            "bytes": 24057,
+            "sha256": "abddfc3203344799494a9e7ad67f5a9b793dfdc465845ab884234b5fae27fb84"
+          },
+          {
+            "path": "previews/reconstruction-r02/natural-rest-slight-warm-r11/render-report.json",
+            "bytes": 24185,
+            "sha256": "cfda3503ca1db2cb3b635571cf4f66b31994d51a7c2150b6de27912459fbf366"
+          }
+        ],
+        "note": "整合者已实看warm0和.2的正面/quarter四图：闭口局部改善，整体木然、下半脸/鼻底/颈观感未达到参考目标；不选定默认微笑，不宣称外观通过。转入实际整体比例和姿态诊断，眼角全多态链暂缓。",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "reference-tie-v3-0df7": {
+        "recordedAt": "2026-10-29T09:44:03.341401+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-reference-ties-v3-r11.blend",
+          "bytes": 246814066,
+          "sha256": "0df7249b6d9ec4e3e3021d606dfd006d0baf5d9eb81b406bb1b86ccb50a4917e"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/reference-adult-reference-ties-v3-r11.tie-transport.json",
+            "bytes": 897124,
+            "sha256": "cd5bbbb3eda9012e9763e7fe1bfd43e605e380a853b46f4e608a19fc820c6992"
+          }
+        ],
+        "note": "原图低双马尾扎位与gather重连实际v3完成；25曲线局部修弯、5条已证明旧入肤的p1/p2例外及2条幅度例外逐点记录。当前native/原门槛全部通过，外观和动态未验收；冠缝/松圈未修。继承29e3闭口，新eye拒绝层仍0。",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      },
+      "reference-fitted-bands-8fd8": {
+        "recordedAt": "2026-10-29T10:31:41.285756+00:00",
+        "source": {
+          "path": "work/reconstruction-r02/reference-adult-fitted-bands-r11.blend",
+          "bytes": 244742365,
+          "sha256": "8fd87255aa7576eeaa486cad396773350b608b27b5e57914332165afa67eb2d9"
+        },
+        "reports": [
+          {
+            "path": "work/reconstruction-r02/reference-adult-fitted-bands-r11.band-fit.json",
+            "bytes": 15886,
+            "sha256": "64177eec01588d1bee81afb175816cc9842d2346d2de4ded8b071c7c2c1d1929"
+          },
+          {
+            "path": "work/reconstruction-r02/reference-current-band-native-proof-r11.json",
+            "bytes": 34179,
+            "sha256": "1c4678b4ed8f55fe64a4a98d5c2404d70ee57f68d6bce4ddb464fa9fa0d1d429"
+          },
+          {
+            "path": "work/reconstruction-r02/reference-post-tie-actual-r11.json",
+            "bytes": 104231,
+            "sha256": "7fe2beefe2f82484b2557cc8361f6b33e36fbeb8bc7768abf5e39e24a6ea5cc2"
+          }
+        ],
+        "note": "Four hair bands fitted to actual current native tail and gather envelope. Current proof and installation passed. Appearance not yet reviewed; future tail or gather changes require revalidation. Master and formal exports unchanged.",
+        "appearanceAccepted": false,
+        "formalDelivery": false,
+        "masterUpdated": false
+      }
+    },
+    "stoppedHandoff": {
+      "recordedAt": "2026-10-29T10:44:58.115013+00:00",
+      "reason": "User requested immediate stop and delivery of existing work due to dissatisfaction.",
+      "source": {
+        "path": "work/reconstruction-r02/reference-adult-fitted-bands-r11.blend",
+        "bytes": 244742365,
+        "sha256": "8fd87255aa7576eeaa486cad396773350b608b27b5e57914332165afa67eb2d9"
+      },
+      "directory": "exports/stopped-handoff-2026-10-29",
+      "archive": "exports/stopped-handoff-2026-10-29.zip",
+      "masterUpdated": false,
+      "formalExportsUpdated": false,
+      "appearanceAccepted": false,
+      "productionContinued": false,
+      "notMerged": [
+        "relaxed mouth corners",
+        "new upper lashes",
+        "continuous outer-eye diagnostic",
+        "crown flow and 14 ear-side tips",
+        "nasal refinement",
+        "new leg/foot/sock/shoe candidates"
+      ]
+    },
+    "historicalOnly": true,
+    "scope": "Preserved stage record. All current/next/master references inside this block describe that historical stage, not the current working master or an instruction to resume."
+  },
+  "artDirectionLatest": {
+    "scope": "Hunyuan static anime rebuild",
+    "referenceAndLimitations": "../../Character_Rebuild/完成说明.txt",
+    "appearanceAccepted": false
+  },
+  "workingMasterHistory": [
+    {
+      "path": "work/character.blend",
+      "bytes": 162979650,
+      "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166",
+      "integratedFrom": {
+        "path": "work/reconstruction-r02/reference-production-refined-r09.blend",
+        "bytes": 162979646,
+        "sha256": "1c0b0210114170f0ce6e09b266b4a9ded58f29bf1df45a6e2be13e9b5c77aa72"
+      },
+      "savedAtSource": "2026-10-28T22:56:23.977350+00:00",
+      "actualSha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166",
+      "backupPath": "work/stage-backups/character-before-hunyuan-3d0e397a6ba0b874.blend",
+      "backupBytes": 162979650
+    }
+  ],
+  "preHunyuanExports": [
+    {
+      "path": "exports/avatar.blend",
+      "bytes": 57502979,
+      "sha256": "dcc12641026baf53579d072442c3139d1fdcef1e37452f1cc197347590c093f1"
+    },
+    {
+      "path": "exports/expression-review/avatar-preview.vrm",
+      "bytes": 76645100,
+      "sha256": "09c82321c484e5512607c9218b442bf998d5076be0d48db574970668e8617c99"
+    },
+    {
+      "path": "exports/expression-review/avatar-preview.glb",
+      "bytes": 75819164,
+      "sha256": "bc67ca334bfc62b860f412af03bae9eb60ac338e225b03aed694d2ede78ce9ef"
+    },
+    {
+      "path": "exports/expression-review/avatar-runtime.blend",
+      "bytes": 54493034,
+      "sha256": "9a3bfdcb54c93ed86d8ad80a3bb3615ef7f98988cf1fe25471daf5ea56f52a5a"
+    }
+  ],
+  "preHunyuanExportCorrespondence": {
+    "sourceSha256": "6e7361e7f5c306325d3f33c4c9f6f56b1a489d5f4579bb4be951d4c3d59cc8c1",
+    "verifiedAgainstCopiedManifest": true,
+    "sourceReport": "exports/avatar-source-report.json",
+    "exportReport": "exports/expression-review/avatar-export-report.json",
+    "runtimeSummary": "exports/expression-review/avatar-runtime-review-summary.json",
+    "runtimeSummaryReportHashesVerified": 12,
+    "motionFilesVerified": 4,
+    "currentDiagnostics": "exports/expression-review/",
+    "rootPreviewAliases": "exports/current-preview-aliases.json",
+    "otherRootDiagnosticReports": "historical",
+    "staleAgainstCurrentMaster": true,
+    "currentMasterSha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5"
+  },
+  "hunyuanStaticRebuild": {
+    "input": "../../character-hq-textured.glb",
+    "delivery": "../../Character_Rebuild/",
+    "currentInputSha256": "105b77790ff4b382b0ef83189827d774a596f4a8069cefdb8911ad85f93af3b2",
+    "statistics": {
+      "nodes": 47,
+      "meshes": 47,
+      "trianglesPerMeshDefinitions": 238527,
+      "trianglesAcrossMeshNodes": 238527,
+      "materials": 16,
+      "images": 5,
+      "textures": 5,
+      "skins": 0,
+      "animations": 0,
+      "containsSkeleton": false,
+      "allImagesEmbedded": true,
+      "cameraNodes": 0,
+      "lightNodes": 0
+    },
+    "originalAndStagesPreserved": true,
+    "noRig": true,
+    "previousR11Work": "Stopped and superseded; no R11 geometry reused",
+    "appearanceAcceptedByUser": false,
+    "remainingLimitations": "Face expression, strand roots/tips and fine garment folds remain simplified relative to the original art.",
+    "migrationManifestStatus": "Older migration manifest is historical; not a frozen manifest of this new workspace state",
+    "offMachineBackup": false
+  },
+  "interactiveMotionPreview": {
+    "createdAt": "2026-10-29T23:22:07.124Z",
+    "sourceStaticSha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5",
+    "blend": {
+      "path": "../../Character_Rebuild/interactive/rigged-preview.blend",
+      "sha256": "fee63d90b281373b56e453af4e0402126aef635105a17bca88f7893e8e073738"
+    },
+    "glb": {
+      "path": "../../Character_Rebuild/interactive/animated-preview.glb",
+      "sha256": "64febee7ea3285cc8f4ff91725fbc2df686daaaaf50e2508384abb8ddec40289"
+    },
+    "viewer": "../../Character_Rebuild/interactive/viewer.html",
+    "url": "http://127.0.0.1:52860/interactive/viewer.html",
+    "actions": [
+      {
+        "id": "idle",
+        "label": "自然站立",
+        "clip": "idle",
+        "duration": 4,
+        "loop": true
+      },
+      {
+        "id": "wave",
+        "label": "招手",
+        "clip": "wave",
+        "duration": 4.800000190734863,
+        "loop": false
+      },
+      {
+        "id": "look",
+        "label": "转头",
+        "clip": "look",
+        "duration": 6,
+        "loop": true
+      },
+      {
+        "id": "walk",
+        "label": "原地轻踏",
+        "clip": "walk",
+        "duration": 2.799999952316284,
+        "loop": true
+      }
+    ],
+    "bones": 22,
+    "skinCount": 1,
+    "blenderReimportVerified": true,
+    "browserVerified": true,
+    "staticMasterUnchanged": true,
+    "productionRig": false,
+    "clothAndHairPhysics": false,
+    "facialAndFingerControls": false,
+    "appearanceAcceptedByUser": false
+  },
+  "priorProductionSummary": {
+    "scope": "Historical top-level R09/R11 records before the Hunyuan static rebuild; not current instructions.",
+    "integratedChanges": [
+      "body_surface_clearance_refine",
+      "ear_orientation_refine",
+      "hair_front_fibres",
+      "hair_nape_finish"
+    ],
+    "candidatePreservation": {
+      "allCopied": true,
+      "unmergedCandidateAudit": "The final producer handoff confirms no required fixes remain unmerged. Historical checkpoints and candidates remain preserved."
+    },
+    "acceptance": {
+      "technicalChecks": "Fresh installed-master finite body/hair/cloth parity and exact-source dependency checks recorded; no appearance or runtime equivalence claim.",
+      "appearanceReviewedByUser": false,
+      "photorealisticClientDeliveryReady": false,
+      "authorMetadataFinalized": false
+    },
+    "knownLimitations": [
+      "R09 production master integrated; formal exports and old migration manifest remain historical.",
+      "Native CURVES/GN/embedded cloth playback are Blender-source features, not established VRM capabilities.",
+      "Checks are finite frames and dependency inventory, not full collision or continuous motion acceptance.",
+      "Final likeness/appearance, continuous video, runtime export/viewer and delivery package remain pending.",
+      "No new client acceptance, author/license determination, performance guarantee or off-machine backup is implied."
+    ],
+    "resume": [
+      "Restore this Git revision and all assets, then run assets verify before production writes.",
+      "Read docs/HANDOFF.md; finish_comprehensive_refinement.py and early generation/shape patches have already been applied and must not be blindly rerun.",
+      "Open work/character.blend with the pinned Blender/VRM Add-on environment; connect MCP and confirm the correct scene.",
+      "Use previews/motion-viewer.html via the workspace preview server for the current runtime model.",
+      "Continue the visual and performance issues recorded in exports/quality-assessment.json; do not regenerate Tripo candidates based on historical workflow stages."
+    ],
+    "currentExportsStatus": "Historical exports retained byte-for-byte; no new VRM/Blender export is certified for this R09 master.",
+    "currentUserDirection": {
+      "physicalBehaviour": "Actions and details must obey physical behaviour; inspect gravity, inertia, contact, joint volume and settling with actual motion.",
+      "skinAppearance": "Natural Asian/Japanese adult woman complexion with light makeup, optionally slightly fairer; preserve warm undertone, subtle blood colour and skin detail. Do not infer a fixed ethnic colour swatch.",
+      "approval": "User delegates routine and artistic decisions; do not wait for confirmations.",
+      "parallelWork": "Use all available subagent slots for independent edits; sole integrator controls master and serial heavy Blender jobs on current hardware."
+    },
+    "currentFaceDirection": {
+      "recordedAt": "2026-10-28T23:56:05.174445+00:00",
+      "userFeedback": "用户明确拒绝当前面部外观，认为与预期完全不同；要求精致、自然的日本女性面部。",
+      "faceAppearanceAccepted": false,
+      "priority": "Full adult feminine face structure reconstruction before further skin polish, continuous delivery rendering or runtime release.",
+      "designDirection": "Natural adult female anatomy and refined soft facial forms informed by the requested Japanese woman appearance; preserve original character identity cues without forcing enlarged round eyes or flattened nose. Do not imply one universal ethnic face geometry.",
+      "preserveRequirements": [
+        "Original black low twin tails and clothing design intent",
+        "Physically credible motion and details",
+        "Natural warm skin with subtle light makeup; slightly fair appearance permitted"
+      ],
+      "parallelism": {
+        "userRequestedSubagents": 10,
+        "availableConcurrentSubagents": 3,
+        "streams": [
+          "Face geometry reconstruction",
+          "Reusable mature female face asset research",
+          "Independent visible face review and proportion checks"
+        ],
+        "integrator": "Only root writes the working master and runs heavy Blender tasks serially."
+      },
+      "currentMaster": {
+        "path": "work/character.blend",
+        "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166"
+      },
+      "notDeliveryReady": true,
+      "retainedIndependentWork": {
+        "handCandidate": "work/reconstruction-r02/reference-asset-hands-r10-v2.blend",
+        "handSha256": "7f45d5a151c8b5efb61afda46d482d97dc60ed5774a988847d82cd6447dd9b4b",
+        "handStatus": "Actually saved and both dorsal stills rendered; no finger-flex, appearance adoption or master integration yet.",
+        "tailShapeHelper": "work/local-model/tail_shape_candidate_r10.py",
+        "tailStatus": "Offline continuity calculation only; not executed in Blender or adopted. Face takes priority.",
+        "skinStatus": "Actual current material observation completed; light-foundation helper remains unapplied until new face direction is established."
+      }
+    },
+    "artDirectionLatest": {
+      "generatedProfileReference": {
+        "path": "references/generated/natural-face-profile-reference-r11.png",
+        "sha256": "80d2dd47452ca2e4a65f125bee2f22c7a2379e616c18e0c33ba379acb274705d",
+        "provenance": "references/generated/natural-face-profile-reference-r11.json",
+        "purpose": "Supplementary adult face/profile and head-neck silhouette direction; original anime remains primary. Approximate generated views are not calibrated geometry.",
+        "productionModelRender": false,
+        "actualImageModelUnverified": true
+      },
+      "defaultExpressionEvaluation": "29e3 seal: whole front/quarter at warm0 and warm.2 actually reviewed. Narrower lip gap is partial progress; overall natural default is not selected. Global face and head-neck proportions require further work; no appearance acceptance."
+    }
+  }
 }

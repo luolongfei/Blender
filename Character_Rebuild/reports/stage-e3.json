@@ -1,0 +1,36 @@
+{
+  "hiddenScalpFit": {
+    "heightLowerBound": 0.845,
+    "method": "Actual crown inner-shell ray intersection from head interior; 3mm gap",
+    "movedVertices": 949,
+    "maxMove": 0.006950605415705425,
+    "faceEyeMouthUnchanged": true
+  },
+  "buttons": [
+    {
+      "name": "Blouse_Button_1",
+      "centre": [
+        0.0,
+        -0.11697398871183395,
+        0.5299999713897705
+      ]
+    },
+    {
+      "name": "Blouse_Button_2",
+      "centre": [
+        0.0,
+        -0.1807963103055954,
+        0.4350000023841858
+      ]
+    },
+    {
+      "name": "Blouse_Button_3",
+      "centre": [
+        0.0,
+        -0.16027216613292694,
+        0.3400000035762787
+      ]
+    }
+  ],
+  "neutralLighting": "Broad front fill reduced to 40W after rejecting overexposed 300W diagnostic"
+}

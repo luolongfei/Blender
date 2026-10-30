@@ -1,0 +1,22 @@
+{
+  "new_mesh_objects": [
+    "Head_Skin_Quad_Retopo",
+    "Neck_Clean_Quad_Sleeve",
+    "Eye_Sclera_L",
+    "Eye_Iris_L",
+    "Eye_UpperLash_L",
+    "Eye_Sclera_R",
+    "Eye_Iris_R",
+    "Eye_UpperLash_R",
+    "Brow_L",
+    "Brow_R",
+    "Mouth_Closed_Line"
+  ],
+  "vertices": 17612,
+  "polygons": 17354,
+  "quad_faces": 16872,
+  "neck_boundary": "intentionally open for body integration",
+  "saved_source": false,
+  "appearance_accepted": false,
+  "moduleSha256": "aa3f6d5b55b104f58ad58f4c350a5a2fe56e2ecb4e560ff3b6c5a3bc61821f31"
+}

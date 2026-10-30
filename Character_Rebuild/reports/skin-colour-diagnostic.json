@@ -1,0 +1,65 @@
+{
+  "images": [
+    {
+      "name": "Rebuilt_FaceSkin_BaseColor",
+      "source": "FILE",
+      "filepath": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\textures\\face-skin-2048.png",
+      "colorspace": "sRGB",
+      "pixel0": [
+        0.960784375667572,
+        0.803921639919281,
+        0.6901960968971252,
+        1.0
+      ],
+      "packed": true
+    }
+  ],
+  "materials": [
+    {
+      "name": "Rebuilt_skin",
+      "color": [
+        0.911407470703125,
+        0.6123368144035339,
+        0.4338795244693756,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.7200000286102295,
+      "baseLink": [
+        [
+          "Rebuilt Base Color Image",
+          "Color"
+        ]
+      ]
+    },
+    {
+      "name": "Rebuilt_skin_back",
+      "color": [
+        0.911407470703125,
+        0.6123368144035339,
+        0.4338795244693756,
+        1.0
+      ],
+      "metallic": 0.0,
+      "roughness": 0.7200000286102295,
+      "baseLink": []
+    }
+  ],
+  "expectedLinear": [
+    0.9114075004063535,
+    0.6123368275896991,
+    0.43387952044860834,
+    1.0
+  ],
+  "freshLoad": {
+    "name": "face-skin-2048.png",
+    "source": "FILE",
+    "colorspace": "sRGB",
+    "pixel0": [
+      0.960784375667572,
+      0.803921639919281,
+      0.6901960968971252,
+      1.0
+    ]
+  }
+}

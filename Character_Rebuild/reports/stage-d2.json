@@ -1,0 +1,202 @@
+{
+  "face": {
+    "new_mesh_objects": [
+      "Head_Skin_Quad_Retopo",
+      "Neck_Clean_Quad_Sleeve",
+      "Eye_Sclera_L",
+      "Eye_Iris_L",
+      "Eye_UpperLash_L",
+      "Eye_Sclera_R",
+      "Eye_Iris_R",
+      "Eye_UpperLash_R",
+      "Brow_L",
+      "Brow_R",
+      "Mouth_Closed_Line"
+    ],
+    "vertices": 17612,
+    "polygons": 17354,
+    "quad_faces": 16872,
+    "neck_boundary": "intentionally open for body integration",
+    "saved_source": false,
+    "appearance_accepted": false
+  },
+  "hands": [
+    {
+      "object": "Rebuilt_Hand_L",
+      "wrist_origin": [
+        0.746,
+        0.0365,
+        0.5475
+      ],
+      "frame": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "dimensions": {
+        "palm_length": 0.118,
+        "palm_width": 0.094,
+        "palm_depth": 0.034,
+        "wrist_width": 0.078,
+        "wrist_depth": 0.052,
+        "finger_lengths": [
+          0.094,
+          0.112,
+          0.124,
+          0.114
+        ],
+        "finger_widths": [
+          0.019,
+          0.022,
+          0.023,
+          0.0215
+        ],
+        "finger_depths": [
+          0.0165,
+          0.0185,
+          0.019,
+          0.0185
+        ],
+        "finger_splay": [
+          -0.018,
+          -0.006,
+          0.004,
+          0.014
+        ],
+        "thumb_length": 0.098,
+        "thumb_width": 0.0265,
+        "thumb_depth": 0.023,
+        "thumb_forward": 0.91,
+        "thumb_outward": 0.445,
+        "curl": 0.003,
+        "finger_root_offsets": [
+          -0.012,
+          -0.004,
+          0,
+          -0.002
+        ],
+        "thenar_pad": 0.003,
+        "hypothenar_pad": 0.002,
+        "palm_cup": 0.0008,
+        "dorsal_knuckle": 0.0014,
+        "finger_arch": 0.0015,
+        "fuller_finger_profile": true,
+        "thumb_base_flare": 0.2
+      },
+      "base_topology": {
+        "vertices": 750,
+        "faces": 768,
+        "quads": 728,
+        "triangles": 1496,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "components": 1,
+        "scope": "connectivity only; visual and self-intersection checks remain necessary"
+      },
+      "subdivision": 1,
+      "bones_added": false,
+      "requires_visual_validation": true
+    },
+    {
+      "object": "Rebuilt_Hand_R",
+      "wrist_origin": [
+        -0.746,
+        0.0365,
+        0.5475
+      ],
+      "frame": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "dimensions": {
+        "palm_length": 0.118,
+        "palm_width": 0.094,
+        "palm_depth": 0.034,
+        "wrist_width": 0.078,
+        "wrist_depth": 0.052,
+        "finger_lengths": [
+          0.094,
+          0.112,
+          0.124,
+          0.114
+        ],
+        "finger_widths": [
+          0.019,
+          0.022,
+          0.023,
+          0.0215
+        ],
+        "finger_depths": [
+          0.0165,
+          0.0185,
+          0.019,
+          0.0185
+        ],
+        "finger_splay": [
+          -0.018,
+          -0.006,
+          0.004,
+          0.014
+        ],
+        "thumb_length": 0.098,
+        "thumb_width": 0.0265,
+        "thumb_depth": 0.023,
+        "thumb_forward": 0.91,
+        "thumb_outward": 0.445,
+        "curl": 0.003,
+        "finger_root_offsets": [
+          -0.012,
+          -0.004,
+          0,
+          -0.002
+        ],
+        "thenar_pad": 0.003,
+        "hypothenar_pad": 0.002,
+        "palm_cup": 0.0008,
+        "dorsal_knuckle": 0.0014,
+        "finger_arch": 0.0015,
+        "fuller_finger_profile": true,
+        "thumb_base_flare": 0.2
+      },
+      "base_topology": {
+        "vertices": 750,
+        "faces": 768,
+        "quads": 728,
+        "triangles": 1496,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "components": 1,
+        "scope": "connectivity only; visual and self-intersection checks remain necessary"
+      },
+      "subdivision": 1,
+      "bones_added": false,
+      "requires_visual_validation": true
+    }
+  ],
+  "status": "Second geometry candidate, pending appearance review; back-yoke not integrated"
+}

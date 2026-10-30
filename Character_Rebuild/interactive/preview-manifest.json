@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-29T23:15:28.255Z",
+  "purpose": "Local interactive motion preview derived from E8 static rebuild",
+  "model": {
+    "url": "animated-preview.glb",
+    "sha256": "64febee7ea3285cc8f4ff91725fbc2df686daaaaf50e2508384abb8ddec40289",
+    "bytes": 18831996
+  },
+  "source": {
+    "url": "rigged-preview.blend",
+    "sha256": "fee63d90b281373b56e453af4e0402126aef635105a17bca88f7893e8e073738",
+    "bytes": 17579018
+  },
+  "downloads": {
+    "blend": "rigged-preview.blend"
+  },
+  "originalStaticSourceSha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5",
+  "actions": [
+    {
+      "id": "idle",
+      "label": "自然站立",
+      "clip": "idle",
+      "duration": 4,
+      "loop": true
+    },
+    {
+      "id": "wave",
+      "label": "招手",
+      "clip": "wave",
+      "duration": 4.800000190734863,
+      "loop": false
+    },
+    {
+      "id": "look",
+      "label": "转头",
+      "clip": "look",
+      "duration": 6,
+      "loop": true
+    },
+    {
+      "id": "walk",
+      "label": "原地轻踏",
+      "clip": "walk",
+      "duration": 2.799999952316284,
+      "loop": true
+    }
+  ],
+  "viewerNote": "基础骨骼动作预览。尚未制作面部表情、独立手指动作、头发和裙子的物理模拟。",
+  "appearanceAcceptedByUser": false,
+  "staticDeliveryPreserved": true
+}

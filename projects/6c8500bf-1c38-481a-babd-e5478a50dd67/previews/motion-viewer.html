@@ -8,7 +8,8 @@
 *{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--paper);font:13px -apple-system,BlinkMacSystemFont,"PingFang SC",sans-serif}
 button,input{font:inherit}button{cursor:pointer;color:inherit}button:disabled{opacity:.45;cursor:default}button:focus-visible,input:focus-visible{outline:2px solid var(--green);outline-offset:3px}
 header{height:84px;padding:21px 28px;display:flex;align-items:center;justify-content:space-between;gap:16px}h1{font-size:20px;margin:0 0 5px;font-weight:600}header p{margin:0;color:var(--muted);font-size:12px}#status{color:var(--muted);font-size:12px}
-main{height:calc(100svh - 105px);min-height:520px;margin:0 22px 21px;display:grid;grid-template-columns:minmax(0,1fr) 270px;grid-template-rows:minmax(0,1fr);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.version-banner{min-height:40px;margin:0 22px 12px;padding:10px 14px;border:1px solid #dfd3ac;border-radius:8px;background:#f7efd9;color:#66542f;font-size:12px;line-height:18px;display:flex;align-items:center;justify-content:space-between;gap:8px 18px;flex-wrap:wrap}.version-banner a{color:#405938;font-weight:600;text-underline-offset:3px}.version-banner a:focus-visible{outline:2px solid var(--green);outline-offset:3px}
+main{height:calc(100svh - 157px);min-height:520px;margin:0 22px 21px;display:grid;grid-template-columns:minmax(0,1fr) 270px;grid-template-rows:minmax(0,1fr);border:1px solid var(--line);border-radius:14px;overflow:hidden}
 #viewport{position:relative;min-width:0;min-height:0}canvas{position:absolute;inset:0;display:block;width:100%;height:100%;touch-action:none}
 aside{padding:24px 20px;border-left:1px solid var(--line);background:#fafaf6;overflow:auto}section+section{margin-top:26px}h2{font-size:12px;color:#737d6f;font-weight:500;margin:0 0 11px}
 .buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}button{border:1px solid var(--line);border-radius:7px;background:transparent;min-height:36px;padding:0 10px;font-size:12px}
@@ -20,12 +21,13 @@ label{display:flex;justify-content:space-between;margin-bottom:10px;font-size:12
 .note{font-size:11px;color:var(--muted);line-height:1.8;margin:11px 0 0}.stage-label{position:absolute;left:23px;top:20px;pointer-events:none}#motion-name{font-size:18px}#motion-detail{display:block;font-size:11px;color:var(--muted);margin-top:5px}
 .viewbar{position:absolute;bottom:24px;left:15px;right:15px;display:flex;justify-content:flex-end;flex-wrap:wrap;gap:6px}.viewbar button{font-size:11px;min-height:32px;background:#f5f4efed}.viewbar button[aria-pressed=true]{color:var(--ink);background:#e4e9df}
 #overlay{position:absolute;inset:0;display:grid;place-items:center;padding:25px;background:var(--paper);z-index:3;text-align:center}#overlay[hidden]{display:none}#overlay p{max-width:420px;font-size:12px;line-height:1.8;color:var(--muted)}
-@media(max-width:760px){header{padding:18px;height:77px}h1{font-size:17px}main{height:auto;min-height:0;margin:0 10px 14px;grid-template-columns:1fr}#viewport{height:68svh;min-height:400px}aside{border-left:0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:23px;padding:20px}section+section{margin:0}}
+@media(max-width:760px){header{padding:18px;height:77px}h1{font-size:17px}.version-banner{margin:0 10px 12px}main{height:auto;min-height:0;margin:0 10px 14px;grid-template-columns:1fr}#viewport{height:68svh;min-height:400px}aside{border-left:0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:23px;padding:20px}section+section{margin:0}}
 </style>
 <script type="importmap">{"imports":{"three":"/public/vendor/three.module.js"}}</script>
 </head>
 <body>
 <header><div><h1>双马尾绿裙 · 动作查看</h1><p>自然站姿、步行、招呼与面部表情</p></div><span id="status" role="status" aria-live="polite">准备载入</span></header>
+<div class="version-banner" role="note"><span>此页为历史动作预览，不对应当前静态重建及其独立动作预览。</span><a href="./latest-model-viewer.html">查看历史 R11 预览 →</a></div>
 <main><div id="viewport">
 <div class="stage-label"><span id="motion-name">自然站姿</span><span id="motion-detail">轻微呼吸与重心变化</span></div>
 <div class="viewbar"><button data-view="front" disabled>正面</button><button data-view="oblique" aria-pressed="true" disabled>斜前方</button><button data-view="profile" disabled>侧面</button><button data-view="face" disabled>脸部</button></div>

@@ -1,0 +1,92 @@
+{
+  "scope": "V2 pure geometry; actual Blender/appearance pending",
+  "scriptSha256": "aa3f6d5b55b104f58ad58f4c350a5a2fe56e2ecb4e560ff3b6c5a3bc61821f31",
+  "specSha256": "9a441c0e38cb050a21b03fc61379423078d9a1c99a23b5f20cada0ead12bc63f",
+  "parts": [
+    {
+      "name": "Head_Skin_Quad_Retopo",
+      "vertices": 13056,
+      "faces": 13066,
+      "finite": true,
+      "edgesGt2": 0
+    },
+    {
+      "name": "Neck_Clean_Quad_Sleeve",
+      "vertices": 1600,
+      "faces": 1536,
+      "finite": true,
+      "edgesGt2": 0
+    },
+    {
+      "name": "Eye_Sclera_L",
+      "vertices": 769,
+      "faces": 768,
+      "finite": true,
+      "edgesGt2": 0
+    },
+    {
+      "name": "Eye_Iris_L",
+      "vertices": 513,
+      "faces": 512,
+      "finite": true,
+      "edgesGt2": 0
+    },
+    {
+      "name": "Eye_UpperLash_L",
+      "vertices": 82,
+      "faces": 40,
+      "finite": true,
+      "edgesGt2": 0
+    },
+    {
+      "name": "Eye_Sclera_R",
+      "vertices": 769,
+      "faces": 768,
+      "finite": true,
+      "edgesGt2": 0
+    },
+    {
+      "name": "Eye_Iris_R",
+      "vertices": 513,
+      "faces": 512,
+      "finite": true,
+      "edgesGt2": 0
+    },
+    {
+      "name": "Eye_UpperLash_R",
+      "vertices": 82,
+      "faces": 40,
+      "finite": true,
+      "edgesGt2": 0
+    },
+    {
+      "name": "Brow_L",
+      "vertices": 66,
+      "faces": 32,
+      "finite": true,
+      "edgesGt2": 0
+    },
+    {
+      "name": "Brow_R",
+      "vertices": 66,
+      "faces": 32,
+      "finite": true,
+      "edgesGt2": 0
+    },
+    {
+      "name": "Mouth_Closed_Line",
+      "vertices": 96,
+      "faces": 48,
+      "finite": true,
+      "edgesGt2": 0
+    }
+  ],
+  "noseY": -0.1270953622940525,
+  "mouthY": -0.10359032712675928,
+  "eyeSkinY": -0.09249003373259608,
+  "frontXZOrientationCheck": {
+    "range": ".71 < Z < .83, vertices in front hemisphere",
+    "negativeProjectedFaces": 0,
+    "note": "projection orientation check only; not general 3D self-intersection validation"
+  }
+}

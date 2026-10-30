@@ -1,0 +1,12 @@
+{
+  "retainedCustomNormalsBefore": true,
+  "retainedCustomNormalsAfter": false,
+  "bodySmoothFaces": 149504,
+  "cuffAndHiddenWristObjects": [
+    "Cuff_Inner_R",
+    "Forearm_UnderSleeve_R",
+    "Cuff_Inner_L",
+    "Forearm_UnderSleeve_L"
+  ],
+  "bodyAlbedo": "Original garment silhouette and folds retained; blouse directional painted shading replaced with ivory intrinsic colour. Skirt, legs, socks and shoes remain previous repaired atlas."
+}

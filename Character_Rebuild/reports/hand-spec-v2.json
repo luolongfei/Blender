@@ -1,0 +1,175 @@
+{
+  "source": "character-hq-textured.glb",
+  "sourceSha256": "105b77790ff4b382b0ef83189827d774a596f4a8069cefdb8911ad85f93af3b2",
+  "coordinateSystem": "Unscaled Blender import: (X,Y,Z)=(glTF X,-glTF Z,glTF Y)",
+  "basis": {
+    "inspectedImages": [
+      "Character_Rebuild/checks/before/hand-top.png",
+      "Character_Rebuild/checks/before/hand-palm.png",
+      "Character_Rebuild/diagnostics/clothing/unlit-z-positive.png",
+      "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/images/body/front.png"
+    ],
+    "measuredFromInput": "GLB POSITION and original embedded PNG sampled through TEXCOORD_0; no old R11 geometry used",
+    "pose": "Palms down, dorsum toward Blender +Z, thumb toward Blender -Y on both hands",
+    "cuffTransitionAbsX": [
+      0.75,
+      0.755
+    ],
+    "cuffColorEvidence": "Upper surface at absX .740-.745 is near neutral ivory RGB about (246,235,224); .755-.760 transitions to warm skin about (201-220,166-179,144-152). This is a texture seam/shadow band, not a bone marker.",
+    "wristAtAbsX0755": {
+      "negativeX": {
+        "zRange": [
+          0.513725,
+          0.582186
+        ],
+        "yRange": [
+          -0.007638,
+          0.08237
+        ]
+      },
+      "positiveX": {
+        "zRange": [
+          0.515427,
+          0.580438
+        ],
+        "yRange": [
+          -0.007879,
+          0.081314
+        ]
+      }
+    },
+    "palmAndThumbOriginal": "At absX .84-.90, four-finger strip spans approximately Blender Y -0.014 to +0.085; fused thumb reaches about Y -0.064. Original fused hand is overly thick and has holes.",
+    "originalFingerTipAbsX": [
+      0.987826,
+      0.990896
+    ]
+  },
+  "implementation": {
+    "module": "Character_Rebuild/scripts/hands.py",
+    "entry": "build_hand(name,wrist_origin,frame,dimensions,collection,skin_material,subdivision=1)",
+    "sourceCut": {
+      "method": "Precisely bisect original source on each plane, keeping torso/cuff side; do not discard complete crossing triangles by their centroids",
+      "positiveXPlane": 0.7525,
+      "negativeXPlane": -0.7525,
+      "preserveSourceCopy": true,
+      "newWristInsideCuffBy": 0.0065,
+      "note": "Hand wrist cap is hidden under cuff. Keep the clothing opening; do not bridge garment vertices directly to skin. Inspect each seam obliquely after integration."
+    },
+    "material": "Use the same clean stylized skin base material as the rebuilt face/neck. Do not reuse the old baked yellow dorsal/shadow-brown palm colors.",
+    "subdivision": 1,
+    "bones": false
+  },
+  "dimensions": {
+    "palm_length": 0.118,
+    "palm_width": 0.094,
+    "palm_depth": 0.034,
+    "wrist_width": 0.078,
+    "wrist_depth": 0.052,
+    "finger_lengths": [
+      0.094,
+      0.112,
+      0.124,
+      0.114
+    ],
+    "finger_widths": [
+      0.019,
+      0.022,
+      0.023,
+      0.0215
+    ],
+    "finger_depths": [
+      0.0165,
+      0.0185,
+      0.019,
+      0.0185
+    ],
+    "finger_splay": [
+      -0.018,
+      -0.006,
+      0.004,
+      0.014
+    ],
+    "thumb_length": 0.098,
+    "thumb_width": 0.0265,
+    "thumb_depth": 0.023,
+    "thumb_forward": 0.91,
+    "thumb_outward": 0.445,
+    "curl": 0.003,
+    "finger_root_offsets": [
+      -0.012,
+      -0.004,
+      0,
+      -0.002
+    ],
+    "thenar_pad": 0.003,
+    "hypothenar_pad": 0.002,
+    "palm_cup": 0.0008,
+    "dorsal_knuckle": 0.0014,
+    "finger_arch": 0.0015,
+    "fuller_finger_profile": true,
+    "thumb_base_flare": 0.2
+  },
+  "hands": [
+    {
+      "name": "Rebuilt_Hand_L",
+      "side": "character left, positive X",
+      "wrist_origin": [
+        0.746,
+        0.0365,
+        0.5475
+      ],
+      "frame": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "Rebuilt_Hand_R",
+      "side": "character right, negative X",
+      "wrist_origin": [
+        -0.746,
+        0.0365,
+        0.5475
+      ],
+      "frame": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  ],
+  "inferredReconstruction": [
+    "Five independent digit branches and their webs are inferred because original four-finger slab has no valid separations.",
+    "Palm depth is reduced while keeping original wrist location, hand span, and thumb direction; joint loop rhythm is conservatively rebuilt.",
+    "Left and right share mirrored construction; tiny generation asymmetries are not treated as intentional design.",
+    "No nail polish, photoreal pores, rig or expression system is added."
+  ],
+  "validationStatus": "Measured v1 image reviewed; v2 local data topology checked, Blender visual and local intersection verification pending.",
+  "version": "v2-hand-shape",
+  "revisionReason": "Actual geometry-v1 hand-top/palm show straight finger-root row, flat palm and overly long narrow thumb. V2 adds staggered roots with length compensation, fuller fingers, shortened thumb, palm pads and subtle knuckles; cuff remains fixed."
+}

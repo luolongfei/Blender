@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>R11 · 历史制作预览</title>
+<style>
+:root{color-scheme:light;--paper:#f3f3ef;--panel:#fafaf7;--ink:#27332d;--muted:#69736d;--line:#d9ded6;--green:#456451}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:14px -apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif}button,input{font:inherit}button,a{touch-action:manipulation}button{border:1px solid var(--line);border-radius:8px;background:transparent;color:inherit;cursor:pointer;min-height:37px;padding:8px 12px}button:hover:enabled{background:#e7ece5}button:disabled{opacity:.45;cursor:default}button[aria-pressed=true]{background:var(--green);border-color:var(--green);color:white}button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--green);outline-offset:3px}a{color:var(--green)}
+header{padding:21px 26px 18px;display:flex;align-items:center;justify-content:space-between;gap:20px}h1{font-size:21px;font-weight:600;margin:0 0 6px}header p{font-size:12px;color:var(--muted);margin:0}#status{font-size:12px;color:var(--muted);text-align:right}main{display:grid;grid-template-columns:minmax(0,1fr) 280px;height:calc(100svh - 106px);min-height:510px;margin:0 20px 20px;border:1px solid var(--line);border-radius:14px;overflow:hidden}#viewport{position:relative;min-width:0;min-height:0}canvas{width:100%;height:100%;display:block;touch-action:none}aside{background:var(--panel);border-left:1px solid var(--line);padding:23px 20px;overflow:auto}section+section{margin-top:25px}h2{font-size:13px;margin:0 0 11px;font-weight:600}.buttons{display:grid;grid-template-columns:1fr 1fr;gap:7px}.views{grid-template-columns:repeat(3,1fr);margin-top:8px}.views button{font-size:12px;padding:7px 4px}.note{font-size:12px;color:var(--muted);line-height:1.7;margin:10px 0}.badge{position:absolute;top:18px;left:20px;z-index:1;pointer-events:none;background:#fafaf7e8;border:1px solid var(--line);border-radius:20px;padding:7px 12px;font-size:11px;color:var(--muted)}.hint{position:absolute;bottom:19px;left:20px;right:20px;text-align:center;pointer-events:none;font-size:12px;color:var(--muted);text-shadow:0 1px 2px var(--paper)}
+#overlay{position:absolute;inset:0;background:var(--paper);z-index:3;display:grid;place-items:center;padding:28px;text-align:center}#overlay[hidden]{display:none}#overlay>div{max-width:370px;width:100%}#loading-title{font-size:17px}#loading-detail{font-size:12px;color:var(--muted);line-height:1.7;overflow-wrap:anywhere}progress{appearance:none;width:100%;height:5px;border:0;border-radius:4px;overflow:hidden;background:#dce2da;margin:10px 0}progress::-webkit-progress-bar{background:#dce2da}progress::-webkit-progress-value{background:var(--green)}progress::-moz-progress-bar{background:var(--green)}
+.expression{margin:16px 0}.expression label{display:flex;justify-content:space-between;gap:12px;font-size:12px;margin-bottom:8px}.expression output{color:var(--muted);font-variant-numeric:tabular-nums}input[type=range]{width:100%;accent-color:var(--green)}#neutral{width:100%;margin-top:7px}#limits,#attributions{margin:0;padding-left:17px;color:var(--muted);font-size:12px;line-height:1.65}#limits li+li,#attributions li+li{margin-top:7px}#attributions{overflow-wrap:anywhere}#attributions strong{color:var(--ink);font-weight:500}#attributions a{display:inline-block;margin-top:3px}details{font-size:12px;color:var(--muted);line-height:1.7}summary{cursor:pointer;color:var(--ink)}#version-info{overflow-wrap:anywhere;margin:9px 0}#download{display:inline-block;margin-top:7px}#reload{margin-top:12px;width:100%}#retry{margin-top:14px}
+@media(max-width:800px){header{padding:18px 15px;align-items:flex-start}h1{font-size:18px}#status{max-width:110px}main{height:auto;min-height:0;margin:0 10px 14px;grid-template-columns:1fr}#viewport{height:65svh;min-height:380px}aside{border-left:0;border-top:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:23px;padding:20px}section+section{margin-top:0}.wide-section{grid-column:1/-1}}@media(max-width:470px){aside{grid-template-columns:1fr}.wide-section{grid-column:auto}.badge{font-size:10px;left:12px}.hint{font-size:11px}}
+</style>
+<script type="importmap">{"imports":{"three":"/public/vendor/three.module.js"}}</script>
+</head>
+<body>
+<p role="note" style="margin:12px 20px;color:#66542f">历史 R11 预览。当前重建请使用<a href="http://127.0.0.1:52860/interactive/viewer.html">独立动作预览页</a>（须先启动本机预览服务）。</p>
+<header><div><h1 id="title">R11 · 历史制作预览</h1><p id="subtitle">旧路线已停止 · 本页不对应当前重建模型</p></div><span id="status" role="status" aria-live="polite">正在读取版本</span></header>
+<main>
+<div id="viewport">
+  <span class="badge" id="badge">R11 历史阶段 · 预览文件</span>
+  <span class="hint">拖动旋转 · 滚轮缩放 · 右键拖动平移</span>
+  <div id="overlay" role="status"><div><strong id="loading-title">正在读取最新预览</strong><p id="loading-detail">读取版本记录，然后载入本地模型。</p><progress id="progress" max="1"></progress><button id="retry" hidden>重新读取</button></div></div>
+</div>
+<aside>
+  <section><h2>观察角度</h2><div class="buttons"><button data-crop="body" disabled>全身</button><button data-crop="head" aria-pressed="true" disabled>头肩</button></div><div class="buttons views"><button data-view="front" disabled>正面</button><button data-view="oblique" aria-pressed="true" disabled>斜前</button><button data-view="side" disabled>侧面</button><button data-view="back" disabled>背面</button><button data-view="other-side" disabled>另一侧</button><button id="reset-view" disabled>重置</button></div><p class="note">从多个角度检查轮廓、接缝和发型。</p></section>
+  <section><h2>已导出的表情</h2><div id="expressions"></div><p id="expression-note" class="note">载入后显示这份预览实际包含的控制。</p><button id="neutral" disabled>恢复中性</button></section>
+  <section class="wide-section"><h2>这份预览的范围</h2><ul id="limits"><li>制作中的阶段快照，尚未作为正式交付。</li></ul></section>
+  <section id="attribution-section" class="wide-section" hidden><h2>来源与署名</h2><ul id="attributions"></ul></section>
+  <section class="wide-section"><details><summary>版本信息</summary><p id="version-info"></p><a id="download" hidden download="avatar-preview-r11.glb">下载这份 GLB 预览</a></details><button id="reload">重新读取预览</button><p id="refresh-note" class="note">此页保留历史快照，未同步当前重建模型。</p></section>
+</aside>
+</main>
+<script type="module" src="./latest-model-viewer.mjs"></script>
+</body>
+</html>

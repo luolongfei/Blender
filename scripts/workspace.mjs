@@ -26,10 +26,14 @@ export function inside(base, relative) {
 async function settings() {
   const lock = await json(path.join(root, 'toolchain.lock.json'));
   const workspace = await json(path.join(root, 'config/workspace.json'));
-  const local = await json(path.join(root, 'config/local.json')).catch(e => {
+  const readLocal = name => json(path.join(root, 'config', name)).catch(e => {
     if (e.code === 'ENOENT') return {};
     throw e;
   });
+  const local = {
+    ...await readLocal('local.json'),
+    ...await readLocal(`local.${process.platform}.json`),
+  };
   return {lock, workspace, local, tool: inside(root, lock.charakuru.path)};
 }
 function option(args, key, fallback) {
@@ -121,8 +125,23 @@ async function walk(dir) {
   }
   return rows;
 }
+export async function validatePythonFiles(files, local) {
+  if (!files.length) return;
+  const code = 'import ast,json,sys,pathlib; [ast.parse(pathlib.Path(p).read_text(encoding="utf-8"), filename=p) for p in json.load(sys.stdin)]';
+  // File lists can exceed Windows command-line limits; send UTF-8 JSON on stdin.
+  const result = spawnSync(python(local ?? (await settings()).local), ['-c', code], {
+    input: JSON.stringify(files), encoding: 'utf8',
+    env: {...process.env, PYTHONUTF8: '1'},
+  });
+  if (result.error) throw result.error;
+  if (result.status !== 0) throw Error(result.stderr || 'Python syntax validation failed');
+}
 async function validate(s) {
-  const all = [...await walk(path.join(root, 'scripts')), ...await walk(path.join(root, 'pipeline'))];
+  const all = [...await walk(path.join(root, 'scripts')), ...await walk(path.join(root, 'pipeline')),
+    ...await walk(path.join(root, 'tests')), ...await walk(path.join(root, 'Character_Rebuild/scripts')),
+    ...await walk(path.join(root, 'Character_Rebuild/interactive/scripts'))];
+  const viewer = path.join(root, 'Character_Rebuild/interactive/viewer.mjs');
+  if (await exists(viewer)) all.push(viewer);
   const projectRoot = inside(root, s.workspace.projectsRoot);
   for (const p of await fs.readdir(projectRoot, {withFileTypes: true})) {
     if (!p.isDirectory()) continue;
@@ -137,15 +156,14 @@ async function validate(s) {
   for (const p of new Set(all)) {
     if (['.mjs', '.js'].includes(path.extname(p))) {
       const result = spawnSync(process.execPath, ['--check', p], {encoding: 'utf8'});
-      if (result.status !== 0) throw Error(result.stderr);
+      if (result.error) throw result.error;
+      if (result.status !== 0) throw Error(result.stderr || 'JavaScript syntax validation failed');
       js++;
     }
   }
   const pythonFiles = [...new Set(all)].filter(p => p.endsWith('.py'));
   if (pythonFiles.length) {
-    const code = 'import ast,sys,pathlib; [ast.parse(pathlib.Path(p).read_text(encoding="utf-8"), filename=p) for p in sys.argv[1:]]';
-    const result = spawnSync(python(s.local), ['-c', code, ...pythonFiles], {encoding: 'utf8'});
-    if (result.status !== 0) throw Error(result.stderr);
+    await validatePythonFiles(pythonFiles, s.local);
     py = pythonFiles.length;
   }
   console.log(JSON.stringify({valid: true, javascriptFiles: js, pythonFiles: py,

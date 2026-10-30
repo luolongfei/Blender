@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "recordedDate": "2026-10-28",
+  "projectId": "6c8500bf-1c38-481a-babd-e5478a50dd67",
+  "stage": "reconstruction-r01-appearance-direction-review",
+  "scope": "官方一级来源调查与首轮造型路线。下载、场景检查由主代理执行；本记录写入者未操作 Blender。许可核对不代表最终客户交付条款已确认。",
+  "pathBase": "project root",
+  "selectedRoute": {
+    "name": "Blender Studio CC0 基础网格与本地写实角色定制",
+    "reason": "当前头脸与衣内身体基础限制质量。使用成熟写实头、眼、身体基底，在现有 Windows Blender 工作流内定制造型，保留双马尾及绿裙身份特征。先验证形体，再投入贴图与表演系统。",
+    "workingMaster": "work/character.blend",
+    "candidate": "work/reconstruction-r01/candidate.blend",
+    "integrationPolicy": "重大重构在工作副本制作；由一个整合者检查组合后更新主源。首轮候选不等于正式交付或用户外观认可。",
+    "purchasesMade": false,
+    "deliveryRouteChanged": false
+  },
+  "machineAssessment": {
+    "source": "本轮主代理实际硬件检查结果",
+    "ramGB": 32,
+    "cpu": "Intel Xeon E-2274G",
+    "physicalCores": 4,
+    "logicalThreads": 8,
+    "gpu": "Intel P630 核显；未发现可用独立显卡",
+    "implications": [
+      "串行运行低采样、适中分辨率造型比较，避免多个重渲染和全量碰撞检查并发。",
+      "优先低密度编辑基底与引导曲线，按检查距离增加细节。",
+      "低于当前 MetaHuman 推荐的处理器及独立显卡等级，不选择其为本轮制作路线。",
+      "照片级最终近景渲染及高密度布料毛发迭代的性能尚未验收，不能承诺实时帧率。"
+    ]
+  },
+  "resources": [
+    {
+      "id": "blender-human-base-meshes",
+      "name": "Blender Studio Human Base Meshes",
+      "version": "1.4.1",
+      "decision": "adopted-in-review-candidate",
+      "sourceUrl": "https://www.blender.org/download/demo-files/",
+      "downloadUrl": "https://download.blender.org/demo/asset-bundles/human-base-meshes/human-base-meshes-bundle-v1.4.1.zip",
+      "directoryUrl": "https://download.blender.org/demo/asset-bundles/human-base-meshes/",
+      "publisher": "Blender Studio and community contributions",
+      "license": "CC0",
+      "licenseEvidence": "官方 Demo Files 资源卡将该包明确标为 CC0。逐对象作者信息应保留包内资产元数据，不能把整个角色署名归于该来源。",
+      "compatibility": "官方资源页要求 Blender 4.2 LTS 或更新",
+      "archive": {
+        "path": "assets/human-base-meshes-v1.4.1/human-base-meshes-bundle-v1.4.1.zip",
+        "bytes": 50643039,
+        "sha256": "811f43accbb31a88266d932f8f5563b2d13586fca0ba2693aad1f5fe582b3515",
+        "verification": "本记录写入者已独立重算本地 ZIP SHA-256；文件大小与官方目录一致。未找到上游发布的 SHA-256，本地哈希用于版本身份而非声称与上游校验值匹配。"
+      },
+      "blendPath": "assets/human-base-meshes-v1.4.1/human-base-meshes-bundle-v1.4.1/human_base_meshes_bundle.blend",
+      "blendBytes": 49420489,
+      "blendSha256": "3c121505651140ceb4d69fd1d8923f7788ffadd81672f5be14845a5f2c75c137",
+      "actualInspectionReportedByIntegrator": {
+        "headObject": "GEO-head_animation_realistic",
+        "totalSelectedObjects": 5,
+        "additionalObjects": "双眼 sclera 与 iris，共四个对象；精确名称以场景检查记录为准",
+        "uvPresent": true
+      },
+      "intendedUse": "以写实动画头、配套眼作为头脸重构起点；女性身体、手足与下颌留作后续评估。",
+      "modificationScope": "在候选中适配角色尺度、年龄与头脸比例、颅颈关系及眼睛位置；头脸、头发、服装最终修改以候选记录为准。",
+      "limitations": ["基础网格并非照片级成品皮肤、完整 FACS 或已适配动画。", "UV 存在不证明无接缝或分辨率足够。", "需要拓扑、眼睑贴合、口腔、权重与表情复测。", "不得把雕刻基底自动视为经过动画验证的变形拓扑。"]
+    },
+    {
+      "id": "blender-studio-realistic-workflow",
+      "name": "Blender Studio Realistic Character Workflow",
+      "version": "在线文档，2026-10-28 查阅",
+      "decision": "adopted-as-workflow-reference",
+      "sourceUrl": "https://studio.blender.org/training/realistic-human-research/",
+      "license": "文档免费公开；附属示例资源逐项核实，不能套用 Human Base Meshes CC0",
+      "intendedUse": "大形设计、重拓扑、雕刻分层、FACS 形态、衣物形态、皱纹与烘焙的阶段流程。",
+      "limitations": ["官方说明主要聚焦用于动画的雕刻与建模，并非完整材质、毛发、绑定、动画教程。", "其旧 realistic_human_base.blend 单独资源为 CC-BY，未下载或采用。"],
+      "additionalSources": ["https://studio.blender.org/training/realistic-human-research/use-of-base-meshes/", "https://studio.blender.org/training/realistic-human-research/creating-facial-shapes/", "https://studio.blender.org/training/realistic-human-research/the-shapes-approach/"]
+    },
+    {
+      "id": "makehuman-mpfb-core",
+      "name": "MakeHuman / MPFB core assets",
+      "version": "未下载，未锁定",
+      "decision": "evaluated-not-adopted",
+      "sourceUrl": "https://static.makehumancommunity.org/assets/index.html",
+      "licenseUrl": "https://static.makehumancommunity.org/about/license.html",
+      "license": "核心资产 CC0；MPFB 代码 GPL，MakeHuman 代码 AGPL；第三方素材各自核实",
+      "intendedUse": "备用人体、基础皮肤与眼口素材。",
+      "limitations": ["未验证 Blender 5.2 插件兼容。", "基础皮肤与程序眼不能直接作为照片级完成质量。", "本轮已有 Studio 头眼基底，因此不额外安装。"],
+      "additionalSources": ["https://static.makehumancommunity.org/mpfb/docs/characters/bodyparts.html"]
+    },
+    {
+      "id": "3dscanstore-free-head",
+      "name": "3DScanStore Free HD Head",
+      "version": "官网在线资源，未下载",
+      "decision": "excluded-from-deliverable-source-pending-license",
+      "sourceUrl": "https://www.3dscanstore.com/blog/Free-3D-Head-Model/Tutorials",
+      "licenseUrl": "https://www.3dscanstore.com/terms-and-conditions-licensing",
+      "license": "资源页仅个人使用；商业用途需联系厂商。商用项目许可亦不能自动推定允许独立角色模型/衍生源再分发。",
+      "intendedUse": "曾评估作为扫描头、眼口与 8K 皮肤参考/候选。",
+      "limitations": ["下载约 1.9 GB。", "当前未有该资产商业与源文件交付授权证据。", "如未来选择，需具体许可范围和价格后再由用户决定；本轮未购买。"]
+    },
+    {
+      "id": "native-hair-curves",
+      "name": "Blender Interpolate Hair Curves",
+      "version": "锁定 Blender 5.2.3 内原生毛发流程；引用 5.1 官方文档说明",
+      "decision": "selected-workflow-not-third-party-import",
+      "sourceUrl": "https://docs.blender.org/manual/en/5.1/modeling/geometry_nodes/hair/generation/interpolate_hair_curves.html",
+      "license": "Blender 原生工具；本条未导入第三方毛发资产",
+      "intendedUse": "少量引导曲线控制头皮毛流、分缝和双马尾下垂，再增加次级发束与细丝。",
+      "limitations": ["需要有效 Surface 与 UV，分区应避免跨边界混插值。", "插值节点不构成完整碰撞和动态系统。", "本轮先检查静态轮廓；动画、阻尼、碰撞另阶段验证。"]
+    },
+    {
+      "id": "polyhaven-terlenka",
+      "name": "Poly Haven Terlenka",
+      "version": "在线资源，未下载锁定",
+      "decision": "recommended-for-material-stage-not-adopted",
+      "sourceUrl": "https://polyhaven.com/a/terlenka",
+      "licenseUrl": "https://polyhaven.com/license",
+      "license": "CC0",
+      "publisherCredits": "Rico Cilliers / colormass",
+      "intendedUse": "绿裙细织合成面料试样，使用法线、粗糙度与各向异性并保留设计色。",
+      "limitations": ["先解决裁片与重力垂坠；织纹不能代替衣物结构。", "官方采样高度 0.3 m，需对应 UV 实物尺度。", "本轮未下载，不能登记为已使用贴图。"]
+    },
+    {
+      "id": "native-cloth",
+      "name": "Blender Cloth",
+      "version": "锁定 Blender 5.2.3",
+      "decision": "selected-workflow",
+      "sourceUrl": "https://docs.blender.org/manual/en/latest/physics/cloth/introduction.html",
+      "license": "Blender 原生工具；本条未导入第三方裁片",
+      "intendedUse": "低密度裁片与腰部固定、碰撞体、逐帧预滚、保存可复现设置与缓存，外层再添加厚度细节。",
+      "limitations": ["初始穿插会导致仿真不稳定。", "跳帧不能证明正确稳定垂坠。", "静态形态试验不得登记为行走/坐下等动态验证通过。"]
+    },
+    {
+      "id": "cloudrig",
+      "name": "CloudRig",
+      "version": "2.2.31，官网更新 2026-10-05",
+      "decision": "evaluated-for-later-rig-stage-not-installed",
+      "sourceUrl": "https://extensions.blender.org/add-ons/cloudrig/",
+      "license": "GPL-3.0-or-later",
+      "compatibility": "官方扩展页 Blender 5.0 起，6.0 及以上不支持",
+      "intendedUse": "后续新身体制作控制器与辅助骨候选。",
+      "limitations": ["实际安装与该角色兼容尚未验证。", "先在副本测试，再映射/烘焙到交付骨架；不直接替换当前 128 骨架。"]
+    },
+    {
+      "id": "cmu-mocap",
+      "name": "CMU Graphics Lab Motion Capture Database",
+      "version": "subject 07 / trial 07_01，2026-10-28 取得官方 ASF+AMC",
+      "decision": "downloaded-local-production-dependency-awaiting-retarget",
+      "sourceRecord": "assets/mocap-cmu/07/source-record.json",
+      "sourceUrl": "https://mocap.cs.cmu.edu/",
+      "license": "官方允许用于商业产品，禁止直接转售数据或转换后的数据；使用时保留来源记录",
+      "intendedUse": "真实站立、行走、转身和动作过渡的重定向基础。",
+      "limitations": ["已选择 07_01 正常行走，316 帧、120 Hz，未做重定向验收。", "官方 FAQ 允许复制、修改与再分发，但主页同时禁止直接转售数据及转换数据；本项目暂作本地依赖，详情见 sourceRecord。", "官方提醒手和脚趾关节可能噪声较多，手指与拇指不是实际捕捉数据。", "需逐项修正接地、重心、滑步与比例，不能直接当成已适配动作。"]
+    },
+    {
+      "id": "mixamo",
+      "name": "Adobe Mixamo",
+      "version": "在线服务，未下载",
+      "decision": "backup-motion-source-not-used",
+      "sourceUrl": "https://helpx.adobe.com/in/creative-cloud/faq/mixamo-faq.html",
+      "license": "FAQ 说明 Adobe ID 免费、角色与动作可用于个人及商业项目；不应推定独立原始动作再售许可",
+      "intendedUse": "备选真人动作库。",
+      "limitations": ["需要可用 Adobe ID，本轮未登录或上传角色。", "长发和大衣物会妨碍自动绑定。", "仍需重定向与动画检查。"]
+    },
+    {
+      "id": "metahuman",
+      "name": "Epic MetaHuman",
+      "version": "当前官方文档包含 Unreal Engine 5.8，未安装锁定",
+      "decision": "not-selected-for-current-machine-or-round",
+      "sourceUrl": "https://www.metahuman.com/en-US/download",
+      "licenseUrl": "https://www.metahuman.com/license",
+      "license": "当前条款允许其他引擎或创作软件；收入低于 100 万美元门槛免费，以上适用 Unreal Engine 标准条款。用户收入及特定交付许可未判断。",
+      "intendedUse": "评估成熟数字人头脸、皮肤、表情路线。",
+      "hardwareSource": "https://dev.epicgames.com/documentation/metahuman/metahuman-hardware-requirements-in-unreal-engine?lang=en-US",
+      "recommendedHardware": "至少 16 个高性能物理核心、32 GB RAM；至少 RTX 3070 / RX 6800 XT 等级且 8 GB VRAM。高纹理装配可能超过 32 GB。",
+      "exportSource": "https://dev.epicgames.com/documentation/metahuman/metahuman-creator-export-tool-in-unreal-engine",
+      "limitations": ["本机 4 核 CPU 与 P630 核显低于推荐等级。", "需要 Unreal Engine、Creator 相关组件及服务，本机尚未具备验证。", "官方 DCC 导出支持几何、DNA 与贴图，成熟官方插件主要面向 Maya/Houdini；Blender 完整 RigLogic、材质、毛发往返未测试。", "转换 VRM 必须另做材质、表情和物理适配；不应假设无损。"]
+    }
+  ],
+  "reviewArrangement": {
+    "status": "planned-by-integrator-no-render-acceptance-claimed-here",
+    "baseline": "从未改动的迁移主源读取旧头脸、毛发与衣物，作为原版参照",
+    "candidate": "工作副本内的新写实头眼基底与双马尾、服装静态改造",
+    "pairedConditions": ["前后使用完全相同机位、焦距、灯光、曝光、背景与输出尺寸。", "正面、侧面、四分之三头脸近景与全身比较；必要时补背面、发际线和裙摆局部。", "不中途增加景深、过曝或不同裁切掩盖问题。", "先中性光辨认大形，选定方向后补侧光与逆光。"],
+    "appearanceDecision": "用户选择人物是否自然、有吸引力以及是否保持身份/年龄；技术完成不代替审美验收。",
+    "firstRoundLimits": "只承诺首轮可见造型对比。皮肤微细节、全身结构、表情绑定、连续动作、毛发/布料动态与最终 VRM 适配均不因静态图自动通过。"
+  },
+  "futureStages": [
+    "头脸与整体比例候选通过用户方向选择。",
+    "重构连续身体与颅颈，锁定眼口及肩髋手指变形拓扑，检查 UV。",
+    "定型发际线、分区、双马尾与衣物裁片/余量，建立可复现静态稳定形态。",
+    "完善眼口结构、皮肤区域色差粗糙度与散射，添加适度细节及衣料纹理。",
+    "新控制器、权重、FACS/口型组合与眼睑跟随；测试中间值及极值。",
+    "动作捕捉重定向和人工修正，毛发布料碰撞与缓存，连续视频审阅。",
+    "目标软件/设备与预算确定后，制作独立实时版本；保留高质量源并说明适配损失。"
+  ],
+  "vrmCompatibilityReference": {
+    "sourceUrl": "https://vrm.dev/en/vrm/vrm_features/",
+    "documentedScope": "glTF PBR、Unlit、MToon，标准表情、视线及 SpringBone",
+    "inference": "DNA/RigLogic、Cycles 区域皮肤散射、曲线毛发和复杂布料缓存不能假设由 VRM 完整保留；必须针对实际目标软件检查。",
+    "testedThisRound": false
+  }
+}

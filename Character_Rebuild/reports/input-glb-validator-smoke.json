@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "input": "character-hq-textured.glb",
+  "bytes": 16438868,
+  "sha256": "105b77790ff4b382b0ef83189827d774a596f4a8069cefdb8911ad85f93af3b2",
+  "checkedAt": "2026-10-29T13:59:21.635Z",
+  "errors": [],
+  "warnings": [],
+  "scope": "GLB structure, finite numeric attributes, declared PBR and embedded image references. Not a full Khronos validator.",
+  "visualAcceptance": false,
+  "blenderReimportVerified": false,
+  "unchecked": [
+    "Visual likeness and texture appearance",
+    "Five-finger geometry and hair silhouette",
+    "Self-intersections and manifold topology",
+    "Physical scale and orientation against references",
+    "Compressed geometry decoding",
+    "Image pixel decoding and texture color-space appearance"
+  ],
+  "generator": "https://github.com/mikedh/trimesh",
+  "extensionsUsed": [],
+  "extensionsRequired": [],
+  "accessorCount": 4,
+  "allAccessorNumericValuesFinite": true,
+  "images": [
+    {
+      "index": 0,
+      "name": null,
+      "bufferView": 2,
+      "mimeType": "image/png",
+      "bytes": 9961736,
+      "sha256": "e7940335f269237ed2f27226195bc2c00da0290aff0fafa456ef5ea028ed03df",
+      "format": "png",
+      "width": 4096,
+      "height": 4096
+    }
+  ],
+  "textures": [
+    {
+      "index": 0,
+      "source": 0,
+      "name": null
+    }
+  ],
+  "materials": [
+    {
+      "index": 0,
+      "name": null,
+      "baseColor": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "metallic": 1,
+      "roughness": 0.9036020036098448,
+      "textures": {
+        "baseColor": {
+          "texture": 0,
+          "image": 0,
+          "texCoord": 0
+        }
+      },
+      "alphaMode": "OPAQUE",
+      "doubleSided": false,
+      "extensions": []
+    }
+  ],
+  "meshes": [
+    {
+      "index": 0,
+      "name": "tmpad_f7e6l.ply",
+      "bounds": {
+        "min": [
+          -0.9908958077430725,
+          -0.9990763664245605,
+          -0.24766801297664642
+        ],
+        "max": [
+          0.9878259897232056,
+          0.9946864247322083,
+          0.23363658785820007
+        ],
+        "size": [
+          1.978721797466278,
+          1.9937627911567688,
+          0.4813046008348465
+        ]
+      },
+      "triangles": 200000,
+      "primitives": [
+        {
+          "index": 0,
+          "vertices": 127360,
+          "triangles": 200000,
+          "material": 0,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "TEXCOORD_0",
+            "NORMAL"
+          ],
+          "morphTargets": 0,
+          "zeroNormals": 0,
+          "nonUnitNormals": 0
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "index": 0,
+      "name": "tmpad_f7e6l.ply",
+      "mesh": 0,
+      "skin": null,
+      "camera": null,
+      "children": [],
+      "matrix": null,
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "extensions": []
+    }
+  ],
+  "skins": [],
+  "animations": [],
+  "summary": {
+    "nodes": 1,
+    "meshes": 1,
+    "trianglesPerMeshDefinitions": 200000,
+    "trianglesAcrossMeshNodes": 200000,
+    "materials": 1,
+    "images": 1,
+    "textures": 1,
+    "skins": 0,
+    "animations": 0,
+    "containsSkeleton": false,
+    "allImagesEmbedded": true,
+    "cameraNodes": 0,
+    "lightNodes": 0
+  },
+  "defaultScene": 0,
+  "scenes": [
+    {
+      "index": 0,
+      "name": null,
+      "roots": [
+        0
+      ]
+    }
+  ],
+  "passed": true
+}

@@ -1,6 +1,8 @@
 /tools/
 /state/
 /config/local.json
+/config/local.*.json
+!/config/local.example.json
 /config/charakuru.local.json
 /node_modules/
 .DS_Store
@@ -23,9 +25,55 @@ __pycache__/
 !/projects/*/work/local-model/*.py
 !/projects/*/work/local-model/*.mjs
 !/projects/*/work/local-model/*.js
+!/projects/*/work/reconstruction-r01/
+/projects/*/work/reconstruction-r01/*
+!/projects/*/work/reconstruction-r01/asset-research.json
+!/projects/*/work/reconstruction-r01/review-summary.json
+!/projects/*/work/reconstruction-r01/static-checks.json
 !/projects/*/previews/
 /projects/*/previews/*
 !/projects/*/previews/*.html
 !/projects/*/previews/*.mjs
 !/projects/*/previews/*.js
 !/projects/*/previews/*.css
+
+# Current Hunyuan reconstruction assets stay local; keep authored code/evidence.
+/character-hq-textured.glb*
+/Character_Rebuild/*
+!/Character_Rebuild/scripts/
+!/Character_Rebuild/reports/
+/Character_Rebuild/reports/*
+!/Character_Rebuild/reports/*.json
+!/Character_Rebuild/reports/*.txt
+
+# Root transfer archives remain local, even when using git add .
+/*.zip
+/*.7z
+
+# Authored delivery pages and instructions.
+!/Character_Rebuild/review.html
+!/Character_Rebuild/完成说明.txt
+!/Character_Rebuild/制作顺序.txt
+/Character_Rebuild/reports/preview-server*.json
+
+# Keep preview source/evidence; exclude models, images and intermediate assets.
+!/Character_Rebuild/interactive/
+/Character_Rebuild/interactive/*
+!/Character_Rebuild/interactive/viewer.html
+!/Character_Rebuild/interactive/viewer.css
+!/Character_Rebuild/interactive/viewer.mjs
+!/Character_Rebuild/interactive/preview-manifest.json
+!/Character_Rebuild/interactive/使用说明.txt
+!/Character_Rebuild/interactive/scripts/
+!/Character_Rebuild/interactive/reports/
+/Character_Rebuild/interactive/reports/*
+!/Character_Rebuild/interactive/reports/*.json
+!/Character_Rebuild/interactive/reports/*.txt
+!/Character_Rebuild/interactive/work/
+/Character_Rebuild/interactive/work/*
+!/Character_Rebuild/interactive/work/export-reimport-report.json
+!/Character_Rebuild/interactive/work/foot-contact-report.json
+!/Character_Rebuild/interactive/work/motion-integration.json
+!/Character_Rebuild/interactive/work/posed-geometry-report.json
+!/Character_Rebuild/interactive/work/rig-build-report.json
+!/Character_Rebuild/interactive/work/rig-contract.json

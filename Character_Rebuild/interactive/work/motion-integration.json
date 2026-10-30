@@ -1,0 +1,83 @@
+{
+  "actions": [
+    {
+      "id": "idle",
+      "clip": "idle",
+      "label": "\u81ea\u7136\u7ad9\u7acb",
+      "duration": 4.0,
+      "loop": true,
+      "fps": 30,
+      "firstFrame": 1,
+      "lastFrame": 121,
+      "keyedBones": 22,
+      "completePoseTracks": true
+    },
+    {
+      "id": "wave",
+      "clip": "wave",
+      "label": "\u8f7b\u8f7b\u62db\u624b",
+      "duration": 4.8,
+      "loop": false,
+      "fps": 30,
+      "firstFrame": 1,
+      "lastFrame": 145,
+      "keyedBones": 22,
+      "completePoseTracks": true
+    },
+    {
+      "id": "look",
+      "clip": "look",
+      "label": "\u5de6\u53f3\u770b\u770b",
+      "duration": 6.0,
+      "loop": true,
+      "fps": 30,
+      "firstFrame": 1,
+      "lastFrame": 181,
+      "keyedBones": 22,
+      "completePoseTracks": true
+    },
+    {
+      "id": "walk",
+      "clip": "walk",
+      "label": "\u539f\u5730\u8f7b\u8e0f",
+      "duration": 2.8,
+      "loop": true,
+      "fps": 30,
+      "firstFrame": 1,
+      "lastFrame": 85,
+      "keyedBones": 22,
+      "completePoseTracks": true
+    },
+    {
+      "id": "tpose",
+      "clip": "Tpose",
+      "label": "\u8fd8\u539f T \u59ff\u52bf",
+      "duration": 1.0,
+      "loop": false,
+      "fps": 30,
+      "firstFrame": 1,
+      "lastFrame": 31,
+      "keyedBones": 22,
+      "completePoseTracks": true
+    }
+  ],
+  "defaultAction": "idle",
+  "resetAction": "tpose",
+  "fps": 30,
+  "coordinateSystem": "X lateral / -Y forward / Z up",
+  "motionLimits": {
+    "upperLegAbsDegrees": 7.824070158459438,
+    "kneeDegrees": [
+      6.198878079423951,
+      17.482889851400934
+    ],
+    "maxFootLift": 0.01
+  },
+  "notes": [
+    "Every action keys every bone rotation, translation, and scale.",
+    "Walk is conservative alternating stepping in place with analytic ankle targets; no root travel.",
+    "Head and twin ponytails move together; no simulated hair or cloth collision.",
+    "Face is static: no expression morph targets or inferred facial animation.",
+    "Wave forearm pronation is a conservative inferred preview gesture."
+  ]
+}

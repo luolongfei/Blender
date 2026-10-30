@@ -94,6 +94,8 @@ Windows 示例，JSON 中使用正斜杠可以避免反斜杠转义问题：
 
 `config/local.json`、`config/charakuru.local.json` 已被 Git 忽略。本页不要求复制旧电脑的绝对路径、`.codex` 配置或登录信息。
 
+同一工作区同时从 WSL 和 Windows 使用时，可以保留 `config/local.json` 的共享配置，并在 `config/local.win32.json` 填 Windows 的 `blenderExecutable` 和 `pythonExecutable`。统一入口按当前 Node 平台逐字段覆盖共享配置；Linux 对应 `config/local.linux.json`。这些本机覆盖文件也不入 Git。Windows Blender 与 MCP 应从 Windows 启动，工程传入 UNC 路径；这不代表 WSL 已能直接驱动 Windows Blender。
+
 若 `tools/charakuru/1.1.0/` 没有一起搬运，在填写 Python 路径之后执行：
 
 ```sh

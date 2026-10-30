@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "input": "character-hq-textured.glb",
+  "inputBytes": 16438868,
+  "inputSha256": "105b77790ff4b382b0ef83189827d774a596f4a8069cefdb8911ad85f93af3b2",
+  "readOnlyInput": true,
+  "generatedAt": "2026-10-29T13:57:49.908Z",
+  "asset": {
+    "version": "2.0",
+    "generator": "https://github.com/mikedh/trimesh"
+  },
+  "chunks": [
+    {
+      "offset": 12,
+      "length": 1584,
+      "type": 1313821514
+    },
+    {
+      "offset": 1604,
+      "length": 16437256,
+      "type": 5130562
+    }
+  ],
+  "counts": {
+    "scenes": 1,
+    "nodes": 1,
+    "meshes": 1,
+    "materials": 1,
+    "textures": 1,
+    "images": 1,
+    "skins": 0,
+    "animations": 0,
+    "accessors": 4
+  },
+  "nodes": [
+    {
+      "name": "tmpad_f7e6l.ply",
+      "mesh": 0
+    }
+  ],
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 0.9036020036098448
+      },
+      "doubleSided": false
+    }
+  ],
+  "materialNotes": [
+    "metallicFactor absent: glTF 2.0 default is 1.0; importer may therefore render the character metallic unless explicitly corrected.",
+    "No normal/roughness image texture; one base-color texture only."
+  ],
+  "images": [
+    {
+      "index": 0,
+      "mimeType": "image/png",
+      "embedded": true,
+      "bytes": 9961736,
+      "sha256": "e7940335f269237ed2f27226195bc2c00da0290aff0fafa456ef5ea028ed03df",
+      "width": 4096,
+      "height": 4096,
+      "path": "Character_Rebuild/diagnostics/original-textures/base-color-0.png"
+    }
+  ],
+  "meshes": [
+    {
+      "mesh": 0,
+      "primitive": 0,
+      "name": "tmpad_f7e6l.ply",
+      "vertices": 127360,
+      "triangles": 200000,
+      "material": 0,
+      "attributes": [
+        "POSITION",
+        "TEXCOORD_0",
+        "NORMAL"
+      ],
+      "bounds": {
+        "min": [
+          -0.9908958077430725,
+          -0.9990763664245605,
+          -0.24766801297664642
+        ],
+        "max": [
+          0.9878259897232056,
+          0.9946864247322083,
+          0.23363658785820007
+        ],
+        "extents": [
+          1.978721797466278,
+          1.9937627911567688,
+          0.4813046008348465
+        ]
+      },
+      "nonFinitePositions": 0,
+      "nonFiniteUVs": 0,
+      "nonFiniteNormals": 0,
+      "invalidIndex": 0,
+      "zeroAreaTriangles": 0,
+      "trianglesOppositeAveragedVertexNormals": 0,
+      "signedVolume": 0.1290052720729562,
+      "indexedTopology": {
+        "edges": 326484,
+        "boundaryEdges": 52968,
+        "nonManifoldOverTwoFaces": 0,
+        "inconsistentWindingTwoFaces": 0
+      },
+      "positionWeldedTopology": {
+        "tolerance": 1e-7,
+        "uniquePositions": 99994,
+        "duplicatePositions": 27366,
+        "edges": 300000,
+        "boundaryEdges": 0,
+        "nonManifoldOverTwoFaces": 0,
+        "inconsistentWindingTwoFaces": 0
+      },
+      "spatialComponents": [
+        {
+          "triangles": 200000,
+          "rawVertices": 127360,
+          "min": [
+            -0.9908958077430725,
+            -0.9990763664245605,
+            -0.24766801297664642
+          ],
+          "max": [
+            0.9878259897232056,
+            0.9946864247322083,
+            0.23363658785820007
+          ]
+        }
+      ],
+      "uvBounds": {
+        "min": [
+          0,
+          0.00040781497955322266
+        ],
+        "max": [
+          0.9995733499526978,
+          1
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Structural parser diagnostic only, not a visual or self-intersection acceptance.",
+    "Position welding used only for diagnostics; UV seam splits are not necessarily defects.",
+    "No geometric edit, remesh, smoothing, export or Blender source write was performed.",
+    "Units follow glTF metre convention, but source was normalized to approximately two units tall; real intended height cannot be established from binary alone."
+  ]
+}

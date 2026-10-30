@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "face": 0,
+      "newUvCenter": [
+        0.24979497492313385,
+        0.5
+      ],
+      "rgb": [
+        0.10196079313755035,
+        0.10196079313755035,
+        0.8000000715255737
+      ]
+    },
+    {
+      "face": 1,
+      "newUvCenter": [
+        0.7502050399780273,
+        0.5
+      ],
+      "rgb": [
+        0.10196079313755035,
+        0.8000000715255737,
+        0.10196079313755035
+      ]
+    }
+  ],
+  "oldAtlasUvsPinned": true,
+  "repairSolidMaterialPreserved": true,
+  "originalUVsRetained": true,
+  "newUvZeroAreas": 0
+}

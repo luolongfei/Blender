@@ -1,0 +1,263 @@
+{
+  "backYoke": {
+    "source": "D-integrated-geometry.blend",
+    "object": "Rebuild_Body_Clothing_SourceRetained",
+    "created_objects": [
+      "Rebuilt_BackCollar_Band"
+    ],
+    "removed_faces": 2911,
+    "new_yoke_quads": 1350,
+    "new_collar_quads": 958,
+    "old_boundary_vertices": 270,
+    "max_boundary_displacement": 0.008545750054843334,
+    "boundary_measurement_error": 0.0,
+    "before_boundaries": [
+      {
+        "edges": 400,
+        "vertices": 400,
+        "closedLoop": true,
+        "min": [
+          -0.19636370241641998,
+          -0.01685710810124874,
+          0.5449568629264832
+        ],
+        "max": [
+          0.1986265331506729,
+          0.12190775573253632,
+          0.6320000290870667
+        ]
+      },
+      {
+        "edges": 112,
+        "vertices": 112,
+        "closedLoop": true,
+        "min": [
+          0.7524999976158142,
+          -0.009437218308448792,
+          0.5114381313323975
+        ],
+        "max": [
+          0.7524999976158142,
+          0.08446019142866135,
+          0.583986222743988
+        ]
+      },
+      {
+        "edges": 54,
+        "vertices": 54,
+        "closedLoop": true,
+        "min": [
+          0.1379362940788269,
+          0.02023467794060707,
+          0.6320000290870667
+        ],
+        "max": [
+          0.18033336102962494,
+          0.0733674094080925,
+          0.6320000290870667
+        ]
+      },
+      {
+        "edges": 53,
+        "vertices": 51,
+        "closedLoop": false,
+        "min": [
+          -0.16109415888786316,
+          0.04960926994681358,
+          0.6289708018302917
+        ],
+        "max": [
+          -0.12100187689065933,
+          0.0810052752494812,
+          0.6320000290870667
+        ]
+      },
+      {
+        "edges": 123,
+        "vertices": 123,
+        "closedLoop": true,
+        "min": [
+          -0.7524999976158142,
+          -0.011183340102434158,
+          0.5061424374580383
+        ],
+        "max": [
+          -0.7524999976158142,
+          0.08655058592557907,
+          0.5865657329559326
+        ]
+      }
+    ],
+    "after_boundaries": [
+      {
+        "edges": 112,
+        "vertices": 112,
+        "closedLoop": true,
+        "min": [
+          0.7524999976158142,
+          -0.009437218308448792,
+          0.5114381313323975
+        ],
+        "max": [
+          0.7524999976158142,
+          0.08446019142866135,
+          0.583986222743988
+        ]
+      },
+      {
+        "edges": 270,
+        "vertices": 270,
+        "closedLoop": true,
+        "min": [
+          -0.05499996617436409,
+          -0.027987247332930565,
+          0.6150006651878357
+        ],
+        "max": [
+          0.05499967932701111,
+          0.08798293024301529,
+          0.6209990978240967
+        ]
+      },
+      {
+        "edges": 123,
+        "vertices": 123,
+        "closedLoop": true,
+        "min": [
+          -0.7524999976158142,
+          -0.011183340102434158,
+          0.5061424374580383
+        ],
+        "max": [
+          -0.7524999976158142,
+          0.08655058592557907,
+          0.5865657329559326
+        ]
+      }
+    ],
+    "unexpected_openings": [],
+    "front_collar": "Original front collar faces outside y>-.035 cut retained",
+    "neck_opening": {
+      "xRadius": 0.055,
+      "yCentre": 0.03,
+      "yRadius": 0.058,
+      "zRange": [
+        0.615,
+        0.621
+      ]
+    },
+    "material_note": "New inferred cloth uses clean simple PBR; bake separately or use explicit material-aware body atlas repack",
+    "appearance_review": "Requires actual neutral back/side/quarter renders after this operation; no appearance acceptance claimed"
+  },
+  "regions": [
+    {
+      "name": "Back duplicate button placket removed",
+      "center": [
+        0,
+        0.086,
+        0.423
+      ],
+      "half_extents": [
+        0.033,
+        0.12,
+        0.16
+      ],
+      "feather": 0.014,
+      "normal_direction": [
+        0,
+        1,
+        0
+      ],
+      "normal_min": 0.2,
+      "color_srgb": [
+        0.94,
+        0.89,
+        0.805
+      ]
+    },
+    {
+      "name": "Front left collar hair colour contamination",
+      "center": [
+        -0.119,
+        -0.075,
+        0.576
+      ],
+      "half_extents": [
+        0.074,
+        0.095,
+        0.06
+      ],
+      "feather": 0.015,
+      "dark_threshold": 0.4,
+      "color_srgb": [
+        0.94,
+        0.89,
+        0.805
+      ]
+    },
+    {
+      "name": "Front right collar hair colour contamination",
+      "center": [
+        0.119,
+        -0.075,
+        0.576
+      ],
+      "half_extents": [
+        0.074,
+        0.095,
+        0.06
+      ],
+      "feather": 0.015,
+      "dark_threshold": 0.4,
+      "color_srgb": [
+        0.94,
+        0.89,
+        0.805
+      ]
+    },
+    {
+      "name": "Skirt white background specks",
+      "center": [
+        0,
+        0,
+        0.022
+      ],
+      "half_extents": [
+        0.36,
+        0.29,
+        0.268
+      ],
+      "feather": 0.014,
+      "bright_threshold": 0.38,
+      "color_srgb": [
+        0.31,
+        0.35,
+        0.276
+      ]
+    },
+    {
+      "name": "Exposed legs colour shadow cleanup",
+      "center": [
+        0,
+        0,
+        -0.446
+      ],
+      "half_extents": [
+        0.23,
+        0.19,
+        0.225
+      ],
+      "feather": 0.018,
+      "strength": 0.72,
+      "color_srgb": [
+        0.96,
+        0.805,
+        0.69
+      ]
+    }
+  ],
+  "newUV": "Rebuilt_BodyUV",
+  "bodyMaterial": "Rebuilt_RetainedBody_RepairedAtlas",
+  "hairSpecSha256": "63ccef83680e8e840b27e6941c04679c0f5b657d598d002f8c5f61ec688ca04c",
+  "status": "Textured candidate; pending neutral review and clean GLB reimport"
+}

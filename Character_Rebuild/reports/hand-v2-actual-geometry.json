@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "blenderVersion": "5.2.3 LTS",
+  "meshState": "evaluated_current_frame",
+  "frame": 1,
+  "readOnly": true,
+  "sceneSaved": false,
+  "objects": [
+    {
+      "mesh": "Rebuilt_Hand_L.EditableTopology.001",
+      "vertices": 3034,
+      "edges": 6064,
+      "polygons": 3032,
+      "triangles": 6064,
+      "polygonSizes": {
+        "4": 3032
+      },
+      "worldBounds": [
+        [
+          0.7460000514984131,
+          0.987109899520874
+        ],
+        [
+          -0.055344369262456894,
+          0.08337713778018951
+        ],
+        [
+          0.5220738053321838,
+          0.5727074146270752
+        ]
+      ],
+      "surfaceAreaWorldUnitsSquared": 0.05855762028508839,
+      "toleranceWorldUnits": 1e-08,
+      "positions": {
+        "nonfinite": 0,
+        "nonfiniteSamples": [],
+        "exactCoincidentGroups": 0,
+        "exactCoincidentExtraVertices": 0,
+        "note": "Coincident UV/material seam vertices are not automatically defects."
+      },
+      "topology": {
+        "boundaryEdges": 0,
+        "branchingEdgesMoreThanTwoFaces": 0,
+        "nonmanifoldEdgesIncludingBoundaryAndLoose": 0,
+        "inconsistentTwoFaceWindingEdges": 0,
+        "looseEdges": 0,
+        "verticesUnusedByEdgesOrFaces": 0,
+        "verticesNotUsedByPolygons": 0,
+        "boundaryEdgeSamples": [],
+        "branchingEdgeSamples": [],
+        "windingEdgeSamples": [],
+        "connectedVertexComponents": 1,
+        "surfaceComponents": 1,
+        "componentsLargestFirst": [
+          {
+            "firstVertex": 0,
+            "vertices": 3034,
+            "polygons": 3032,
+            "triangles": 6064,
+            "signedVolumeWorldUnitsCubed": 0.0005137201941460433
+          }
+        ],
+        "componentListTruncated": false,
+        "note": "Connectivity is by vertex indices; split seams can produce multiple components. Boundary edges can be intentional garment openings. Vertex-fan manifoldness not tested."
+      },
+      "triangulation": {
+        "zeroAreaTriangles": 0,
+        "nonfiniteTriangles": 0,
+        "zeroAreaTriangleSamples": []
+      },
+      "normals": {
+        "nonfiniteVertexNormals": 0,
+        "zeroVertexNormals": 0,
+        "nonfinitePolygonNormals": 0,
+        "nonfiniteCornerNormals": 0,
+        "cornerNormalReadError": null,
+        "outwardOrientationCertified": false,
+        "note": "Winding consistency and signed volume are diagnostics. Outwardness of open/multi-shell surfaces needs visual review."
+      },
+      "uvLayers": [
+        {
+          "name": "HandAtlas",
+          "loopCount": 12128,
+          "nonfiniteLoops": 0,
+          "bounds": [
+            [
+              0.019999999552965164,
+              0.9600000977516174
+            ],
+            [
+              0.019999999552965164,
+              0.9600000977516174
+            ]
+          ],
+          "outsideUnitSquareLoops": 0,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "note": "Outside [0,1] can be intentional tiling. This is not a UV overlap or stretch audit."
+        }
+      ],
+      "materials": {
+        "slots": [
+          "RebuiltV2_skin_back"
+        ],
+        "polygonUse": {
+          "0": 3032
+        },
+        "invalidMaterialPolygonCount": 0
+      },
+      "selfContacts": {
+        "requested": true,
+        "status": "completed",
+        "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs.",
+        "method": "BVH broad phase, then closed triangle SAT; contact includes tangency and coplanar overlap.",
+        "toleranceWorldUnits": 1e-08,
+        "triangleLimit": 25000,
+        "candidateLimit": 200000,
+        "completeWithinDeclaredScope": true,
+        "doesNotProveNoGlobalIntersections": true,
+        "counts": {
+          "uniqueBroadPhasePairs": 2,
+          "sharedIndexExcluded": 1,
+          "narrowPhasePairs": 1,
+          "contacts": 1
+        },
+        "contactPairSamples": [
+          {
+            "triangles": [
+              5253,
+              5313
+            ],
+            "polygons": [
+              2626,
+              2656
+            ]
+          }
+        ],
+        "contacts": 1
+      },
+      "object": "Rebuilt_Hand_L",
+      "matrixWorldFinite": true,
+      "matrixWorldDeterminant": 1.0,
+      "modifiers": [
+        {
+          "name": "SurfaceFinish_EditableBase",
+          "type": "SUBSURF",
+          "viewport": true,
+          "render": true
+        }
+      ]
+    },
+    {
+      "mesh": "Rebuilt_Hand_R.EditableTopology.001",
+      "vertices": 3034,
+      "edges": 6064,
+      "polygons": 3032,
+      "triangles": 6064,
+      "polygonSizes": {
+        "4": 3032
+      },
+      "worldBounds": [
+        [
+          -0.987109899520874,
+          -0.7460000514984131
+        ],
+        [
+          -0.05534437298774719,
+          0.08337713032960892
+        ],
+        [
+          0.5220738053321838,
+          0.5727074146270752
+        ]
+      ],
+      "surfaceAreaWorldUnitsSquared": 0.05855762040495543,
+      "toleranceWorldUnits": 1e-08,
+      "positions": {
+        "nonfinite": 0,
+        "nonfiniteSamples": [],
+        "exactCoincidentGroups": 0,
+        "exactCoincidentExtraVertices": 0,
+        "note": "Coincident UV/material seam vertices are not automatically defects."
+      },
+      "topology": {
+        "boundaryEdges": 0,
+        "branchingEdgesMoreThanTwoFaces": 0,
+        "nonmanifoldEdgesIncludingBoundaryAndLoose": 0,
+        "inconsistentTwoFaceWindingEdges": 0,
+        "looseEdges": 0,
+        "verticesUnusedByEdgesOrFaces": 0,
+        "verticesNotUsedByPolygons": 0,
+        "boundaryEdgeSamples": [],
+        "branchingEdgeSamples": [],
+        "windingEdgeSamples": [],
+        "connectedVertexComponents": 1,
+        "surfaceComponents": 1,
+        "componentsLargestFirst": [
+          {
+            "firstVertex": 0,
+            "vertices": 3034,
+            "polygons": 3032,
+            "triangles": 6064,
+            "signedVolumeWorldUnitsCubed": 0.0005137201979629213
+          }
+        ],
+        "componentListTruncated": false,
+        "note": "Connectivity is by vertex indices; split seams can produce multiple components. Boundary edges can be intentional garment openings. Vertex-fan manifoldness not tested."
+      },
+      "triangulation": {
+        "zeroAreaTriangles": 0,
+        "nonfiniteTriangles": 0,
+        "zeroAreaTriangleSamples": []
+      },
+      "normals": {
+        "nonfiniteVertexNormals": 0,
+        "zeroVertexNormals": 0,
+        "nonfinitePolygonNormals": 0,
+        "nonfiniteCornerNormals": 0,
+        "cornerNormalReadError": null,
+        "outwardOrientationCertified": false,
+        "note": "Winding consistency and signed volume are diagnostics. Outwardness of open/multi-shell surfaces needs visual review."
+      },
+      "uvLayers": [
+        {
+          "name": "HandAtlas",
+          "loopCount": 12128,
+          "nonfiniteLoops": 0,
+          "bounds": [
+            [
+              0.019999999552965164,
+              0.9600000977516174
+            ],
+            [
+              0.019999999552965164,
+              0.9600000977516174
+            ]
+          ],
+          "outsideUnitSquareLoops": 0,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "note": "Outside [0,1] can be intentional tiling. This is not a UV overlap or stretch audit."
+        }
+      ],
+      "materials": {
+        "slots": [
+          "RebuiltV2_skin_back"
+        ],
+        "polygonUse": {
+          "0": 3032
+        },
+        "invalidMaterialPolygonCount": 0
+      },
+      "selfContacts": {
+        "requested": true,
+        "status": "completed",
+        "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs.",
+        "method": "BVH broad phase, then closed triangle SAT; contact includes tangency and coplanar overlap.",
+        "toleranceWorldUnits": 1e-08,
+        "triangleLimit": 25000,
+        "candidateLimit": 200000,
+        "completeWithinDeclaredScope": true,
+        "doesNotProveNoGlobalIntersections": true,
+        "counts": {
+          "uniqueBroadPhasePairs": 3,
+          "sharedIndexExcluded": 2,
+          "narrowPhasePairs": 1,
+          "contacts": 1
+        },
+        "contactPairSamples": [
+          {
+            "triangles": [
+              5252,
+              5312
+            ],
+            "polygons": [
+              2626,
+              2656
+            ]
+          }
+        ],
+        "contacts": 1
+      },
+      "object": "Rebuilt_Hand_R",
+      "matrixWorldFinite": true,
+      "matrixWorldDeterminant": 1.0,
+      "modifiers": [
+        {
+          "name": "SurfaceFinish_EditableBase",
+          "type": "SUBSURF",
+          "viewport": true,
+          "render": true
+        }
+      ]
+    }
+  ],
+  "skippedObjects": [],
+  "errors": [],
+  "limitations": [
+    "No artistic acceptance, silhouette identity, texture bleed, or finger-count certification.",
+    "No inter-object collisions, animation, global self-intersection, UV overlap or UV stretch certification.",
+    "Signed volume does not prove outward normals on open or multiple nested shells.",
+    "Self-contact reports include touching, exclude shared positions and are bounded per explicit object."
+  ],
+  "totals": {
+    "vertices": 6068,
+    "edges": 12128,
+    "polygons": 6064,
+    "triangles": 12128,
+    "objectsInspected": 2
+  },
+  "notAnAcceptanceVerdict": true
+}

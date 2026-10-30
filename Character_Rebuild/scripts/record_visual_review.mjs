@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+import {workspacePath} from '../../pipeline/context.mjs';
+const p=x=>workspacePath('Character_Rebuild',x);
+const hash=x=>crypto.createHash('sha256').update(fs.readFileSync(p(x))).digest('hex');
+const imp=JSON.parse(fs.readFileSync(p('reports/clean-reimport.json'),'utf8'));
+if(!imp.structuralReimportPassed||!imp.reviewImagesRendered||!imp.glbUnchangedDuringReimport)throw Error('Reimport evidence incomplete');
+if(hash('character-rebuilt-textured.glb')!==imp.glbSha256||hash('character-rebuilt.blend')!==imp.blendSha256)throw Error('Files changed');
+const names=['front','back','face-front','face-side','face-other-side','face-back-quarter','hand-top','hand-palm','hand-other-top','hand-other-palm'];
+const reviewedImages=names.map(name=>({path:`checks/reimport/${name}.png`,sha256:hash(`checks/reimport/${name}.png`)}));
+const report={reviewCompleted:true,recordedAt:new Date().toISOString(),glbSha256:imp.glbSha256,blendSha256:imp.blendSha256,reviewers:['root: actual final/reimport images and numeric correspondence','visual_qa: all 10 reimport images and 12 final-source images'],reviewedImages,agentReview:{path:'reports/final-visual-agent-review.txt',sha256:hash('reports/final-visual-agent-review.txt')},bothHandsFiveFingersVisible:true,embeddedTexturesVisuallyPresent:true,lowTwinPonytailsPresent:true,sideEyePlaqueRemoved:true,rearScalpPokeoutsNotVisibleInReviewedViews:true,rearNeckHorizontalBandRemoved:true,noNewVisibleMissingPartsAfterReimport:true,sourceAndReimportAppearanceConsistent:true,TPoseAndWardrobePreserved:true,appearanceAcceptedByUser:false,exactReferenceReconstructionClaim:false,limitations:['Facial expression and nose/mouth transitions remain simplified relative to the original illustration.','Fringe roots, rear crown and ponytail tie transitions remain broad and visibly assembled; fine strand polish is limited.','Palm pads, knuckles and nails are simplified.','Small crease-like dents remain at shoulders/collar; most original garment triangle topology is retained.','No rig, expression system, animation, cloth physics or global inter-object collision certification.'],conclusion:'Technical delivery and visual consistency were inspected. Known artistic limitations remain; no customer acceptance is inferred.'};
+fs.writeFileSync(p('reports/final-visual-review.json'),JSON.stringify(report,null,2)+'\n');
+imp.visualReviewCompleted=true;imp.fiveFingerVisualCheckCompleted=true;imp.visualReviewFile='reports/final-visual-review.json';
+fs.writeFileSync(p('reports/clean-reimport.json'),JSON.stringify(imp,null,2)+'\n');
+console.log(JSON.stringify({glbSha256:report.glbSha256,reviewedImages:reviewedImages.length,bothHandsFiveFingersVisible:true,appearanceAcceptedByUser:false}));

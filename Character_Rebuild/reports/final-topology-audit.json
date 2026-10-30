@@ -1,0 +1,1152 @@
+{
+  "schemaVersion": 2,
+  "checkedAtUtc": "2026-10-29T15:33:05.671223+00:00",
+  "scope": "Read-only E8 exact-export topology and targeted normals/UV audit; no model edits or Blender/render process.",
+  "glb": "Character_Rebuild/character-rebuilt-textured.glb",
+  "glbSha256": "4b70a67d9f2677b5d80e7d6d79a31fd6ff90d6d2c6c267c9a50ba678f3c904d8",
+  "sourceStage": "Character_Rebuild/stages/E8-delivery-source.blend",
+  "sourceStageSha256": "571074910ed0dc95fde19ca742bc903927640b58e35ec53a67e85c5b3a30cac9",
+  "blendSha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5",
+  "sourceGeometryReportSha256": "2058559be07a857fc692f21a95066de2074ac01d8f7ccb71ff5da639d6669b88",
+  "glbValidatorReportSha256": "ecf4e7edf96d83e32784a252239f08eeebcffcbd3447d92127e4f4bba07db49b",
+  "sourceGeometryErrors": [],
+  "summary": {
+    "objects": 47,
+    "triangles": 238527,
+    "zeroAreaGeometryTriangles": 0,
+    "nonfiniteGeometryTriangles": 0,
+    "nonfinitePositions": 0,
+    "nonfiniteNormals": 0,
+    "zeroVertexNormals": 0,
+    "branchingEdges": 0,
+    "inconsistentWindingEdges": 0,
+    "looseEdges": 0,
+    "looseVertices": 0,
+    "invalidMaterialPolygons": 0
+  },
+  "neckOutwardNormals": {
+    "method": "Per glTF Y section ring, dot exported NORMAL against radial XZ direction from ring centroid. Repeated seam vertices included.",
+    "rings": 25,
+    "exportedVertexSamples": 1792,
+    "excludedAxisSamples": 0,
+    "smallSectionGroups": [],
+    "minimumOutwardDot": 0.426697325493509,
+    "maximumOutwardDot": 0.9999948331989028,
+    "meanOutwardDot": 0.9599365132082694,
+    "nonpositiveSamples": 0,
+    "outwardVerified": true
+  },
+  "textureUsedUvProblems": [],
+  "unusedLegacyUvDegeneracies": [
+    {
+      "object": "Rebuild_Body_Clothing_SourceRetained",
+      "primitive": 0,
+      "layer": {
+        "texCoord": 0,
+        "usedByTexture": false,
+        "zeroAreaTrianglesAtUvTolerance1e-14": 119,
+        "nonfiniteTriangles": 0
+      }
+    }
+  ],
+  "uvAudit": [
+    {
+      "object": "Blouse_Button_1",
+      "primitive": 0,
+      "material": "Rebuilt_Ivory_Buttons",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Blouse_Button_2",
+      "primitive": 0,
+      "material": "Rebuilt_Ivory_Buttons",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Blouse_Button_3",
+      "primitive": 0,
+      "material": "Rebuilt_Ivory_Buttons",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Brow_L",
+      "primitive": 0,
+      "material": "Rebuilt_Final_brow",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Brow_R",
+      "primitive": 0,
+      "material": "Rebuilt_Final_brow",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Cuff_Inner_L",
+      "primitive": 0,
+      "material": "Rebuilt_Cuff_Inner",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Cuff_Inner_R",
+      "primitive": 0,
+      "material": "Rebuilt_Cuff_Inner",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ear_L",
+      "primitive": 0,
+      "material": "Rebuilt_skin_back",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ear_R",
+      "primitive": 0,
+      "material": "Rebuilt_skin_back",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Eye_Iris_L",
+      "primitive": 0,
+      "material": "Rebuilt_Final_iris",
+      "textureUvSets": [
+        0
+      ],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": true,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Eye_Iris_R",
+      "primitive": 0,
+      "material": "Rebuilt_Final_iris",
+      "textureUvSets": [
+        0
+      ],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": true,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Eye_Sclera_L",
+      "primitive": 0,
+      "material": "Rebuilt_Final_sclera",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Eye_Sclera_R",
+      "primitive": 0,
+      "material": "Rebuilt_Final_sclera",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Eye_UpperLash_L",
+      "primitive": 0,
+      "material": "Rebuilt_Final_lash",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Eye_UpperLash_R",
+      "primitive": 0,
+      "material": "Rebuilt_Final_lash",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Forearm_UnderSleeve_L",
+      "primitive": 0,
+      "material": "Rebuilt_Final_skin_back",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Forearm_UnderSleeve_R",
+      "primitive": 0,
+      "material": "Rebuilt_Final_skin_back",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Fringe_CentreLeft",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Fringe_CentreRight",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Fringe_Left",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Fringe_LeftFine",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Fringe_Right",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Fringe_RightFine",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Hair_Crown_SourceEnvelope",
+      "primitive": 0,
+      "material": "Rebuilt_Hair_Crown_BakedNormal_V5",
+      "textureUvSets": [
+        0
+      ],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": true,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Head_Skin_Quad_Retopo",
+      "primitive": 0,
+      "material": "Rebuilt_Final_skin",
+      "textureUvSets": [
+        0
+      ],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": true,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Head_Skin_Quad_Retopo",
+      "primitive": 1,
+      "material": "Rebuilt_Final_skin_back",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Mouth_Closed_Line",
+      "primitive": 0,
+      "material": "Rebuilt_Final_mouth",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Neck_Clean_Quad_Sleeve",
+      "primitive": 0,
+      "material": "Rebuilt_Final_skin_back",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ponytail_Left_FabricTie",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair_shadow",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ponytail_Left_Layer_1",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ponytail_Left_Layer_2",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ponytail_Left_Layer_3",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ponytail_Left_Layer_4",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ponytail_Left_Layer_5",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ponytail_Right_FabricTie",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair_shadow",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ponytail_Right_Layer_1",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ponytail_Right_Layer_2",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ponytail_Right_Layer_3",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ponytail_Right_Layer_4",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Ponytail_Right_Layer_5",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Rebuild_Body_Clothing_SourceRetained",
+      "primitive": 0,
+      "material": "Rebuilt_RetainedBody_RepairedAtlas.001",
+      "textureUvSets": [
+        1
+      ],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 119,
+          "nonfiniteTriangles": 0
+        },
+        {
+          "texCoord": 1,
+          "usedByTexture": true,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Rebuilt_BackCollar_Band",
+      "primitive": 0,
+      "material": "Rebuilt_blouse",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Rebuilt_FrontCollar_L",
+      "primitive": 0,
+      "material": "Rebuilt_Final_blouse",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Rebuilt_FrontCollar_R",
+      "primitive": 0,
+      "material": "Rebuilt_Final_blouse",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Rebuilt_Hand_L",
+      "primitive": 0,
+      "material": "Rebuilt_Final_skin_back",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Rebuilt_Hand_R",
+      "primitive": 0,
+      "material": "Rebuilt_Final_skin_back",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Temple_Left",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    },
+    {
+      "object": "Temple_Right",
+      "primitive": 0,
+      "material": "Rebuilt_Final_hair",
+      "textureUvSets": [],
+      "uvLayers": [
+        {
+          "texCoord": 0,
+          "usedByTexture": false,
+          "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+          "nonfiniteTriangles": 0
+        }
+      ]
+    }
+  ],
+  "bodyBoundaryLoops": [
+    {
+      "region": "positive_X_cuff",
+      "verticesAndEdges": 112,
+      "gltfBoundsXYZ": [
+        [
+          0.7524999976158142,
+          0.7524999976158142
+        ],
+        [
+          0.5114381313323975,
+          0.583986222743988
+        ],
+        [
+          -0.08446019142866135,
+          0.009437218308448792
+        ]
+      ],
+      "verticesWithDegreeOtherThan2": 0
+    },
+    {
+      "region": "negative_X_cuff",
+      "verticesAndEdges": 123,
+      "gltfBoundsXYZ": [
+        [
+          -0.7524999976158142,
+          -0.7524999976158142
+        ],
+        [
+          0.5061424374580383,
+          0.5865657329559326
+        ],
+        [
+          -0.08655058592557907,
+          0.011183340102434158
+        ]
+      ],
+      "verticesWithDegreeOtherThan2": 0
+    },
+    {
+      "region": "neck_collar_opening",
+      "verticesAndEdges": 270,
+      "gltfBoundsXYZ": [
+        [
+          -0.05499996617436409,
+          0.05499967932701111
+        ],
+        [
+          0.6150006651878357,
+          0.6209990978240967
+        ],
+        [
+          -0.08798293024301529,
+          0.027987247332930565
+        ]
+      ],
+      "verticesWithDegreeOtherThan2": 0
+    }
+  ],
+  "perObjectSelfContacts": [
+    {
+      "object": "Rebuild_Body_Clothing_SourceRetained",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Rebuilt_BackCollar_Band",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Rebuilt_FrontCollar_L",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Rebuilt_FrontCollar_R",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ear_R",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ear_L",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Head_Skin_Quad_Retopo",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Neck_Clean_Quad_Sleeve",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Eye_Sclera_L",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Eye_Iris_L",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Eye_UpperLash_L",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Eye_Sclera_R",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Eye_Iris_R",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Eye_UpperLash_R",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Brow_L",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Brow_R",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Mouth_Closed_Line",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Rebuilt_Hand_L",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Rebuilt_Hand_R",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Hair_Crown_SourceEnvelope",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ponytail_Left_FabricTie",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ponytail_Right_FabricTie",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Fringe_CentreLeft",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Fringe_Left",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Fringe_CentreRight",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Fringe_Right",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Fringe_LeftFine",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Fringe_RightFine",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Temple_Left",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Temple_Right",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ponytail_Left_Layer_1",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ponytail_Left_Layer_2",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ponytail_Left_Layer_3",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ponytail_Left_Layer_4",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ponytail_Left_Layer_5",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ponytail_Right_Layer_1",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ponytail_Right_Layer_2",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ponytail_Right_Layer_3",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ponytail_Right_Layer_4",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Ponytail_Right_Layer_5",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Blouse_Button_1",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Blouse_Button_2",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Blouse_Button_3",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Cuff_Inner_R",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Forearm_UnderSleeve_R",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Cuff_Inner_L",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    },
+    {
+      "object": "Forearm_UnderSleeve_L",
+      "status": "completed",
+      "contacts": 0,
+      "completeWithinDeclaredScope": true,
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs."
+    }
+  ],
+  "selfContactSummary": {
+    "objects": 47,
+    "contacts": 0,
+    "incompleteObjects": 0
+  },
+  "glbStructureValidation": {
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "allImagesEmbedded": true
+  },
+  "limitations": [
+    "Intentional neck, eye/iris, brow/lash/mouth strip and cuff openings remain; mesh is not claimed watertight as one closed solid.",
+    "Per-object self-contact checks exclude adjacent/shared-position pairs; they do not certify inter-object or animation collision freedom.",
+    "UV overlap/stretch and artistic likeness are not certified by this audit.",
+    "Fresh Blender reimport and visual inspection are performed separately by the integrator."
+  ],
+  "modelModified": false,
+  "blenderLaunched": false,
+  "targetedFindingsResolved": true
+}

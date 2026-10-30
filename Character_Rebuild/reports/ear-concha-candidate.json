@@ -1,0 +1,345 @@
+{
+  "objects": [
+    {
+      "name": "Ear_L",
+      "location": [
+        0.11100000143051147,
+        0.023000000044703484,
+        0.7670000195503235
+      ],
+      "sourceLocalBounds": [
+        [
+          -0.01699998416006565,
+          -0.017999988049268723,
+          -0.03200000151991844
+        ],
+        [
+          0.016999995335936546,
+          0.017999976873397827,
+          0.03200000151991844
+        ]
+      ],
+      "radii": [
+        0.0169999897480011,
+        0.017999982461333275,
+        0.03200000151991844
+      ],
+      "vertices": 1058,
+      "polygons": 1104,
+      "uv": "Ear_Surface_UV",
+      "materials": [
+        "Rebuilt_skin_back"
+      ],
+      "shape": "Integral concha depression; original YZ silhouette exact; all new front vertices within old ellipsoid envelope"
+    },
+    {
+      "name": "Ear_R",
+      "location": [
+        -0.11100000143051147,
+        0.023000000044703484,
+        0.7670000195503235
+      ],
+      "sourceLocalBounds": [
+        [
+          -0.01699998416006565,
+          -0.017999988049268723,
+          -0.03200000151991844
+        ],
+        [
+          0.016999995335936546,
+          0.017999976873397827,
+          0.03200000151991844
+        ]
+      ],
+      "radii": [
+        0.0169999897480011,
+        0.017999982461333275,
+        0.03200000151991844
+      ],
+      "vertices": 1058,
+      "polygons": 1104,
+      "uv": "Ear_Surface_UV",
+      "materials": [
+        "Rebuilt_skin_back"
+      ],
+      "shape": "Integral concha depression; original YZ silhouette exact; all new front vertices within old ellipsoid envelope"
+    }
+  ],
+  "removedInnerPills": [
+    "Ear_Inner_L",
+    "Ear_Inner_R"
+  ],
+  "style": "simplified anime concha, helix and tragus; no pores",
+  "changesOutsideEars": false,
+  "sceneSaved": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\work\\ear-concha-candidate.blend",
+  "source": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\stages\\E4-final-refined.blend",
+  "sourceSha256": "7a406fbbcf337e4098ebc98697766cdb3d88d8966286779c92a5e58e3e6928aa",
+  "otherMeshGeometryAndTransformsExact": true,
+  "geometry": {
+    "schemaVersion": 1,
+    "blenderVersion": "5.2.3 LTS",
+    "meshState": "evaluated_current_frame",
+    "frame": 1,
+    "readOnly": true,
+    "sceneSaved": false,
+    "objects": [
+      {
+        "mesh": "Ear_L.ConchaQuadSurface",
+        "vertices": 1058,
+        "edges": 2160,
+        "polygons": 1104,
+        "triangles": 2112,
+        "polygonSizes": {
+          "3": 96,
+          "4": 1008
+        },
+        "worldBounds": [
+          [
+            0.09400001913309097,
+            0.12609462440013885
+          ],
+          [
+            0.005000011995434761,
+            0.04099997878074646
+          ],
+          [
+            0.7350000143051147,
+            0.7990000247955322
+          ]
+        ],
+        "surfaceAreaWorldUnitsSquared": 0.006047403173930588,
+        "toleranceWorldUnits": 1e-08,
+        "positions": {
+          "nonfinite": 0,
+          "nonfiniteSamples": [],
+          "exactCoincidentGroups": 0,
+          "exactCoincidentExtraVertices": 0,
+          "note": "Coincident UV/material seam vertices are not automatically defects."
+        },
+        "topology": {
+          "boundaryEdges": 0,
+          "branchingEdgesMoreThanTwoFaces": 0,
+          "nonmanifoldEdgesIncludingBoundaryAndLoose": 0,
+          "inconsistentTwoFaceWindingEdges": 0,
+          "looseEdges": 0,
+          "verticesUnusedByEdgesOrFaces": 0,
+          "verticesNotUsedByPolygons": 0,
+          "boundaryEdgeSamples": [],
+          "branchingEdgeSamples": [],
+          "windingEdgeSamples": [],
+          "connectedVertexComponents": 1,
+          "surfaceComponents": 1,
+          "componentsLargestFirst": [
+            {
+              "firstVertex": 0,
+              "vertices": 1058,
+              "polygons": 1104,
+              "triangles": 2112,
+              "signedVolumeWorldUnitsCubed": 3.651247277463349e-05
+            }
+          ],
+          "componentListTruncated": false,
+          "note": "Connectivity is by vertex indices; split seams can produce multiple components. Boundary edges can be intentional garment openings. Vertex-fan manifoldness not tested."
+        },
+        "triangulation": {
+          "zeroAreaTriangles": 0,
+          "nonfiniteTriangles": 0,
+          "zeroAreaTriangleSamples": []
+        },
+        "normals": {
+          "nonfiniteVertexNormals": 0,
+          "zeroVertexNormals": 0,
+          "nonfinitePolygonNormals": 0,
+          "nonfiniteCornerNormals": 0,
+          "cornerNormalReadError": null,
+          "outwardOrientationCertified": false,
+          "note": "Winding consistency and signed volume are diagnostics. Outwardness of open/multi-shell surfaces needs visual review."
+        },
+        "uvLayers": [
+          {
+            "name": "Ear_Surface_UV",
+            "loopCount": 4320,
+            "nonfiniteLoops": 0,
+            "bounds": [
+              [
+                0.019999999552965164,
+                0.9800000190734863
+              ],
+              [
+                0.05000000074505806,
+                0.949999988079071
+              ]
+            ],
+            "outsideUnitSquareLoops": 0,
+            "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+            "note": "Outside [0,1] can be intentional tiling. This is not a UV overlap or stretch audit."
+          }
+        ],
+        "materials": {
+          "slots": [
+            "Rebuilt_skin_back"
+          ],
+          "polygonUse": {
+            "0": 1104
+          },
+          "invalidMaterialPolygonCount": 0
+        },
+        "selfContacts": {
+          "requested": true,
+          "status": "completed",
+          "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs.",
+          "method": "BVH broad phase, then closed triangle SAT; contact includes tangency and coplanar overlap.",
+          "toleranceWorldUnits": 1e-08,
+          "triangleLimit": 25000,
+          "candidateLimit": 200000,
+          "completeWithinDeclaredScope": true,
+          "doesNotProveNoGlobalIntersections": true,
+          "counts": {},
+          "contactPairSamples": [],
+          "contacts": 0
+        },
+        "object": "Ear_L",
+        "matrixWorldFinite": true,
+        "matrixWorldDeterminant": 1.0,
+        "modifiers": []
+      },
+      {
+        "mesh": "Ear_R.ConchaQuadSurface",
+        "vertices": 1058,
+        "edges": 2160,
+        "polygons": 1104,
+        "triangles": 2112,
+        "polygonSizes": {
+          "3": 96,
+          "4": 1008
+        },
+        "worldBounds": [
+          [
+            -0.12609460949897766,
+            -0.09400000423192978
+          ],
+          [
+            0.005000011995434761,
+            0.04099997878074646
+          ],
+          [
+            0.7350000143051147,
+            0.7990000247955322
+          ]
+        ],
+        "surfaceAreaWorldUnitsSquared": 0.006047403144014532,
+        "toleranceWorldUnits": 1e-08,
+        "positions": {
+          "nonfinite": 0,
+          "nonfiniteSamples": [],
+          "exactCoincidentGroups": 0,
+          "exactCoincidentExtraVertices": 0,
+          "note": "Coincident UV/material seam vertices are not automatically defects."
+        },
+        "topology": {
+          "boundaryEdges": 0,
+          "branchingEdgesMoreThanTwoFaces": 0,
+          "nonmanifoldEdgesIncludingBoundaryAndLoose": 0,
+          "inconsistentTwoFaceWindingEdges": 0,
+          "looseEdges": 0,
+          "verticesUnusedByEdgesOrFaces": 0,
+          "verticesNotUsedByPolygons": 0,
+          "boundaryEdgeSamples": [],
+          "branchingEdgeSamples": [],
+          "windingEdgeSamples": [],
+          "connectedVertexComponents": 1,
+          "surfaceComponents": 1,
+          "componentsLargestFirst": [
+            {
+              "firstVertex": 0,
+              "vertices": 1058,
+              "polygons": 1104,
+              "triangles": 2112,
+              "signedVolumeWorldUnitsCubed": 3.6512473478704186e-05
+            }
+          ],
+          "componentListTruncated": false,
+          "note": "Connectivity is by vertex indices; split seams can produce multiple components. Boundary edges can be intentional garment openings. Vertex-fan manifoldness not tested."
+        },
+        "triangulation": {
+          "zeroAreaTriangles": 0,
+          "nonfiniteTriangles": 0,
+          "zeroAreaTriangleSamples": []
+        },
+        "normals": {
+          "nonfiniteVertexNormals": 0,
+          "zeroVertexNormals": 0,
+          "nonfinitePolygonNormals": 0,
+          "nonfiniteCornerNormals": 0,
+          "cornerNormalReadError": null,
+          "outwardOrientationCertified": false,
+          "note": "Winding consistency and signed volume are diagnostics. Outwardness of open/multi-shell surfaces needs visual review."
+        },
+        "uvLayers": [
+          {
+            "name": "Ear_Surface_UV",
+            "loopCount": 4320,
+            "nonfiniteLoops": 0,
+            "bounds": [
+              [
+                0.019999999552965164,
+                0.9800000190734863
+              ],
+              [
+                0.05000000074505806,
+                0.949999988079071
+              ]
+            ],
+            "outsideUnitSquareLoops": 0,
+            "zeroAreaTrianglesAtUvTolerance1e-14": 0,
+            "note": "Outside [0,1] can be intentional tiling. This is not a UV overlap or stretch audit."
+          }
+        ],
+        "materials": {
+          "slots": [
+            "Rebuilt_skin_back"
+          ],
+          "polygonUse": {
+            "0": 1104
+          },
+          "invalidMaterialPolygonCount": 0
+        },
+        "selfContacts": {
+          "requested": true,
+          "status": "completed",
+          "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs.",
+          "method": "BVH broad phase, then closed triangle SAT; contact includes tangency and coplanar overlap.",
+          "toleranceWorldUnits": 1e-08,
+          "triangleLimit": 25000,
+          "candidateLimit": 200000,
+          "completeWithinDeclaredScope": true,
+          "doesNotProveNoGlobalIntersections": true,
+          "counts": {},
+          "contactPairSamples": [],
+          "contacts": 0
+        },
+        "object": "Ear_R",
+        "matrixWorldFinite": true,
+        "matrixWorldDeterminant": 1.0,
+        "modifiers": []
+      }
+    ],
+    "skippedObjects": [],
+    "errors": [],
+    "limitations": [
+      "No artistic acceptance, silhouette identity, texture bleed, or finger-count certification.",
+      "No inter-object collisions, animation, global self-intersection, UV overlap or UV stretch certification.",
+      "Signed volume does not prove outward normals on open or multiple nested shells.",
+      "Self-contact reports include touching, exclude shared positions and are bounded per explicit object."
+    ],
+    "totals": {
+      "vertices": 2116,
+      "edges": 4320,
+      "polygons": 2208,
+      "triangles": 4224,
+      "objectsInspected": 2
+    },
+    "notAnAcceptanceVerdict": true
+  },
+  "sourceUnchanged": true
+}

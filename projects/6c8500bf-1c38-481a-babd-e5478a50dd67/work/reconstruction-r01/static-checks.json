@@ -1,0 +1,37 @@
+{
+  "source": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\projects\\6c8500bf-1c38-481a-babd-e5478a50dd67\\work\\reconstruction-r01\\candidate-review-A.blend",
+  "version": "5.2.3 LTS",
+  "new_head_vertices": 3171,
+  "new_head_faces": 3152,
+  "new_head_uv_layers": [
+    "UVMap"
+  ],
+  "finite_vertices": true,
+  "skirt_body_intersecting_triangle_pairs_rest": {
+    "Body_Complete_Trunk_Arms_Pelvis": 0,
+    "Leg L · knee calf ankle": 0,
+    "Leg R · knee calf ankle": 0
+  },
+  "groom_strands": {
+    "R01 Groom back coverage": 3600,
+    "R01 Groom fringe": 1500,
+    "R01 Groom scalp": 6600,
+    "R01 Groom tail L": 2200,
+    "R01 Groom tail R": 2200
+  },
+  "limitations": [
+    "Static rest pose only; no dynamics/animation validation",
+    "Head, neck, curves not bound to old rig; no FACS transfer",
+    "Old exports describe original master only",
+    "Skin is a form-study shader, not scanned or pore-detailed skin",
+    "Neck-to-body welding and collar fit remain provisional"
+  ],
+  "sha256": "14727372830ceaaccd1d9b9f0ade7f4be2c16b082be478b4f500f8aa2bd30f73",
+  "appearance_observations": [
+    "Compared front/quarter/profile/full/back with same cameras and lights",
+    "Cranial/nose/jaw structure improved over baseline, but new face reads more mature/serious; not accepted identity",
+    "Crown bright clumping/seam remains; tail variation and nape blending require further work",
+    "Skin/eye/lip/brow closeup still lacks realism",
+    "Neck/collar junction remains visibly provisional; no final anatomical integration"
+  ]
+}

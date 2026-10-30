@@ -1,44 +1,29 @@
-请在当前 Blender 工作区继续已经迁移的角色工程。直接使用 main，
-未经我明确要求不要新建分支。先读 AGENTS.md、README.md、
-docs/HANDOFF.md、docs/MIGRATION.md、docs/NEW_MACHINE_SETUP.md、toolchain.lock.json 和
-projects/6c8500bf-1c38-481a-babd-e5478a50dd67/project-state.json。
+请先读取 AGENTS.md、README.md、docs/HANDOFF.md、docs/PRODUCTION.md、
+toolchain.lock.json 和 projects/6c8500bf-1c38-481a-babd-e5478a50dd67/project-state.json。
+本仓库直接使用 main。Charakuru 是锁定的外部依赖，不改工具包原文件；
+所有命令从工作区根目录运行，使用统一路径适配入口。
 
-这是现有工程的续作，不从图片生成阶段重做，不使用 Tripo。
-Charakuru 是 tools/charakuru/<锁定版本>/ 下的外部工具，读取其中实际需要的 Skill。
-不要用旧完整换机包的根目录、.git、会话配置或源码覆盖当前工作区。
+当前主源为 projects/6c8500bf-1c38-481a-babd-e5478a50dd67/work/character.blend，
+SHA-256：b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5。
+它与 Character_Rebuild/character-rebuilt.blend 字节一致，是无骨骼、无动画的静态动漫重建。
+Character_Rebuild/character-rebuilt-textured.glb 为对应导出。
+Character_Rebuild/interactive/ 保存独立绑定预览，22 骨骼、四段基础动作；
+没有面部表情、独立手指或头发／裙子物理，不替代主源，也不代表客户外观验收。
 
-这是新环境时，先按 docs/NEW_MACHINE_SETUP.md 核对并补齐 Git、Node、
-独立 Python/uv、Blender、VRM Add-on、Blender MCP 两端和 Codex 配置。
-手动复制 tools/setup 的安装文件不等于已经安装；保留本机已有配置，
-使用新电脑的可执行文件绝对路径。先填好 config/local.json 的 pythonExecutable，
-再执行工具安装和源码语法检查。通过 MCP 实际读取场景才能判定连接成功。
+当前预览：node Character_Rebuild/scripts/serve_delivery.mjs --port 52860
+动作页：http://127.0.0.1:52860/interactive/viewer.html
+静态图册：http://127.0.0.1:52860/review.html
+旧 workspace preview、exports/avatar.*、旧 VRM 及 R09/R11 网页均为历史。
 
-在当前根目录校验：
-node scripts/assets.mjs verify --project 6c8500bf-1c38-481a-babd-e5478a50dd67
-node scripts/workspace.mjs doctor
-node scripts/workspace.mjs validate-source
+旧 R11 路线已按用户要求停止。历史队列、过程脚本和“下一步”文字不是继续制作指令。
+不得顺序重跑旧脚本，不从 Tripo 重新生成，不用旧 .charakit 或导出覆盖当前主源。
+保留全部历史候选、待合并副本、停止交接包及原主源阶段备份。
+只有收到新的制作请求才开始模型修改；不要因读取此提示自动恢复旧任务。
 
-资产 verify 失败时先修复搬运结果，不执行 inventory 重写基准。
-用 Blender 打开：
-projects/6c8500bf-1c38-481a-babd-e5478a50dd67/work/character.blend
-这是唯一建模主源。检查贴图、骨骼、形态键、衣内身体和马尾物理。
-需要预览时运行 node scripts/workspace.mjs preview，使用命令打印的地址。
-不要把运行版 VRM 重新导入后当作可编辑主源。
-
-当前主源 SHA-256：
-6e7361e7f5c306325d3f33c4c9f6f56b1a489d5f4579bb4be951d4c3d59cc8c1
-此哈希标识迁移基线；开始新的编辑并保存后，更新相关状态和清单。
-
-原最终交接确认本轮必需修复已整合，无必需修复待合并。
-finish_comprehensive_refinement.py 已执行，不能再次对当前主源施加。
-早期整体生成、头型变形脚本和旧 QA 副本是历史资料，不能顺序重跑或覆盖主源。
-
-当前仍是需要精修的审阅版，未达到真人感终稿要求。
-先检查真实多角度效果，再按头脸自然感、枕颈和发帽边缘、真实发丝、
-皮肤和配色、手部及衣料的顺序完善。保留默认无腮红、自然表情、
-完整衣内身体和可摆动的马尾。不能用技术检查替代外观验收。
-运行版目前614282三角形，超过脚本300000目标；目标设备、作者和授权信息未确认。
-
-仍可多代理分工，但只有整合者写主源；子代理使用独立副本，
-合并前核对基线，合并后重新导出并验证。先报告迁移验收结果、
-实际看到的问题和下一步优先级，再继续制作。旧电脑原件保留到新机恢复成功。
+新环境先按 docs/NEW_MACHINE_SETUP.md 安装并核对配置；本机配置不进 Git。
+运行 node scripts/workspace.mjs doctor 和 node scripts/workspace.mjs validate-source。
+通过 MCP 实际读取正确场景后才算连接成功。
+Git 仅包含源码、文档和小型证据；模型、贴图、缓存、视频、ZIP 与工具须另行复制。
+旧资产清单仅验证历史快照，不覆盖本轮新成果；不要覆盖当前主源或重写旧清单以通过 verify。
+迁移须先停止写入，保存所有主源及工作副本，再建立清单、复制和校验。
+当前没有覆盖新成果的异机备份声明。技术通过不等于外观验收。

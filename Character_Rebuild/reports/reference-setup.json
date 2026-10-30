@@ -1,0 +1,13 @@
+{
+  "landmarks": {
+    "head_top": 0.9947,
+    "chin": 0.68,
+    "shoulder": 0.603,
+    "waist": 0.285,
+    "skirt_hem": -0.222,
+    "foot_sole": -0.9991
+  },
+  "reference": "Original IMG_7224 four-view board; A-pose only",
+  "modelPose": "Original T-pose",
+  "materialNormalization": "Both before-neutral and after use non-metallic material, neutral fixed lights and fixed cameras"
+}

@@ -1,0 +1,101 @@
+{
+  "scope": "V3 pure construction geometry, not rendered visual acceptance",
+  "scriptSha256": "e04464ee152bb445b6c3bc8a06921a49c3cc209c6fd5ca65bc58822bbafe81de",
+  "specSha256": "c833d7f4cd2f714034c99526b4e0be9bb7d7fdb4dbd00e7a92421aef64c243d2",
+  "parts": [
+    {
+      "name": "Head_Skin_Quad_Retopo",
+      "vertices": 13880,
+      "faces": 13890,
+      "finite": true,
+      "edgesGt2": 0,
+      "zeroAreaFaces": 0
+    },
+    {
+      "name": "Neck_Clean_Quad_Sleeve",
+      "vertices": 1600,
+      "faces": 1536,
+      "finite": true,
+      "edgesGt2": 0,
+      "zeroAreaFaces": 0
+    },
+    {
+      "name": "Eye_Sclera_L",
+      "vertices": 769,
+      "faces": 768,
+      "finite": true,
+      "edgesGt2": 0,
+      "zeroAreaFaces": 0
+    },
+    {
+      "name": "Eye_Iris_L",
+      "vertices": 513,
+      "faces": 512,
+      "finite": true,
+      "edgesGt2": 0,
+      "zeroAreaFaces": 0
+    },
+    {
+      "name": "Eye_UpperLash_L",
+      "vertices": 82,
+      "faces": 40,
+      "finite": true,
+      "edgesGt2": 0,
+      "zeroAreaFaces": 0
+    },
+    {
+      "name": "Eye_Sclera_R",
+      "vertices": 769,
+      "faces": 768,
+      "finite": true,
+      "edgesGt2": 0,
+      "zeroAreaFaces": 0
+    },
+    {
+      "name": "Eye_Iris_R",
+      "vertices": 513,
+      "faces": 512,
+      "finite": true,
+      "edgesGt2": 0,
+      "zeroAreaFaces": 0
+    },
+    {
+      "name": "Eye_UpperLash_R",
+      "vertices": 82,
+      "faces": 40,
+      "finite": true,
+      "edgesGt2": 0,
+      "zeroAreaFaces": 0
+    },
+    {
+      "name": "Brow_L",
+      "vertices": 66,
+      "faces": 32,
+      "finite": true,
+      "edgesGt2": 0,
+      "zeroAreaFaces": 0
+    },
+    {
+      "name": "Brow_R",
+      "vertices": 66,
+      "faces": 32,
+      "finite": true,
+      "edgesGt2": 0,
+      "zeroAreaFaces": 0
+    },
+    {
+      "name": "Mouth_Closed_Line",
+      "vertices": 96,
+      "faces": 48,
+      "finite": true,
+      "edgesGt2": 0,
+      "zeroAreaFaces": 0
+    }
+  ],
+  "frontXZInversions": 0,
+  "eyeSpecsUnchangedFromV2": true,
+  "mouthXZUnchangedFromV2": true,
+  "noseY": -0.12515155811346598,
+  "mouthY": -0.1046473758832343,
+  "eyeSkinY": -0.0928166863209884
+}

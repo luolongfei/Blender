@@ -1,0 +1,129 @@
+{
+  "scope": "local coordinate polish only; no visual acceptance until same-camera render",
+  "capAndFittedHeadExact": true,
+  "protectedHashes": {
+    "Hair_Crown_SourceEnvelope": {
+      "geometry": "4112ce52573b638c08e61c7428e8421299fc81340f667244446299ac7190cbd4",
+      "uv": "b108b85c99a359cbfd5ec421218c90b5a6dc0fe4d46997dfaa883c18d1a76df9"
+    },
+    "Head_Skin_Quad_Retopo": {
+      "geometry": "e84d74f71adb0e9de25c9fe20e8094dd105060fa8a277c79ec956fab6d052bad",
+      "uv": "e96c3d075655516bda87ea05b4fbd1a6a21f9fca3c8d2cd0d5922e446ad0540e"
+    }
+  },
+  "records": [
+    {
+      "object": "Fringe_CentreLeft",
+      "vertices": 444,
+      "movedVertices": 396,
+      "maxDisplacement": 0.002800028504411376,
+      "maxRootEmbed": 0.0028,
+      "maxSideGapReduction": 0,
+      "tipLastFourRingsExact": true,
+      "uvExact": true,
+      "topologyExact": true,
+      "geometryBefore": "5f5dcd3ffc5d439b687e0b695760cbd0d9091e714d98b4a04315277319c3c786",
+      "geometryAfter": "19a65dffa368e24f1534cb2c1ec14a79a1ddf06967d02562c217941214c160d6"
+    },
+    {
+      "object": "Fringe_Left",
+      "vertices": 444,
+      "movedVertices": 396,
+      "maxDisplacement": 0.002799989924605439,
+      "maxRootEmbed": 0.0028,
+      "maxSideGapReduction": 0,
+      "tipLastFourRingsExact": true,
+      "uvExact": true,
+      "topologyExact": true,
+      "geometryBefore": "0bae2920de1cb2540e2b8720743b3f54bcd61aa935c73ab8dfb643955e8c2135",
+      "geometryAfter": "20cd7842311a6f5ef8e39e1b658db0e29ad215e5b47fcd91b3ae95aa5bc8be48"
+    },
+    {
+      "object": "Fringe_CentreRight",
+      "vertices": 444,
+      "movedVertices": 396,
+      "maxDisplacement": 0.0027999840169226314,
+      "maxRootEmbed": 0.0028,
+      "maxSideGapReduction": 0,
+      "tipLastFourRingsExact": true,
+      "uvExact": true,
+      "topologyExact": true,
+      "geometryBefore": "17b40db9d33fad5ae0d81c391fb6db2859cf444a71acd4898349f64ae77e1e7b",
+      "geometryAfter": "61292d5a462595f41418e101c505de6f4ea5bc47452c162f25c5a856f3a2b908"
+    },
+    {
+      "object": "Fringe_Right",
+      "vertices": 444,
+      "movedVertices": 396,
+      "maxDisplacement": 0.0027999813472955556,
+      "maxRootEmbed": 0.0028,
+      "maxSideGapReduction": 0,
+      "tipLastFourRingsExact": true,
+      "uvExact": true,
+      "topologyExact": true,
+      "geometryBefore": "db3c10ee16f17a60a5b7a8c805ec26a35018896c7c26cd735f51e3149193e97f",
+      "geometryAfter": "9c73c25b178c1811a4e1ef179fbb1e134f2b9c703d674ec47d633bf5957a98ed"
+    },
+    {
+      "object": "Fringe_LeftFine",
+      "vertices": 444,
+      "movedVertices": 396,
+      "maxDisplacement": 0.0027999986541482826,
+      "maxRootEmbed": 0.0028,
+      "maxSideGapReduction": 0,
+      "tipLastFourRingsExact": true,
+      "uvExact": true,
+      "topologyExact": true,
+      "geometryBefore": "731a4b04d9bd3e004adf6609b77d43dc23cf0774e0e0b22f26406e8db1dd50ce",
+      "geometryAfter": "7aab15dfd5c3991a08dca1ff1149647fa7610269e6cb120c04919d1feaafb713"
+    },
+    {
+      "object": "Fringe_RightFine",
+      "vertices": 444,
+      "movedVertices": 396,
+      "maxDisplacement": 0.0021405091135807946,
+      "maxRootEmbed": 0.0017206980878687475,
+      "maxSideGapReduction": 0,
+      "tipLastFourRingsExact": true,
+      "uvExact": true,
+      "topologyExact": true,
+      "geometryBefore": "c2c4a102807fa57057e60201f18e2801a99431401b73d448689c86963d406cc6",
+      "geometryAfter": "1d52c2b90dd28eed25b91b4e94103fdac24cb891d05e887f19cbf5e19438c2a7"
+    },
+    {
+      "object": "Temple_Left",
+      "vertices": 492,
+      "movedVertices": 420,
+      "maxDisplacement": 0.0022708046178724515,
+      "maxRootEmbed": 0,
+      "maxSideGapReduction": 0.002,
+      "tipLastFourRingsExact": true,
+      "uvExact": true,
+      "topologyExact": true,
+      "geometryBefore": "f778a1dd3c1154ce5cfbc1479d380bd8cab3e654e75eca3dffeacd3f641fd426",
+      "geometryAfter": "796ddebea0650fdbce25262485ae9537512829eb5d5f024c630a1c7e112d2e76"
+    },
+    {
+      "object": "Temple_Right",
+      "vertices": 492,
+      "movedVertices": 420,
+      "maxDisplacement": 0.0022708237987766147,
+      "maxRootEmbed": 0,
+      "maxSideGapReduction": 0.002,
+      "tipLastFourRingsExact": true,
+      "uvExact": true,
+      "topologyExact": true,
+      "geometryBefore": "72c9487b8e80528948d40a93cf385eda94c586f8dfcbcad1624ae2f1f4385819",
+      "geometryAfter": "ec1a8ee2359a6a6b47e3eb11f072c5d9abf6b8827d55e522b1b5e68ae9112694"
+    }
+  ],
+  "newVertices": 0,
+  "newFaces": 0,
+  "newObjects": 0,
+  "newModifiers": 0,
+  "source": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\stages\\E4-final-refined.blend",
+  "sourceSha256": "7a406fbbcf337e4098ebc98697766cdb3d88d8966286779c92a5e58e3e6928aa",
+  "sourceUnchanged": true,
+  "candidate": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\agents\\hair\\E5-hair-continuity-candidate.blend",
+  "candidateSha256": "e1b823bd7ac759371cb55c0b28b9a4c70f0f2d20e5d1ca8f43fdf194c02e31ed"
+}

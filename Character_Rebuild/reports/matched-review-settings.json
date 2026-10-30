@@ -1,0 +1,84 @@
+{
+  "sameLightingBeforeAfter": true,
+  "sameLightingReimport": true,
+  "comparisons": [
+    {
+      "name": "front",
+      "matched": true
+    },
+    {
+      "name": "right",
+      "matched": true
+    },
+    {
+      "name": "back",
+      "matched": true
+    },
+    {
+      "name": "face-front",
+      "matched": true
+    },
+    {
+      "name": "face-side",
+      "matched": true
+    },
+    {
+      "name": "hand-top",
+      "matched": true
+    },
+    {
+      "name": "hand-palm",
+      "matched": true
+    },
+    {
+      "name": "hand-oblique",
+      "matched": true
+    }
+  ],
+  "imported": [
+    {
+      "name": "front",
+      "matched": true
+    },
+    {
+      "name": "back",
+      "matched": true
+    },
+    {
+      "name": "face-front",
+      "matched": true
+    },
+    {
+      "name": "face-side",
+      "matched": true
+    },
+    {
+      "name": "hand-top",
+      "matched": true
+    },
+    {
+      "name": "hand-palm",
+      "matched": true
+    },
+    {
+      "name": "face-other-side",
+      "matched": true
+    },
+    {
+      "name": "hand-other-top",
+      "matched": true
+    },
+    {
+      "name": "hand-other-palm",
+      "matched": true
+    },
+    {
+      "name": "face-back-quarter",
+      "matched": true
+    }
+  ],
+  "beforeMaterialNormalization": "Original source metallic default 1 corrected to 0 for neutral garment/skin review; original GLB remains byte-identical.",
+  "imageProcessing": "Direct Blender renders, no retouching, denoise beautification or depth-of-field.",
+  "scope": "Camera, light and render settings correspondence; not an appearance verdict.",
+  "passed": true
+}

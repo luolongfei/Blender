@@ -1,0 +1,15 @@
+import fs from 'node:fs';
+import {workspacePath} from '../../pipeline/context.mjs';
+const read = p => JSON.parse(fs.readFileSync(workspacePath('Character_Rebuild',p),'utf8'));
+const before=read('checks/before-matched/review-settings.json');
+const after=read('checks/final/review-settings.json');
+const reimport=read('checks/reimport/review-settings.json');
+const settings = x => Object.fromEntries(['engine','viewTransform','look','exposure','gamma','resolution','depthOfField','areaShadowJitter','samples','lights'].map(k=>[k,k==='lights'?[...x[k]].sort((a,b)=>a.name.localeCompare(b.name)):x[k]]));
+const equal=(a,b)=>JSON.stringify(a)===JSON.stringify(b);
+const comparisons=before.views.map(v=>({name:v.name,matched:equal(v,after.views.find(x=>x.name===v.name))}));
+const imported=reimport.views.map(v=>({name:v.name,matched:equal(v,after.views.find(x=>x.name===v.name))}));
+const report={sameLightingBeforeAfter:equal(settings(before),settings(after)),sameLightingReimport:equal(settings(after),settings(reimport)),comparisons,imported,beforeMaterialNormalization:'Original source metallic default 1 corrected to 0 for neutral garment/skin review; original GLB remains byte-identical.',imageProcessing:'Direct Blender renders, no retouching, denoise beautification or depth-of-field.',scope:'Camera, light and render settings correspondence; not an appearance verdict.'};
+report.passed=report.sameLightingBeforeAfter&&report.sameLightingReimport&&comparisons.every(v=>v.matched)&&imported.every(v=>v.matched);
+fs.writeFileSync(workspacePath('Character_Rebuild/reports/matched-review-settings.json'),JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify(report,null,2));
+if(!report.passed)process.exitCode=1;

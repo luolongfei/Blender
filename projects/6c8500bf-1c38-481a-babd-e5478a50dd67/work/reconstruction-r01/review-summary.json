@@ -1,0 +1,68 @@
+{
+  "stage": "首轮静态造型提案，等待人物方向选择",
+  "recordedAt": "2026-10-28T15:17:10.376665+00:00",
+  "masterUnchanged": true,
+  "sources": [
+    {
+      "path": "work/character.blend",
+      "sha256": "6e7361e7f5c306325d3f33c4c9f6f56b1a489d5f4579bb4be951d4c3d59cc8c1",
+      "bytes": 60560716
+    },
+    {
+      "path": "work/reconstruction-r01/candidate-review-A.blend",
+      "sha256": "14727372830ceaaccd1d9b9f0ade7f4be2c16b082be478b4f500f8aa2bd30f73",
+      "bytes": 53740619
+    },
+    {
+      "path": "work/reconstruction-r01/candidate-review-B.blend",
+      "sha256": "c856df91c4a54b73a42e8d4e9853f8cbae5a2303c50d74fba68ccc24e327f32a",
+      "bytes": 53739969
+    }
+  ],
+  "renderCondition": "同场景三灯、同相机和静止姿势、Cycles CPU 24 samples、无景深；对比图仅拼接标注，无修图",
+  "images": [
+    {
+      "path": "previews/reconstruction-r01/back-comparison.png",
+      "sha256": "f68ab7469ff215d35517aefaefc96cb35de49a463112533d23823907eda169a6"
+    },
+    {
+      "path": "previews/reconstruction-r01/face-comparison.png",
+      "sha256": "07bae8f542e1e809bffbde3ec7fa39dc449c8a5a7f2d3485b1aeec9a148efdcb"
+    },
+    {
+      "path": "previews/reconstruction-r01/profile-comparison.png",
+      "sha256": "d4ad8db594b57050f9b45c1f236667b623cf68023670c97ef8f4fe55fdb98011"
+    },
+    {
+      "path": "previews/reconstruction-r01/silhouette-comparison.png",
+      "sha256": "7c0a1c4c95f8520a3b92bf0d210dba3b64873c605e0639ccf98d2f25f6cf5f2a"
+    }
+  ],
+  "changes": [
+    "CC0动画头经比例与鼻颌适配，替换旧头脸/耳/眼",
+    "重做球形眼及曲面虹膜，保留项目虹膜纹理",
+    "可编辑曲线发型与双马尾自然下垂，修复头顶根线与后脑覆盖",
+    "绿裙在保留刀褶/腰部的可逆形态键中收拢下摆并同步缝线",
+    "新头脸A/B可调方向保存在独立源"
+  ],
+  "scopeAndLimits": [
+    "尚未达到AAA或照片级近景，不是最终交付",
+    "新脸偏成熟、严肃，原角色身份与年龄感尚未确认保留，需要用户选择或调整",
+    "头脸与身体尚未焊接，领口和颈肩仍需雕刻整合",
+    "新头脸与曲线发型未绑定，旧表情和旧动作未适配；不适用旧技术通过结论",
+    "皮肤仍是大形评审材质，缺少区域纹理、细微不对称、毛孔与绒毛",
+    "眼睑、睫毛、眉毛、口腔及表情系统仍需重做与验证",
+    "头发尚有规则梳理、头顶亮斑和高光过于整齐的问题；没有物理模拟",
+    "裙摆为手工静态形变，不是布料仿真；上衣本轮未修改",
+    "不更新VRM/GLB或avatar.blend；它们仍对应迁移主源",
+    "无新增异机备份，不宣称备份已冻结"
+  ],
+  "nextDecision": "选择 A 的较明确下颌或 B 的较柔和短下半脸，或指出希望继续调整的部位",
+  "nextProduction": [
+    "用户方向选择后深化颅面、颈肩与原服装适配",
+    "统一全身拓扑和UV，处理隐藏重叠身体",
+    "新眼口眉睫/皮肤与曲线梳理",
+    "重做制作绑定、面部表演、动作重定向与布料毛发动态",
+    "按实际目标软件另做实时交付适配"
+  ]
+}

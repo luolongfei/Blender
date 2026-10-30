@@ -1,0 +1,722 @@
+{
+  "blendSha256": "fee63d90b281373b56e453af4e0402126aef635105a17bca88f7893e8e073738",
+  "glbSha256": "64febee7ea3285cc8f4ff91725fbc2df686daaaaf50e2508384abb8ddec40289",
+  "sourceStaticSha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5",
+  "actions": {
+    "idle": [
+      1.0,
+      121.0
+    ],
+    "look": [
+      1.0,
+      181.0
+    ],
+    "Tpose": [
+      1.0,
+      31.0
+    ],
+    "walk": [
+      1.0,
+      85.0
+    ],
+    "wave": [
+      1.0,
+      145.0
+    ]
+  },
+  "meshCount": 47,
+  "boneCount": 22,
+  "reimportVerified": true,
+  "importerBoneDisplayHelpers": [
+    "Icosphere"
+  ],
+  "reimportImages": [
+    {
+      "name": "iris-anime-1024",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "hair-crown-flow-normal-v5-2048",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "face-skin-2048",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "hair-crown-flow-v4-2048",
+      "size": [
+        2048,
+        2048
+      ],
+      "packed": true
+    },
+    {
+      "name": "body-final-4096",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    }
+  ],
+  "reimportWeights": [
+    {
+      "object": "Blouse_Button_1",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Blouse_Button_2",
+      "unweighted": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "maxInfluences": 2
+    },
+    {
+      "object": "Blouse_Button_3",
+      "unweighted": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "maxInfluences": 2
+    },
+    {
+      "object": "Brow_L",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Brow_R",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Cuff_Inner_L",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Cuff_Inner_R",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Ear_L",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Ear_R",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Eye_Iris_L",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Eye_Iris_R",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Eye_Sclera_L",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Eye_Sclera_R",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Eye_UpperLash_L",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Eye_UpperLash_R",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Forearm_UnderSleeve_L",
+      "unweighted": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "maxInfluences": 2
+    },
+    {
+      "object": "Forearm_UnderSleeve_R",
+      "unweighted": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "maxInfluences": 2
+    },
+    {
+      "object": "Fringe_CentreLeft",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Fringe_CentreRight",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Fringe_Left",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Fringe_LeftFine",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Fringe_Right",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Fringe_RightFine",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Hair_Crown_SourceEnvelope",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Head_Skin_Quad_Retopo",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Mouth_Closed_Line",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Neck_Clean_Quad_Sleeve",
+      "unweighted": 0,
+      "maxWeightError": 2.9802322387695312e-08,
+      "maxInfluences": 2
+    },
+    {
+      "object": "Ponytail_Left_FabricTie",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Ponytail_Left_Layer_1",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Ponytail_Left_Layer_2",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Ponytail_Left_Layer_3",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Ponytail_Left_Layer_4",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Ponytail_Left_Layer_5",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Ponytail_Right_FabricTie",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Ponytail_Right_Layer_1",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Ponytail_Right_Layer_2",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Ponytail_Right_Layer_3",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Ponytail_Right_Layer_4",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Ponytail_Right_Layer_5",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Rebuild_Body_Clothing_SourceRetained",
+      "unweighted": 0,
+      "maxWeightError": 1.1920928955078125e-07,
+      "maxInfluences": 4
+    },
+    {
+      "object": "Rebuilt_BackCollar_Band",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Rebuilt_FrontCollar_L",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Rebuilt_FrontCollar_R",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Rebuilt_Hand_L",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Rebuilt_Hand_R",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Temple_Left",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    },
+    {
+      "object": "Temple_Right",
+      "unweighted": 0,
+      "maxWeightError": 0,
+      "maxInfluences": 1
+    }
+  ],
+  "reimportRestEquivalence": [
+    {
+      "object": "Blouse_Button_1",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Blouse_Button_2",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Blouse_Button_3",
+      "bidirectionalMaximumVertexDistance": 2.7755575615628914e-17
+    },
+    {
+      "object": "Brow_L",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Brow_R",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Cuff_Inner_L",
+      "bidirectionalMaximumVertexDistance": 8.470940571214669e-08
+    },
+    {
+      "object": "Cuff_Inner_R",
+      "bidirectionalMaximumVertexDistance": 1.341104507446289e-07
+    },
+    {
+      "object": "Ear_L",
+      "bidirectionalMaximumVertexDistance": 5.961192073300481e-08
+    },
+    {
+      "object": "Ear_R",
+      "bidirectionalMaximumVertexDistance": 5.961192073300481e-08
+    },
+    {
+      "object": "Eye_Iris_L",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Eye_Iris_R",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Eye_Sclera_L",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Eye_Sclera_R",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Eye_UpperLash_L",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Eye_UpperLash_R",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Forearm_UnderSleeve_L",
+      "bidirectionalMaximumVertexDistance": 1.7896908843795245e-07
+    },
+    {
+      "object": "Forearm_UnderSleeve_R",
+      "bidirectionalMaximumVertexDistance": 1.7896908843795245e-07
+    },
+    {
+      "object": "Fringe_CentreLeft",
+      "bidirectionalMaximumVertexDistance": 5.961192073300481e-08
+    },
+    {
+      "object": "Fringe_CentreRight",
+      "bidirectionalMaximumVertexDistance": 5.961192073300481e-08
+    },
+    {
+      "object": "Fringe_Left",
+      "bidirectionalMaximumVertexDistance": 5.961192073300481e-08
+    },
+    {
+      "object": "Fringe_LeftFine",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Fringe_Right",
+      "bidirectionalMaximumVertexDistance": 5.961192073300481e-08
+    },
+    {
+      "object": "Fringe_RightFine",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Hair_Crown_SourceEnvelope",
+      "bidirectionalMaximumVertexDistance": 5.961192073300481e-08
+    },
+    {
+      "object": "Head_Skin_Quad_Retopo",
+      "bidirectionalMaximumVertexDistance": 5.961192073300481e-08
+    },
+    {
+      "object": "Mouth_Closed_Line",
+      "bidirectionalMaximumVertexDistance": 0.0
+    },
+    {
+      "object": "Neck_Clean_Quad_Sleeve",
+      "bidirectionalMaximumVertexDistance": 5.961192073300481e-08
+    },
+    {
+      "object": "Ponytail_Left_FabricTie",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Ponytail_Left_Layer_1",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Ponytail_Left_Layer_2",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Ponytail_Left_Layer_3",
+      "bidirectionalMaximumVertexDistance": 0.0
+    },
+    {
+      "object": "Ponytail_Left_Layer_4",
+      "bidirectionalMaximumVertexDistance": 0.0
+    },
+    {
+      "object": "Ponytail_Left_Layer_5",
+      "bidirectionalMaximumVertexDistance": 0.0
+    },
+    {
+      "object": "Ponytail_Right_FabricTie",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Ponytail_Right_Layer_1",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Ponytail_Right_Layer_2",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Ponytail_Right_Layer_3",
+      "bidirectionalMaximumVertexDistance": 0.0
+    },
+    {
+      "object": "Ponytail_Right_Layer_4",
+      "bidirectionalMaximumVertexDistance": 0.0
+    },
+    {
+      "object": "Ponytail_Right_Layer_5",
+      "bidirectionalMaximumVertexDistance": 0.0
+    },
+    {
+      "object": "Rebuild_Body_Clothing_SourceRetained",
+      "bidirectionalMaximumVertexDistance": 1.8506858623368316e-07
+    },
+    {
+      "object": "Rebuilt_BackCollar_Band",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Rebuilt_FrontCollar_L",
+      "bidirectionalMaximumVertexDistance": 5.960475846222835e-08
+    },
+    {
+      "object": "Rebuilt_FrontCollar_R",
+      "bidirectionalMaximumVertexDistance": 5.960475846222835e-08
+    },
+    {
+      "object": "Rebuilt_Hand_L",
+      "bidirectionalMaximumVertexDistance": 1.7978143773689226e-07
+    },
+    {
+      "object": "Rebuilt_Hand_R",
+      "bidirectionalMaximumVertexDistance": 1.7978143773689226e-07
+    },
+    {
+      "object": "Temple_Left",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    },
+    {
+      "object": "Temple_Right",
+      "bidirectionalMaximumVertexDistance": 5.960464477539063e-08
+    }
+  ],
+  "reimportActionSamples": [
+    {
+      "name": "idle",
+      "frame": 24.0,
+      "bbox": [
+        [
+          -0.5228607654571533,
+          0.5228607654571533
+        ],
+        [
+          -0.23363658785820007,
+          0.24766801297664642
+        ],
+        [
+          -0.9990766644477844,
+          0.9948912858963013
+        ]
+      ],
+      "sourceBbox": [
+        [
+          -0.5228610038757324,
+          0.5228610634803772
+        ],
+        [
+          -0.23363658785820007,
+          0.24766801297664642
+        ],
+        [
+          -0.9990763664245605,
+          0.994891345500946
+        ]
+      ],
+      "sourceBboxMaxError": 2.980232238769531e-07
+    },
+    {
+      "name": "wave",
+      "frame": 28.80000114440918,
+      "bbox": [
+        [
+          -0.5311164855957031,
+          0.5228607654571533
+        ],
+        [
+          -0.23363658785820007,
+          0.24766801297664642
+        ],
+        [
+          -0.9990766644477844,
+          0.9948904514312744
+        ]
+      ],
+      "sourceBbox": [
+        [
+          -0.5311169028282166,
+          0.5228610634803772
+        ],
+        [
+          -0.23363658785820007,
+          0.24766801297664642
+        ],
+        [
+          -0.9990763664245605,
+          0.9948905110359192
+        ]
+      ],
+      "sourceBboxMaxError": 4.172325134277344e-07
+    },
+    {
+      "name": "look",
+      "frame": 36.0,
+      "bbox": [
+        [
+          -0.5228607654571533,
+          0.5228607654571533
+        ],
+        [
+          -0.23363658785820007,
+          0.24766801297664642
+        ],
+        [
+          -0.9990766644477844,
+          0.9949192404747009
+        ]
+      ],
+      "sourceBbox": [
+        [
+          -0.5228610038757324,
+          0.5228610634803772
+        ],
+        [
+          -0.23363658785820007,
+          0.24766801297664642
+        ],
+        [
+          -0.9990763664245605,
+          0.9949193000793457
+        ]
+      ],
+      "sourceBboxMaxError": 2.980232238769531e-07
+    },
+    {
+      "name": "walk",
+      "frame": 16.799999237060547,
+      "bbox": [
+        [
+          -0.5220746994018555,
+          0.5233179926872253
+        ],
+        [
+          -0.24528923630714417,
+          0.24766801297664642
+        ],
+        [
+          -0.9990764856338501,
+          0.9933911561965942
+        ]
+      ],
+      "sourceBbox": [
+        [
+          -0.522074818611145,
+          0.5233179926872253
+        ],
+        [
+          -0.24528922140598297,
+          0.24766801297664642
+        ],
+        [
+          -0.9990763068199158,
+          0.9933913350105286
+        ]
+      ],
+      "sourceBboxMaxError": 1.7881393432617188e-07
+    },
+    {
+      "name": "Tpose",
+      "frame": 5.6,
+      "bbox": [
+        [
+          -0.9871099591255188,
+          0.9871099591255188
+        ],
+        [
+          -0.23363658785820007,
+          0.24766801297664642
+        ],
+        [
+          -0.9990766644477844,
+          0.9945254325866699
+        ]
+      ],
+      "sourceBbox": [
+        [
+          -0.987109899520874,
+          0.987109899520874
+        ],
+        [
+          -0.23363658785820007,
+          0.24766801297664642
+        ],
+        [
+          -0.9990763664245605,
+          0.9945253729820251
+        ]
+      ],
+      "sourceBboxMaxError": 2.980232238769531e-07
+    }
+  ],
+  "notes": [
+    "GLB fresh-import verified for mesh count, armature modifiers, packed image decoding, normalized skin weights and five animated action samples.",
+    "Rest geometry compared bidirectionally against original evaluated source points, allowing glTF UV seam vertex duplication.",
+    "Visual key poses are source renders; root performs independent web runtime inspection.",
+    "No full dynamic cloth/hair or exhaustive inter-object collision verification."
+  ]
+}

@@ -1,0 +1,425 @@
+{
+  "face": {
+    "new_mesh_objects": [
+      "Head_Skin_Quad_Retopo",
+      "Neck_Clean_Quad_Sleeve",
+      "Eye_Sclera_L",
+      "Eye_Iris_L",
+      "Eye_UpperLash_L",
+      "Eye_Sclera_R",
+      "Eye_Iris_R",
+      "Eye_UpperLash_R",
+      "Brow_L",
+      "Brow_R",
+      "Mouth_Closed_Line"
+    ],
+    "vertices": 17628,
+    "polygons": 17382,
+    "quad_faces": 16900,
+    "neck_boundary": "intentionally open for body integration",
+    "saved_source": false,
+    "appearance_accepted": false
+  },
+  "hands": [
+    {
+      "object": "Rebuilt_Hand_L",
+      "wrist_origin": [
+        0.746,
+        0.0365,
+        0.5475
+      ],
+      "frame": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "dimensions": {
+        "palm_length": 0.118,
+        "palm_width": 0.094,
+        "palm_depth": 0.034,
+        "wrist_width": 0.078,
+        "wrist_depth": 0.052,
+        "finger_lengths": [
+          0.082,
+          0.108,
+          0.124,
+          0.112
+        ],
+        "finger_widths": [
+          0.0165,
+          0.0195,
+          0.02,
+          0.019
+        ],
+        "finger_depths": [
+          0.0165,
+          0.0185,
+          0.019,
+          0.0185
+        ],
+        "finger_splay": [
+          -0.018,
+          -0.006,
+          0.004,
+          0.014
+        ],
+        "thumb_length": 0.11,
+        "thumb_width": 0.023,
+        "thumb_depth": 0.021,
+        "thumb_forward": 0.91,
+        "thumb_outward": 0.52,
+        "curl": 0.003
+      },
+      "base_topology": {
+        "vertices": 750,
+        "faces": 768,
+        "quads": 728,
+        "triangles": 1496,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "components": 1,
+        "scope": "connectivity only; visual and self-intersection checks remain necessary"
+      },
+      "subdivision": 1,
+      "bones_added": false,
+      "requires_visual_validation": true
+    },
+    {
+      "object": "Rebuilt_Hand_R",
+      "wrist_origin": [
+        -0.746,
+        0.0365,
+        0.5475
+      ],
+      "frame": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "dimensions": {
+        "palm_length": 0.118,
+        "palm_width": 0.094,
+        "palm_depth": 0.034,
+        "wrist_width": 0.078,
+        "wrist_depth": 0.052,
+        "finger_lengths": [
+          0.082,
+          0.108,
+          0.124,
+          0.112
+        ],
+        "finger_widths": [
+          0.0165,
+          0.0195,
+          0.02,
+          0.019
+        ],
+        "finger_depths": [
+          0.0165,
+          0.0185,
+          0.019,
+          0.0185
+        ],
+        "finger_splay": [
+          -0.018,
+          -0.006,
+          0.004,
+          0.014
+        ],
+        "thumb_length": 0.11,
+        "thumb_width": 0.023,
+        "thumb_depth": 0.021,
+        "thumb_forward": 0.91,
+        "thumb_outward": 0.52,
+        "curl": 0.003
+      },
+      "base_topology": {
+        "vertices": 750,
+        "faces": 768,
+        "quads": 728,
+        "triangles": 1496,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "components": 1,
+        "scope": "connectivity only; visual and self-intersection checks remain necessary"
+      },
+      "subdivision": 1,
+      "bones_added": false,
+      "requires_visual_validation": true
+    }
+  ],
+  "clothing": [
+    "<bpy_struct, Object(\"Rebuild_Body_Clothing_SourceRetained\") at 0x0000021626D41D20>",
+    {
+      "source": "character-hq-textured.glb",
+      "sourceSha256": "105b77790ff4b382b0ef83189827d774a596f4a8069cefdb8911ad85f93af3b2",
+      "coordinateSystem": "Original Blender X,-glTF-Z,glTF-Y; no scale change",
+      "headCut": 0.632,
+      "wristCut": 0.7525,
+      "originalVertices": 127360,
+      "originalFaces": 200000,
+      "positionWeldDistance": 1e-06,
+      "preservedUVLayers": [
+        "UVMap"
+      ],
+      "globalRemesh": false,
+      "globalSmoothing": false,
+      "warnings": [
+        "Rear hair removal has a boundary shared with the neck cut or a complex non-loop. It is deliberately not capped; a local back-yoke/collar bridge must be reviewed and rebuilt before delivery."
+      ],
+      "weldedVertices": 99994,
+      "facesAfterPartCuts": 154487,
+      "removedRearTailFaces": 3422,
+      "removedRearTailBounds": {
+        "min": [
+          -0.19636370241641998,
+          0.02270929515361786,
+          0.5449568629264832
+        ],
+        "max": [
+          0.1986265331506729,
+          0.1572655588388443,
+          0.6320000290870667
+        ]
+      },
+      "tailBoundaryBeforeFill": [
+        {
+          "vertices": 54,
+          "edges": 54,
+          "closedLoop": true,
+          "bounds": {
+            "min": [
+              0.1379362940788269,
+              0.02023467794060707,
+              0.6320000290870667
+            ],
+            "max": [
+              0.18033336102962494,
+              0.0733674094080925,
+              0.6320000290870667
+            ]
+          },
+          "verticesOnHeadCut": 54,
+          "verticesOnWristCut": 0,
+          "containsExpectedPartOpening": true
+        },
+        {
+          "vertices": 51,
+          "edges": 53,
+          "closedLoop": false,
+          "bounds": {
+            "min": [
+              -0.16109415888786316,
+              0.04960926994681358,
+              0.6289708018302917
+            ],
+            "max": [
+              -0.12100187689065933,
+              0.0810052752494812,
+              0.6320000290870667
+            ]
+          },
+          "verticesOnHeadCut": 39,
+          "verticesOnWristCut": 0,
+          "containsExpectedPartOpening": true
+        }
+      ],
+      "unresolvedTailBoundaries": [
+        {
+          "vertices": 54,
+          "edges": 54,
+          "closedLoop": true,
+          "bounds": {
+            "min": [
+              0.1379362940788269,
+              0.02023467794060707,
+              0.6320000290870667
+            ],
+            "max": [
+              0.18033336102962494,
+              0.0733674094080925,
+              0.6320000290870667
+            ]
+          },
+          "verticesOnHeadCut": 54,
+          "verticesOnWristCut": 0,
+          "containsExpectedPartOpening": true
+        },
+        {
+          "vertices": 51,
+          "edges": 53,
+          "closedLoop": false,
+          "bounds": {
+            "min": [
+              -0.16109415888786316,
+              0.04960926994681358,
+              0.6289708018302917
+            ],
+            "max": [
+              -0.12100187689065933,
+              0.0810052752494812,
+              0.6320000290870667
+            ]
+          },
+          "verticesOnHeadCut": 39,
+          "verticesOnWristCut": 0,
+          "containsExpectedPartOpening": true
+        }
+      ],
+      "newLocalBlouseTriangles": 0,
+      "finalBoundaries": [
+        {
+          "vertices": 123,
+          "edges": 123,
+          "closedLoop": true,
+          "bounds": {
+            "min": [
+              -0.7524999976158142,
+              -0.011183340102434158,
+              0.5061424374580383
+            ],
+            "max": [
+              -0.7524999976158142,
+              0.08655058592557907,
+              0.5865657329559326
+            ]
+          },
+          "verticesOnHeadCut": 0,
+          "verticesOnWristCut": 123,
+          "containsExpectedPartOpening": true
+        },
+        {
+          "vertices": 400,
+          "edges": 400,
+          "closedLoop": true,
+          "bounds": {
+            "min": [
+              -0.19636370241641998,
+              -0.01685710810124874,
+              0.5449568629264832
+            ],
+            "max": [
+              0.1986265331506729,
+              0.12190775573253632,
+              0.6320000290870667
+            ]
+          },
+          "verticesOnHeadCut": 257,
+          "verticesOnWristCut": 0,
+          "containsExpectedPartOpening": true
+        },
+        {
+          "vertices": 54,
+          "edges": 54,
+          "closedLoop": true,
+          "bounds": {
+            "min": [
+              0.1379362940788269,
+              0.02023467794060707,
+              0.6320000290870667
+            ],
+            "max": [
+              0.18033336102962494,
+              0.0733674094080925,
+              0.6320000290870667
+            ]
+          },
+          "verticesOnHeadCut": 54,
+          "verticesOnWristCut": 0,
+          "containsExpectedPartOpening": true
+        },
+        {
+          "vertices": 112,
+          "edges": 112,
+          "closedLoop": true,
+          "bounds": {
+            "min": [
+              0.7524999976158142,
+              -0.009437218308448792,
+              0.5114381313323975
+            ],
+            "max": [
+              0.7524999976158142,
+              0.08446019142866135,
+              0.583986222743988
+            ]
+          },
+          "verticesOnHeadCut": 0,
+          "verticesOnWristCut": 112,
+          "containsExpectedPartOpening": true
+        },
+        {
+          "vertices": 51,
+          "edges": 53,
+          "closedLoop": false,
+          "bounds": {
+            "min": [
+              -0.16109415888786316,
+              0.04960926994681358,
+              0.6289708018302917
+            ],
+            "max": [
+              -0.12100187689065933,
+              0.0810052752494812,
+              0.6320000290870667
+            ]
+          },
+          "verticesOnHeadCut": 39,
+          "verticesOnWristCut": 0,
+          "containsExpectedPartOpening": true
+        }
+      ],
+      "remainingVertices": 76048,
+      "remainingFaces": 151065,
+      "bodyClothingGeometryReadyForReview": false
+    }
+  ],
+  "hairObjects": [
+    "Hair_Crown_SourceEnvelope",
+    "Ponytail_Left_FabricTie",
+    "Ponytail_Right_FabricTie",
+    "Fringe_CentreLeft",
+    "Fringe_Left",
+    "Fringe_CentreRight",
+    "Fringe_Right",
+    "Fringe_LeftFine",
+    "Fringe_RightFine",
+    "Temple_Left",
+    "Temple_Right",
+    "Ponytail_Left_Lock_01",
+    "Ponytail_Left_Lock_02",
+    "Ponytail_Left_Lock_03",
+    "Ponytail_Left_Lock_04",
+    "Ponytail_Left_Lock_05",
+    "Ponytail_Right_Lock_01",
+    "Ponytail_Right_Lock_02",
+    "Ponytail_Right_Lock_03",
+    "Ponytail_Right_Lock_04",
+    "Ponytail_Right_Lock_05"
+  ],
+  "status": "first integrated geometry; appearance review pending"
+}

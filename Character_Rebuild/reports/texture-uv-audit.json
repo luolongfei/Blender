@@ -1,0 +1,84 @@
+{
+  "source": "character-hq-textured.glb",
+  "sourceSha256": "105b77790ff4b382b0ef83189827d774a596f4a8069cefdb8911ad85f93af3b2",
+  "materials": [
+    {
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "roughnessFactor": 0.9036020036098448
+      },
+      "doubleSided": false
+    }
+  ],
+  "images": [
+    {
+      "mimeType": "image/png",
+      "bufferView": 2
+    }
+  ],
+  "uvMin": [
+    0,
+    0.00040781497955322266
+  ],
+  "uvMax": [
+    0.9995733499526978,
+    1
+  ],
+  "total": {
+    "triangles": 200000,
+    "surfaceArea": 3.9094146798753036,
+    "uvArea": 0.5586533597898896,
+    "zeroUvArea": 199,
+    "zeroSurfaceArea": 0,
+    "uvOutsideUnit": 0
+  },
+  "regions": {
+    "head_neck": {
+      "triangles": 37758,
+      "surfaceArea": 0.43578141415827,
+      "uvArea": 0.06282099915765416,
+      "zeroUvArea": 65,
+      "zeroSurfaceArea": 0,
+      "uvOutsideUnit": 0,
+      "uvAreaFraction": 0.11245076764826266,
+      "surfaceAreaFraction": 0.11146973392246275,
+      "relativeLinearTexelDensity": 1.0043908092511065
+    },
+    "hands": {
+      "triangles": 7469,
+      "surfaceArea": 0.1109933599255833,
+      "uvArea": 0.016048914455388367,
+      "zeroUvArea": 4,
+      "zeroSurfaceArea": 0,
+      "uvOutsideUnit": 0,
+      "uvAreaFraction": 0.028727858114778702,
+      "surfaceAreaFraction": 0.028391298701810674,
+      "relativeLinearTexelDensity": 1.005909695511842
+    },
+    "garments_legs_shoes": {
+      "triangles": 154773,
+      "surfaceArea": 3.3626399057914553,
+      "uvArea": 0.4797834461768471,
+      "zeroUvArea": 130,
+      "zeroSurfaceArea": 0,
+      "uvOutsideUnit": 0,
+      "uvAreaFraction": 0.8588213742369587,
+      "surfaceAreaFraction": 0.8601389673757278,
+      "relativeLinearTexelDensity": 0.9992337877016072
+    }
+  },
+  "interpretation": [
+    "Region bounds are only approximate original glTF coordinate groups, not segmentation masks.",
+    "uvArea is the sum of triangle UV areas, not unique occupied texels; overlapping islands are not excluded.",
+    "A 4K input texture does not prove local feature sharpness. Valid garment details should be preserved, while replacement face/hand regions need dedicated UVs.",
+    "No texture pixels were changed and no Blender material validation was performed."
+  ]
+}

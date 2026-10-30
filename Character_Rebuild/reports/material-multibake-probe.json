@@ -1,0 +1,36 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "face": 0,
+      "uvCenter": [
+        0.24979497492313385,
+        0.5
+      ],
+      "rgb": [
+        0.8000000715255737,
+        0.10196079313755035,
+        0.10196079313755035
+      ]
+    },
+    {
+      "face": 1,
+      "uvCenter": [
+        0.7502050399780273,
+        0.5
+      ],
+      "rgb": [
+        0.10196079313755035,
+        0.10196079313755035,
+        0.8000000715255737
+      ]
+    }
+  ],
+  "uvLayers": [
+    "OriginalUV",
+    "Rebuilt_BodyUV"
+  ],
+  "sourceGeometryUnchanged": true,
+  "repairedMaterialPlaceholderUvsDoNotReadAtlas": true,
+  "newUvZeroAreas": 0
+}

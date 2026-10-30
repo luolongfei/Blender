@@ -1,0 +1,422 @@
+{
+  "frozenInputs": {
+    "scripts/neck_join_delta.py": "d474118cccfec4b3e163aa370e7a560d53a7f76ee0288d061139dd1dc0c7b3a6",
+    "scripts/face_e7_mouth_annulus_delta.py": "c384c564c37fb026dfba276b83eb664384ed9af43182e1ed30b26871b2365e80",
+    "reports/e7-mouth-annulus-delta.json": "0227e1d56ff4bce8e8846052b446177c9009e3e86799657bc5c312f6048f36a0",
+    "scripts/clothing_contact_e7.py": "ebf015bc9534e49a3efd98b1da470cc0805e36118763e398dc58b1dce2ebd77d",
+    "scripts/cap_inner_diagonal_fix_e8.py": "c1adfddd26e2a2320e6a77869dfe71a438051a0011f3a352ff097e7253b57b28"
+  },
+  "sourceStage": "E7-uv-normals-corrected.blend",
+  "neckJoin": {
+    "object": "Neck_Clean_Quad_Sleeve",
+    "oldTopZ": 0.7300000190734863,
+    "newTopZ": 0.7649999856948853,
+    "anchorZ": 0.685,
+    "movedVertices": 576,
+    "maxZDisplacement": 0.034999980926513685,
+    "outsideTopVerticesBefore": 21,
+    "outsideTopVerticesAfter": 0,
+    "minTopInteriorSignedDistanceAfter": 0.01046201649046452,
+    "xyExact": true,
+    "uvExact": true,
+    "lowerNeckExact": true,
+    "topologyWindingMaterialsUnchanged": true,
+    "diagnosis": "Top opening was exposed behind lower head; same skin material on both parts. Extension hides that opening inside actual head."
+  },
+  "mouthAnnulus": {
+    "operation": "Move only 217 upper mouth surround vertices on the existing smooth skin surface to make the annular rows nested. Mouth opening and inner wall unchanged.",
+    "sourceSha256": "fb285cbe33d0015f185cdf6a83e28e059e5043726b4640e347c2000117923cdf",
+    "deltaSha256": "0227e1d56ff4bce8e8846052b446177c9009e3e86799657bc5c312f6048f36a0",
+    "changedVertices": 217,
+    "maximumMove": 0.0003375592676114807,
+    "topologyExact": true,
+    "uvExact": true,
+    "allOtherHeadVerticesExact": true,
+    "otherObjectsExact": true,
+    "verifiedSourceAndHeadOnlyReimportSelfContacts": 0,
+    "testedTolerances": [
+      1e-08,
+      1e-10,
+      0
+    ],
+    "note": "Root must still export and verify the final combined GLB. No global/inter-object intersection certification."
+  },
+  "clothing": {
+    "beforeSAT": {
+      "Rebuild_Body_Clothing_SourceRetained": {
+        "requested": true,
+        "status": "completed",
+        "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs.",
+        "method": "BVH broad phase, then closed triangle SAT; contact includes tangency and coplanar overlap.",
+        "toleranceWorldUnits": 1e-08,
+        "triangleLimit": 200000,
+        "candidateLimit": 3000000,
+        "completeWithinDeclaredScope": true,
+        "doesNotProveNoGlobalIntersections": true,
+        "counts": {
+          "uniqueBroadPhasePairs": 2,
+          "narrowPhasePairs": 1,
+          "contacts": 1,
+          "sharedIndexExcluded": 1
+        },
+        "contactPairSamples": [
+          {
+            "triangles": [
+              29802,
+              150853
+            ],
+            "polygons": [
+              29738,
+              149444
+            ]
+          }
+        ],
+        "contacts": 1
+      },
+      "Rebuilt_FrontCollar_R": {
+        "requested": true,
+        "status": "completed",
+        "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs.",
+        "method": "BVH broad phase, then closed triangle SAT; contact includes tangency and coplanar overlap.",
+        "toleranceWorldUnits": 1e-08,
+        "triangleLimit": 200000,
+        "candidateLimit": 3000000,
+        "completeWithinDeclaredScope": true,
+        "doesNotProveNoGlobalIntersections": true,
+        "counts": {
+          "uniqueBroadPhasePairs": 4,
+          "narrowPhasePairs": 4,
+          "contacts": 4
+        },
+        "contactPairSamples": [
+          {
+            "triangles": [
+              126,
+              1279
+            ],
+            "polygons": [
+              63,
+              639
+            ]
+          },
+          {
+            "triangles": [
+              126,
+              1278
+            ],
+            "polygons": [
+              63,
+              639
+            ]
+          },
+          {
+            "triangles": [
+              127,
+              1279
+            ],
+            "polygons": [
+              63,
+              639
+            ]
+          },
+          {
+            "triangles": [
+              127,
+              1278
+            ],
+            "polygons": [
+              63,
+              639
+            ]
+          }
+        ],
+        "contacts": 4
+      }
+    },
+    "afterSAT": {
+      "Rebuild_Body_Clothing_SourceRetained": {
+        "requested": true,
+        "status": "completed",
+        "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs.",
+        "method": "BVH broad phase, then closed triangle SAT; contact includes tangency and coplanar overlap.",
+        "toleranceWorldUnits": 1e-08,
+        "triangleLimit": 200000,
+        "candidateLimit": 3000000,
+        "completeWithinDeclaredScope": true,
+        "doesNotProveNoGlobalIntersections": true,
+        "counts": {},
+        "contactPairSamples": [],
+        "contacts": 0
+      },
+      "Rebuilt_FrontCollar_R": {
+        "requested": true,
+        "status": "completed",
+        "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs.",
+        "method": "BVH broad phase, then closed triangle SAT; contact includes tangency and coplanar overlap.",
+        "toleranceWorldUnits": 1e-08,
+        "triangleLimit": 200000,
+        "candidateLimit": 3000000,
+        "completeWithinDeclaredScope": true,
+        "doesNotProveNoGlobalIntersections": true,
+        "counts": {},
+        "contactPairSamples": [],
+        "contacts": 0
+      }
+    },
+    "objects": {
+      "Rebuild_Body_Clothing_SourceRetained": {
+        "movedVertices": [
+          62754
+        ],
+        "changes": [
+          {
+            "vertex": 62754,
+            "before": [
+              -0.1688709706068039,
+              0.11592613160610199,
+              0.5500567555427551
+            ],
+            "after": [
+              -0.1688554883003235,
+              0.1158289983868599,
+              0.5500651597976685
+            ],
+            "distance": 9.871775724222358e-05
+          }
+        ],
+        "maximumDisplacement": 9.871775724222358e-05,
+        "uvPerCornerPreserved": true,
+        "uvBytesExact": true,
+        "uvSha256Before": "b11d250e7122178453ee369273fa0a4cd3fafeba6f78d8f184cf68e6a9349ec7",
+        "uvSha256After": "b11d250e7122178453ee369273fa0a4cd3fafeba6f78d8f184cf68e6a9349ec7",
+        "topologyExact": true,
+        "topologyBefore": {
+          "vertices": 75738,
+          "edges": 225243,
+          "faces": 149504,
+          "boundary_edges": 505,
+          "nonmanifold_edges": 0,
+          "connectivity_sha256": "b725a008b76c4855c69bf4e70711e2fd20086672cf7acd46f7a74521e6478009"
+        },
+        "topologyAfter": {
+          "vertices": 75738,
+          "edges": 225243,
+          "faces": 149504,
+          "boundary_edges": 505,
+          "nonmanifold_edges": 0,
+          "connectivity_sha256": "b725a008b76c4855c69bf4e70711e2fd20086672cf7acd46f7a74521e6478009"
+        },
+        "degenerateUvTrianglesAfter": {
+          "UVMap": 119,
+          "Rebuilt_BodyUV": 0
+        }
+      },
+      "Rebuilt_FrontCollar_R": {
+        "movedVertices": [],
+        "changes": [],
+        "maximumDisplacement": 0.0,
+        "uvPerCornerPreserved": true,
+        "uvBytesExact": false,
+        "uvSha256Before": "989b9efb8d1376f263d2c1a88c1f88781f1bcee947c21abd1fee75c4e714c1b5",
+        "uvSha256After": "48f3a28053582d2ca54d7e15229bf763e51a211a0d145ee708460456276dcc84",
+        "topologyExact": false,
+        "topologyBefore": {
+          "vertices": 1274,
+          "edges": 2544,
+          "faces": 1272,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "connectivity_sha256": "d464b9c3cbd71bb9b248217789cae0bb918070e582e80565e48da2dcbb0a7e4f"
+        },
+        "topologyAfter": {
+          "vertices": 1274,
+          "edges": 2545,
+          "faces": 1273,
+          "boundary_edges": 0,
+          "nonmanifold_edges": 0,
+          "connectivity_sha256": "14ad9188acd1763edd71fc85a6e6d417a24939ca700053f5069195edf0270a2a"
+        },
+        "degenerateUvTrianglesAfter": {
+          "FrontCollar_UV": 0
+        }
+      }
+    },
+    "bodyReason": "One rear yoke boundary point crossed an adjacent retained blouse face; repaired by measured 0.00009872-unit inward displacement.",
+    "collarReason": "Right front collar top/underside implicit tessellation used opposite diagonals. One hidden underside quad replaced by two explicit triangles using the matching diagonal 705-719. All 1274 collar vertex positions and all per-corner UV coordinates unchanged; visible top faces unchanged.",
+    "scope": "Same-object full BVH/SAT checks at 1e-8; excludes same-polygon/shared-index/shared-position pairs, as in final verifier. Inter-object clearance is a separate scope."
+  },
+  "crownInnerShell": {
+    "operation": "Two buried inner quads matched to outer diagonal; no point moved",
+    "beforeSelfContacts": {
+      "requested": true,
+      "status": "completed",
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs.",
+      "method": "BVH broad phase, then closed triangle SAT; contact includes tangency and coplanar overlap.",
+      "toleranceWorldUnits": 1e-10,
+      "triangleLimit": 20000,
+      "candidateLimit": 300000,
+      "completeWithinDeclaredScope": true,
+      "doesNotProveNoGlobalIntersections": true,
+      "counts": {
+        "uniqueBroadPhasePairs": 8,
+        "narrowPhasePairs": 8,
+        "contacts": 8
+      },
+      "contactPairSamples": [
+        {
+          "triangles": [
+            2212,
+            4837
+          ],
+          "polygons": [
+            1106,
+            2450
+          ]
+        },
+        {
+          "triangles": [
+            2212,
+            4836
+          ],
+          "polygons": [
+            1106,
+            2450
+          ]
+        },
+        {
+          "triangles": [
+            2213,
+            4837
+          ],
+          "polygons": [
+            1106,
+            2450
+          ]
+        },
+        {
+          "triangles": [
+            2213,
+            4836
+          ],
+          "polygons": [
+            1106,
+            2450
+          ]
+        },
+        {
+          "triangles": [
+            1846,
+            4471
+          ],
+          "polygons": [
+            923,
+            2267
+          ]
+        },
+        {
+          "triangles": [
+            1846,
+            4470
+          ],
+          "polygons": [
+            923,
+            2267
+          ]
+        },
+        {
+          "triangles": [
+            1847,
+            4471
+          ],
+          "polygons": [
+            923,
+            2267
+          ]
+        },
+        {
+          "triangles": [
+            1847,
+            4470
+          ],
+          "polygons": [
+            923,
+            2267
+          ]
+        }
+      ],
+      "contacts": 8
+    },
+    "afterSelfContacts": {
+      "requested": true,
+      "status": "completed",
+      "scope": "Within one object only; excludes same-polygon, shared-index, and shared-position pairs.",
+      "method": "BVH broad phase, then closed triangle SAT; contact includes tangency and coplanar overlap.",
+      "toleranceWorldUnits": 1e-08,
+      "triangleLimit": 20000,
+      "candidateLimit": 300000,
+      "completeWithinDeclaredScope": true,
+      "doesNotProveNoGlobalIntersections": true,
+      "counts": {},
+      "contactPairSamples": [],
+      "contacts": 0
+    },
+    "allVertexPositionsExact": true,
+    "outerEvidenceBefore": {
+      "outerVertices": "db9a642bde7ec23a93273441dc14fcb701ed984080d18be3f536c79e31aae5cf",
+      "outerTopology": "cc09759c87626fc2647b18824bc9319de24110b4366fbb05021ae7cda6c32b18",
+      "outerLoopUV": "ed634a1d4ec2a269a5a0b6d5bf1b71474e6bd5494dacf27090fe8b6d8eec3531",
+      "outerCornerNormals": "3f5de75faf467f31cb6f9be1c546548030dbe2ca96aa9ea2614dd47392752361",
+      "outerTangents": "2fcf5e86129f3bca7156cf137c566c7907fa1ee1511b6855be90da338dfe308d",
+      "outerPolygons": 1344
+    },
+    "outerEvidenceAfter": {
+      "outerVertices": "db9a642bde7ec23a93273441dc14fcb701ed984080d18be3f536c79e31aae5cf",
+      "outerTopology": "cc09759c87626fc2647b18824bc9319de24110b4366fbb05021ae7cda6c32b18",
+      "outerLoopUV": "ed634a1d4ec2a269a5a0b6d5bf1b71474e6bd5494dacf27090fe8b6d8eec3531",
+      "outerCornerNormals": "3f5de75faf467f31cb6f9be1c546548030dbe2ca96aa9ea2614dd47392752361",
+      "outerTangents": "2fcf5e86129f3bca7156cf137c566c7907fa1ee1511b6855be90da338dfe308d",
+      "outerPolygons": 1344
+    },
+    "outerPositionTopologyUVNormalsTangentsExact": true,
+    "changes": [
+      {
+        "outerPolygon": 923,
+        "innerPolygon": 2267,
+        "newInnerTriangles": [
+          [
+            2332,
+            2331,
+            2267
+          ],
+          [
+            2268,
+            2332,
+            2267
+          ]
+        ]
+      },
+      {
+        "outerPolygon": 1106,
+        "innerPolygon": 2450,
+        "newInnerTriangles": [
+          [
+            2515,
+            2514,
+            2450
+          ],
+          [
+            2451,
+            2515,
+            2450
+          ]
+        ]
+      }
+    ],
+    "polygonsBefore": 2752,
+    "polygonsAfter": 2754,
+    "sourceTrianglesBefore": 5376,
+    "sourceTrianglesAfter": 5376,
+    "normalRebakeRequiredForOuterSurface": false,
+    "freshExportValidationRequired": true
+  }
+}

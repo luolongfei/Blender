@@ -1,0 +1,155 @@
+{
+  "input": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\character-hq-textured.glb",
+  "sha256": "105b77790ff4b382b0ef83189827d774a596f4a8069cefdb8911ad85f93af3b2",
+  "backupVerified": true,
+  "Blender": "5.2.3 LTS",
+  "objects": [
+    {
+      "name": "Original_Character",
+      "vertices": 127360,
+      "triangles": 200000,
+      "polygons": 200000,
+      "uvLayers": [
+        "UVMap"
+      ],
+      "bbox": [
+        [
+          -0.9908958077430725,
+          0.9878259897232056
+        ],
+        [
+          -0.23363658785820007,
+          0.24766801297664642
+        ],
+        [
+          -0.9990763664245605,
+          0.9946864247322083
+        ]
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "Image_0",
+      "size": [
+        4096,
+        4096
+      ],
+      "packed": true
+    }
+  ],
+  "reviewViews": [
+    {
+      "name": "front",
+      "eye": [
+        0,
+        -5,
+        0
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho": 2.2
+    },
+    {
+      "name": "right",
+      "eye": [
+        5,
+        0,
+        0
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho": 2.2
+    },
+    {
+      "name": "back",
+      "eye": [
+        0,
+        5,
+        0
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho": 2.2
+    },
+    {
+      "name": "quarter",
+      "eye": [
+        3,
+        -5,
+        0
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "ortho": 2.2
+    },
+    {
+      "name": "face-front",
+      "eye": [
+        0,
+        -4,
+        0.78
+      ],
+      "target": [
+        0,
+        0,
+        0.78
+      ],
+      "ortho": 0.64
+    },
+    {
+      "name": "face-side",
+      "eye": [
+        4,
+        0,
+        0.78
+      ],
+      "target": [
+        0,
+        0,
+        0.78
+      ],
+      "ortho": 0.64
+    },
+    {
+      "name": "hand-top",
+      "eye": [
+        0.86,
+        0,
+        3
+      ],
+      "target": [
+        0.86,
+        0,
+        0.545
+      ],
+      "ortho": 0.34
+    },
+    {
+      "name": "hand-palm",
+      "eye": [
+        0.86,
+        0,
+        -3
+      ],
+      "target": [
+        0.86,
+        0,
+        0.545
+      ],
+      "ortho": 0.34
+    }
+  ]
+}

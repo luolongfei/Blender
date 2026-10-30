@@ -1,0 +1,21 @@
+{
+  "normalInstall": {
+    "oldMaterial": "Rebuilt_Hair_Crown_BakedFlow_V4",
+    "newMaterial": "Rebuilt_Hair_Crown_BakedNormal_V5",
+    "normalStrength": 0.85,
+    "normalImage": "hair-crown-flow-normal-v5-2048.png",
+    "imagePacked": true,
+    "imageColorSpace": "Non-Color",
+    "capGeometryUVExact": true,
+    "baseColorNetworkCopied": true,
+    "roughness": 0.5600000023841858
+  },
+  "rearHiddenScalpFit": {
+    "movedVertices": 623,
+    "maxDisplacement": 0.007041840671705856,
+    "clearanceSourceUnits": 0.004,
+    "visibleFaceEyesMouthUnchanged": true,
+    "capGeometryUVUnchanged": true
+  },
+  "pending": "Final combined render and clean GLB reimport"
+}

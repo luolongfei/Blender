@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-10-29T15:40:38.451Z",
+  "status": "technical-and-visual-inspection-recorded; artistic-limitations-remain",
+  "completionClaim": false,
+  "appearanceAcceptedByUser": false,
+  "scope": "Static anime T-pose character rebuild. File inventory and evidence correspondence only.",
+  "files": {
+    "input": {
+      "path": "character-hq-textured.glb",
+      "exists": true,
+      "bytes": 16438868,
+      "sha256": "105b77790ff4b382b0ef83189827d774a596f4a8069cefdb8911ad85f93af3b2"
+    },
+    "editable": {
+      "path": "Character_Rebuild/character-rebuilt.blend",
+      "exists": true,
+      "bytes": 16784776,
+      "sha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5"
+    },
+    "glb": {
+      "path": "Character_Rebuild/character-rebuilt-textured.glb",
+      "exists": true,
+      "bytes": 15210992,
+      "sha256": "4b70a67d9f2677b5d80e7d6d79a31fd6ff90d6d2c6c267c9a50ba678f3c904d8"
+    },
+    "sourceStage": {
+      "path": "Character_Rebuild/stages/E8-delivery-source.blend",
+      "exists": true,
+      "bytes": 16784592,
+      "sha256": "571074910ed0dc95fde19ca742bc903927640b58e35ec53a67e85c5b3a30cac9"
+    }
+  },
+  "checks": {
+    "inputUnchanged": true,
+    "sourceExportReportMatches": true,
+    "binaryValidationMatchesAndPasses": true,
+    "cleanReimportMatchesAndPasses": true,
+    "agentVisualReviewMatches": true
+  },
+  "toolVersions": {
+    "locked": {
+      "nodeMinimumMajor": 22,
+      "blender": "5.2.3",
+      "vrmAddon": "4.10.2",
+      "blenderMcp": "2.2.4",
+      "uv": "0.13.5",
+      "mcpPython": "3.15.1",
+      "meaning": "Previously validated versions, not a claim of latest releases."
+    },
+    "actualBlender": "5.2.3 LTS"
+  },
+  "statistics": {
+    "nodes": 47,
+    "meshes": 47,
+    "trianglesPerMeshDefinitions": 238527,
+    "trianglesAcrossMeshNodes": 238527,
+    "materials": 16,
+    "images": 5,
+    "textures": 5,
+    "skins": 0,
+    "animations": 0,
+    "containsSkeleton": false,
+    "allImagesEmbedded": true,
+    "cameraNodes": 0,
+    "lightNodes": 0,
+    "imageDimensions": [
+      {
+        "name": "iris-anime-1024",
+        "width": 1024,
+        "height": 1024,
+        "format": "png",
+        "sha256": "88d7c992f4b56fd005654030c1d577307cf118c66992f7437a064a5795252644"
+      },
+      {
+        "name": "hair-crown-flow-normal-v5-2048",
+        "width": 2048,
+        "height": 2048,
+        "format": "png",
+        "sha256": "f6865585f534ed757db8b33b6202b0dd1fee2c6f966ba0b3fd09098f6e8e2816"
+      },
+      {
+        "name": "hair-crown-flow-v4-2048",
+        "width": 2048,
+        "height": 2048,
+        "format": "png",
+        "sha256": "6af96ece565dbe690b6c734c8c230f63d625d0a0d7f9a6b1ea169e531d24f491"
+      },
+      {
+        "name": "face-skin-2048",
+        "width": 2048,
+        "height": 2048,
+        "format": "png",
+        "sha256": "241bd4c8960b81f02cd668f761168b68bf05986c7ebcced9ad93ecb83ad6d48b"
+      },
+      {
+        "name": "body-final-4096",
+        "width": 4096,
+        "height": 4096,
+        "format": "png",
+        "sha256": "69f40a3a9323716e5669a6cadca5f4a1ee499757660d2306c81b02b7cc73d6a7"
+      }
+    ],
+    "coordinateConvention": "glTF Y up; source/reimport world-bounds correspondence reported separately"
+  },
+  "evidence": {
+    "source": {
+      "path": "Character_Rebuild/reports/final-source-geometry.json",
+      "exists": true,
+      "bytes": 217689,
+      "sha256": "2058559be07a857fc692f21a95066de2074ac01d8f7ccb71ff5da639d6669b88"
+    },
+    "binary": {
+      "path": "Character_Rebuild/reports/final-glb-validation.json",
+      "exists": true,
+      "bytes": 69239,
+      "sha256": "ecf4e7edf96d83e32784a252239f08eeebcffcbd3447d92127e4f4bba07db49b"
+    },
+    "reimport": {
+      "path": "Character_Rebuild/reports/clean-reimport.json",
+      "exists": true,
+      "bytes": 307592,
+      "sha256": "6a73003fb5c60cc82bbc6c993ad71cb879a398b9e7e5ba1f38a8cc12740a4e49"
+    },
+    "visual": {
+      "path": "Character_Rebuild/reports/final-visual-review.json",
+      "exists": true,
+      "bytes": 3172,
+      "sha256": "62ffaecf7b2c5d8e2982ffcb2bbf47a5c8317e6bfb274a67aecf583db68e2963"
+    }
+  },
+  "parseErrors": [],
+  "reviewImages": [
+    {
+      "path": "Character_Rebuild/checks/final/quarter.png",
+      "exists": true,
+      "bytes": 660489,
+      "sha256": "7b68f82dd80e97dda85ffd9d1cb2f5862a562c5c7dad46627d1b529ff45dab2e"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/face-other-side.png",
+      "exists": true,
+      "bytes": 751397,
+      "sha256": "328601d23e7729a16a4fcdb4c2a1fffadb039f9fbd4622052ddb564963059600"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/hand-other-top.png",
+      "exists": true,
+      "bytes": 636171,
+      "sha256": "a9253243dca91a4844680ed2999da334d88510f7e6d0fd60620b6aa3bebdea47"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/hand-palm.png",
+      "exists": true,
+      "bytes": 638131,
+      "sha256": "3b7fd616eae3d74f711bf0195ea5959d2a4af47e3e8907481254e2748688d5f4"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/right.png",
+      "exists": true,
+      "bytes": 602119,
+      "sha256": "747b718adc66fba33b17d6ad831f14ef8cfe1a321b7521f6b72917f10d820bbd"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/face-quarter.png",
+      "exists": true,
+      "bytes": 845745,
+      "sha256": "583575e8906637b819ee51ea2816cfdfcca02f9546e923d93b615c53ba80d161"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/hand-oblique.png",
+      "exists": true,
+      "bytes": 633355,
+      "sha256": "aa2290f8019549f311b2b1bb46df2f5315982336c27ad8054069df67ef6a2f8c"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/face-back-quarter.png",
+      "exists": true,
+      "bytes": 821797,
+      "sha256": "50f13827e187cc3eb47f0fd979f545d526be5f9ad88c5dc242de9b8b4f339658"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/hand-other-palm.png",
+      "exists": true,
+      "bytes": 632762,
+      "sha256": "5d07a691427264060d0c54871f7c4599a9d1fadbd9f7125d15814eb81c4e4337"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/face-back.png",
+      "exists": true,
+      "bytes": 792816,
+      "sha256": "10633958cc49bde478f46071df8177e001db4da9f6fd75c8a1e49da0aa5f0f06"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/face-front.png",
+      "exists": true,
+      "bytes": 830779,
+      "sha256": "f8e4e53a190c98c660d936194c9cb5cd789dafdff972af20e7b086761e79f0cf"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/front.png",
+      "exists": true,
+      "bytes": 656585,
+      "sha256": "1fdbfd8586e9f1b2207c57c0626d80a891ff9f6a6e67b584091dfd34dde44856"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/hand-top.png",
+      "exists": true,
+      "bytes": 636700,
+      "sha256": "f2f6430c6ece2150140209508494e0c3b537730da6a95a501338972578b66421"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/face-side.png",
+      "exists": true,
+      "bytes": 750864,
+      "sha256": "d92b1566f2e04cb125382cff08c1ec7b04063e2e68bd5db5f5de4cd441e760af"
+    },
+    {
+      "path": "Character_Rebuild/checks/final/back.png",
+      "exists": true,
+      "bytes": 645371,
+      "sha256": "c33a8279d8eae05172f4aa6f7102ad0cd71e7ba79b4264504699eff9911391f7"
+    },
+    {
+      "path": "Character_Rebuild/checks/reimport/face-other-side.png",
+      "exists": true,
+      "bytes": 751220,
+      "sha256": "8fc41b4252a32cce8195c7bc136bd48a0906bc1f38bf5454e99187d1f52566dd"
+    },
+    {
+      "path": "Character_Rebuild/checks/reimport/hand-other-top.png",
+      "exists": true,
+      "bytes": 636379,
+      "sha256": "06457c826d08e11f6f702c9ff21b5c71aa13a19b1d57c46168c90649c98492a4"
+    },
+    {
+      "path": "Character_Rebuild/checks/reimport/hand-palm.png",
+      "exists": true,
+      "bytes": 638148,
+      "sha256": "e3d2f34ee1e683b6646efaa0b5f89f4a8131609901bd54aadee10d7e7195a35b"
+    },
+    {
+      "path": "Character_Rebuild/checks/reimport/face-back-quarter.png",
+      "exists": true,
+      "bytes": 821782,
+      "sha256": "3540dded58327e01ab9eca13cc93b7f42a3b1852a9fdf68995dcab7c525a215b"
+    },
+    {
+      "path": "Character_Rebuild/checks/reimport/hand-other-palm.png",
+      "exists": true,
+      "bytes": 633394,
+      "sha256": "d8de163a09739ffba8db6d4ec21a66c107c02922fd9debd61547d7bfb3831ef6"
+    },
+    {
+      "path": "Character_Rebuild/checks/reimport/face-front.png",
+      "exists": true,
+      "bytes": 830621,
+      "sha256": "2c0619da3a93daa810960db7a348d4e99b048b69661cfddc32db80958e1cb2ad"
+    },
+    {
+      "path": "Character_Rebuild/checks/reimport/front.png",
+      "exists": true,
+      "bytes": 656596,
+      "sha256": "ec28166d2a19d9f831576c7908d9ab3186423473d07cebc3d3fc022d60bd4ef3"
+    },
+    {
+      "path": "Character_Rebuild/checks/reimport/hand-top.png",
+      "exists": true,
+      "bytes": 636520,
+      "sha256": "a812e1f717a215a4ef1523d5e200bf55e96e8499118799eaf43ec7b0ff120fae"
+    },
+    {
+      "path": "Character_Rebuild/checks/reimport/face-side.png",
+      "exists": true,
+      "bytes": 751035,
+      "sha256": "6391bd6d53b6d960c68994ea11be6a8454910fcc7f1547e8d5a6051736816fdd"
+    },
+    {
+      "path": "Character_Rebuild/checks/reimport/back.png",
+      "exists": true,
+      "bytes": 645447,
+      "sha256": "fc5cbc3bfacb8ddef83a1b771defe7abc3660eb7c9615a6a8fadbc7955cca11f"
+    }
+  ],
+  "evidenceLimits": [
+    "A successful structural audit does not prove likeness, clean silhouettes, no intersections, correct fingers or texture appearance.",
+    "Source and exported model can have UV/material seam vertex count differences; triangle counts are compared independently.",
+    "Original hand details not visible in the reference are inferred. The final completion note must describe those inferred features.",
+    "No skeleton/animation production is required this round; report actual exported skins/animations above.",
+    "No off-machine backup or user visual acceptance is implied."
+  ],
+  "pending": []
+}

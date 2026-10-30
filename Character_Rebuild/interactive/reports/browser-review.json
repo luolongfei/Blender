@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-29T23:22:07.099Z",
+  "url": "http://127.0.0.1:52860/interactive/viewer.html",
+  "modelSha256": "64febee7ea3285cc8f4ff91725fbc2df686daaaaf50e2508384abb8ddec40289",
+  "realBrowserObserved": true,
+  "renderedSkinnedPrimitives": 48,
+  "bones": 22,
+  "visibleActions": [
+    "idle",
+    "wave",
+    "look",
+    "walk"
+  ],
+  "checks": {
+    "loadAndEmbeddedTextures": true,
+    "dragOrbit": true,
+    "wheelZoom": true,
+    "keyboardPan": true,
+    "clipSelection": true,
+    "realSkinnedHandMotion": true,
+    "pause": true,
+    "seekWhilePaused": true,
+    "halfSpeed": true,
+    "headAndBodyFraming": true,
+    "frontObliqueSideViews": true,
+    "tposeReset": true
+  },
+  "evidence": {
+    "pausedWaveTime": 2.208000087738037,
+    "pausedWaveHandVertex": [
+      -0.492621364675208,
+      0.6463618340811945,
+      -0.04517568076081685
+    ],
+    "tposeHandVertex": [
+      -0.7489501042956288,
+      0.5282884133205047,
+      -0.07101905713005484
+    ],
+    "screenshot": "checks/browser-wave.jpg"
+  },
+  "runtimeErrorsAfterFinalModelLoad": [],
+  "earlierExpectedError": "Initial page visit preceded the preview manifest and showed a recoverable not-ready state.",
+  "limits": [
+    "Limited pose visual review, not exhaustive cross-object collision testing.",
+    "Existing E8 leg/sock/shoe texture streaks remain.",
+    "No face/finger articulation or hair/cloth physics."
+  ],
+  "appearanceAcceptedByUser": false
+}

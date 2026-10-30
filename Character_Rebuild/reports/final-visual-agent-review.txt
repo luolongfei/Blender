@@ -1,0 +1,59 @@
+最终独立视觉复核：E8 制作源与干净场景 GLB 重导入
+日期：2026-10-29
+审阅者角色：只读视觉检查；没有建模、修改材质或启动渲染。
+
+版本核对
+- character-rebuilt.blend 实际 SHA-256：b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5
+- character-rebuilt-textured.glb 实际 SHA-256：4b70a67d9f2677b5d80e7d6d79a31fd6ff90d6d2c6c267c9a50ba678f3c904d8
+- checks/final/review-settings.json 的 sourceBlend 为当前 character-rebuilt.blend。
+- checks/reimport/review-settings.json 的 sourceBlend 为 stages/F-clean-glb-reimport.blend。
+- reports/clean-reimport.json 的 glbSha256 与上述实际 GLB 一致；报告字段 structuralReimportPassed=true、glbUnchangedDuringReimport=true。本视觉审阅没有重新运行该结构检查。
+- reimport 图片更新时间均为本次最新渲染批次；没有把旧 E7 手图混作 E8 验证。
+
+实际查看的最终源图片
+checks/final/face-front.png
+checks/final/face-side.png
+checks/final/face-other-side.png
+checks/final/face-back.png
+checks/final/face-back-quarter.png
+checks/final/hand-top.png
+checks/final/hand-palm.png
+checks/final/hand-other-top.png
+checks/final/hand-other-palm.png
+checks/final/hand-oblique.png
+checks/final/front.png
+checks/final/back.png
+
+实际查看的本次重导入图片（10张）
+checks/reimport/front.png
+checks/reimport/back.png
+checks/reimport/face-front.png
+checks/reimport/face-side.png
+checks/reimport/face-other-side.png
+checks/reimport/face-back-quarter.png
+checks/reimport/hand-top.png
+checks/reimport/hand-palm.png
+checks/reimport/hand-other-top.png
+checks/reimport/hand-other-palm.png
+
+观察结果
+1. 最终源和当前 GLB 重导入在已看同机位图中的轮廓、材质颜色和主要部件外观一致。未看到重导入导致的贴图丢失、头发缺件、手指缺件或新增大面积漏底。
+2. 后颈曾经的水平硬带在最终源 face-back/face-back-quarter 和重导入 face-back-quarter 中均已消失。耳后到下颌的斜向体积明暗仍在，不应把所有明暗变化当作横向接缝。
+3. 两侧眼部不再呈旧 E4 的黑色前凸贴片轮廓；正面双眼、眉、鼻、闭口线均能辨认。本审阅只确认这些静态视角的可见结果，不证明动画转眼/眨眼结构。
+4. 头顶和后冠在当前正面、双侧、背面/后侧图中没有看到肤色透点或旧大缺口。双低马尾及分束末梢完整，重导入后保留。
+5. 双手各自的掌侧与手背图均能明确数出四指加拇指；指间有连续可见间隙，没有看到原来的手套式粘连或破面。最终源斜侧腕部与袖口连续。当前图中未见明显指间穿出。
+6. 前领原黑发串色、背中央重复前门襟已经移除；当前前后服装颜色正常，白袜、棕鞋、绿裙均在。
+
+对早期视觉记录的更正
+早期 E4 记录把鬓侧宽暗带描述为“深浅条带/折面”。结合已实看的 checks/face-shadow-diagnostic/face-front.png 无头发诊断与整合者的同色材质核对，该特定竖向暗带属于发束投影，不能据此认定为已证实的几何裂缝或 UV 污染。最终光照下该暗带也已显著柔化。
+
+剩余艺术简化与未覆盖范围
+- 头脸仍是简化动漫造型，鼻梁较直、口线较简，眼睑与面部软组织层次有限；不能称精确还原原画身份或已达到用户要求的精致程度。
+- 后冠仍以较大连续发帽体积为主，马尾扎点到冠部的过渡、各大束之间的层次偏分件和简化；虽无已看视角的大洞，仍不同于原画自然细束层次。
+- 肩领表面仍有少量细小裂纹状凹痕/不平整，袖口和裙摆保留部分生成模型的简化边缘。图像不能单独断言这些都是通孔或穿插。
+- 双手掌垫、关节、指甲等细节简化；本次确认了五指静态结构可辨，不是动画变形或解剖精修验收。
+- 这是一套有限静态视角复核，没有完整旋转视频、动态、骨骼或表情验收；没有对所有隐藏面做独立穷举碰撞检查。
+- 成功重导入、静态部件完整和图像一致，不等于客户接受、精确原画还原或“高精度重建质量已经全面达成”。
+
+结论
+当前 E8 与对应 GLB 的静态导出保真复核已完成，所列关键缺损修正可在重导入实图中确认；交付说明必须保留上述艺术简化与检查边界。

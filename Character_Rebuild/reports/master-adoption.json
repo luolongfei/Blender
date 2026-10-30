@@ -1,0 +1,22 @@
+{
+  "recordedAt": "2026-10-29T15:41:11.369Z",
+  "masterPath": "projects/6c8500bf-1c38-481a-babd-e5478a50dd67/work/character.blend",
+  "masterSha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5",
+  "deliverySha256": "b3506fb27cdc04633a5bdaddf5e14166059209bab0f115e790614a3b6bd3d4f5",
+  "byteCopyVerified": true,
+  "priorMasterBackup": {
+    "path": "work/character.blend",
+    "bytes": 162979650,
+    "sha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166",
+    "integratedFrom": {
+      "path": "work/reconstruction-r02/reference-production-refined-r09.blend",
+      "bytes": 162979646,
+      "sha256": "1c0b0210114170f0ce6e09b266b4a9ded58f29bf1df45a6e2be13e9b5c77aa72"
+    },
+    "savedAtSource": "2026-10-28T22:56:23.977350+00:00",
+    "actualSha256": "3d0e397a6ba0b8742054718d01c4eed5b4ff0daa4a603fac43aa020b87707166",
+    "backupPath": "work/stage-backups/character-before-hunyuan-3d0e397a6ba0b874.blend",
+    "backupBytes": 162979650
+  },
+  "appearanceAcceptedByUser": false
+}

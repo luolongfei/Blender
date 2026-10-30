@@ -1,0 +1,433 @@
+{
+  "lockedModules": {
+    "face_v3.py": "e04464ee152bb445b6c3bc8a06921a49c3cc209c6fd5ca65bc58822bbafe81de",
+    "hands.py": "5d40c0625a1a76ab26b7b6488383fa2b9c6f6ba5e50568af39bdee82854406c5",
+    "hair.py": "cf1626835dbdbabe74ee52140c27ad3603dd31c646aa0a80c521b2ff6daf43c3"
+  },
+  "face": {
+    "new_mesh_objects": [
+      "Head_Skin_Quad_Retopo",
+      "Neck_Clean_Quad_Sleeve",
+      "Eye_Sclera_L",
+      "Eye_Iris_L",
+      "Eye_UpperLash_L",
+      "Eye_Sclera_R",
+      "Eye_Iris_R",
+      "Eye_UpperLash_R",
+      "Brow_L",
+      "Brow_R",
+      "Mouth_Closed_Line"
+    ],
+    "vertices": 18436,
+    "polygons": 18178,
+    "quad_faces": 17696,
+    "neck_boundary": "intentionally open for body integration",
+    "saved_source": false,
+    "appearance_accepted": false
+  },
+  "hair": {
+    "object": "Hair_Crown_SourceEnvelope",
+    "baseColor": "\\\\wsl.localhost\\Ubuntu-24.04\\home\\dev\\code\\Blender\\Character_Rebuild\\textures\\hair-crown-flow-v4-2048.png",
+    "imageSize": [
+      2048,
+      2048
+    ],
+    "roughness": 0.56,
+    "normalMap": false,
+    "extraGeometry": false,
+    "imagePacked": true,
+    "status": "baked technical output; appearance requires actual neutral render"
+  },
+  "hands": [
+    {
+      "object": "Rebuilt_Hand_L",
+      "wrist_origin": [
+        0.746,
+        0.0365,
+        0.5475
+      ],
+      "frame": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "dimensions": {
+        "palm_length": 0.118,
+        "palm_width": 0.094,
+        "palm_depth": 0.034,
+        "wrist_width": 0.078,
+        "wrist_depth": 0.052,
+        "finger_lengths": [
+          0.094,
+          0.112,
+          0.124,
+          0.114
+        ],
+        "finger_widths": [
+          0.019,
+          0.022,
+          0.023,
+          0.0215
+        ],
+        "finger_depths": [
+          0.0165,
+          0.0185,
+          0.019,
+          0.0185
+        ],
+        "finger_splay": [
+          -0.018,
+          -0.006,
+          0.004,
+          0.014
+        ],
+        "thumb_length": 0.098,
+        "thumb_width": 0.0265,
+        "thumb_depth": 0.023,
+        "thumb_forward": 0.91,
+        "thumb_outward": 0.445,
+        "curl": 0.003,
+        "finger_root_offsets": [
+          -0.012,
+          -0.004,
+          0,
+          -0.002
+        ],
+        "thenar_pad": 0.003,
+        "hypothenar_pad": 0.002,
+        "palm_cup": 0.0008,
+        "dorsal_knuckle": 0.0014,
+        "finger_arch": 0.0015,
+        "fuller_finger_profile": true,
+        "thumb_base_flare": 0.2,
+        "thumb_root_clearance": 0.0005
+      },
+      "base_topology": {
+        "vertices": 750,
+        "faces": 768,
+        "quads": 728,
+        "triangles": 1496,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "components": 1,
+        "scope": "connectivity only; visual and self-intersection checks remain necessary"
+      },
+      "subdivision": 1,
+      "bones_added": false,
+      "requires_visual_validation": true
+    },
+    {
+      "object": "Rebuilt_Hand_R",
+      "wrist_origin": [
+        -0.746,
+        0.0365,
+        0.5475
+      ],
+      "frame": [
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "dimensions": {
+        "palm_length": 0.118,
+        "palm_width": 0.094,
+        "palm_depth": 0.034,
+        "wrist_width": 0.078,
+        "wrist_depth": 0.052,
+        "finger_lengths": [
+          0.094,
+          0.112,
+          0.124,
+          0.114
+        ],
+        "finger_widths": [
+          0.019,
+          0.022,
+          0.023,
+          0.0215
+        ],
+        "finger_depths": [
+          0.0165,
+          0.0185,
+          0.019,
+          0.0185
+        ],
+        "finger_splay": [
+          -0.018,
+          -0.006,
+          0.004,
+          0.014
+        ],
+        "thumb_length": 0.098,
+        "thumb_width": 0.0265,
+        "thumb_depth": 0.023,
+        "thumb_forward": 0.91,
+        "thumb_outward": 0.445,
+        "curl": 0.003,
+        "finger_root_offsets": [
+          -0.012,
+          -0.004,
+          0,
+          -0.002
+        ],
+        "thenar_pad": 0.003,
+        "hypothenar_pad": 0.002,
+        "palm_cup": 0.0008,
+        "dorsal_knuckle": 0.0014,
+        "finger_arch": 0.0015,
+        "fuller_finger_profile": true,
+        "thumb_base_flare": 0.2,
+        "thumb_root_clearance": 0.0005
+      },
+      "base_topology": {
+        "vertices": 750,
+        "faces": 768,
+        "quads": 728,
+        "triangles": 1496,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "components": 1,
+        "scope": "connectivity only; visual and self-intersection checks remain necessary"
+      },
+      "subdivision": 1,
+      "bones_added": false,
+      "requires_visual_validation": true
+    }
+  ],
+  "frontCollar": {
+    "created_objects": [
+      "Rebuilt_FrontCollar_L",
+      "Rebuilt_FrontCollar_R"
+    ],
+    "leaves": [
+      {
+        "object": "Rebuilt_FrontCollar_L",
+        "vertices": 1274,
+        "quads": 1272,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "projected_samples": 624,
+        "nominal_thickness": 0.0015,
+        "front_top_clearance": 0.0035,
+        "bounds": {
+          "min": [
+            0.002712839050218463,
+            -0.09581021219491959,
+            0.5625618100166321
+          ],
+          "max": [
+            0.11295481771230698,
+            0.03143397718667984,
+            0.6220000386238098
+          ]
+        }
+      },
+      {
+        "object": "Rebuilt_FrontCollar_R",
+        "vertices": 1274,
+        "quads": 1272,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "projected_samples": 624,
+        "nominal_thickness": 0.0015,
+        "front_top_clearance": 0.0035,
+        "bounds": {
+          "min": [
+            -0.11278603225946426,
+            -0.09581021219491959,
+            0.5625618100166321
+          ],
+          "max": [
+            -0.0027292147278785706,
+            0.03143208473920822,
+            0.6220000386238098
+          ]
+        }
+      }
+    ],
+    "body_geometry_changed": false,
+    "body_uv_changed": false,
+    "rear_collar_changed": false,
+    "material": "Rebuilt_Final_blouse",
+    "bones_added": false,
+    "body_texture_cleanup_region": {
+      "absX": 0.16,
+      "minZ": 0.555,
+      "maxY": 0.035,
+      "note": "Remove obsolete drawn collar fringe from the body atlas beneath new leaves with a feathered cream repair; preserve buttons below this region."
+    },
+    "validation_note": "Closed topology checked here; root must inspect actual front, side and quarter views before delivery."
+  },
+  "regions": [
+    {
+      "name": "Blouse baked-light reduction",
+      "center": [
+        0,
+        0,
+        0.492
+      ],
+      "half_extents": [
+        0.77,
+        0.29,
+        0.204
+      ],
+      "feather": 0.012,
+      "strength": 0.7,
+      "color_srgb": [
+        0.94,
+        0.89,
+        0.805
+      ]
+    },
+    {
+      "name": "Back duplicate button placket removed",
+      "center": [
+        0,
+        0.086,
+        0.445
+      ],
+      "half_extents": [
+        0.035,
+        0.12,
+        0.14
+      ],
+      "feather": 0.014,
+      "normal_direction": [
+        0,
+        1,
+        0
+      ],
+      "normal_min": 0.2,
+      "color_srgb": [
+        0.94,
+        0.89,
+        0.805
+      ]
+    },
+    {
+      "name": "Front left collar hair colour contamination",
+      "center": [
+        -0.119,
+        -0.075,
+        0.576
+      ],
+      "half_extents": [
+        0.074,
+        0.095,
+        0.06
+      ],
+      "feather": 0.015,
+      "dark_threshold": 0.4,
+      "color_srgb": [
+        0.94,
+        0.89,
+        0.805
+      ]
+    },
+    {
+      "name": "Front right collar hair colour contamination",
+      "center": [
+        0.119,
+        -0.075,
+        0.576
+      ],
+      "half_extents": [
+        0.074,
+        0.095,
+        0.06
+      ],
+      "feather": 0.015,
+      "dark_threshold": 0.4,
+      "color_srgb": [
+        0.94,
+        0.89,
+        0.805
+      ]
+    },
+    {
+      "name": "Old front collar painted edge removed beneath new collar",
+      "center": [
+        0,
+        -0.08,
+        0.602
+      ],
+      "half_extents": [
+        0.162,
+        0.112,
+        0.048
+      ],
+      "feather": 0.01,
+      "color_srgb": [
+        0.94,
+        0.89,
+        0.805
+      ]
+    },
+    {
+      "name": "Skirt white background specks",
+      "center": [
+        0,
+        0,
+        0.022
+      ],
+      "half_extents": [
+        0.36,
+        0.29,
+        0.268
+      ],
+      "feather": 0.014,
+      "bright_threshold": 0.38,
+      "color_srgb": [
+        0.31,
+        0.35,
+        0.276
+      ]
+    },
+    {
+      "name": "Exposed legs colour shadow cleanup",
+      "center": [
+        0,
+        0,
+        -0.446
+      ],
+      "half_extents": [
+        0.23,
+        0.19,
+        0.225
+      ],
+      "feather": 0.018,
+      "strength": 0.72,
+      "color_srgb": [
+        0.96,
+        0.805,
+        0.69
+      ]
+    }
+  ],
+  "newUV": "Rebuilt_BodyUV",
+  "status": "Final candidate pending visual review and clean GLB reimport"
+}
